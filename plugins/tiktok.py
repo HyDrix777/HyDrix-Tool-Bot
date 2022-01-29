@@ -3,9 +3,6 @@ from typing import Tuple
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
-
-downloads = './downloads/{}/'
-
 DL_BUTTONS=[
     [
         InlineKeyboardButton('🚫 No Watermark', callback_data='nowm'),
@@ -13,11 +10,6 @@ DL_BUTTONS=[
     ],
     [InlineKeyboardButton('🔊 Audio', callback_data='audio')],
 ]
-
-
-# Running bot
-xbot = Client('TikTokDL', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-
 
 # Helpers
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
@@ -42,6 +34,8 @@ async def _tiktok(bot, update):
   if not 'tiktok.com' in resp.url:
     return
   await update.reply('Select the options below', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
+
+downloads = './downloads/{}/'
 
 # Callbacks
 @Client.on_callback_query()
