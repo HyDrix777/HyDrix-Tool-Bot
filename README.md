@@ -1,4 +1,4 @@
-### hydrix Tool
+### Hydrix Tool
 
 ### My Future's 🌟
 
