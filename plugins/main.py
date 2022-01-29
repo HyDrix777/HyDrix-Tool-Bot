@@ -15,7 +15,7 @@ import lyricsgenius
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text="╭───────────────⍟\n│Hᴇʏ bro👋😌\n│I ᴀᴍ HʏDʀɪx's Tool ᴛᴇsᴛ ᴘʀojᴇᴄᴛ\n│Click /help to know my Commands and my uses ℹ️\n╰──────────────⍟",
+        text="╭───────────────⍟\n│Hᴇʏ bro👋😄\n│I ᴀᴍ HʏDʀɪx's Tool ᴛᴇsᴛ Bot[🛠️](https://telegra.ph/file/fcf03969d2344d1a62d64.jpg)\n│Click /help to know my Commands and my uses ℹ️\n╰──────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕Add Me To Group➕", url="http://t.me/HydrixToolsbot?startgroup=botstart")
            ],[
