@@ -6,55 +6,8 @@ import requests
 import youtube_dl
 from pyrogram import filters, Client, idle
 from youtube_search import YoutubeSearch
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+eyboardMarkup
 
-## Extra Fns -------
-# Convert hh:mm:ss to seconds
-def time_to_seconds(time):
-    stringt = str(time)
-    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
-
-
-## Commands --------
-@Client.on_message(filters.command(['start']))
-async def start(client, message):
-       await message.reply("╭─────※🎶※────⍟\n│🧑‍💻 Hᴇʟʟᴏ\n│I'ᴍ ᴍᴜsɪᴄ ᴅʟʀ[📥](https://telegra.ph/file/afbcaeb494cd50fc0e568.jpg)\n│Exᴄʟᴜsɪᴠᴇʟʏ ᴍᴀᴅᴇ ғᴏʀ👇🏼\n├▶️ [Music Galaxy](https://t.me/Music_Galaxy_Dl)\n│Jᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ & Sᴇᴇ ᴡʜᴀᴛ ᴄᴀɴ I ᴅᴏ🎶\n╰─────※🎶※────⍟",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('👥 Group', url='https://t.me/Music_Galaxy_Dl'),
-                    InlineKeyboardButton('MG', url='https://t.me/Music_Galaxy_Dl')
-                ],
-                [
-                    InlineKeyboardButton('Search Inline', switch_inline_query_current_chat='')
-                ]
-            ]
-        )
-    )
-
-@Client.on_message(filters.command(['help']))
-async def help(client, message):
-       await message.reply("<b>Simplest Way😂</b>\n\n<i>How many times have I said that just giving the name of a song is enough.🙄\nDo not expect any other help from me😠</i>\n\n<b>Eg :</b> `/s Vaathi Coming`",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('Music', url='https://t.me/Music_Galaxy_Dl')
-                ]
-            ]
-        )
-    )
-
-@Client.on_message(filters.command(['about']))
-async def about(client, message):
-       await message.reply("➥<b>Name</b> : ⍟<i>Music Downloader</i>\n➥<b>Group</b> : ⍟[Music Galaxy](https://t.me/Music_Galaxy_Dl)\n➥<b>Language</b> : ⍟<i>Python3</i>\n➥<b>Server</b> : ⍟[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➥<b>Source</b> : ⍟[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://t.me/Music_Galaxy_Dl)",
-       reply_markup=InlineKeyboardMarkup(
-           [
-               [
-                   InlineKeyboardButton('Search Inline', switch_inline_query_current_chat='')
-               ]
-           ]
-        )
-    )
 
 @Client.on_message(filters.command(['s']))
 def a(client, message):
