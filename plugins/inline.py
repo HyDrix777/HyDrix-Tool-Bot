@@ -5,7 +5,7 @@ from youtubesearchpython import VideosSearch
 
 
 @Hydrix.on_inline_query()
-async def inline(client: Hydrix, query: InlineQuery):
+async def inline(client: Client, query: InlineQuery):
     answers = []
     search_query = query.query.lower().strip().rstrip()
 
