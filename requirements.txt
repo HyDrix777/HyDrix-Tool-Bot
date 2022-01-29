@@ -5,3 +5,5 @@ telethon
 telegram
 requests
 lyricsgenius
+youtube_search_python
+youtube_search
