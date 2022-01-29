@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
-        InlineKeyboardButton('🌠 Watermark', callback_data='wm'),
+        InlineKeyboardButton('📥 Download..', callback_data='wm'),
     ],
     [InlineKeyboardButton('🔊 Audio', callback_data='audio')],
 ]
