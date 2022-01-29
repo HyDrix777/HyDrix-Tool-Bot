@@ -3,7 +3,10 @@ from typing import Tuple
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
-
+# Configs
+API_HASH = os.environ['API_HASH']
+APP_ID = int(os.environ['APP_ID'])
+BOT_TOKEN = os.environ['BOT_TOKEN']
 downloads = './downloads/{}/'
 
 DL_BUTTONS=[
@@ -15,8 +18,11 @@ DL_BUTTONS=[
 ]
 
 
-# Helpers
+# Running bot
+Client = Client('TikTokDL', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
+
+# Helpers
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   args = shlex.split(cmd)
   process = await asyncio.create_subprocess_exec(
@@ -31,7 +37,6 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   )
 
 # Downloader for tiktok
-
 @Client.on_message(filters.regex(pattern='.*http.*') & filters.private)
 async def _tiktok(bot, update):
   url = update.text
@@ -42,7 +47,6 @@ async def _tiktok(bot, update):
   await update.reply('Select the options below', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
 
 # Callbacks
-
 @Client.on_callback_query()
 async def _callbacks(bot, cb: CallbackQuery):
   if cb.data == 'nowm':
