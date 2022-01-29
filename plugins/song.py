@@ -37,6 +37,7 @@ def a(client, message):
             title = results[0]["title"]
             thumbnail = results[0]["thumbnails"][0]
             duration = results[0]["duration"]
+            channel = results[0]["channel"]
 
             ## UNCOMMENT THIS IF YOU WANT A LIMIT ON DURATION. CHANGE 1800 TO YOUR OWN PREFFERED DURATION AND EDIT THE MESSAGE (30 minutes cap) LIMIT IN SECONDS
             # if time_to_seconds(duration) >= 1800:  # duration limit
@@ -64,7 +65,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎙️ <b>Title:</b> [{title[:35]}]\n🔗 <b>Link:</b> ({link})\n⌚ </b>Duration:</b> `{duration}`\n👁️‍🗨️ <b>Views:</b> `{views}`\n\n📮 <b>By:</b> {message.from_user.mention()}\n📤 <b>By:</b> @HydrixToolsbot'
+        rep =  f'🎙️ <b>Title:</b> [{title[:35]}]\n🔗 <b>Link:</b> ({link})\n⌚ <b>Duration:</b> `{duration}`\n👁️‍🗨️ <b>Views:</b> `{views}`\n🎥 <b>Cʜᴀɴɴᴇʟ:</b> {channel}\n\n📮 <b>By:</b> {message.from_user.mention()}\n📤 <b>By:</b> @HydrixToolsbot'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
