@@ -9,11 +9,11 @@ if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
-    bot = Client(
+    Hydrix = Client(
         "Music-Bot",
         bot_token=BOT_TOKEN,
         api_hash=API_HASH,
         api_id=API_ID,
         plugins=plugins
     )
-    bot.run()
+    Hydrix.run()
