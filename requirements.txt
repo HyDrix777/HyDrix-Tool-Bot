@@ -1,0 +1,7 @@
+pyrogram
+tgcrypto
+telegraph
+telethon
+telegram
+requests
+lyricsgenius
