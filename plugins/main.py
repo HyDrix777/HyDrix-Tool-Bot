@@ -119,3 +119,4 @@ async def lrsearch(_, message: Message):
 **__Lyrics:__**
 {S.lyrics}"""
     await m.edit(xxx)
+
