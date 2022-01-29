@@ -12,7 +12,7 @@ import lyricsgenius
 
 
 
-@Hydrix.on_message(filters.command("start"))
+@Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
         text="╭───────────────⍟\n│Hᴇʏ bro👋😌\n│I ᴀᴍ HʏDʀɪx's Tool ᴛᴇsᴛ ᴘʀojᴇᴄᴛ\n│Click /help to know my Commands and my uses ℹ️\n╰──────────────⍟",
@@ -29,8 +29,8 @@ async def start_message(bot, message):
            ]]
            )
        )
-@Hydrix.on_message(filters.command("help"))
-async def help(bot: Hydrix, message: Message):
+@Client.on_message(filters.command("help"))
+async def help(bot: Client, message: Message):
     await message.reply_text(
         text="⍟─────[COM]─────⍟\nI Have some cool futures, More features Soon..😌\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n👁️‍🗨️⍟ **Join Left Hider** - I Can Delete A Member joined Message,add me your group and promote.\n📜⍟ **Telegraph Uploader** - Send me any Photo I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a Song name I give you a Lyrics.Eg: `/lyric` <Song Name>\n📟⍟ /calculate - 👈🏼 Send me the command and type your Number to calculate.\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
@@ -40,8 +40,8 @@ async def help(bot: Hydrix, message: Message):
        )
 
 
-@Hydrix.on_message(filters.command("about"))
-async def about(bot: Hydrix, message: Message):
+@Client.on_message(filters.command("about"))
+async def about(bot: Client, message: Message):
     await message.reply_text(
         text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Hʏᴅʀɪx Tool Bot](https://t.me/HydrixToolsbot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
@@ -52,17 +52,17 @@ async def about(bot: Hydrix, message: Message):
 
 # Sticker id
 
-@Hydrix.on_message(filters.private & filters.sticker)
+@Client.on_message(filters.private & filters.sticker)
 async def stickers(_, message):
        await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
 # join left Hider
 
-@Hydrix.on_message(filters.new_chat_members)
+@Client.on_message(filters.new_chat_members)
 async def welcome(bot, message):
 	await message.delete()	
 	
-@Hydrix.on_message(filters.left_chat_member)
+@Client.on_message(filters.left_chat_member)
 async def goodbye(bot, message):
 	await message.delete()	
 
@@ -70,7 +70,7 @@ async def goodbye(bot, message):
 # Telegraph
 
 
-@Hydrix.on_message(filters.photo)
+@Client.on_message(filters.photo)
 async def getimage(client, message):
     location = "./FILES"
     if not os.path.isdir(location):
@@ -101,7 +101,7 @@ async def getimage(client, message):
 
 #  Lyrics
 
-@Hydrix.on_message(filters.command("lyric"))
+@Client.on_message(filters.command("lyric"))
 async def lrsearch(_, message: Message):  
     m = await message.reply_text("Sᴇᴀʀᴄʜɪɴɢ ʟʏʀɪᴄs...")
     query = query = message.text.split(None, 1)[1]
@@ -158,7 +158,7 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-@Hydrix.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
+@Client.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
 async def calculate(bot, update):
     await update.reply_text(
         text=CALCULATE_TEXT,
@@ -168,7 +168,7 @@ async def calculate(bot, update):
     )
 
 
-@Hydrix.on_callback_query()
+@Client.on_callback_query()
 async def cb_data(bot, update):
         data = update.data
         try:
@@ -191,7 +191,7 @@ async def cb_data(bot, update):
             print(error)
 
 
-@Hydrix.on_inline_query()
+@Client.on_inline_query()
 async def inline(bot, update):
     if len(update.data) == 0:
         try:
