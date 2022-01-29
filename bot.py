@@ -16,4 +16,5 @@ if __name__ == "__main__" :
         api_id=API_ID,
         plugins=plugins
    )
-   Client.run()
+
+bot.run()
