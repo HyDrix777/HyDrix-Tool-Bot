@@ -3,20 +3,6 @@ from typing import Tuple
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
-# Configs
-API_HASH = os.environ['API_HASH']
-APP_ID = int(os.environ['APP_ID'])
-BOT_TOKEN = os.environ['BOT_TOKEN']
-downloads = './downloads/{}/'
-
-#Button
-START_BUTTONS=[
-    [
-        InlineKeyboardButton('👥 Group', url='https://t.me/musicdowngroup'),
-        InlineKeyboardButton('📣 Channel', url='https://t.me/Tg_Galaxy'),
-    ],
-
-]
 
 DL_BUTTONS=[
     [
@@ -27,12 +13,8 @@ DL_BUTTONS=[
 ]
 
 
-# Running bot
-xbot = Client('TikTokDL', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-
-
 # Helpers
-# Thanks to FridayUB
+
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   args = shlex.split(cmd)
   process = await asyncio.create_subprocess_exec(
@@ -46,13 +28,9 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
       process.pid,
   )
 
-# Start
-@xbot.on_message(filters.command('start') & filters.private)
-async def _start(bot, update):
-  await update.reply_text(f"Wᴇʟᴄᴏᴍᴇ ᴛᴏ TɪᴋTᴏᴋ Dᴏᴡɴʟᴏᴀᴅᴇʀ.\n\nʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴛɪᴋᴛᴏᴋ ᴠɪᴅᴇᴏs/Aᴜᴅɪᴏs ᴡɪᴛʜᴏᴜᴛ ᴡᴀᴛᴇʀᴍᴀʀᴋ.\nsɪᴍᴘʟʏ sᴜʙᴍɪᴛ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ᴛʜᴇ TɪᴋTᴏᴋ ᴠɪᴅᴇᴏ.", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
-
 # Downloader for tiktok
-@xbot.on_message(filters.regex(pattern='.*http.*') & filters.private)
+
+@Client.on_message(filters.regex(pattern='.*http.*') & filters.private)
 async def _tiktok(bot, update):
   url = update.text
   session = requests.Session()
@@ -62,7 +40,8 @@ async def _tiktok(bot, update):
   await update.reply('Select the options below', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
 
 # Callbacks
-@xbot.on_callback_query()
+
+@Client.on_callback_query()
 async def _callbacks(bot, cb: CallbackQuery):
   if cb.data == 'nowm':
     dirs = downloads.format(uuid.uuid4().hex)
@@ -135,5 +114,3 @@ async def _callbacks(bot, cb: CallbackQuery):
     await run_cmd(cmd)
     await bot.send_audio(update.chat.id, f'{ttid}.mp3',)
     shutil.rmtree(dirs)
-
-xbot.run()
