@@ -226,7 +226,3 @@ async def inline(bot, update):
         except:
             pass
     await update.answer(answers)
-
-
-
-Hydrix.run()
