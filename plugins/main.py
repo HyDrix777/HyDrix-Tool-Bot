@@ -12,18 +12,6 @@ import lyricsgenius
 
 
 
-
-Hydrix=Client(
-    "Pyrogram Bot",
-    bot_token="5172677053:AAE0dIBBQKCPc5FJeGvAYcgPJLh1_cud4bY",
-    api_id="18891187",
-    api_hash="7d120384f48b2a86fa2b9e9772a28af6"
-
-
-)
-
-
-
 @Hydrix.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
