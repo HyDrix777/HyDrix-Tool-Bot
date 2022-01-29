@@ -70,7 +70,7 @@ async def goodbye(bot, message):
 # Telegraph
 
 
-@Client.on_message(filters.photo)
+@Client.on_message(filters.private & filters.photo)
 async def getimage(client, message):
     location = "./FILES"
     if not os.path.isdir(location):
