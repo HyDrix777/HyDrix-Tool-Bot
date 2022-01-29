@@ -10,4 +10,4 @@ youtube_search_python
 youtube_search
 ffmpeg-python
 ffmpeg
-
+gpytranslate
