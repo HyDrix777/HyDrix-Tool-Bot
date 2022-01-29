@@ -6,7 +6,12 @@ import requests
 import youtube_dl
 from pyrogram import filters, Client, idle
 from youtube_search import YoutubeSearch
-eyboardMarkup
+
+## Extra Fns -------
+# Convert hh:mm:ss to seconds
+def time_to_seconds(time):
+    stringt = str(time)
+    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
 @Client.on_message(filters.command(['s']))
