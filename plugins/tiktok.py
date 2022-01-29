@@ -19,7 +19,7 @@ DL_BUTTONS=[
 
 
 # Running bot
-Client = Client('TikTokDL', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+xbot = Client('TikTokDL', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 
 # Helpers
