@@ -1,10 +1,7 @@
-# © @Mr_Dark_Prince 🌚
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputTextMessageContent, InlineQueryResultArticle
 from gpytranslate import Translator
 import sqlite3, string
-
-# ⚠️ Fill api_id and api_hash from my.telegram.org.. Also fill your bot_token from @botfather
 
 bot = Client(
     "APP_NAME",
