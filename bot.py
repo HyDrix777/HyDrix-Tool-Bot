@@ -9,8 +9,8 @@ if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
-    Hydrix = Client(
-        "Hydrix-tool",
+    Hydrix=Client(
+        "Pyrogram Bot",
         bot_token=BOT_TOKEN,
         api_hash=API_HASH,
         api_id=API_ID,
