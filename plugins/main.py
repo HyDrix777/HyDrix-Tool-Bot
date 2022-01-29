@@ -25,7 +25,7 @@ async def start_message(bot, message):
            InlineKeyboardButton(text="🔎 Sᙓᗩᖇᙅᕼ", switch_inline_query_current_chat=""),
            InlineKeyboardButton("🧑‍💻 Bᴏᴛ Dᴇᴠ", url="https://t.me/Hydrix777")
            ],[
-           InlineKeyboardButton('🏃 ᙅᒪOSᙓ', callback_data='close')
+           InlineKeyboardButton("🏃 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
            )
        )
