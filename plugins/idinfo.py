@@ -96,9 +96,9 @@ async def id_(bot: Client, msg: Message):
 
 
 @Client.on_message(filters.private & filters.command("info"))
-async def info(bot, message):
-    if message.from_user.last_name:
-        last_name = message.from_user.last_name
+async def info(bot, update):
+    if update.from_user.last_name:
+        last_name = update.from_user.last_name
     else:
         last_name = "None"
     text = f"""
