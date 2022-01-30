@@ -32,7 +32,7 @@ async def start_message(bot, message):
 @Client.on_message(filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
-        text="⍟─────[COM]─────⍟\nI Have some cool futures✨\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑⍟ **Clean Service message** - I Can Delete A Service mesage like join left and more,add me your group and promote.\n🔗⍟ **Block links** - I Remove some regex links from group.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.Eg: `/lyric` <Song Name>\n🔎⍟ You Can search **YouTube** videos in nline Mode | copy this and paste it `@HydrixTgtoolsbot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
+        text="⍟─────[COM]─────⍟\nI Have some cool futures✨\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑⍟ **Clean Service message** - I Can Delete A Service mesage like join left and more,add me your group and promote.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.\nEg: `/lyric beggin` \n🔎⍟ You Can search **YouTube** videos in nline Mode | copy this and paste it `@HydrixTgtoolsbot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
@@ -59,7 +59,7 @@ async def stickers(_, message):
 
 # Service clear
 
-@Client.on_message(filters.service) | filters.regex("t.me")
+@Client.on_message(filters.service)
 async def delete(bot,message):
  await message.delete()
 
