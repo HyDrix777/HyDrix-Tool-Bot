@@ -11,23 +11,6 @@ db.commit()
 
 default_language = "en"
 
-    
-def get_db_lang(chat_id: int, chat_type: str) -> str:
-    if chat_type == "private":
-        dbc.execute("SELECT chat_lang FROM users WHERE user_id = ?", (chat_id,))
-        ul = dbc.fetchone()
-    return ul[0] if ul else None
-    
-def add_chat(chat_id, chat_type):
-    if chat_type == "private":
-        dbc.execute("INSERT INTO users (user_id) values (?)", (chat_id,))
-        db.commit()
-        
-        
-def set_db_lang(chat_id: int, chat_type: str, lang_code: str):
-    if chat_type == "private":
-        dbc.execute("UPDATE users SET chat_lang = ? WHERE user_id = ?", (lang_code, chat_id))
-        db.commit()
 
 
 @Client.on_message(filters.private, group=-1)
