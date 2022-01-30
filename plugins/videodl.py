@@ -1,11 +1,9 @@
 import asyncio
-import math
 import os
 import time
 from random import randint
 from urllib.parse import urlparse
 import requests
-import wget
 import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.types import Message
