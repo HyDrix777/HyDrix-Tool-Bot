@@ -14,9 +14,9 @@ from yt_dlp import YoutubeDL
 
 
 
-@Client.on_message(filters.private & filters.command(['vsong'])
+@Client.on_message(filters.private & filters.command(['v'])
 )
-async def vsong(client, message):
+async def v(client, message):
     ydl_opts = {
         "format": "best",
         "keepvideo": True,
