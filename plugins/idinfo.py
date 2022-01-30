@@ -93,3 +93,22 @@ async def id_(bot: Client, msg: Message):
 				await msg.reply("Invalid Username.", quote=True)
 			except UsernameNotOccupied:
 				await msg.reply("This username is not occupied by anyone", quote=True)
+
+
+@Client.on_message(filters.private & filters.command("info"))
+async def info(bot, message):
+    if message.from_user.last_name:
+        last_name = message.from_user.last_name
+    else:
+        last_name = "None"
+    text = f"""
+**🙋🏻‍♂️ First Name :** {update.from_user.first_name}
+
+**🧖‍♂️ Your Second Name :** {last_name}
+
+**🧑🏻‍🎓 Your Username :** {update.from_user.username}
+
+**🆔 Your Telegram ID :** {update.from_user.id}
+
+**🔗 Your Profile Link :** {update.from_user.mention}
+""" 
