@@ -1,7 +1,8 @@
+import os
+from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import UsernameInvalid, UsernameNotOccupied
-from pyrogram.types import Message
-
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
@@ -95,7 +96,14 @@ async def id_(bot: Client, msg: Message):
 				await msg.reply("This username is not occupied by anyone", quote=True)
 
 
-@Client.on_message(filters.private & filters.command("info"))
+BOT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton(text="SOURCE", url=f"https://github.com/vivek-tp/Info-Bot")
+        ]]
+    )
+
+
+@Bot.on_message(filters.private & filters.command("info"))
 async def info(bot, update):
     if update.from_user.last_name:
         last_name = update.from_user.last_name
@@ -112,3 +120,9 @@ async def info(bot, update):
 
 **🔗 Your Profile Link :** {update.from_user.mention}
 """ 
+    reply_markup = START_BUTTONS
+    await update.reply_text(        
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )
