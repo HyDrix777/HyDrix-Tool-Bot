@@ -4,22 +4,12 @@ from pyrogram import Client, filters
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-bughunter0 = Client(
-    "Mp4-to-Mp3-Conveter",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
-)
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 
-@bughunter0.on_message(filters.private & filters.text)
-async def start(bot, message):
-    await message.reply_text("Send a video for converting to audio")
 
-
-@bughunter0.on_message(filters.video & filters.private)
+@Client.on_message(filters.video & filters.private)
 async def mp3(bot, message):
     
     # download video
@@ -39,6 +29,3 @@ async def mp3(bot, message):
         pass
     
     await txt.delete()
-
-
-bughunter0.run()
