@@ -103,7 +103,7 @@ BOT_BUTTONS = InlineKeyboardMarkup(
     )
 
 
-@Bot.on_message(filters.private & filters.command("info"))
+@Client.on_message(filters.private & filters.command("info"))
 async def info(bot, update):
     if update.from_user.last_name:
         last_name = update.from_user.last_name
