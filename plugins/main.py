@@ -15,7 +15,7 @@ import lyricsgenius
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text="╭──────────────⍟\n│Hᴇʏ 🧑🏻‍🔧\n│I ᴀᴍ Tg Tool Bot[🛠️](https://telegra.ph/file/5e91ce24fe69adf454227.jpg)\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────────⍟",
+        text="╭──────────────⍟\n│Hᴇʏ 🧑🏻‍🔧\n│I ᴀᴍ Tg Tool Bot[🛠️](https://telegra.ph/file/5e91ce24fe69adf454227.jpg)\n│I Have some cool futures✨\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕Add Me To Group➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -32,7 +32,7 @@ async def start_message(bot, message):
 @Client.on_message(filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
-        text="⍟─────[COM]─────⍟\n✨I Have some cool futures✨\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑⍟ **Clean Service message** - I Can Delete A Service mesage like join left and more,add me your group and promote.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.\nEg: `/lyric beggin` \n🔎⍟ You Can search **YouTube** videos in **nline Mode** | copy this and paste it `@HTGToolBot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n📹➥🎵⍟ **Mp4** to **Mp3Conveter** - Send a video for converting to audio.\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
+        text="⍟─────[COM]─────⍟\n🔻My Futures🔻\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑⍟ **Clean Service message** - I Can Delete A Service mesage like join left and more,add me your group and promote.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.\nEg: `/lyric beggin` \n🔎⍟ You Can search **YouTube** videos in **nline Mode** | copy this and paste it `@HTGToolBot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n📹➥🎵⍟ **Mp4** to **Mp3Conveter** - Send a video for converting to audio.\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
