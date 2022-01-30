@@ -42,7 +42,7 @@ async def v(client, message):
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
         return await msg.edit(f"🚫 **error:** {e}")
-    preview = wget.download(thumbnail)
+    preview = thumb.download(thumbnail)
     await msg.edit("📤 **uploading video...**")
     await message.reply_video(
         file_name,
