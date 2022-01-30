@@ -15,7 +15,7 @@
 
 6. Song Downloader 🎵📥
 
-7. Tik tok Download ⚫📥
+7. Tik tok Video Downloader ⚫📥
 
 8.Remove / commands on Group /🚫
 
