@@ -15,12 +15,12 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 from tg_bot.modules.helper_funcs.decorators import kigcmd
 
 
-@kigcmd(command='runs')
+@Client(command='runs')
 def runs(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
 
 
-@kigcmd(command='slap')
+@Client(command='slap')
 def slap(update: Update, context: CallbackContext):
     bot: telegram.Bot = context.bot
     args = context.args
@@ -77,7 +77,7 @@ def slap(update: Update, context: CallbackContext):
     reply_text(reply, parse_mode=ParseMode.HTML)
 
 
-@kigcmd(command='pat')
+@Client(command='pat')
 def pat(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     msg = str(update.message.text)
@@ -118,17 +118,17 @@ def pat(update: Update, context: CallbackContext):
         )
 
 
-@kigcmd(command='roll')
+@Client(command='roll')
 def roll(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(range(1, 7)))
 
 
-@kigcmd(command='toss')
+@Client(command='toss')
 def toss(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(fun_strings.TOSS))
 
 
-@kigcmd(command='shrug')
+@Client(command='shrug')
 def shrug(update: Update, context: CallbackContext):
     msg = update.effective_message
     reply_text = (
@@ -137,7 +137,7 @@ def shrug(update: Update, context: CallbackContext):
     reply_text(r"¯\_(ツ)_/¯")
 
 
-@kigcmd(command='rlg')
+@Client(command='rlg')
 def rlg(update: Update, context: CallbackContext):
     eyes = random.choice(fun_strings.EYES)
     mouth = random.choice(fun_strings.MOUTHS)
@@ -150,7 +150,7 @@ def rlg(update: Update, context: CallbackContext):
     update.message.reply_text(repl)
 
 
-@kigcmd(command='decide')
+@Client(command='decide')
 def decide(update: Update, context: CallbackContext):
     reply_text = (
         update.effective_message.reply_to_message.reply_text
@@ -160,7 +160,7 @@ def decide(update: Update, context: CallbackContext):
     reply_text(random.choice(fun_strings.DECIDE))
 
 
-@kigcmd(command='table')
+@Client(command='table')
 def table(update: Update, context: CallbackContext):
     reply_text = (
         update.effective_message.reply_to_message.reply_text
