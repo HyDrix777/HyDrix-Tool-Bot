@@ -17,7 +17,7 @@ async def start_message(bot, message):
     await message.reply_text(
         text="╭──────────────⍟\n│Hᴇʏ 🧑🏻‍🔧\n│I ᴀᴍ Tg Tool Bot[🛠️](https://telegra.ph/file/5e91ce24fe69adf454227.jpg)\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("➕Add Me To Group➕", url="http://t.me/HydrixToolsbot?startgroup=botstart")
+           InlineKeyboardButton("➕Add Me To Group➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
            InlineKeyboardButton("📢 Cʜᴀɴɴᴇʟ", url="https://t.me/Tg_galaxy"),
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
