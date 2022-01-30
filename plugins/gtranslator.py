@@ -14,15 +14,6 @@ default_language = "en"
 
 
 
-@Client.on_message(filters.private, group=-1)
-async def check_chat(bot, msg):
-    chat_id = msg.chat.id
-    chat_type = msg.chat.type
-
-    if not chat_exists(chat_id, chat_type):
-        add_chat(chat_id, chat_type)
-        set_db_lang(chat_id, chat_type, "en")
-        
     
     
 ##When the user sent /language command, configure the message that the bot should send
