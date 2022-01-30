@@ -56,19 +56,15 @@ async def about(bot: Client, message: Message):
 async def stickers(_, message):
        await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
-# join left Hider
 
-@Client.on_message(filters.new_chat_members)
-async def welcome(bot, message):
-	await message.delete()	
-	
-@Client.on_message(filters.left_chat_member)
-async def goodbye(bot, message):
-	await message.delete()	
+# Service clear
+
+@Client.on_message(filters.regex("http") | filters.regex("t.me") | filters.regex("youtu.be") | filters.regex("com") | filters.regex("https") | filters.regex("/" ) | filters.service)
+async def delete(bot,message):
+ await message.delete()
 
 
 # Telegraph
-
 
 @Client.on_message(filters.private & filters.photo)
 async def getimage(client, message):
