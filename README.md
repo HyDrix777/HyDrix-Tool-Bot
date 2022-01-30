@@ -17,7 +17,5 @@
 
 7. Tik tok Video Downloader ⚫📥
 
-9.Remove some regex links 🔗
-
 ⍟──────────────────────⍟
 ### More futures add Soon...
