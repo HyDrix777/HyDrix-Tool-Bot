@@ -10,7 +10,6 @@ import requests
 import wget
 import youtube_dl
 from pyrogram import Client, filters
-from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
@@ -70,7 +69,7 @@ async def ytmusic(client, message: Message):
 
     except Exception:
         # await pablo.edit(event, f"**Failed To Download** \n**Error :** `{str(e)}`")
-        is_downloading = False
+        is_downloading = True
         return
 
     c_time = time.time()
