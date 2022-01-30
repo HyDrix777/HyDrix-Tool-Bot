@@ -1,6 +1,7 @@
 import asyncio
 import os
 import time
+import wget
 from random import randint
 from urllib.parse import urlparse
 import requests
