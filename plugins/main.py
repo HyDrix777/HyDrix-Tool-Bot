@@ -32,7 +32,7 @@ async def start_message(bot, message):
 @Client.on_message(filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
-        text="⍟─────[COM]─────⍟\nI Have some cool futures✨\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n👁️‍🗨️⍟ **Join Left Hider** - I Can Delete A Member joined Message,add me your group and promote.\n**Block links** - I Remove some regex links from group.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.Eg: `/lyric` <Song Name>\n🔎⍟ You Can search **YouTube** videos in nline Mode | copy this and paste it `@HydrixToolsbot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
+        text="⍟─────[COM]─────⍟\nI Have some cool futures✨\n\n🖼️⍟ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑⍟ **Clean Service mesage** - I Can Delete A Service mesage like join left,add me your group and promote.\n🔗⍟ **Block links** - I Remove some regex links from group.\n📜⍟ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🎼⍟ /lyric - Send me a **Song name** I give you a Lyrics.Eg: `/lyric` <Song Name>\n🔎⍟ You Can search **YouTube** videos in nline Mode | copy this and paste it `@HydrixTgtoolsbot`\n🎵⍟ /s - To **download** audio songs from **YouTube**.\nEg : `/s Believer`\n⚫⍟ **Tiktok Download** - Send me Tiktok Video **Url** here\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
@@ -43,7 +43,7 @@ async def help(bot: Client, message: Message):
 @Client.on_message(filters.command("about"))
 async def about(bot: Client, message: Message):
     await message.reply_text(
-        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Hʏᴅʀɪx Tool Bot](https://t.me/HydrixToolsbot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
+        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Hʏᴅʀɪx Tool Bot](https://t.me/HydrixTgtoolsbot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
