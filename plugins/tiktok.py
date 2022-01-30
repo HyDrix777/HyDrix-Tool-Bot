@@ -8,7 +8,7 @@ DL_BUTTONS=[
         InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
         InlineKeyboardButton('📥 Download..', callback_data='wm'),
     ],
-    [InlineKeyboardButton('🔊 Audio', callback_data='audio')],
+    [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
 ]
 
 # Helpers
