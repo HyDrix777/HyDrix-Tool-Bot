@@ -1,23 +1,18 @@
-from __future__ import unicode_literals
-
 import asyncio
 import math
 import os
 import time
 from random import randint
 from urllib.parse import urlparse
-
 import aiofiles
 import aiohttp
 import requests
 import wget
 import yt_dlp
 from pyrogram import Client, filters
-from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-
 from config import BOT_USERNAME as bn
 from driver.decorators import humanbytes
 from driver.filters import command, other_filters
@@ -33,10 +28,7 @@ ydl_opts = {
 }
 
 
-
-
-@Client.on_message(
-    command(["vsong", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited
+@Client.on_message(filters.private & filters.command(['vsong'])
 )
 async def vsong(client, message):
     ydl_opts = {
