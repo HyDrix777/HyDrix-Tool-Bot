@@ -18,14 +18,6 @@ from driver.decorators import humanbytes
 from driver.filters import command, other_filters
 
 
-ydl_opts = {
-    'format': 'best',
-    'keepvideo': True,
-    'prefer_ffmpeg': False,
-    'geo_bypass': True,
-    'outtmpl': '%(title)s.%(ext)s',
-    'quite': True
-}
 
 
 @Client.on_message(filters.private & filters.command(['vsong'])
