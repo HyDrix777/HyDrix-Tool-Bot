@@ -32,6 +32,8 @@ def a(client, message):
             count += 1
         # results = YoutubeSearch(query, max_results=1).to_dict()
         try:
+            link = f"https://youtube.com{results[0]['url_suffix']}"
+            # print(results)
             title = results[0]["title"]
             thumbnail = results[0]["thumbnails"][0]
             duration = results[0]["duration"]
@@ -63,7 +65,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'╭────⋆♫⋆─────✪\n├🎙️ <b>Title:</b> [{title[:35]}]\n├⌚ <b>Duration:</b> `{duration}`\n├👁️‍🗨️ <b>Views:</b> `{views}`\n├🎥 <b>Cʜᴀɴɴᴇʟ:</b> {channel}\n│\n├📮 <b>By:</b> {message.from_user.mention()}\n├📤 <b>By:</b> @HydrixToolsbot\n╰────⋆♫⋆────✪'
+        rep =  f'╭────⋆♫⋆─────✪\n├🎙️ <b>Title:</b> [{title[:35]}]\n├🔗 <b>Link:</b> [link]({link})\n├⌚ <b>Duration:</b> `{duration}`\n├👁️‍🗨️ <b>Views:</b> `{views}`\n├🎥 <b>Cʜᴀɴɴᴇʟ:</b> {channel}\n│\n├📮 <b>By:</b> {message.from_user.mention()}\n├📤 <b>By:</b> @HydrixToolsbot\n╰────⋆♫⋆────✪'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
