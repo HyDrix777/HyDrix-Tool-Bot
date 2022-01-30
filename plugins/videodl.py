@@ -1,17 +1,12 @@
 import asyncio
 import os
 import time
-from random import randint
-from urllib.parse import urlparse
 import requests
 import yt_dlp
-from pyrogram import Client, filters, wget
+from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-
-
-
 
 
 @Client.on_message(filters.private & filters.command(['v'])
