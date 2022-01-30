@@ -17,8 +17,6 @@
 
 7. Tik tok Video Downloader ⚫📥
 
-8.Remove / commands on Group /🚫
-
 9.Remove some regex links 🔗
 
 ⍟──────────────────────⍟
