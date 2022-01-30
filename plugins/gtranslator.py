@@ -11,13 +11,6 @@ db.commit()
 
 default_language = "en"
 
-#Get User IDs and save it in DB
-def chat_exists(chat_id, chat_type):
-    if chat_type == "private":
-        dbc.execute("SELECT user_id FROM users where user_id = ?", (chat_id,))
-        return bool(dbc.fetchone())
-    raise TypeError("Unknown chat type '%s'." % chat_type)
-
     
 def get_db_lang(chat_id: int, chat_type: str) -> str:
     if chat_type == "private":
