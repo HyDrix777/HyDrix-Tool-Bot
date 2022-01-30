@@ -43,7 +43,7 @@ async def help(bot: Client, message: Message):
 @Client.on_message(filters.command("about"))
 async def about(bot: Client, message: Message):
     await message.reply_text(
-        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Hʏᴅʀɪx Tool Bot](https://t.me/HydrixTgtoolsbot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
+        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
@@ -108,7 +108,7 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("Lʏʀɪᴄs ɴᴏᴛ ғᴏᴜɴᴅ...")
     xxx = f"""
-**Lyrics Search Powered By HyDrix Tool**
+**Lyrics Search Powered By Tg Tool Bot**
 **Searched Song:-** __{query}__
 **Found Lyrics For:-** __{S.title}__
 **Artist:-** {S.artist}
