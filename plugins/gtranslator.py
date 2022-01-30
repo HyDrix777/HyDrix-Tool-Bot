@@ -32,16 +32,8 @@ async def setmylang(bot, msg):
 
 
 
-##main translation process
+##main 
 
-@Client.on_message(filters.private & ~filters.command("tr"))
-async def main(bot, msg):
-    tr = Translator()
-    userlang = get_db_lang(msg.chat.id, msg.chat.type)
-    translation = await tr(msg.text, targetlang=[userlang, 'utf-16'])
-    language = await tr.detect(msg.text)
-    await msg.reply(f"**\ud83c\udf10 Translation**:\n\n```{translation.text}```\n\n**🔍 Detected language:** {language}")
-    
 @Client.on_message(filters.command("tr") & filters.group)
 async def translategroup(bot, msg) -> None:
     tr = Translator()
