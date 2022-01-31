@@ -10,7 +10,6 @@ from random import randint
 from urllib.parse import urlparse
 
 import requests
-import wget
 import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
