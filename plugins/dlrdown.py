@@ -5,7 +5,6 @@ import youtube_dl
 import math
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
-from Python_ARQ import ARQ
 from urllib.parse import urlparse
 import aiofiles
 import os
