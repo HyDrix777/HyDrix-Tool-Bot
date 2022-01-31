@@ -85,7 +85,7 @@ def a(client, message):
 @Client.on_message(filters.private & filters.command("broadcast") & filters.reply)
 async def broadcast_(c, m):
     print("broadcasting......")
-    if m.from_user.id not in Config.OWNER_ID:
+    if m.from_user.id not in Config:
         await c.delete_messages(
             chat_id=m.chat.id,
             message_ids=m.message_id,
