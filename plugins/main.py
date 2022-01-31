@@ -29,10 +29,21 @@ async def start_message(bot, message):
            ]]
            )
        )
+
 @Client.on_message(filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
         text="⍟─────[COM]─────⍟\n🔻My Futures🔻\n\n🖼️➥ **Sticker ID**❓- Just send me the Sticker I would reply with it's Id.\n🗑➥ **Clean Service message** - I Can Delete A **Service message** like join left and more,add me your group and promote it.\n📜➥ **Telegraph Uploader** - Send me any **Photo** I'll Upload it into Telegra.ph\n🔎➥ You Can search **YouTube** videos in **nline Mode** | copy this and paste it `@HTGToolBot`\n📹➥🎵⍟ **Mp4** to **Mp3Conveter** - Send a **Video** for converting to **Audio**.\n\n🎼➥ /lyric - Send me a **Song name** I give you a Lyrics.\nEg: `/lyric beggin`\n🎵➥ /s - To **download** audio songs from **YouTube**,You can use this in group.\nEg : `/s Believer`\n📹➥ /v - To **download Video** from **YouTube**, video downloading is very slowly pls wait it.\n⚫📥➥ **TikTok Download** - Send me **Tiktok** Video **Url** here\n💱➥ **G translator** - You can use me in group's in this command👉🏻 /tr first add me in group.\nClick /list to find your language.\nEg: reply to /tr en 👈🏼\n\n🆔➥ **user, group's, bot, channel's Id Finder**\n1. Send any message to get **your ID**.\n2. Forward any message from any user/bot/channel or anonymous admins to get ID.\n3. Add in group / channel to get ID.\n4. **Use /id command:**\n- in private: To get ID through username\n- in group/channel: To get ID of that chat.\n5. **Your DC**❓ - Click /dc to get your DC.\n\n🆎⍟ /about - Know me 🙋\n⍟─────────────⍟",
+        reply_markup=InlineKeyboardMarkup( [[
+           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
+           ]]
+           )
+       )
+
+@Client.on_message(filters.command("list"))
+async def list(bot: Client, message: Message):
+    await message.reply_text(
+        text="╭────List────⍟\n`List is in the form`\n**Language code** <=> **Language**\n`af` ➥ **Afrikaans**\n╰───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
