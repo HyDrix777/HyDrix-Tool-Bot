@@ -21,6 +21,8 @@
 
 9. user's, group's, Bot's, channel's Id Finder 🆔
 
+10. DC Finder 
+
 ⍟──────────────────────⍟
 
 ### More futures Soon...
