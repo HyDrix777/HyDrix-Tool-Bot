@@ -213,5 +213,3 @@ async def del_whitelist_handler(bot, message):
         await message.reply_text(f"This ids found in whitelist\n\n{show_wl}")
     else:
         await message.reply_text("White list not found.")
-
-if __name__ == "__main__":
