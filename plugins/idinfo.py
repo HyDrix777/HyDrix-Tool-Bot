@@ -2,7 +2,8 @@ import os
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import UsernameInvalid, UsernameNotOccupied
-
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from config import Config
 
 
 
@@ -95,3 +96,23 @@ async def id_(bot: Client, msg: Message):
 			except UsernameNotOccupied:
 				await msg.reply("This username is not occupied by anyone", quote=True)
 
+
+# Dc finder
+
+@Client.on_message(filters.private & filters.command(["dc"]))
+async def dc(bot, update):
+    text = START_TEXT.format(update.from_user.dc_id)
+    reply_markup = START_BUTTON
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup,
+        quote=True
+    )
+
+START_TEXT = "Your Telegram DC Is : `{}`"
+START_BUTTON = InlineKeyboardMarkup(
+             [[
+             InlineKeyboardButton('⚡ Channel', url=f"https://telegram.me/tg_galaxy")
+             ]]
+        )
