@@ -353,6 +353,8 @@ TBL_STRINGS = (
     "┻━┻ ヘ╰( •̀ε•́ ╰)",
     "ʕノ•ᴥ•ʔノ ︵ ┻━┻",
     "(ヘ･_･)ヘ┳━┳",
+    "I ran out of tables, will order more.",
+    "Go do some work instead of flippin tables.",
 )
 
 
