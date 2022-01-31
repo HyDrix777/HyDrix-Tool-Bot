@@ -3,7 +3,6 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import UsernameInvalid, UsernameNotOccupied
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config import Config
 
 
 
