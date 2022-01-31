@@ -204,7 +204,7 @@ async def run(_, message):
 
 import random
 
-RUN_STRINGS = (
+LNM_STRINGS = (
     "1",
     "8",
     "4",
@@ -219,11 +219,11 @@ RUN_STRINGS = (
 
 
 @Client.on_message(
-    filters.command("luck")
+    filters.command("lnm")
 )
-async def luck(_, message):
-    """ /luck strings """
-    effective_string = random.choice(RUN_STRINGS)
+async def lnm(_, message):
+    """ /lnm strings """
+    effective_string = random.choice(LNM_STRINGS)
     if message.reply_to_message:
         await message.reply_to_message.reply_text(effective_string)
     else:
