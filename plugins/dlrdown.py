@@ -4,13 +4,11 @@ import youtube_dl
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from urllib.parse import urlparse
-import os
 from random import randint
 from youtubesearchpython import SearchVideos
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
-import sys
 import time
 
 # Saavn---------
