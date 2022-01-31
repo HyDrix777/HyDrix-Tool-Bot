@@ -228,3 +228,38 @@ async def lnm(_, message):
         await message.reply_to_message.reply_text(effective_string)
     else:
         await message.reply_text(effective_string)
+
+# LOVE-------
+
+import random
+
+LOV_STRINGS = (
+    "(๑♡⌓♡๑)",
+    "꒰⑅ᵕ༚ᵕ꒱˖♡",
+    "♡˖꒰ᵕ༚ᵕ⑅꒱",
+    "(◍•ᴗ•◍)❤",
+    "(✿ ♡‿♡)",
+    "♡(ӦｖӦ｡)",
+    "(灬º‿º灬)♡",
+    "( ˘ ³˘)♥",
+    "(っ˘з(˘⌣˘ )",
+    "(๑˙❥˙๑)",
+    "(●’3)♡(ε`●)",
+    "(๑♡⌓♡๑)",
+    "(｡♡‿♡｡)",
+    "(●♡∀♡)",
+    "( ◜‿◝ )♡",
+    "♡(> ਊ <)♡",
+)
+
+
+@Client.on_message(
+    filters.command("love")
+)
+async def love(_, message):
+    """ /love strings """
+    effective_string = random.choice(LOV_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
