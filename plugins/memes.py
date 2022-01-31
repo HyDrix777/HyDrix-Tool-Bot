@@ -368,3 +368,24 @@ async def table(_, message):
         await message.reply_to_message.reply_text(effective_string)
     else:
         await message.reply_text(effective_string)
+
+#  YES OR NO--------
+
+import random
+
+DCD_STRINGS = (
+    "Yes",
+    "No",
+)
+
+
+@Client.on_message(
+    filters.command("decide")
+)
+async def decide(_, message):
+    """ /decide strings """
+    effective_string = random.choice(DCD_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
