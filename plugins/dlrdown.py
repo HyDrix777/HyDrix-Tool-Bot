@@ -12,7 +12,6 @@ from pyrogram.types import Chat, Message, User
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
 import sys
 import time
-from helpers.errors import DurationLimitError
 
 # Saavn---------
 
