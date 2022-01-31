@@ -126,10 +126,10 @@ RUN_STRINGS = (
 
 
 @Client.on_message(
-    filters.command("runs")
+    filters.command("run")
 )
-async def runs(_, message):
-    """ /runs strings """
+async def run(_, message):
+    """ /run strings """
     effective_string = random.choice(RUN_STRINGS)
     if message.reply_to_message:
         await message.reply_to_message.reply_text(effective_string)
