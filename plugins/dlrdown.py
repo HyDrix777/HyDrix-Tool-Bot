@@ -1,6 +1,5 @@
 import os
 import requests
-import aiohttp
 import youtube_dl
 import wget
 import math
