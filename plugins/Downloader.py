@@ -9,7 +9,6 @@ import time
 from random import randint
 from urllib.parse import urlparse
 
-import aiohttp
 import requests
 import wget
 import yt_dlp
