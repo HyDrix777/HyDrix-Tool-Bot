@@ -134,9 +134,9 @@ ROLL_E_MOJI = "🎲"
 # EMOJI CONSTANTS
 
 @Client.on_message(
-    filters.command(["roll", "die"])
+    filters.command(["roll", "dice"])
 )
-async def roll_die(client, message):
+async def roll_dice(client, message):
     """ @roll """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
@@ -194,6 +194,35 @@ RUN_STRINGS = (
 )
 async def run(_, message):
     """ /run strings """
+    effective_string = random.choice(RUN_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
+
+# lucky number------------
+
+import random
+
+RUN_STRINGS = (
+    "1",
+    "8",
+    "4",
+    "7",
+    "3",
+    "9",
+    "5",
+    "2",
+    "6",
+    "10",
+)
+
+
+@Client.on_message(
+    filters.command("luck")
+)
+async def luck(_, message):
+    """ /luck strings """
     effective_string = random.choice(RUN_STRINGS)
     if message.reply_to_message:
         await message.reply_to_message.reply_text(effective_string)
