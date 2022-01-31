@@ -3,28 +3,29 @@
 ### My Future's 🌟
 ⍟────────────────⍟
 
-1. Clean Service mesage like Join and Left.⚠️👁️‍🗨️
+⍟ Clean Service mesage like Join and Left.⚠️👁️‍🗨️
 
-2. Sticker id finder 🖼️
+⍟ Sticker id finder 🖼️
 
-3. Telegraph Uploader 📜
+⍟ Telegraph Uploader 📜
 
-4. Lyrics finder 🎼
+⍟ Lyrics finder 🎼
 
-5. Inline YouTube Search 🔴🔎
+⍟ Inline YouTube Search 🔴🔎
 
-6. Song Downloader 🎵📥
+⍟ Song Downloader 🎵📥
 
-7. Tik tok No Watermark Video Download ⚫📥
+⍟ Tik tok No Watermark Video Download ⚫📥
 
-8. Mp4 to Mp3 Conveter 📹➥🎵
+⍟ Mp4 to Mp3 Conveter 📹➥🎵
 
-9. user's, group's, Bot's, channel's Id Finder 🆔
+⍟ user's, group's, Bot's, channel's Id Finder 🆔
 
-10. DC Finder 
+⍟ DC Finder 
 
-11. Google Translator 🔠
+⍟ Google Translator 🔠
 
+⍟ Fun
 ⍟──────────────────────⍟
 
 ### More futures Soon...
