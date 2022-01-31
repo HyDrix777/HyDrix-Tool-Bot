@@ -73,7 +73,7 @@ GOAL_E_MOJI = "⚽"
 @Client.on_message(
     filters.command(["goal", "shoot"])
 )
-async def roll_dice(client, message):
+async def roll_shoot(client, message):
     """ @Goal """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
@@ -81,6 +81,27 @@ async def roll_dice(client, message):
     await client.send_dice(
         chat_id=message.chat.id,
         emoji=GOAL_E_MOJI,
+        disable_notification=True,
+        reply_to_message_id=rep_mesg_id
+    )
+
+# PONG------------ 
+
+# EMOJI CONSTANTS
+PONG_E_MOJI = "🎳"
+# EMOJI CONSTANTS
+
+@Client.on_message(
+    filters.command(["pog", "ping"])
+)
+async def pog_ping(client, message):
+    """ @pog """
+    rep_mesg_id = message.message_id
+    if message.reply_to_message:
+        rep_mesg_id = message.reply_to_message.message_id
+    await client.send_dice(
+        chat_id=message.chat.id,
+        emoji=PONG_E_MOJI,
         disable_notification=True,
         reply_to_message_id=rep_mesg_id
     )
