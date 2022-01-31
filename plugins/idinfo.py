@@ -112,6 +112,6 @@ async def dc(bot, update):
 START_TEXT = "Your Telegram DC Is : `{}`"
 START_BUTTON = InlineKeyboardMarkup(
              [[
-             InlineKeyboardButton('⚡ Channel', url=f"https://telegram.me/tg_galaxy")
+             InlineKeyboardButton('👥 Group', url=f"https://t.me/Music_Galaxy_Dl")
              ]]
         )
