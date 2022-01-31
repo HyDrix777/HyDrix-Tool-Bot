@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 import os
 import requests
 import youtube_dl
-import wget
 import math
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
