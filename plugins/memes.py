@@ -263,3 +263,67 @@ async def love(_, message):
         await message.reply_to_message.reply_text(effective_string)
     else:
         await message.reply_text(effective_string)
+
+# SHRUGLE-------
+
+import random
+
+SRG_STRINGS = (
+    "¯\_(ツ)_/¯",
+    "¯\_༼ •́ ͜ʖ •̀ ༽_/¯",
+    "¯\_( ͡° ͜ʖ ͡°)_/¯",
+    "乁༼☯‿☯✿༽ㄏ",
+    "¯\_༼ᴼل͜ᴼ༽_/¯",
+    "乁[ᓀ˵▾˵ᓂ]ㄏ",
+    "¯\_(☯෴☯)_/¯",
+    "乁ʕ •̀ ۝ •́ ʔㄏ",
+    "乁║ ˙ 益 ˙ ║ㄏ",
+    "乁( ⁰͡ Ĺ̯ ⁰͡ ) ㄏ",
+    "¯\_〳 •̀ o •́ 〵_/¯",
+    "乁( •_• )ㄏ",
+    "乁[ ◕ ᴥ ◕ ]ㄏ",
+    "¯\_ʘ‿ʘ_/¯",
+    "¯\_༼ ಥ ‿ ಥ ༽_/¯",
+    "¯\(◉‿◉)/¯",
+)
+
+
+@Client.on_message(
+    filters.command("shrug")
+)
+async def shrug(_, message):
+    """ /shrug strings """
+    effective_string = random.choice(SRG_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
+
+# TOSS TAIL-------
+
+import random
+
+THT_STRINGS = (
+    "Heads",
+    "Tails",
+    "Tails",
+    "Heads",
+    "Tails",
+    "Heads",
+    "Heads",
+    "Heads",
+    "Tails",
+    "Tails",
+)
+
+
+@Client.on_message(
+    filters.command("toss")
+)
+async def toss(_, message):
+    """ /toss strings """
+    effective_string = random.choice(THT_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
