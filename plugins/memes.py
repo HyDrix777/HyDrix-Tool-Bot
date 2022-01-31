@@ -1,6 +1,5 @@
 from pyrogram import Client, filters
 
-# AESTHETIC------------ https://telegram.me/Josprojects ------------ #
 
 def aesthetify(string):
     PRINTABLE_ASCII = range(0x21, 0x7f)
@@ -21,7 +20,7 @@ async def aesthetic(client, message):
     text = "".join(aesthetify(text))
     await status_message.edit(text)
 
-# DART------------ https://telegram.me/Josprojects ------------ #
+# DART------------
 
 # EMOJI CONSTANTS
 DART_E_MOJI = "🎯"
@@ -43,29 +42,28 @@ async def throw_dart(client, message):
         reply_to_message_id=rep_mesg_id
     )
 
-# DICE------------ https://telegram.me/Josprojects ------------ #
+# DICE------------
 
 # EMOJI CONSTANTS
-DICE_E_MOJI = "🎲"
+TRY_YOUR_LUCK = "🎲"
 # EMOJI CONSTANTS
-
 
 @Client.on_message(
-    filters.command(["roll", "dice"])
+    filters.command(["dice", "cownd"])
 )
-async def roll_dice(client, message):
-    """ @RollADie """
+async def luck_cownd(client, message):
+    """ /luck an @animatedluck """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
         rep_mesg_id = message.reply_to_message.message_id
     await client.send_dice(
         chat_id=message.chat.id,
-        emoji=DICE_E_MOJI,
+        emoji=TRY_YOUR_LUCK,
         disable_notification=True,
         reply_to_message_id=rep_mesg_id
     )
 
-# LUCK------------ https://telegram.me/Josprojects ------------ #
+# LUCK------------
 
 # EMOJI CONSTANTS
 TRY_YOUR_LUCK = "🎰"
@@ -86,7 +84,7 @@ async def luck_cownd(client, message):
         reply_to_message_id=rep_mesg_id
     )
 
-# GOAL------------ https://telegram.me/Josprojects ------------ #
+# GOAL------------ 
 
 # EMOJI CONSTANTS
 GOAL_E_MOJI = "⚽"
@@ -107,7 +105,7 @@ async def roll_dice(client, message):
         reply_to_message_id=rep_mesg_id
     )
 
-# RUNS------------ https://telegram.me/Josprojects ------------ #
+# RUN-----------------
 
 import random
 
