@@ -106,6 +106,27 @@ async def pog_ping(client, message):
         reply_to_message_id=rep_mesg_id
     )
 
+# BASKETBALL------------ 
+
+# EMOJI CONSTANTS
+BALL_E_MOJI = "⚽"
+# EMOJI CONSTANTS
+
+@Client.on_message(
+    filters.command(["ball", "shoot"])
+)
+async def ball_shoot(client, message):
+    """ @ball """
+    rep_mesg_id = message.message_id
+    if message.reply_to_message:
+        rep_mesg_id = message.reply_to_message.message_id
+    await client.send_dice(
+        chat_id=message.chat.id,
+        emoji=BALL_E_MOJI,
+        disable_notification=True,
+        reply_to_message_id=rep_mesg_id
+    )
+
 # RUN-----------------
 
 import random
