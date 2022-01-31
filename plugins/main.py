@@ -74,6 +74,9 @@ async def stickers(_, message):
 async def delete(bot,message):
  await message.delete()
 
+@Client.on_message(filters.left_chat_member)
+async def goodbye(bot, message):
+ await message.delete()
 
 # Telegraph
 
