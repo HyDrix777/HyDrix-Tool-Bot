@@ -1,5 +1,3 @@
-# (c) Jigarvarma2005
-
 import motor.motor_asyncio
 from config import Config
 
@@ -46,7 +44,3 @@ class Database:
                 return True, f"{ch_id}, removed from white list"
             elif int(ch_id) not in chat_list:
                 return True, f"{ch_id}, not found in white list."
-
-   
-
-db = Database(Config.DATABASE_URL, "whitelist_chats")
