@@ -109,7 +109,7 @@ async def pog_ping(client, message):
 # BASKETBALL------------ 
 
 # EMOJI CONSTANTS
-BALL_E_MOJI = "⚽"
+BALL_E_MOJI = "🏀"
 # EMOJI CONSTANTS
 
 @Client.on_message(
