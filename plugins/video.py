@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.private & filters.command(['s']))
+@Client.on_message(filters.private & filters.command(['v']))
 def a(client, message):
     query = ''
     for i in message.command[1:]:
