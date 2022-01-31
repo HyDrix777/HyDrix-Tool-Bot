@@ -327,3 +327,42 @@ async def toss(_, message):
         await message.reply_to_message.reply_text(effective_string)
     else:
         await message.reply_text(effective_string)
+
+
+#  TABLE--------
+
+import random
+
+TBL_STRINGS = (
+    "(ノಠ益ಠ)ノ彡┻━┻",
+    "(╯°□°）╯︵ ┻━┻",
+    "(┛◉Д◉)┛彡┻━┻",
+    "(ﾉ≧∇≦)ﾉ ﾐ ┻━┻",
+    "(ﾉ´･ω･)ﾉ ﾐ ┻━┻",
+    "(┛ಸ_ಸ)┛彡┻━┻",
+    "(╯ರ ~ ರ)╯︵ ┻━┻",
+    "(ノಥ,_｣ಥ)ノ彡┻━┻",
+    "(┛✧Д✧))┛彡┻━┻",
+    "┻┻︵¯\(ツ)/¯︵┻┻",
+    "┻┻︵ヽ(`Д´)ﾉ︵┻┻",
+    "(/¯◡ ‿ ◡)/¯ ~ ┻━┻",
+    "┻━┻ミ＼(≧ﾛ≦＼)",
+    "(ノ￣皿￣)ノ ⌒== ┫",
+    "(┛❍ᴥ❍)┛彡┻━┻",
+    "─=≡Σ(╯°□°)╯︵┻┻",
+    "┻━┻ ヘ╰( •̀ε•́ ╰)",
+    "ʕノ•ᴥ•ʔノ ︵ ┻━┻",
+    "(ヘ･_･)ヘ┳━┳",
+)
+
+
+@Client.on_message(
+    filters.command("table")
+)
+async def table(_, message):
+    """ /table strings """
+    effective_string = random.choice(TLB_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
