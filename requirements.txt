@@ -11,3 +11,5 @@ youtube_search
 ffmpeg-python
 ffmpeg
 yt-dlp
+dnspython
+motor
