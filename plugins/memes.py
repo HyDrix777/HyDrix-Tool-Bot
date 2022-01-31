@@ -45,7 +45,7 @@ async def throw_dart(client, message):
 # DICE------------
 
 # EMOJI CONSTANTS
-TRY_YOUR_LUCK = "🎲"
+TRY_YOUR_LUCK = "🎳"
 # EMOJI CONSTANTS
 
 @Client.on_message(
