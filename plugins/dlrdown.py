@@ -6,8 +6,6 @@ import math
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from urllib.parse import urlparse
-import aiofiles
-import os
 from random import randint
 from youtubesearchpython import SearchVideos
 from pyrogram.errors import FloodWait, MessageNotModified
