@@ -91,8 +91,8 @@ async def deezsong(_, message):
 
 @Client.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client,message: Message):
-    global is downloading.
-    if is downloading:
+    global is_downloading.
+    is_downloading:
         await message.reply_text("Another download is in progress, try again after sometime.")
         return
 
@@ -131,7 +131,7 @@ async def ytmusic(client,message: Message):
             "quiet": True,
         }
     try:
-        is downloading = True
+        is_downloading = True
         with youtube_dl.YoutubeDL(opts) as ytdl:
             infoo = ytdl.extract_info(url, False)
             duration = round(infoo["duration"] / 60)
