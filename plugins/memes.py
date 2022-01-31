@@ -361,7 +361,7 @@ TBL_STRINGS = (
 )
 async def table(_, message):
     """ /table strings """
-    effective_string = random.choice(TLB_STRINGS)
+    effective_string = random.choice(TBL_STRINGS)
     if message.reply_to_message:
         await message.reply_to_message.reply_text(effective_string)
     else:
