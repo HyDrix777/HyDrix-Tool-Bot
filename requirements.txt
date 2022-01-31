@@ -11,4 +11,4 @@ youtube_search
 ffmpeg-python
 ffmpeg
 yt-dlp
-gpytranslate
+googletrans==3.1.0a0
