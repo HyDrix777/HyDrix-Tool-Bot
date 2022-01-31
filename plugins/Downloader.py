@@ -1,7 +1,4 @@
-
-
 from __future__ import unicode_literals
-
 import asyncio
 import math
 import os
@@ -15,6 +12,7 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
+import wget
 
 
 @Client.on_message(filters.command(['vsong']))
