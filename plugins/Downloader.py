@@ -78,9 +78,7 @@ def song(_, message):
         print(e)
 
 
-@Client.on_message(
-    command(["vsong"]) & ~filters.edited
-)
+@Client.on_message(filters.command(['vsong']))
 async def vsong(client, message):
     ydl_opts = {
         "format": "best",
