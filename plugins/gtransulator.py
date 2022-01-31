@@ -41,7 +41,7 @@ async def left(client,message):
 # Language list
 
 @Client.on_message(filters.command("list"))
-async def help(bot: Client, message: Message):
+async def list(bot: Client, message: Message):
     await message.reply_text(
         text="⍟───List───⍟\n`List is in the form`\n**Language Code** -> **Language**\`naf` -> **Afrikaans**\n⍟──────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
