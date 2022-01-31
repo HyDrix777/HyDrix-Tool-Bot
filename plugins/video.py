@@ -21,7 +21,7 @@ def a(client, message):
         query += ' ' + str(i)
     print(query)
     m = message.reply('🔎Searching..your request...')
-    ydl_opts = {"format": "bestaudio[ext=mp4]"}
+    ydl_opts = {"format": "bestvideo[ext=mp4]"}
     try:
         results = []
         count = 0
