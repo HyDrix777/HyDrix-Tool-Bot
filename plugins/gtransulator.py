@@ -38,14 +38,3 @@ async def left(client,message):
 	else:
 			 ms = await message.reply_text("You can Use This Command by using reply to message")
 			 
-# Language list
-
-@Client.on_message(filters.command("list"))
-async def list(bot: Client, message: Message):
-    await message.reply_text(
-        text="⍟───List───⍟\n`List is in the form`\n**Language Code** -> **Language**\`naf` -> **Afrikaans**\n⍟──────────⍟",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
