@@ -55,7 +55,7 @@ async def list(bot: Client, message: Message):
 @Client.on_message(filters.command("fun"))
 async def fun(bot: Client, message: Message):
     await message.reply_text(
-        text="⍟────Fun────⍟\n🔻some Fun Comm...🔻\n➥ /roll\n➥ /ball\n➥ /pog\n➥ /run\n➥ /throw\n➥ /goal\n➥ /luck\n⍟───────────⍟",
+        text="⍟────Fun────⍟\n🔻Here is the help for the Fun module:\n➥ /roll : Roll a dice\n➥ /ball\n➥ /pog\n➥ /run : reply a random string from an array of replies\n➥ /throw\n➥ /goal\n➥ /luck\n⍟───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
