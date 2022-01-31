@@ -8,7 +8,6 @@ import os
 import time
 from random import randint
 from urllib.parse import urlparse
-
 import requests
 import yt_dlp
 from pyrogram import Client, filters
@@ -16,7 +15,6 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-from driver.filters import command, other_filters
 
 
 ydl_opts = {
