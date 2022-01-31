@@ -11,7 +11,7 @@
 
 4. Lyrics finder 🎼
 
-5. Yt Inline Search 🔴🔎
+5. Inline YouTube Search 🔴🔎
 
 6. Song Downloader 🎵📥
 
