@@ -14,12 +14,12 @@ async def mp3(bot, message):
     
     # download video
     file_path = DOWNLOAD_LOCATION + f"{message.from_user.id}.mp3"
-    txt = await message.reply_text("Downloading to My server.....")
+    txt = await message.reply_text("Dᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛᴏ ᴍʏ sᴇʀᴠᴇʀ...")
     await message.download(file_path)
     await txt.edit_text("Downloaded Successfully")
     
     # convert to audio
-    await txt.edit_text("Converting to audio")
+    await txt.edit_text("Cᴏɴᴠᴇʀᴛɪɴɢ ᴛᴏ ᴀᴜᴅɪᴏ.....")
     await message.reply_audio(audio=file_path, caption="@HTGToolBot", quote=True)
     
     # remove file
