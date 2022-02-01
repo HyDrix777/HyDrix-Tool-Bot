@@ -106,25 +106,6 @@ async def delete_events(bot, msg):
             "I'm not admin, so I can't delete messages. \n\nMake me admin or kick me outta here."
         )
 
-# Pin and Unpin---------------------
-
-@Client.on_message(
-    filters.command(["pin"]) &
-)
-async def pin(_, message: Message):
-    if not message.reply_to_message:
-        return
-    await message.reply_to_message.pin()
-
-
-@Client.on_message(
-    filters.command(["unpin"]) &
-)
-async def unpin(_, message: Message):
-    if not message.reply_to_message:
-        return
-    await message.reply_to_message.unpin()
-
 
 # Telegraph------------------
 
