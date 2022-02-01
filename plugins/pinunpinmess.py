@@ -2,9 +2,6 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
  
 
-import (
-    admin_fliter
-)
 
 @Client.on_message(
     filters.command(["pin"]) &
