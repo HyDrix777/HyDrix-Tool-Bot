@@ -12,14 +12,14 @@ if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
 
-import pyrogram
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+import Client
+logging.getLogger("Client").setLevel(logging.WARNING)
 
 from helper_funcs.help_Nekmo_ffmpeg import generate_screen_shots
 from helper_funcs.display_progress import progress_for_pyrogram
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["sshot"]))
+@Client.on_message(Client.filters.command(["sshot"]))
 async def generate_screen_shot(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
@@ -78,7 +78,7 @@ async def generate_screen_shot(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "Join : @TGBotsCollection \nFor the list of Telegram Bots"
+                caption = "Join : @Collection \nFor the list of Telegram Bots"
                 for image in images:
                     if os.path.exists(image):
                         if i == 0:
