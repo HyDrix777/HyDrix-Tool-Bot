@@ -2,6 +2,8 @@ import os
 import requests
 from pyrogram import Client, filters
 
+REMOVEBG_API = os.environ.get("REMOVEBG_API", "JysFjacfEDkd95Pf6xgCyyEp")
+UNSCREEN_API = os.environ.get("UNSCREEN_API", "aL8We5F9ttrCqwtJjFqTxW21")
 
 
 @Client.on_message(filters.private & ("rbg"))
