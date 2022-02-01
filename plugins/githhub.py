@@ -1,6 +1,6 @@
 from import Client
-from Client.modules.disable import DisableAbleCommandHandler
-from Client import dispatcher
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot import dispatcher
 from requests import get
 
 
