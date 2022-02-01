@@ -17,7 +17,7 @@ async def inline(client: Client, query: InlineQuery):
             cache_time=0
         )
     else:
-        search = VideosSearch(search_query, limit=50)
+        search = VideosSearch(search_query, limit=100)
 
         for result in search.result()["result"]:
             answers.append(
