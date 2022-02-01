@@ -1,6 +1,6 @@
-from telegram.ext import Client
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot import dispatcher
+from import Client
+from Client.modules.disable import DisableAbleCommandHandler
+from Client import dispatcher
 from requests import get
 
 
