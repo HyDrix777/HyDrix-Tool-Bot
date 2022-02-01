@@ -1,8 +1,8 @@
 import time
 from typing import List
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin
+from import dispatcher
+from modules.disable import DisableAbleCommandHandler
+from modules.helper_funcs.chat_status import user_admin
 
 # sleep how many times after each edit in 'love'
 EDIT_SLEEP = 1
