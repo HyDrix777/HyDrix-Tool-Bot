@@ -59,9 +59,3 @@ def weather(bot, update, args):
     except pyowm.exceptions.not_found_error.NotFoundError:
         update.effective_message.reply_text("Sorry, location not found.")
 """
-
-__mod_name__ = "WEATHER"
-
-WEATHER_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
-
-dispatcher.add_handler(WEATHER_HANDLER)
