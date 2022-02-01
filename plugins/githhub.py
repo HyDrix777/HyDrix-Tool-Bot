@@ -1,4 +1,3 @@
-from telegram import ParseMode, Update, Bot
 from telegram.ext import Client
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot import dispatcher
