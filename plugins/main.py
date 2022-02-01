@@ -66,7 +66,7 @@ async def fun(bot: Client, message: Message):
            )
        )
 
-# About
+# About------------
 
 @Client.on_message(filters.private & filters.command("about"))
 async def about(bot: Client, message: Message):
@@ -78,14 +78,14 @@ async def about(bot: Client, message: Message):
            )
        )
 
-# Sticker id
+# Sticker id-----------------
 
 @Client.on_message(filters.private & filters.sticker)
 async def stickers(_, message):
        await message.reply(f"ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ sᴛɪᴄᴋᴇʀ's ɪᴅ ɪs👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
 
-# Service clear
+# Service clear-----------------
 
 @Client.on_message(filters.group & filters.service)
 async def delete_events(bot, msg):
@@ -105,7 +105,29 @@ async def delete_events(bot, msg):
             "I'm not admin, so I can't delete messages. \n\nMake me admin or kick me outta here."
         )
 
-# Telegraph
+# Pin and Unpin---------------------
+
+@Client.on_message(
+    filters.command(["pin"]) &
+    admin_fliter
+)
+async def pin(_, message: Message):
+    if not message.reply_to_message:
+        return
+    await message.reply_to_message.pin()
+
+
+@Client.on_message(
+    filters.command(["unpin"]) &
+    admin_fliter
+)
+async def unpin(_, message: Message):
+    if not message.reply_to_message:
+        return
+    await message.reply_to_message.unpin()
+
+
+# Telegraph------------------
 
 @Client.on_message(filters.private & filters.photo)
 async def getimage(client, message):
