@@ -13,4 +13,4 @@ ffmpeg
 yt-dlp
 googletrans
 gTTS
-ytthumb
+
