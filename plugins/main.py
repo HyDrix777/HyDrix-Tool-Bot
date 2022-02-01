@@ -12,6 +12,8 @@ import lyricsgenius
 
 
 
+
+
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
@@ -25,7 +27,7 @@ async def start_message(bot, message):
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
            InlineKeyboardButton("🧑‍💻 ʙᴏᴛ ᴅᴇᴠ", url="https://t.me/Hydrix777")
            ],[
-           InlineKeyboardButton("🏃 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
+           InlineKeyboardButton("🎪 About", callback_data="about")
            ]]
            )
        )
