@@ -68,7 +68,7 @@ async def fun(bot: Client, message: Message):
 
 # About
 
-@Client.on_message(filters.command("about"))
+@Client.on_message(filters.private & filters.command("about"))
 async def about(bot: Client, message: Message):
     await message.reply_text(
         text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**ᴍʏ ɴᴀᴍᴇ:** [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n├🧑‍💻**ᴍʏ ᴅᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**ᴄʜᴀɴɴᴇʟ:** [ᴛɢɢ](https://t.me/Tg_Galaxy)\n├👥**ɢʀᴏᴜᴘ:** [ᴍɢ](https://t.me/Music_Galaxy_Dl)\n├📡**sᴇʀᴠᴇʀ:** [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n├🔣**ʟᴀɴɢᴜᴀɢᴇ:** [ᴘʏᴛʜᴏɴ](https://python.org/)\n╰───────────⍟",
