@@ -9,9 +9,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from telegraph import upload_file
 import requests 
 import lyricsgenius
-import (
-    admin_fliter
-)
+
 
 
 
@@ -112,7 +110,6 @@ async def delete_events(bot, msg):
 
 @Client.on_message(
     filters.command(["pin"]) &
-    admin_fliter
 )
 async def pin(_, message: Message):
     if not message.reply_to_message:
@@ -122,7 +119,6 @@ async def pin(_, message: Message):
 
 @Client.on_message(
     filters.command(["unpin"]) &
-    admin_fliter
 )
 async def unpin(_, message: Message):
     if not message.reply_to_message:
