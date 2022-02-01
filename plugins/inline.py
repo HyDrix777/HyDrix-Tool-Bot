@@ -1,6 +1,5 @@
 from pyrogram import Client, errors
 from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
-
 from youtubesearchpython import VideosSearch
 
 
@@ -13,12 +12,12 @@ async def inline(client: Client, query: InlineQuery):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text="Type a YouTube video name...",
+            switch_pm_text="Tʏᴘᴇ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ɴᴀᴍᴇ.",
             switch_pm_parameter="help",
             cache_time=0
         )
     else:
-        search = VideosSearch(search_query, limit=50)
+        search = VideosSearch(search_query, limit=100)
 
         for result in search.result()["result"]:
             answers.append(
