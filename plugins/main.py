@@ -9,8 +9,10 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from telegraph import upload_file
 import requests 
 import lyricsgenius
+import (
+    admin_fliter
+)
 
-import (admin_fliter)
 
 
 
