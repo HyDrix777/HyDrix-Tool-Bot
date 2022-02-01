@@ -4,8 +4,8 @@ from pyrogram import Client, filters
 
 
 
-@Client.on_message(filters.private & (filters.photo | filters.video | filters.document))
-async def remove_background(bot, update):
+@Client.on_message(filters.private & ("rbg"))
+async def rbg(bot, update):
     if not REMOVEBG_API:
         await update.reply_text(
             text="Error :- Remove BG Api is error",
