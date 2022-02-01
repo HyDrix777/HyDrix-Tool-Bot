@@ -1,6 +1,4 @@
 from asyncio import (gather, get_event_loop, sleep)
-
-from aiohttp import ClientSession
 from pyrogram import (Client, filters, idle)
 
 
