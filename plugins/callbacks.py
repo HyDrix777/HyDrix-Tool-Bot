@@ -8,7 +8,7 @@ from Data import Data
 async def _callbacks(bot, callback_query: CallbackQuery):
     user = await bot.get_me()
     mention = user["mention"]
-    if callback_query.data.lower() == "home":
+    if callback_query.data.lower() == "about":
         chat_id = callback_query.from_user.id
         message_id = callback_query.message.message_id
         await bot.edit_message_text(
