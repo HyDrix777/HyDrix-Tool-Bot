@@ -186,6 +186,17 @@ RUN_STRINGS = (
     "The drunk rains and wast ...."
     "To tell me I love Yo ...."
     "No, the Meenaka of Verbapur is not ....",
+    "Look out for the wall!",
+    "Get back here!",
+    "Don't leave me alone with them!!",
+    "Naruto run activated",
+    "Hey take responsibilty for what you just did!",
+    "Run everyone, they just dropped a bomb 💣😱",
+    "Legend has it, they're still running.",
+    "Ah, what a waste. I liked that one.",
+    "As The Doctor would say... RUN!",
+    "Hasta la vista, baby.",
+    "And they disappeared forever, never to be seen again.",
 )
 
 
