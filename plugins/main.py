@@ -85,13 +85,7 @@ async def stickers(_, message):
 
 # Service clear
 
-@Client.on_message(filters.service)
-async def delete(bot,message):
- await message.delete()
 
-@Client.on_message(filters.new_chat_members)
-async def welcome(bot, message):
- await message.delete() 
 
 # Telegraph
 
