@@ -4,8 +4,6 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
 API_ID = int(os.environ.get("API_ID", "18891187"))
 API_HASH = os.environ.get("API_HASH", "7d120384f48b2a86fa2b9e9772a28af6")
-REMOVEBG_API = os.environ.get("REMOVEBG_API", "JysFjacfEDkd95Pf6xgCyyEp")
-UNSCREEN_API = os.environ.get("UNSCREEN_API", "aL8We5F9ttrCqwtJjFqTxW21")
 
 
 if __name__ == "__main__" :
