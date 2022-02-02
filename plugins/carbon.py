@@ -1,5 +1,5 @@
 from pyrogram import filters
-from pyrogram import Client
+from pyrogram import Client, filters
 
 
 
