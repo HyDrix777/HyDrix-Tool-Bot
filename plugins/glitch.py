@@ -14,8 +14,8 @@ async def glitch(bot, update):
         return await message.reply_text("Reply to some text.")
     download_path = PATH + "/" + str(update.from_user.id) + "/"
     download_location = download_path + "photo.jpg"
-    message = await update.reply_text(
-        text="`Processing...`",
+    message = await message.reply_text(
+    m = await message.reply_text("Processing")
         disable_web_page_preview=True,
         quote=True
     )
