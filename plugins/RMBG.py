@@ -7,7 +7,7 @@ from telethon.tl import functions
 
 
 
-REM_BG_API_KEY = get_str_key("JysFjacfEDkd95Pf6xgCyyEp", required=False)
+REM_BG_API_KEY = get_str_key("JysFjacfEDkd95Pf6xgCyyEp", required=True)
 TEMP_DOWNLOAD_DIRECTORY = "./"
 
 
@@ -23,7 +23,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@register(pattern="^/rmbg")
+@register(pattern="/rmbg")
 async def _(event):
     HELP_STR = "use `/rmbg` as reply to a media.\nJoin my updates channel 👉 @sl_bot_zone "
     if event.fwd_from:
