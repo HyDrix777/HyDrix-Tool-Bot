@@ -36,5 +36,5 @@ async def left(client,message):
 		except :
 			print("error")
 	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message")
+			 ms = await message.reply_text("You can Use This Command by using reply to message in group's")
 			 
