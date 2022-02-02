@@ -4,13 +4,15 @@ from io import BytesIO
 
 from googletrans import Translator
 from gtts import gTTS
-from pyrogram import Client, filters
+from pyrogram import filters
 from pyrogram.types import Message
+
+from wbb import app
 
 
 def convert(text):
     audio = BytesIO()
-    i = Translator().translate(text, dest="ml")
+    i = Translator().translate(text, dest="en")
     lang = i.src
     tts = gTTS(text, lang=lang)
     audio.name = lang + ".mp3"
