@@ -17,7 +17,7 @@ STR_PIC = [
  "https://telegra.ph/file/738a362ee817361bbacd6.jpg",
  "https://telegra.ph/file/47aa004ca5cf753c7b090.jpg",
  "https://telegra.ph/file/95119a07ba9d4230ddad9.jpg"
-
+]
 
 
 
