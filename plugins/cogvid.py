@@ -1,5 +1,5 @@
 from pyrogram import filters
-
+from pyrogram import Client, filters
 
 
 @Client.on_message(filters.command("covid") & ~filters.edited)
