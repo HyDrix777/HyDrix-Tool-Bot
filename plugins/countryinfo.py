@@ -9,7 +9,6 @@ API = "https://api.sumanjay.cf/covid/?country="
 
 @Client.on_message(filters.private & filters.text)
 async def reply_info(bot, update):
-    reply_markup = BUTTONS
     await update.reply_text(
         text=covid_info(update.text),
         disable_web_page_preview=True,
