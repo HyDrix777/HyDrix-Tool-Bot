@@ -6,7 +6,7 @@ from googletrans import Translator
 from gtts import gTTS
 from pyrogram import filters
 from pyrogram.types import Message
-
+from pyrogram import Client, filters
 
 
 
