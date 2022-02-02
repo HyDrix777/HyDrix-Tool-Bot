@@ -1,14 +1,11 @@
 import io
 import os
 from datetime import datetime
-
 import requests
 from telethon import types
 from telethon.tl import functions
 
-from DewmiBot.config import get_str_key
-from DewmiBot.events import register
-from DewmiBot import telethn as tbot
+
 
 REM_BG_API_KEY = get_str_key("JysFjacfEDkd95Pf6xgCyyEp", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"
