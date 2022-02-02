@@ -15,7 +15,7 @@ import lyricsgenius
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text="╭─────────────〄\n│Hᴇʏ ⚡\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│I Have some cool futures✨\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────〄",
+        text="╭─────────────〄\n│Hᴇʏ ⚡\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -102,7 +102,7 @@ async def getimage(client, message):
         os.makedirs(location)
     imgdir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".jpg"
     dwn = await client.send_message(
-          text="<b>𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>",
+          text="<b>ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...</b>",
           chat_id = message.chat.id,
           reply_to_message_id=message.message_id
           )          
@@ -110,11 +110,11 @@ async def getimage(client, message):
             message=message,
             file_name=imgdir
         )
-    await dwn.edit_text("<b>𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>")
+    await dwn.edit_text("<b>ᴜᴘʟᴏᴀᴅɪɴɢ...</b>")
     try:
         response = upload_file(imgdir)
     except Exception as error:
-        await dwn.edit_text(f"𝗢𝗼𝗽𝘀 𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗪𝗲𝗻𝘁 𝗪𝗿𝗼𝗻𝗴\n{error} Contact @HydraLivegrambot")
+        await dwn.edit_text(f"Oᴏᴘs sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n{error} Cᴏɴᴛᴀᴄᴛ @HydraLivegrambot")
         return
     await dwn.edit_text(f"https://telegra.ph{response[0]}")
     try:
@@ -137,7 +137,7 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("Lʏʀɪᴄs ɴᴏᴛ ғᴏᴜɴᴅ...")
     xxx = f"""
-**Lyrics Search Powered By Tg Tool Bot**
+**Lyrics Search Powered By ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**
 **Searched Song:-** __{query}__
 **Found Lyrics For:-** __{S.title}__
 **Artist:-** {S.artist}
