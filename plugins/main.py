@@ -15,7 +15,7 @@ import lyricsgenius
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text="╭─────────────⍟\n│Hᴇʏ ⚡\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│I Have some cool futures✨\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────⍟",
+        text="╭─────────────〄\n│Hᴇʏ ⚡\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│I Have some cool futures✨\n│Click /help to know my Commands\n│and my uses 🍃\n╰──────────〄",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
