@@ -7,10 +7,10 @@ from pyrogram import Client, filters
 API = "https://api.sumanjay.cf/covid/?country="
 
 
-@Client.on_message(filters.private & filters.text)
-async def reply_info(bot, update):
+@Client.on_message(filters.private("covid"))
+async def covid(bot, message):
     await update.reply_text(
-        text=covid_info(update.text),
+        text=covid_info(message.text),
         disable_web_page_preview=True,
         quote=True,
         reply_markup=reply_markup
