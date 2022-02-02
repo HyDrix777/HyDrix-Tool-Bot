@@ -6,9 +6,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
-        InlineKeyboardButton('🖼️ Watermark', callback_data='wm'),
+        InlineKeyboardButton('🖼️ Watermark', callback_data='wmk'),
     ],
-    [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
+    [InlineKeyboardButton('🚫 No Watermark', callback_data='nwm')],
 ]
 
 # Helpers
@@ -40,7 +40,7 @@ downloads = './downloads/{}/'
 # Callbacks
 @Client.on_callback_query()
 async def _callbacks(bot, cb: CallbackQuery):
-  if cb.data == 'nowm':
+  if cb.data == 'nwm':
     dirs = downloads.format(uuid.uuid4().hex)
     os.makedirs(dirs)
     cbb = cb
@@ -57,13 +57,13 @@ async def _callbacks(bot, cb: CallbackQuery):
     r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
     result = r.text
     rs = json.loads(result)
-    link = rs['result']['nowm']
+    link = rs['result']['nwm']
     resp = session.head(link, allow_redirects=True)
     r = requests.get(resp.url, allow_redirects=True)
     open(f'{ttid}.mp4', 'wb').write(r.content)
     await bot.send_video(update.chat.id, f'{ttid}.mp4',)
     shutil.rmtree(dirs)
-  elif cb.data == 'wm':
+  elif cb.data == 'wmk':
     dirs = downloads.format(uuid.uuid4().hex)
     os.makedirs(dirs)
     cbb = cb
@@ -80,7 +80,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
     result = r.text
     rs = json.loads(result)
-    link = rs['result']['wm']
+    link = rs['result']['wmk']
     resp = session.head(link, allow_redirects=True)
     r = requests.get(resp.url, allow_redirects=True)
     open(f'{ttid}.mp4', 'wb').write(r.content)
@@ -103,7 +103,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
     result = r.text
     rs = json.loads(result)
-    link = rs['result']['wm']
+    link = rs['result']['wmk']
     resp = session.head(link, allow_redirects=True)
     r = requests.get(resp.url, allow_redirects=True)
     open(f'{ttid}.mp4', 'wb').write(r.content)
