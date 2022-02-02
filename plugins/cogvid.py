@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram import Client, filters
 
 
-@Client.on_message(filters.command("covid") & ~filters.edited)
+@Client.on_message(filters.command("covid"))
 async def covid(_, message):
     if len(message.command) == 1:
         data = await fetch("https://corona.lmao.ninja/v2/all")
