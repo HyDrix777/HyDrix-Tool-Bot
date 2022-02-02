@@ -8,8 +8,10 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 
 
-@Bot.on_message(filters.private("glitch"))
+@Client.on_message(filters.private("glitch"))
 async def glitch(bot, update):
+    if not message.reply_to_message:
+        return await message.reply_text("Reply to some text.")
     download_path = PATH + "/" + str(update.from_user.id) + "/"
     download_location = download_path + "photo.jpg"
     message = await update.reply_text(
