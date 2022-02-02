@@ -1,4 +1,4 @@
-from . import bot
+from . import Client
 from pyrogram import Client, idle
 from pyrogram import Client, filters
 
