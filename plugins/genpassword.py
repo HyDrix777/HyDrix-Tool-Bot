@@ -16,6 +16,6 @@ async def password(bot, update):
         text = "Sorry... Failed To Create Password, Because Limit is 1 to 100."
     else:
         random_value = "".join(random.sample(password, limit))
-        text = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**\n\nJoin @Movie_flix7",
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Movie channel', url='https://t.me/Movie_flix7')]])
+        text = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**\n\nJoin @Music_Galaxy_Dl",
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Movie channel', url='https://t.me/Music_Galaxy_Dl')]])
     await message.edit_text(text, True)
