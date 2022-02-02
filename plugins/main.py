@@ -9,17 +9,23 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from telegraph import upload_file
 import requests 
 import lyricsgenius
+import random
 
 
 
+STR_PIC = [
+ "https://telegra.ph/file/738a362ee817361bbacd6.jpg",
+ "https://telegra.ph/file/47aa004ca5cf753c7b090.jpg",
+ "https://telegra.ph/file/95119a07ba9d4230ddad9.jpg"
 
 
 
 
 @Client.on_message(filters.command("start"))
 async def start_message(bot, message):
-    await message.reply_text(
-        text="╭─────────────〄\n│Hᴇʏ 🧞\n│I ᴀᴍ ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ[🛠️](https://telegra.ph/file/dad7f5c9f7572ac3cb5e1.jpg)\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
+    await message.reply_photo(STR_PIC)
+        photo=random.choice(
+        caption="╭─────────────〄\n│Hᴇʏ 🧞\n│I ᴀᴍ ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
