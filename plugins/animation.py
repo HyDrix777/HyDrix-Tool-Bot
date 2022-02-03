@@ -1,10 +1,7 @@
 import time
 from typing import List
-from telegram.ext import run_async,CallbackContext
 
-from DewmiBot import dispatcher
-from DewmiBot.modules.disable import DisableAbleCommandHandler
-from DewmiBot.modules.helper_funcs.chat_status import user_admin
+
 
 
 
