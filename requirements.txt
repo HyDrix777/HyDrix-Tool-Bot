@@ -15,3 +15,4 @@ googletrans
 gtts
 aiohttp==3.7.4
 imdbpy
+youtube_search
