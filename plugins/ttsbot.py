@@ -8,7 +8,6 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from pyrogram import filters, Client
-from import Import
 
 
 
