@@ -14,10 +14,10 @@ async def search(_, message: Message):
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("Searching....")
-        results = YoutubeSearch(query, max_results=9).to_dict()
+        results = YoutubeSearch(query, max_results=10).to_dict()
         i = 0
         text = ""
-        while i < 9:
+        while i < 10:
             text += f"Title - {results[i]['title']}\n"
             text += f"Duration - {results[i]['duration']}\n"
             text += f"Views - {results[i]['views']}\n"
