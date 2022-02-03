@@ -16,3 +16,5 @@ gtts
 aiohttp==3.7.4
 imdbpy
 youtube_search
+pytesseract~=0.3.8
+Pillow~=8.3.1
