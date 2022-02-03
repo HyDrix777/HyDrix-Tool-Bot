@@ -12,5 +12,5 @@ ffmpeg-python
 ffmpeg
 yt-dlp
 googletrans
-gTTS
+gtts
 aiohttp==3.7.4
