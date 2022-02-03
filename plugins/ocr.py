@@ -5,7 +5,6 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import MessageEmpty
 
-# pytesseract.pytesseract.tesseract_cmd = r""
 
 
 @Client.on_message(filters.private & filters.incoming & filters.photo)
@@ -22,5 +21,4 @@ async def _ocr(_, msg: Message):
         await msg.reply(text, quote=True, disable_web_page_preview=True)
     except MessageEmpty:
         await msg.reply("Either the image has no text or the text is not recognizable.", quote=True)
-    await message.delete()
     os.remove(image)
