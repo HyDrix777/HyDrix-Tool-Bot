@@ -1,8 +1,7 @@
 from pyrogram.errors import ChatAdminRequired, RightForbidden, RPCError
 from pyrogram.filters import regex
 from pyrogram.types import CallbackQuery, Message
-
-
+from pyrogram import Client, filters
 
 
 @Client.on_message(command("pin") & admin_filter)
