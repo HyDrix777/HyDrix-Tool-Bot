@@ -92,7 +92,7 @@ PONG_E_MOJI = "🎳"
 # EMOJI CONSTANTS
 
 @Client.on_message(
-    filters.command(["pog", "ping"])
+    filters.command(["pog", "piong"])
 )
 async def pog_ping(client, message):
     """ @pog """
