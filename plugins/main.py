@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from telegraph import upload_file
 import requests 
 import lyricsgenius
-
+COMMAND_HAND_LER = Config.COMMAND_HAND_LER
 
 
 @Client.on_message(filters.private & filters.command("start"))
