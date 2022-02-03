@@ -6,6 +6,7 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 from aiohttp import ClientSession
+from ShuKurenaiXRoBot import BOT_USERNAME as bu
 
 
 
