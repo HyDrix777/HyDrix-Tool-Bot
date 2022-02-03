@@ -40,7 +40,7 @@ async def help(bot: Client, message: Message):
            )
        )
 
-@Client.on_message(filters.group("help"))
+@Client.on_message(filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
         text="Contact me in PM for help!",
