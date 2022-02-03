@@ -1,5 +1,3 @@
-
-
 import emoji
 import re
 import aiohttp
