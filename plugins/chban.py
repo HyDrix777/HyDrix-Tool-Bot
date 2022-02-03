@@ -146,7 +146,6 @@ async def uncban_handler(bot, message):
         print(e)
         await message.reply_text(e)
 
-
 @Client.on_message(filters.command(["add_whitelist"]) & filters.group)
 async def add_whitelist_handler(bot, message):
     chat_id = message.chat.id
@@ -169,16 +168,11 @@ async def add_whitelist_handler(bot, message):
     except Exception as e:
         print(e)
 
-
 @Client & filters.group)
 async def del_whitelist_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(chat_id, message.from_user.id)
     if user.status == "creator" or user.status == "administrator":
-        pass
-    else:
-        return
-    try:
         a_id = await get_channel_id_from_input(bot, message)
         if not a_id:
             return
@@ -191,7 +185,6 @@ async def del_whitelist_handler(bot, message):
             await message.reply_text("Something wrong happend")
     except Exception as e:
         print(e)
-
 
 @Client.on_message(filters.command(["show_whitelist"]) & filters.group)
 async def del_whitelist_handler(bot, message):
