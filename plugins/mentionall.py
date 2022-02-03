@@ -1,6 +1,5 @@
 import os, logging, asyncio
 from telethon import Button
-from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from pyrogram import Client, filters
@@ -61,4 +60,3 @@ async def mentionall(event):
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
-        
