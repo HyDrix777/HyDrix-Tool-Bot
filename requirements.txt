@@ -15,3 +15,6 @@ googletrans
 gtts
 aiohttp==3.7.4
 imdbpy
+umongo==3.0.0
+marshmallow==3.12.2
+motor==2.4.0
