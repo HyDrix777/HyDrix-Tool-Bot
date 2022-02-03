@@ -1,7 +1,6 @@
 import pyrogram
 import asyncio
 import os
-from pyrogram import filters
 from pyrogram import Client, filters
 
 
