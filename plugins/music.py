@@ -17,7 +17,6 @@ from youtubesearchpython import SearchVideos
 
 
 
-
 @Client.on_message(filters.command("song") & ~filters.channel)
 def song(client, message):
 
@@ -55,7 +54,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "**🎵 Uploaded by @TheAnkiVectorBot**"
+        rep = "**🎵 Uploaded by DaisyXMusic**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -279,45 +278,6 @@ async def jssong(_, message):
     is_downloading = False
 
 
-# Deezer Music
-
-
-@Client.on_message(filters.command("deezer") & ~filters.edited)
-async def deezsong(_, message):
-    global is_downloading
-    if len(message.command) < 2:
-        await message.reply_text("/deezer requires an argument.")
-        return
-    if is_downloading:
-        await message.reply_text(
-            "Another download is in progress, try again after sometime."
-        )
-        return
-    is_downloading = True
-    text = message.text.split(None, 1)[1]
-    query = text.replace(" ", "%20")
-    m = await message.reply_text("Searching...")
-    try:
-        songs = await arq.deezer(query, 1)
-        if not songs.ok:
-            await message.reply_text(songs.result)
-            return
-        title = songs.result[0].title
-        url = songs.result[0].url
-        artist = songs.result[0].artist
-        await m.edit("Downloading")
-        song = await download_song(url)
-        await m.edit("Uploading")
-        await message.reply_audio(audio=song, title=title, performer=artist)
-        os.remove(song)
-        await m.delete()
-    except Exception as e:
-        is_downloading = False
-        await m.edit(str(e))
-        return
-    is_downloading = False
-
-
 @Client.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client, message: Message):
     global is_downloading
@@ -393,7 +353,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From Anki Vector Music!`",
+            f"`Uploading {urlissed} Song From YouTube Music!`",
             file_stark,
         ),
     )
@@ -402,3 +362,39 @@ async def ytmusic(client, message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
+
+
+@Client.on_message(filters.command("deezer") & ~filters.edited)
+async def deezsong(_, message):
+    global is_downloading
+    if len(message.command) < 2:
+        await message.reply_text("/deezer requires an argument.")
+        return
+    if is_downloading:
+        await message.reply_text(
+            "Another download is in progress, try again after sometime."
+        )
+        return
+    is_downloading = True
+    text = message.text.split(None, 1)[1]
+    query = text.replace(" ", "%20")
+    m = await message.reply_text("Searching...")
+    try:
+        songs = await arq.deezer(query, 1)
+        if not songs.ok:
+            await message.reply_text(songs.result)
+            return
+        title = songs.result[0].title
+        url = songs.result[0].url
+        artist = songs.result[0].artist
+        await m.edit("Downloading")
+        song = await download_song(url)
+        await m.edit("Uploading")
+        await message.reply_audio(audio=song, title=title, performer=artist)
+        os.remove(song)
+        await m.delete()
+    except Exception as e:
+        is_downloading = False
+        await m.edit(str(e))
+        return
+    is_downloading = False
