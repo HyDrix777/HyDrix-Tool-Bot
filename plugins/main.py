@@ -40,16 +40,6 @@ async def help(bot: Client, message: Message):
            )
        )
 
-@Client.on_message(filters.command("help"))
-async def help(bot: Client, message: Message):
-    await message.reply_text(
-        text="Contact me in PM for help!",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
-
 # G Translator Language code list
 
 @Client.on_message(filters.command("list"))
