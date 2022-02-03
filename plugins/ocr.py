@@ -8,7 +8,7 @@ from pyrogram.errors import MessageEmpty
 
 
 @Client.on_message(filters.private("ptt"))
-async def _ocr(_, msg: Message):
+async def ptt(_, msg: Message):
     user_id = msg.from_user.id
     message_id = msg.message_id
     name_format = f"StarkBots_{user_id}_{message_id}"
