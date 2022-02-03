@@ -3,11 +3,6 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 
-logging.basicConfig(
-    level=logging.DEBUG, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-logger = logging.getLogger(__name__)
-
 
 
 
