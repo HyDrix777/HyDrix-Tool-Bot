@@ -14,3 +14,6 @@ yt-dlp
 googletrans
 gtts
 aiohttp==3.7.4
+pyromod
+music_tag
+Pillow
