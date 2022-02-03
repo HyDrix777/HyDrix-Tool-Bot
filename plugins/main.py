@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from telegraph import upload_file
 import requests 
 import lyricsgenius
-COMMAND_HAND_LER = Config.COMMAND_HAND_LER
+
 
 
 @Client.on_message(filters.private & filters.command("start"))
@@ -95,13 +95,13 @@ async def goodbye(bot, message):
 
 # PIN UNPIN-------
 
-@Client.on_message(filters.command(["pin"], COMMAND_HAND_LER) & admin_fliter)
+@Client.on_message(filters.command(["pin"],) & admin_fliter)
 async def pin(_, message: Import.Msg):
     if not message.reply_to_message:
         return
     await message.reply_to_message.pin()
 
-@Client.on_message(filters.command(["unpin"], COMMAND_HAND_LER) & admin_fliter)
+@Client.on_message(filters.command(["unpin"],) & admin_fliter)
 async def unpin(_, message: Import.Msg):
     if not message.reply_to_message:
         return
