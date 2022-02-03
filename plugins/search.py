@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 @Client.on_message(filters.command(["search"]))
-async def ytsearch(_, message: Message):
+async def search(_, message: Message):
     try:
         if len(message.command) < 2:
             await message.reply_text("/search needs an argument!")
