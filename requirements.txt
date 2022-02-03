@@ -17,3 +17,4 @@ aiohttp==3.7.4
 imdbpy
 googletrans==4.0.0rc1
 aiohttp
+emoji
