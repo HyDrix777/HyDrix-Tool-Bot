@@ -1,12 +1,11 @@
 import requests
-import wget
 from pyrogram import filters
 
 
 
 
 @Client.on_message(filters.command("saavn"))
-async def song(client, message):
+async def song(Client, message):
     message.chat.id
     message.from_user["id"]
     args = get_arg(message) + " " + "song"
