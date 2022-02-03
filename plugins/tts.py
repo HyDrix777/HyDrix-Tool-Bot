@@ -21,7 +21,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@Client(pattern="^/tts (.*)")
+@Client.on_message(filters.command("tts"))
 async def _(event):
     if event.fwd_from:
         return
