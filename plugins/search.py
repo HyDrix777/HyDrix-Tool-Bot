@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 
 import pyrogram
 
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-@Client.on_message(pyrogram.filters.command(["search"]))
+
+@Client.on_message(filters.command(["search"]))
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
