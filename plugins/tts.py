@@ -19,7 +19,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@register(pattern="^/tts (.*)")
+@Client(pattern="^/tts (.*)")
 async def _(event):
     if event.fwd_from:
         return
