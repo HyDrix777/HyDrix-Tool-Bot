@@ -15,3 +15,5 @@ googletrans
 gtts
 aiohttp==3.7.4
 imdbpy
+music_tag
+Pillow
