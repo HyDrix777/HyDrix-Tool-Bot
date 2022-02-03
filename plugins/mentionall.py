@@ -19,7 +19,7 @@ async def mentionall(event):
     return await event.respond("__This command can be use in groups and channels!__")
   
   admins = []
-  async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
+  async for admin in Client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
     return await event.respond("__Only admins can mention all!__")
@@ -40,11 +40,11 @@ async def mentionall(event):
   if mode == "text_on_cmd":
     usrnum = 0
     usrtxt = ""
-    async for usr in client.iter_participants(event.chat_id):
+    async for usr in Client.iter_participants(event.chat_id):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if usrnum == 5:
-        await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
+        await Client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
@@ -52,11 +52,11 @@ async def mentionall(event):
   if mode == "text_on_reply":
     usrnum = 0
     usrtxt = ""
-    async for usr in client.iter_participants(event.chat_id):
+    async for usr in Client.iter_participants(event.chat_id):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if usrnum == 5:
-        await client.send_message(event.chat_id, usrtxt, reply_to=msg)
+        await Client.send_message(event.chat_id, usrtxt, reply_to=msg)
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
