@@ -2,7 +2,6 @@ import os
 import time
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
-from utils import extract_user
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
@@ -18,9 +17,6 @@ async def who_is(client, message):
     await status_message.edit(
         "`Processing user info...`"
     )
-    from_user = None
-    from_user_id, _ = extract_user(message)
-    try:
         from_user = await client.get_users(from_user_id)
     except Exception as error:
         await status_message.edit(str(error))
