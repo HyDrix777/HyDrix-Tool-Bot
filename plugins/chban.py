@@ -27,12 +27,6 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-JV_BOT = Client("AntiChannelBot",
-                api_id=Config.API_ID,
-                api_hash=Config.API_HASH,
-                bot_token=Config.BOT_TOKEN)
-
-
 async def whitelist_check(chat_id,channel_id=0):
     if not (await db.is_chat_exist(chat_id)):
         await db.add_chat_list(chat_id)
