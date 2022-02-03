@@ -8,8 +8,8 @@ from music_tag import load_file
 
 
    
-@bot.on_message(filters.private & filters.audio)
-async def tag(bot, m):
+@Client.on_message(filters.private & filters.audio)
+async def tag(Client, m):
     mes = await m.reply("`Downloading...`", parse_mode='md')
     await m.download("temp/music.mp3")
     music = load_file("temp/music.mp3")
