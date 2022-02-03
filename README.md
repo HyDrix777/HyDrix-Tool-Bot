@@ -1,4 +1,4 @@
-### Hydrix Tool <img src="./ImageFont/Kenpurple.gif" width="40px"
+###Hydrix Tool.  <img src="./ImageFont/Kenpurple.gif" width="40px">
 
 ### My Future's 🌟
 ⍟────────────────⍟
