@@ -37,7 +37,7 @@ async def start_message(bot, message):
 
     await message.reply_text(  
         text=START_MESSAGE.format(message.from_user.mention)
-        reply_markup=InlineKeyboardMarkup( [[
+        reply_markup=InlineKeyboardMarkup([[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
            InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url="https://t.me/Tg_galaxy"),
@@ -48,7 +48,7 @@ async def start_message(bot, message):
            ],[
            InlineKeyboardButton("❌ ᴇxɪᴛ ❌", url="https://t.me/MusicdGalabdbxy_Dl")
            ]]
-           )
+        )
     )
 
 @Client.on_message(filters.private & filters.command("help"))
