@@ -14,6 +14,10 @@ import lyricsgenius
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
+    await message.reply_sticker(
+        sticker="CAACAgIAAxkBAAIGNmH9fPvNyton8eg1ue8_yDCaoTGsAAIiAANOXNIpYXS-_nMW_BQeBA"
+    )
+
     await message.reply_text(
         text="╭─────────────〄\n│Hᴇʏ ⚡\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
         reply_markup=InlineKeyboardMarkup( [[
