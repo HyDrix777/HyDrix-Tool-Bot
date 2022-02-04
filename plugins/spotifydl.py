@@ -17,9 +17,9 @@ def update_config():
         json.dump(config, write_file)
 
 try:
-    token = dotenv_values(".env")["TELEGRAM_TOKEN"]
+    token = dotenv_values(".env")["5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w"]
 except:
-    token = os.environ['TELEGRAM_TOKEN']
+    token = os.environ['5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w']
 
 updater = Updater(token)
 dispatcher = updater.dispatcher
@@ -42,7 +42,7 @@ def get_single_song(bot, update):
     os.chdir(f'./.temp{message_id}{chat_id}')
 
     logging.log(logging.INFO, f'start downloading')
-    bot.send_message(chat_id=chat_id, text="Fetching...")
+    bot.send_message(chat_id=chat_id, text="Spotify Fetching...")
 
     if config["SPOTDL_DOWNLOADER"]:
         os.system(f'spotdl {url}')
