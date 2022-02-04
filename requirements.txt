@@ -19,3 +19,4 @@ youtube_search
 aiofiles
 spotdl
 python-dotenv
+wget
