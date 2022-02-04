@@ -12,36 +12,36 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(filters.private & filters.forwarded)
 async def forwarded(_, msg):
     if msg.forward_from:
-        text = "Forward detected! \n\n"
+        text = "Fᴏʀᴡᴀʀᴅ ᴅᴇᴛᴇᴄᴛᴇᴅ! \n\n"
         if msg.forward_from.is_bot:
-            text += "**Bot**"
+            text += "**ʙᴏᴛ**"
         else:
-            text += "**User**"
+            text += "**ᴜsᴇʀ**"
         text += f'\n{msg.forward_from.first_name} \n'
         if msg.forward_from.username:
-            text += f'@{msg.forward_from.username} \nID : `{msg.forward_from.id}`'
+            text += f'@{msg.forward_from.username} \nɪᴅ : `{msg.forward_from.id}`'
         else:
-            text += f'ID : `{msg.forward_from.id}`'
+            text += f'ɪᴅ : `{msg.forward_from.id}`'
         await msg.reply(text, quote=True)
     else:
         hidden = msg.forward_sender_name
         if hidden:
             await msg.reply(
-                f"Forward detected but unfortunately, {hidden} has enabled forwarding privacy, so I can't get their id",
+                f"Fᴏʀᴡᴀʀᴅ ᴅᴇᴛᴇᴄᴛᴇᴅ ʙᴜᴛ ᴜɴғᴏʀᴛᴜɴᴀᴛᴇʟʏ, {hidden} ʜᴀs ᴇɴᴀʙʟᴇᴅ ғᴏʀᴡᴀʀᴅɪɴɢ ᴘʀɪᴠᴀᴄʏ, sᴏ I ᴄᴀɴ'ᴛ ɢᴇᴛ ᴛʜᴇɪʀ ɪᴅ",
                 quote=True,
             )
         else:
-            text = f"Forward Detected. \n\n"
-            if msg.forward_from_chat.type == "channel":
+            text = f"Fᴏʀᴡᴀʀᴅ ᴅᴇᴛᴇᴄᴛᴇᴅ. \n\n"
+            if msg.forward_from_chat.type == "Channel":
                 text += "**Channel**"
             if msg.forward_from_chat.type == "supergroup":
                 text += "**Group**"
             text += f'\n{msg.forward_from_chat.title} \n'
             if msg.forward_from_chat.username:
                 text += f'@{msg.forward_from_chat.username} \n'
-                text += f'ID : `{msg.forward_from_chat.id}`'
+                text += f'ɪᴅ : `{msg.forward_from_chat.id}`'
             else:
-                text += f'ID : `{msg.forward_from_chat.id}`'
+                text += f'ɪᴅ : `{msg.forward_from_chat.id}`'
             await msg.reply(text, quote=True)
 
 # group id
@@ -53,7 +53,7 @@ async def welcome(bot, msg):
     for member in members:
         if member.id == bot_id:
             await msg.reply(
-                f"Thanks for adding me here! \n\nThis group's ID is `{msg.chat.id}`"
+                f"Tʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇ! \n\nTʜɪs ɢʀᴏᴜᴘ's ɪᴅ ɪs `{msg.chat.id}`"
             )
 
 # private id
@@ -61,16 +61,16 @@ async def welcome(bot, msg):
 @Client.on_message(filters.command("id"))
 async def id_(bot: Client, msg: Message):
 	if not msg.chat.type == "private":
-		main = f"This {msg.chat.type}'s ID is `{msg.chat.id}`"
+		main = f"This {msg.chat.type}'s ɪᴅ is `{msg.chat.id}`"
 		if msg.reply_to_message:
 			if msg.reply_to_message.from_user:
-				main = f"{msg.reply_to_message.from_user.first_name}'s ID is `{msg.reply_to_message.from_user.id}`"
+				main = f"{msg.reply_to_message.from_user.first_name}'s ɪᴅ is `{msg.reply_to_message.from_user.id}`"
 				if msg.reply_to_message.sticker:
-					main += f"\n\nThis sticker's id is `{msg.reply_to_message.sticker.file_id}`"
+					main += f"\n\nTʜɪs sᴛɪᴄᴋᴇʀ's ɪᴅ ɪs `{msg.reply_to_message.sticker.file_id}`"
 		await msg.reply(main)
 	else:
 		if len(msg.command) == 1:
-			await msg.reply(f"Your Telegram ID is: `{msg.from_user.id}`", quote=True)
+			await msg.reply(f"Yᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ɪs: `{msg.from_user.id}`", quote=True)
 		if len(msg.command) == 2:
 			try:
 				uname = msg.command[1]
@@ -89,11 +89,11 @@ async def id_(bot: Client, msg: Message):
 					user = await bot.get_chat(uname)
 					name = '@'+user.username if user.username else user.title
 				id = user.id
-				await msg.reply(f"{name}'s id is `{id}`", quote=True)
+				await msg.reply(f"{name}'s ɪᴅ ɪs `{id}`", quote=True)
 			except UsernameInvalid:
 				await msg.reply("Invalid Username.", quote=True)
 			except UsernameNotOccupied:
-				await msg.reply("This username is not occupied by anyone", quote=True)
+				await msg.reply("Tʜɪs ᴜsᴇʀɴᴀᴍᴇ ɪs ɴᴏᴛ ᴏᴄᴄᴜᴘɪᴇᴅ ʙʏ ᴀɴʏᴏɴᴇ", quote=True)
 
 
 # Dc finder
@@ -109,7 +109,7 @@ async def dc(bot, update):
         quote=True
     )
 
-START_TEXT = "Your Telegram DC Is : `{}`"
+START_TEXT = "Yᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴅᴄ ɪs : `{}`"
 START_BUTTON = InlineKeyboardMarkup(
              [[
              InlineKeyboardButton('👥 Group', url=f"https://t.me/Music_Galaxy_Dl")
