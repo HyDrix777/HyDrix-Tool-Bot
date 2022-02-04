@@ -77,7 +77,7 @@ async def about(bot: Client, message: Message):
        )
 
 @Client.on_message(filters.command("ping"))
-async def ping(bot, Message):
+async def ping(bot, message):
     await message.reply_text("**Pong!**\n⚡`310.028 ms`")
        
 # Sticker id
