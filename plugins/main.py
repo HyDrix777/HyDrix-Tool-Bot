@@ -48,7 +48,7 @@ async def start_message(bot, message):
            ],[
            InlineKeyboardButton("❌ ᴇxɪᴛ ❌", url="https://t.me/MusicdGalabdbxy_Dl")
            ]]
-        )
+       )
     )
 
 @Client.on_message(filters.private & filters.command("help"))
