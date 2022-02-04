@@ -33,8 +33,7 @@ async def left(client,message):
 			   	await message.reply_text(f"```{translation.text}```", reply_markup=hehek, reply_to_message_id=message.reply_to_message.message_id)
 			
 
-		except :
-			print("error")
+		
 	else:
 			 ms = await message.reply_text("You can Use This Command by using reply to message")
 			 
