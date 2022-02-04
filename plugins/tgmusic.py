@@ -8,6 +8,10 @@ OpenCC
 Pillow
 youtube-dl
 
+# ../../config.py
+MUSIC_CHATS = [
+    -1001671054664,
+    -1001500208686
 ]
 MUSIC_USERS = [1234567890]
 MUSIC_DELAY_DELETE_INFORM = 10
@@ -52,6 +56,9 @@ def get_music_chats():
     return chats
 
 
+MUSIC_CHATS = get_music_chats()
+
+
 # - handlers and functions
 main_filter = (
     filters.text
@@ -61,13 +68,13 @@ main_filter = (
 )
 
 
-@Client.on_message(main_filter & filters.regex("^/ping$"))
+@app.on_message(main_filter & filters.regex("^/ping$"))
 async def ping_pong(_, message):
     await _reply_and_delete_later(message, "pong",
                                   DELAY_DELETE_INFORM)
 
 
-@Client.on_message(main_filter
+@app.on_message(main_filter
                 & filters.regex(REGEX_SITES)
                 & ~filters.regex(REGEX_EXCLUDE_URL))
 async def music_downloader(_, message: Message):
