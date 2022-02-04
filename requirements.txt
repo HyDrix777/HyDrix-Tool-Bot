@@ -20,5 +20,3 @@ aiofiles
 spotdl
 python-dotenv
 wget
-Pillow
-ffmpeg-python
