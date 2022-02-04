@@ -8,10 +8,7 @@ OpenCC
 Pillow
 youtube-dl
 
-# ../../config.py
-MUSIC_CHATS = [
-    -1001671054664,
-    -1001500208686
+
 ]
 MUSIC_USERS = [1234567890]
 MUSIC_DELAY_DELETE_INFORM = 10
@@ -45,18 +42,6 @@ REGEX_EXCLUDE_URL = (
     r"\/channel\/|\/playlist\?list=|&list=|\/sets\/"
 )
 
-
-def get_music_chats():
-    chats = []
-    for x in os.environ["MUSIC_CHATS"].split("-1001671054664, -1001500208686 "):
-        try:
-            chats.append(int(x))
-        except ValueError:
-            chats.append(x)
-    return chats
-
-
-MUSIC_CHATS = get_music_chats()
 
 
 # - handlers and functions
