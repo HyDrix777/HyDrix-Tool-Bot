@@ -76,12 +76,10 @@ async def about(bot: Client, message: Message):
            )
        )
 
-@Client.on_message(filters.command & filters.regex("ping"))
-async def ping(_, message):
-    await _reply_and_delete_later(message, "⚡pong",
-                                  DELAY_DELETE_INFORM)
-
-
+@Client.on_message(filters.command("ping"))
+async def ping_message(bot, Message):
+    await message.reply_text("**Pong!**\n⚡`310.028 ms`")
+       
 # Sticker id
 
 @Client.on_message(filters.private & filters.sticker)
