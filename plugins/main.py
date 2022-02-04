@@ -12,10 +12,31 @@ import lyricsgenius
 
 
 
+
+
+START_MESSAGE = """
+╭─────────────〄\n│Hᴇʏ {} 👋\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄
+"""
+
+
+
+
+
+
+
+
+
+
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
-    await message.reply_text(
-        text=f"╭─────────────〄\n│Hᴇʏ {message.from_user.mention} 👋\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
+    await message.reply_sticker(
+        sticker="CAACAgIAAxkBAAIGNmH9fPvNyton8eg1ue8_yDCaoTGsAAIiAANOXNIpYXS-_nMW_BQeBA"
+    )
+
+
+
+        await message.reply_text(
+        text=START_MESSAGE.format(message.from_user.mention)
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -28,7 +49,7 @@ async def start_message(bot, message):
            InlineKeyboardButton("❌ ᴇxɪᴛ ❌", url="https://t.me/MusicdGalabdbxy_Dl")
            ]]
            )
-       )
+    )
 
 @Client.on_message(filters.private & filters.command("help"))
 async def help(bot: Client, message: Message):
