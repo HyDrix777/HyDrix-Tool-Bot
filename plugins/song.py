@@ -20,7 +20,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎Searching your song...')
+    m = message.reply('🔎<b>Sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ sᴏɴɢ</b>...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -51,7 +51,7 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('Found nothing..Try again later...🙁')
+            m.edit('Fᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ..Tʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ...🙁')
             return
     except Exception as e:
         m.edit(
@@ -59,13 +59,13 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("📤Uploading To Telegram")
+    m.edit("📤<b>𝗨ᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ</b>...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🔍<b>Track Downloaded</b>\n\n🎙️ <b>Title:</b> [{title[:35]}]\n\n🔗 <b>Link:</b> ({link})\n⌚ <b>Duration:</b> `{duration}`\n👁️‍🗨️ <b>Views:</b> `{views}`\n🎥 <b>Cʜᴀɴɴᴇʟ:</b> {channel}\n\n⚡<i>Youtube Inline Download Powered By Tg Tool Bot</i>'
+        rep =  f'🔍<b>Tʀᴀᴄᴋ Dᴏᴡɴʟᴏᴀᴅᴇᴅ</b>\n\n🎙️ <b>ᴛɪᴛʟᴇ:</b> [{title[:35]}]\n\n🔗 <b>ʟɪɴᴋ:</b> ({link})\n⌚ <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> `{duration}`\n👁️‍🗨️ <b>ᴠɪᴇᴡs:</b> `{views}`\n🔴 <b>ᴄʜᴀɴɴᴇʟ:</b> {channel}\n\n⚡<i>Youtube Inline Download Powered By Hydrix Tool Bot</i>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -73,7 +73,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=str(info_dict["uploader"]), thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('`Faild Try Again Later`')
+        m.edit('`Fᴀɪʟᴅ Tʀʏ Aɢᴀɪɴ Lᴀᴛᴇʀ`')
         print(e)
     try:
         os.remove(audio_file)
