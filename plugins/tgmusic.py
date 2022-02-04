@@ -68,13 +68,13 @@ main_filter = (
 )
 
 
-@app.on_message(main_filter & filters.regex("^/ping$"))
+@Client.on_message(main_filter & filters.regex("^/ping$"))
 async def ping_pong(_, message):
     await _reply_and_delete_later(message, "pong",
                                   DELAY_DELETE_INFORM)
 
 
-@app.on_message(main_filter
+@Client.on_message(main_filter
                 & filters.regex(REGEX_SITES)
                 & ~filters.regex(REGEX_EXCLUDE_URL))
 async def music_downloader(_, message: Message):
