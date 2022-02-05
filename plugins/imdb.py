@@ -1,12 +1,3 @@
-
-# For UniBorg
-# Copyright (c) JeepBot | 2019 
-# (c) JeepBot is not occur to all modules in here
-"""
-Imdb Module
-.imdb
-"""
-
 import bs4
 import requests
 import asyncio
@@ -15,11 +6,11 @@ import re
 import subprocess
 import time
 from datetime import datetime
-from uniborg.util import admin_cmd
+from imdb
 
 langi = "en"
 
-#kanged from Blank-x ;---;
+
 @Client.on(admin_cmd("imdb (.*)", outgoing=True)) 
 async def imdb(e):
  try:
