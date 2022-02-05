@@ -1,5 +1,5 @@
-from Covid
-from . import *
+from import Covid
+
 
 
 @Client.on_message(filters.command("covid"))
