@@ -19,7 +19,6 @@ START_MESSAGE = """
 
 
 
-
 @Client.on_message(filters.private & filters.command("start"))
 async def start(bot, message):
     await message.reply_sticker(
@@ -28,7 +27,6 @@ async def start(bot, message):
 
     await message.reply_text(
         text=START_MESSAGE.format(message.from_user.mention)
-    )
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
