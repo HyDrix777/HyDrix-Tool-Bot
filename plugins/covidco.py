@@ -1,4 +1,5 @@
 from import Covid
+from pyrogram import Client, filters
 
 
 
