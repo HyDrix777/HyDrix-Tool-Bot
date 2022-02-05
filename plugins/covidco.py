@@ -1,4 +1,4 @@
-from import Covid
+from Covid
 from . import *
 
 
