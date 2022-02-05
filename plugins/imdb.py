@@ -11,8 +11,8 @@ from imdb
 langi = "en"
 
 
-@Client.on(admin_cmd("imdb (.*)", outgoing=True)) 
-async def imdb(e):
+@Client.on_message(filters.command("imdb")) 
+async def imdb(bot, message):
  try:
     movie_name = e.pattern_match.group(1)
     remove_space = movie_name.split(' ')
@@ -90,3 +90,4 @@ async def imdb(e):
     			)
  except IndexError:
      await e.edit("Plox enter **Valid movie name** kthx")
+on_message(filters.private & filters.command("start"))
