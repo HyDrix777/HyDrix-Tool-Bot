@@ -18,14 +18,13 @@ async def start_message(bot, message):
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
-           InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", url="https://t.me/Tg_galaxy"),
+           InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", url="https://t.me/Tg_gabdnlaxy"),
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
            InlineKeyboardButton("🧑‍💻 ʙᴏᴛ ᴅᴇᴠ", url="https://t.me/Hydrix777")
            ],[
-           InlineKeyboardButton("🏠 ʜᴏᴍᴇ", url="https://t.me/MusicdGalabdbxy_Dl"),
-           InlineKeyboardButton("🚪 ᴇxɪᴛ", url="https://t.me/MusicdGalabdbxy_Dl")
+           InlineKeyboardButton("🚪 ᴇxɪᴛ", url="https://t.me/MusicdGalabfdbxy_Dl")
            ]]
            )
        )
