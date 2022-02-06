@@ -33,7 +33,7 @@ START_PHOTO = [
 async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
-        caption=START_MSG.format(message.from_user.mention)
+        caption=START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup([[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
