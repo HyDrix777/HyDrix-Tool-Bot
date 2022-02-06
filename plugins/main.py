@@ -14,11 +14,11 @@ import lyricsgenius
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text=f"╭─────────────〄\n│✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n│I ᴀᴍ (**ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**)[https://t.me/HTGToolBot][🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
+        text=f"✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
-           InlineKeyboardButton("📚 ʜᴇʟᴘ", url="https://t.me/Tg_galaxy"),
+           InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", url="https://t.me/Tg_galaxy"),
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
