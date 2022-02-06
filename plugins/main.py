@@ -14,7 +14,7 @@ import lyricsgenius
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
     await message.reply_text(
-        text="╭─────────────〄\n│👋Hᴇʏ\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
+        text="╭─────────────〄\n│✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention}\n│I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n│\n│ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴄᴏᴏʟ ғᴜᴛᴜʀᴇs✨\n│ᴄʟɪᴄᴋ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs\n│ᴀɴᴅ ᴍʏ ᴜsᴇs 🍃\n╰──────────〄",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -30,6 +30,8 @@ async def start_message(bot, message):
            )
        )
 
+# Commands----------------
+
 @Client.on_message(filters.private & filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
@@ -40,31 +42,8 @@ async def help(bot: Client, message: Message):
            )
        )
 
-# G Translator Language code list
 
-@Client.on_message(filters.command("list"))
-async def list(bot: Client, message: Message):
-    await message.reply_text(
-        text="⍟────[ʟɪsᴛ]────⍟\n`List is in the form`\n**Language code** => **Language**\n\n`af` ➥ **Afrikaans**\n`sq` -> **Albanian**\n`am` -> **Amharic**\n`ar` -> **Arabic**\n`hy` -> **Armenian**\n`az` -> **Azerbaijani**\n`eu` -> **Basque**\n`be` -> **Belarusian**\n`bn` -> **Bengali**\n`bs` -> **Bosnian**\n`bg` -> **Bulgarian**\n`ca` -> **Catalan**\n`ceb` -> **Cebuano**\n`ny` -> **Chichewa**\n`zh`-`cn` -> **Chinese**\n`co` -> **Corsican**\n`hr` -> **Croatian**\n`cs` -> **Czech**\n`da` -> **Danish**\n`nl` -> **Dutch**\n`en` -> **English**\n`eo` -> **Esperanto**\n`et` -> **Estonian**\n`tl` -> **Filipino**\n`fi` -> **Finnish**\n`fr` -> **French**\n`fy` -> **Frisian**\n`gl` -> **Galician**\n`ka` -> **Georgian**\n`de` -> **German**\n`el` -> **Greek**\n`gu` -> **Gujarati**\n`ht` -> **Haitian creole**\n`ha` -> **Hausa**\n`haw` -> **Hawaiian**\n`iw` -> **Hebrew**\n`hi` -> **Hindi**\n`hmn` -> **Hmong**\n`hu` -> **Hungarian**\n`is` -> **Icelandic**\n`is` -> **Icelandic**\n`ig` -> **Igbo**\n`id` -> **Indonesian**\n`ga` -> **Irish**\n`it` -> **Italian**\n`ja` -> **Japanese*\n`jw` -> **Javanese**\n`kn` -> **Kannada**\n`kk` -> **Kazakh**\n`km` -> **Khmer**\n`rw` -> **Kinyarwanda**\n`ko` -> **Korean**\n`ku` -> **Kurdish (kurmanji)**\n`ky` -> **Kyrgyz**\n`lo` -> **Lao**\n`la` -> **Latin**\n`lv` -> **Latvian**\n`lt` -> **Lithuanian**\n`lb` -> **Luxembourgish**\n`mk` -> **Macedonian**\n`mg` -> **Malagasy**\n`ms` -> **Malay**\n`ml` -> **Malayalam**\n`mt` -> **Maltese**\n`mi` -> **Maori**\n`mr` -> **Marathi**\n`mn` -> **Mongolian**\n`my` -> **Myanmar**\n`ne` -> **Nepali**\n`no` -> **Norwegian**\n`or` -> **Oriya**\n`ps` -> **Pashto**\n`fa` -> **Persian**\n`pl` -> **Polish**\n`pt` -> **Portuguese**\n`pa` -> **Punjabi**\n`ro` -> **Romanian**\n`ru` -> **Russian**\n`sm` -> **Samoan*\n`gd` -> **Scots gaelic**\n`sr` -> **Serbian**\n`st` -> **Sesotho**\n`sn` -> **Shona**\n`sd` -> **Sindhi**\n`si` -> **Sinhala**\n`sk` -> **Slovak**\n`sl` -> **Slovenian**\n`so` -> **Somali**\n`es` -> **Spanish**\n`su` -> **Sundanese**\n`sw` -> **Swahili**\n`sv` -> **Swedish**\n`tg` -> **Tajik**\n`ta` -> **Tamil**\n`tt` -> **Tatar**\n`te` -> **Telugu**\n`th` -> **Thai**\n`tr` -> **Turkish**\n`tk` -> **Turkmen**\n`ug` -> **Uighur**\n`uk` -> **Ukrainian**\n`ur` -> **Urdu**\n`uz` -> **Uzbek**\n`vi` -> **Vietnamese**\n`cy` -> **Welsh**\n`xh -> **Xhosa**\n`yi` -> **Yiddish**\n`yo` -> **Yoruba**\n`zu` -> **Zulu** \n\n⍟───────────⍟",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
-
-# Fun Comm------
-
-@Client.on_message(filters.command("fun"))
-async def fun(bot: Client, message: Message):
-    await message.reply_text(
-        text="⍟────Fun────⍟\n🔻**Here is the help for the Fun module**:\n➥ /roll : Roll a dice\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n➥ /run : reply a random string from an array of replie.\n➥ /lnm : find your lucky number.\n ➥ /love : Love 😘\n➥ /toss : Tosses A coin\n➥ /shrug : get shrug XD\n➥ /table : get flip/unflip :v\n➥ /decide : \Randomly answers yes/no/maybe.\n⍟───────────⍟",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
-
-# About
+# About--------------------
 
 @Client.on_message(filters.private & filters.command("about"))
 async def about(bot: Client, message: Message):
@@ -76,14 +55,28 @@ async def about(bot: Client, message: Message):
            )
        )
 
-# Sticker id
+
+# Fun Comm-----------------
+
+@Client.on_message(filters.command("fun"))
+async def fun(bot: Client, message: Message):
+    await message.reply_text(
+        text="⍟────Fun────⍟\n🔻**Here is the help for the Fun module**:\n➥ /roll : Roll a dice\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n➥ /run : reply a random string from an array of replie.\n➥ /lnm : find your lucky number.\n ➥ /love : Love 😘\n➥ /toss : Tosses A coin\n➥ /shrug : get shrug XD\n➥ /table : get flip/unflip :v\n➥ /decide : \Randomly answers yes/no/maybe.\n⍟───────────⍟",
+        reply_markup=InlineKeyboardMarkup( [[
+           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
+           ]]
+           )
+       )
+
+
+# Sticker id-----------------------
 
 @Client.on_message(filters.private & filters.sticker)
 async def stickers(_, message):
        await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
 
-# Service clear
+# Service clear--------------------
 
 @Client.on_message(filters.service)
 async def delete(bot,message):
@@ -94,7 +87,7 @@ async def goodbye(bot, message):
  await message.delete()
 
 
-# Telegraph
+# Telegraph---------------------
 
 @Client.on_message(filters.private & filters.photo)
 async def getimage(client, message):
@@ -125,7 +118,7 @@ async def getimage(client, message):
 
 
 
-#  Lyrics
+#  Lyrics--------------------
 
 @Client.on_message(filters.command("lyric"))
 async def lrsearch(_, message: Message):  
