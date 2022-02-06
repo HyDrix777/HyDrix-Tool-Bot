@@ -8,32 +8,23 @@ from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessa
 from telegraph import upload_file
 import requests 
 import lyricsgenius
-import random
 
 
 
 
-START_MSG = """
+
+START_MSAG = """
 ✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!
 """
-
-START_PHOTO = [
- "https://telegra.ph/file/e4901681616e47f1ab3bc.jpg",
- "https://telegra.ph/file/eba603c8799ea006d77be.jpg",
- "https://telegra.ph/file/f6f7beba68b77a6dbfb69.jpg",
- "https://telegra.ph/file/2333e8560d8d91203494c.jpg",
- "https://telegra.ph/file/2e4de7eb7fdda2576deb7.jpg"
-]
 
 
 
 
 
 @Client.on_message(filters.private & filters.command("start"))
-async def start_message(bot, message):
-    await message.reply_photo(
-        photo=random.choice(START_PHOTO),
-        caption=START_MSG.format(message.from_user.mention),
+async def start(bot, msg):
+    await msg.reply_text(
+        text=START_MSAG.format(msg.from_user.mention),
         reply_markup=InlineKeyboardMarkup([[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
