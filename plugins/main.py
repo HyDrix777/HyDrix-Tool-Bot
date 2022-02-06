@@ -13,7 +13,7 @@ import random
 
 
 
-START_MESSAGE = """
+START_MSG = """
 ✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!
 """
 
@@ -33,7 +33,7 @@ START_PHOTO = [
 async def start_message(bot, hydrix):
     await hydrix.reply_photo(
         photo=random.choice(START_PHOTO),
-        caption=START_MESSAGE.format(hydrix.from_user.mention),
+        caption=START_MSG.format(hydrix.from_user.mention),
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
