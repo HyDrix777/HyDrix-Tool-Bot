@@ -5,7 +5,6 @@ from pyrogram.types import Message, User
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
-from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 from telegraph import upload_file
 import requests 
 import lyricsgenius
