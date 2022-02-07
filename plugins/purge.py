@@ -8,9 +8,9 @@ from pyrogram import Client, filters
 TG_MAX_SELECT_LEN = 100
 
 @Client.on_message(
-    filters.command("purge") &
-    f_onw_fliter
+    filters.command("purge")
 )
+
 async def purge(client, message):
     """ purge upto the replied message """
     if message.chat.type not in (("supergroup", "channel")):
