@@ -17,10 +17,11 @@ async def info(bot, hydrix):
 ╭─────[ɪɴғᴏ]─────〄
 ├😃 **Fɪʀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.first_name}
 ├😌 **Lᴀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.last_name}
-├😁 **Usᴇʀ ɴᴀᴍᴇ** : @{hydrix.from_user.username}
+├😁 **Usᴇʀɴᴀᴍᴇ** : @{hydrix.from_user.username}
 ├🧐 **ɪᴅ** : `{hydrix.from_user.id}`
 ├😜 **Mᴇɴᴛɪᴏɴ** : {hydrix.from_user.mention}
-├😎 **Your DC : {hydrix.from_user.dc_id}
+├😎 **Yᴏᴜʀ ᴅᴄ** : {hydrix.from_user.dc_id}
+├ karma : {hydrix.from_user.karma}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
