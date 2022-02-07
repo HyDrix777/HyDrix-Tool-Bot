@@ -18,8 +18,7 @@ DL_BUTTONS=[
 
 
 
-# Helpers
-# Thanks to FridayUB
+
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   args = shlex.split(cmd)
   process = await asyncio.create_subprocess_exec(
@@ -35,6 +34,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
 
 
 # Downloader for tiktok
+
 @Client.on_message(filters.regex(pattern='.*http.*') & filters.private)
 async def _tiktok(bot, update):
   url = update.text
