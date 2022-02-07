@@ -1,5 +1,4 @@
 import traceback
-from rose import app
 from rose.utils.inlinefuncs import *
 
 __MODULE__ = "Inline"
