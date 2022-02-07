@@ -4,16 +4,14 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 
-downloads = './downloads/{}/'
-
-
 DL_BUTTONS=[
     [
-        InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
+        InlineKeyboardButton('🚫 No Watermark', callback_data='nowm'),
         InlineKeyboardButton('🖼️ Watermark', callback_data='wm'),
     ],
-    [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
+    [InlineKeyboardButton('🔊 Audio', callback_data='audio')],
 ]
+
 
 
 
@@ -23,7 +21,6 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   process = await asyncio.create_subprocess_exec(
       *args, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
   )
-
   stdout, stderr = await process.communicate()
   return (
       stdout.decode("utf-8", "replace").strip(),
@@ -44,8 +41,8 @@ async def _tiktok(bot, update):
     return
   await update.reply('Select the options below', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
 
-
 # Callbacks
+
 @Client.on_callback_query()
 async def _callbacks(bot, cb: CallbackQuery):
   if cb.data == 'nowm':
