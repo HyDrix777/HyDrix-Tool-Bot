@@ -8,7 +8,7 @@ CHAT_ID=int(os.environ.get("CHAT_ID", None))
 TEXT=os.environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour Auto Approved")
 APPROVED = os.environ.get("APPROVED_WELCOME", "on").lower()
 
-    await message.reply_text(text="**Hello Iam Auto Approved Join Request Bot**",
+    await message.reply_text(text="Hello Iam Auto Approved Join Request Bot",
         reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
 @Client.on_chat_join_request(filters.chat(CHAT_ID))
