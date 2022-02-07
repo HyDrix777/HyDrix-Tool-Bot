@@ -18,4 +18,4 @@ imdbpy
 youtube_search
 aiofiles
 spotdl
-asyncio==3.4.3
+
