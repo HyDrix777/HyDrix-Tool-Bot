@@ -21,7 +21,7 @@ async def info(bot, hydrix):
 ├🧐 **ɪᴅ** : `{hydrix.from_user.id}`
 ├😜 **Mᴇɴᴛɪᴏɴ** : {hydrix.from_user.mention}
 ├😎 **Yᴏᴜʀ ᴅᴄ** : {hydrix.from_user.dc_id}
-├ karma : {hydrix.from_user.karma}
+├ g ban : {hydrix.from_user.is_gbanned}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
