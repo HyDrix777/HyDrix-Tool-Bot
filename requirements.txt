@@ -11,12 +11,11 @@ youtube_search
 ffmpeg-python
 ffmpeg
 yt-dlp
-googletrans
+googletrans==3.1.0a0
 gtts
 aiohttp==3.7.4
 imdbpy
 youtube_search
 aiofiles
 spotdl
-python-dotenv
-wget
+
