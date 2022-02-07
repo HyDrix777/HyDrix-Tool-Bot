@@ -3,6 +3,9 @@ from typing import Tuple
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
+
+
+
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
@@ -11,7 +14,10 @@ DL_BUTTONS=[
     [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
 ]
 
+
+
 # Helpers
+# Thanks to FridayUB
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   args = shlex.split(cmd)
   process = await asyncio.create_subprocess_exec(
@@ -25,6 +31,7 @@ async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
       process.pid,
   )
 
+
 # Downloader for tiktok
 @Client.on_message(filters.regex(pattern='.*http.*') & filters.private)
 async def _tiktok(bot, update):
@@ -35,7 +42,6 @@ async def _tiktok(bot, update):
     return
   await update.reply('Select the options below', True, reply_markup=InlineKeyboardMarkup(DL_BUTTONS))
 
-downloads = './downloads/{}/'
 
 # Callbacks
 @Client.on_callback_query()
