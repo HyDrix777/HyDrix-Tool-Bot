@@ -7,14 +7,11 @@ from pyrogram import Client, filters
 
 TG_MAX_SELECT_LEN = 100
 
-@Client.on_message(
-    filters.command("purge")
-)
-
+@Client.on_message(filters.command("purge") & f_onw_fliter)
 async def purge(client, message):
     """ purge upto the replied message """
     if message.chat.type not in (("supergroup", "channel")):
-        # https://t.me/c/1312712379/84174
+
         return
 
     is_admin = await admin_check(message)
