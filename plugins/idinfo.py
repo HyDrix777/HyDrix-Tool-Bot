@@ -18,8 +18,8 @@ async def info(bot, hydrix):
 ├😃 **Fɪʀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.first_name}
 ├😌 **Lᴀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.last_name}
 ├😁 **Usᴇʀ ɴᴀᴍᴇ** : @{hydrix.from_user.username}
-├🧐 **ɪᴅ** : {hydrix.from_user.id}
-├😜 **Mᴇɴᴛɪᴏɴ** : `{hydrix.from_user.mention}`
+├🧐 **ɪᴅ** : `{hydrix.from_user.id}`
+├😜 **Mᴇɴᴛɪᴏɴ** : {hydrix.from_user.mention}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
