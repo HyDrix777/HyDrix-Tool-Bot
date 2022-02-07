@@ -7,6 +7,24 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
+
+
+# User info
+
+@Client.on_message(filters.command("info"))
+async def info(bot, hydrix):
+    text = f"""
+First Name : {hydrix.from_user.first_name}
+Last Name : {hydrix.from_user.last_name}
+User Name : {hydrix.from_user.username}
+ID : {hydrix.from_user.id}
+Mention : {hydrix.from_user.mention}"""
+
+    await hydrix.reply_text(text=text)
+
+
+
+
 # id finder
 
 @Client.on_message(filters.private & filters.forwarded)
