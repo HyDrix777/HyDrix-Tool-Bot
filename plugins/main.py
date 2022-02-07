@@ -8,18 +8,12 @@ from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessa
 from telegraph import upload_file
 import requests 
 import lyricsgenius
-from pyrogram.types import CallbackQuery
-import random
 
 
-START_PHOTO = [
- "https://telegra.ph/file/912bbe750ad25f8caefc7.jpg",
- "https://telegra.ph/file/fd00da5b5a4ebbc9dce4f.jpg",
- "https://telegra.ph/file/81092f3a3ad93ad719d6f.jpg",
- "https://telegra.ph/file/4f63d3a37c637492626ad.jpg",
- "https://telegra.ph/file/754b0f3c621fdb3a5adfe.jpg",
- "https://telegra.ph/file/08252e986c916f1b38704.jpg"
-]
+
+
+
+
 
 
 
@@ -27,9 +21,8 @@ START_PHOTO = [
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
-    await message.reply_photo(
-        photo=random.choice(START_PHOTO),
-        caption=f"✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's /help ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
+    await message.reply_text(
+        text=f"✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's /help ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
