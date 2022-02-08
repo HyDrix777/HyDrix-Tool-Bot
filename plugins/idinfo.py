@@ -21,7 +21,6 @@ async def info(bot, hydrix):
 ├⍟ **Usᴇʀ ɪᴅ** : `{hydrix.from_user.id}`
 ├⍟ **Mᴇɴᴛɪᴏɴ** : {hydrix.from_user.mention}
 ├⍟ **Dᴀᴛᴀᴄᴇɴᴛᴇʀ** : {hydrix.from_user.dc_id}
-    Bio : {hydrix.from_user.bio}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
@@ -38,7 +37,7 @@ async def ginfo(bot, hydrix):
 ├⍟ **Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
 ├⍟ **Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 ├⍟ **Gʀᴏᴜᴘ ɪᴅ** : {hydrix.chat.id}
-  Scam : {hydrix.chat.bio}
+├⍟ **Scam** : {hydrix.chat.description}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
