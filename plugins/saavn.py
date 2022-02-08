@@ -1,11 +1,8 @@
 import os
-
 import requests
 import wget
 from pyrogram import filters
 
-from love import pbot as Jebot
-from love.pyrogramee.dark import get_arg
 
 
 @Client.on_message(filters.command("saavn"))
