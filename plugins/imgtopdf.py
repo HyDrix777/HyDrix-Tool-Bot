@@ -2,7 +2,7 @@
 from io import BytesIO
 from os import path, remove
 from time import time
-from pyrogram import img2pdf
+import img2pdf
 from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
