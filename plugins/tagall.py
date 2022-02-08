@@ -1,7 +1,6 @@
 from pyrogram import filters
-
 import admins_only, get_text
-from TGNRobot import pbot
+
 
 
 @Client.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
