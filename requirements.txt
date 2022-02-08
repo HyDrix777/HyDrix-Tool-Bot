@@ -16,5 +16,3 @@ gtts
 aiohttp==3.7.4
 aiofiles
 imdbpy
-pyTelegramBotAPI
-python-decouple==3.3
