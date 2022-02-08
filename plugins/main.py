@@ -6,9 +6,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
 from telegraph import upload_file
+from pyrogram.types import CallbackQuery
 import requests 
 import lyricsgenius
-from pyrogram.types import CallbackQuery
+
 
 
 
@@ -25,7 +26,7 @@ async def start_message(bot, message):
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
-           InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", url="https://t.me/Tg_gabdnlaxy"),
+           InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
@@ -36,18 +37,14 @@ async def start_message(bot, message):
            )
        )
 
-# Commands----------------
+# Callback----------------
 
-@Client.on_message(filters.private & filters.command("help"))
-async def help(bot: Client, message: Message):
-    await message.reply_text(
-        text="⍟─────[ᴄᴏᴍᴍ]─────⍟\n🔻**ᴍʏ ғᴜᴛᴜʀᴇs**🔻\n\n🖼️➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- Just send me the **Sticker** I would reply with it's Id.\n[🗑](https://telegra.ph/file/738a362ee817361bbacd6.jpg)➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - I Can Delete A **Service message** like join left and more,add me your group and promote it.\n📜➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ** - Send me any **Photo** I'll Upload it into Telegra.ph\n🔎➥ You Can search **YouTube** videos in **nline Mode** | copy this and paste it `@HTGToolBot`\nOr\nsearch YT videos in this command👉🏻 /search\nEg : `/search bilever`\n🔰➥ /json - Reply To Any Message To Get Json\n📹➥🎵⍟ **Mp4** to **Mp3Conveter** - Send a **Video** for converting to **Audio**.\n\n🎼➥ /lyric - Send me a **Song name** I give you a Lyrics.\nEg: `/lyric beggin`\n🎵➥ /s - To **download** audio songs from **YouTube**,You can use this in group.\nEg : `/s Believer`\n📹➥ /v - To **download Video** from **YouTube**, video downloading is very slowly pls wait it.\n⚫➥ **ᴛɪᴋᴛᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅ** - Send me **Tiktok** Video **Url** here\n💱➥ **Gᴏᴏɢʟᴇ ᴛʀᴀɴsʟᴀᴛᴏʀ** - You can use me in group's in this command👉🏻 /tr first add me in group.\nClick /list to find your language.\nEg: reply to /tr en 👈🏼\n🕹️➥ **ғᴜɴ** - Click /fun to get fun commands\n\n🆔➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n1. Send any message to get **your ID**.\n2. Forward any message from any user/bot/channel or anonymous admins to get ID.\n3. Add in group / channel to get ID.\n4. **Use /id command:**\n- in private: To get ID through username\n- in group/channel: To get ID of that chat.\n5. **Your DC**❓ - Click /dc to get your DC.\n\n🆎 /about - Know me 🙋\n⍟─────────────⍟",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
-
+@Hydrix.on_callback_query()
+async def hydrix(bot, msg: CallbackQuery):
+    if msg.data == "help":
+        await msg.message.edit(
+            text =f""" Hello {msg.from_user.mention} Help me"""
+        )
 
 # About--------------------
 
