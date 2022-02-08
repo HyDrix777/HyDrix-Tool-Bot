@@ -1,16 +1,15 @@
 from pyrogram import filters, Client
-import admin_check
-import admin_fliter
 
 
 
-@Client.on_message(filters.command(["pin"]) & admin_fliter)
+
+@Client.on_message(filters.command(["pin"]))
 async def pin(_, message: Import.Msg):
     if not message.reply_to_message:
         return
     await message.reply_to_message.pin()
 
-@Client.on_message(filters.command(["unpin"]) & admin_fliter)
+@Client.on_message(filters.command(["unpin"]))
 async def unpin(_, message: Import.Msg):
     if not message.reply_to_message:
         return
