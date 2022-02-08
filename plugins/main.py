@@ -78,7 +78,7 @@ async def fun(bot: Client, message: Message):
 
 # Sticker id-----------------------
 
-@Client.on_message(filters.private & filters.sticker("sticker"))
+@Client.on_message(filters.private & filters.sticker(["sticker"]))
 async def stickers(_, message):
     if message.reply_to_message.sticker:
        await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
@@ -146,11 +146,3 @@ async def lrsearch(_, message: Message):
 **__Lyrics:__**
 {S.lyrics}"""
     await m.edit(xxx)
-
-
-@Client.on_message(filters.command(["stickerid"]))
-async def stickerid(bot, message):   
-    if message.reply_to_message.sticker:
-       await message.reply(f"Sticker ID is \n <code>{message.reply_to_message.sticker.file_id}</code>\n\nUnique ID is\n\n<code>{message.reply_to_message.sticker.file_unique_id}</code>")
-    else: 
-       await message.reply("Oops !! Not a sticker file")
