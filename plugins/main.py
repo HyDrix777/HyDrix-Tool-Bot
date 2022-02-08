@@ -55,7 +55,7 @@ async def help(bot: Client, message: Message):
 @Client.on_message(filters.private & filters.command("about"))
 async def about(bot: Client, message: Message):
     await message.reply_text(
-        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python 3](https://python.org/)\n╰───────────⍟",
+        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻 **Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢 **Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥 **Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡 **Sᴇʀᴠᴇʀ** : [Heroku](https://Heroku.com)\n🥭 **Dᴀᴛᴀʙᴀsᴇ** : [Mᴀɴɢᴏ ᴅʙ](https://account.mongodb.com)\n├🔣 **Language** : [Python 3](https://python.org/)\n╰───────────⍟",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
