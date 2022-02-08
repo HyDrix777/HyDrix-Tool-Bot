@@ -14,7 +14,7 @@ yt-dlp
 googletrans==3.1.0a0
 gtts
 aiohttp==3.7.4
-imdbpy
 aiofiles
-wget
-
+imdbpy
+pyTelegramBotAPI
+python-decouple==3.3
