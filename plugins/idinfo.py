@@ -25,7 +25,21 @@ async def info(bot, hydrix):
 """
     await hydrix.reply_text(text=text)
 
+# Group info
 
+@Client.on_message(filters.group("ginfo"))
+async def ginfo(bot, hydrix):
+    text = f"""
+╭─────[ɢ-ɪɴғᴏ]────〄
+├⍟ **Fɪʀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.first_name}
+├⍟ **Usᴇʀɴᴀᴍᴇ** : @{hydrix.from_user.username}
+├⍟ **Usᴇʀ ɪᴅ** : `{hydrix.from_user.id}`
+├⍟ **Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
+├⍟ **Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** - @{hydrix.chat.username}
+├⍟ **Gʀᴏᴜᴘ ɪᴅ** - {hydrix.chat.id}
+╰───────────〄
+"""
+    await hydrix.reply_text(text=text)
 
 
 # id finder
