@@ -1,8 +1,8 @@
 import asyncio
-from rose import app2
+from pyrogram import app2
 from pyrogram.errors import UserAlreadyParticipant, FloodWait
-from rose import app 
-from rose.modules.admin import adminsOnly 
+from pyrogram import app 
+from pyrogram.modules.admin import adminsOnly 
 from pyrogram.types import  Message
 from pyrogram import filters
 
