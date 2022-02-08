@@ -35,8 +35,8 @@ async def ginfo(bot, hydrix):
 ├⍟ **Usᴇʀɴᴀᴍᴇ** : @{hydrix.from_user.username}
 ├⍟ **Usᴇʀ ɪᴅ** : `{hydrix.from_user.id}`
 ├⍟ **Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
-├⍟ **Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** - @{hydrix.chat.username}
-├⍟ **Gʀᴏᴜᴘ ɪᴅ** - {hydrix.chat.id}
+├⍟ **Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
+├⍟ **Gʀᴏᴜᴘ ɪᴅ** : {hydrix.chat.id}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
