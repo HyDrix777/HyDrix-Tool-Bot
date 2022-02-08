@@ -78,9 +78,8 @@ async def fun(bot: Client, message: Message):
 
 # Sticker id-----------------------
 
-@Client.on_message(filters.private & filters.command(["sticker"]))
+@Client.on_message(filters.private & filters.sticker)
 async def stickers(_, message):
-    if message.reply_to_message.sticker:
        await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
 
