@@ -96,8 +96,10 @@ async def goodbye(bot, message):
 
 # Telegraph---------------------
 
-@Client.on_message(filters.private & filters.photo)
+@Client.on_message(filters.command(["tgraph"]))
 async def getimage(client, message):
+    replied = message.reply_to_message
+    if not replied:
     location = "./FILES"
     if not os.path.isdir(location):
         os.makedirs(location)
