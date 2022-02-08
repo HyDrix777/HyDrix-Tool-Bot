@@ -1,5 +1,5 @@
 from pyrogram import filters, Client
-from pyrogram import admin_check, extract_user, admin_fliter
+from Client import admin_check, extract_user, admin_fliter
 
 @Client.on_message(filters.command(["pin"]) & admin_fliter)
 async def pin(_, message: Import.Msg):
