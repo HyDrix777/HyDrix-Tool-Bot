@@ -1,11 +1,9 @@
 from pyrogram import filters
 from pyrogram import Client
-from pyrogram.core.decorators.errors import capture_err
-from pyrogram.utils.functions import make_carbon
+from pyrogram import make_carbon
 
 
 @Client.on_message(filters.command("carbon"))
-@capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
