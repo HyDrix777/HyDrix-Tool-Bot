@@ -27,7 +27,7 @@ async def info(bot, hydrix):
 
 # Group info
 
-@Client.on_message(filters.group("ginfo"))
+@Client.on_message(filters.group & filters.command("ginfo"))
 async def ginfo(bot, hydrix):
     text = f"""
 ╭─────[ɢ-ɪɴғᴏ]────〄
