@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram import Client
-from pyrogram import make_carbon
-from pyrogram import capture_err
+import make_carbon
+
 
 @Client.on_message(filters.command("carbon"))
 @capture_err
