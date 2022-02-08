@@ -1,5 +1,4 @@
 from pyrogram import filters
-from rose import app
 from rose.core.decorators.errors import capture_err
 from rose.utils.functions import make_carbon
 
