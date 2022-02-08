@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram import Client
-import make_carbon
-import capture_err
+from import make_carbon
+from import capture_err
 
 
 
