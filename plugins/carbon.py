@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram import Client
-from pyrogram import make_carbon
+from hydrix import make_carbon
 
 
 @Client.on_message(filters.command("carbon"))
