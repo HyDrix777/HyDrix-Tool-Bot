@@ -39,7 +39,7 @@ async def start_message(bot, message):
 
 # Callback----------------
 
-@Hydrix.on_callback_query()
+@Client.on_callback_query()
 async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "help":
         await msg.message.edit(
