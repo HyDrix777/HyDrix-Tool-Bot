@@ -1,5 +1,5 @@
 from pyrogram import filters
-from rose import app
+from pyrogram import app
 
 
 @Client.on_message(filters.command("carbon"))
