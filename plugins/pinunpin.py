@@ -1,6 +1,5 @@
 from pyrogram import filters, Client
-COMMAND_HAND_LER = COMMAND_HAND_LER
-from DonLee_Robot_V2.Admins import admin_check, extract_user, admin_fliter
+from Client.Admins import admin_check, extract_user, admin_fliter
 
 @Client.on_message(filters.command(["pin"], COMMAND_HAND_LER) & admin_fliter)
 async def pin(_, message: Import.Msg):
