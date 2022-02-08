@@ -3,7 +3,7 @@ from pyrogram import filters, Client
 from telegraph import upload_file
 
 @Client.on_message(filters.command(["tgraph"]))
-async def telegraph(client, message: Import.Msg):
+async def tgraph(client, message):
     replied = message.reply_to_message
     if not replied:
         await message.reply("Reply to a supported media file")
