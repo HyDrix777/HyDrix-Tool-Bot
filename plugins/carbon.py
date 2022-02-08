@@ -1,5 +1,5 @@
 from pyrogram import filters
-from pyrogram import app
+from pyrogram import Client
 
 
 @Client.on_message(filters.command("carbon"))
