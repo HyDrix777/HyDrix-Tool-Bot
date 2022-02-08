@@ -1,6 +1,6 @@
 from decouple import config
 import telebot,requests,math
-from icons import icons
+import icons 
 
 
 api_address = config('1231f5b50287f809be66858d32001485')
