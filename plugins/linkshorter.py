@@ -18,7 +18,7 @@ async def link_handler(bot, message):
 
 async def get_shortlink(link):
     url = 'https://shortzon.com/api'
-    params = {'api':'url', link}
+    params = {'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
