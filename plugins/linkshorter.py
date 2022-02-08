@@ -3,7 +3,10 @@ import aiohttp
 from pyrogram import Client, filters
 
 
-    
+API_KEY = environ.get('API_KEY', '095c9785-5ee2-4b70-bb20-017dfb30fa10')
+
+             workers=50,
+             sleep_threshold=10)
 
 
 @Client.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
@@ -18,7 +21,7 @@ async def link_handler(bot, message):
 
 async def get_shortlink(link):
     url = 'https://shortzon.com/api'
-    
+    params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
