@@ -1,5 +1,4 @@
-from pyrogram import filters, Client as DonLee_Robot_V2
-from DonLee_Robot_V2 import Config, Import
+from pyrogram import filters, Client
 COMMAND_HAND_LER = Config.COMMAND_HAND_LER
 from DonLee_Robot_V2.Admins import admin_check, extract_user, admin_fliter
 
