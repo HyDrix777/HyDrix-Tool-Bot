@@ -37,7 +37,7 @@ async def ginfo(bot, hydrix):
 ├⍟ **Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
 ├⍟ **Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 ├⍟ **Gʀᴏᴜᴘ ɪᴅ** : {hydrix.chat.id}
-  Scam : {hydrix.chat.megagroup}
+  Scam : {hydrix.chat.bio}
 ╰───────────〄
 """
     await hydrix.reply_text(text=text)
