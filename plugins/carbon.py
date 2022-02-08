@@ -1,10 +1,8 @@
 from pyrogram import filters
-from rose.core.decorators.errors import capture_err
-from rose.utils.functions import make_carbon
+from rose import app
 
 
 @Client.on_message(filters.command("carbon"))
-@capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
