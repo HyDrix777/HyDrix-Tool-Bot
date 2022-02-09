@@ -27,7 +27,7 @@ async def start_message(bot, message):
 
 
     await message.reply_text(
-        text=f"✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention} \n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
+        text="✨ ʜᴇʟʟᴏ ᴛʜᴇʀᴇ !\n\n💭 ɪ'ᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ** [🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -51,9 +51,9 @@ async def hydrix(bot, msg: CallbackQuery):
             text ="""Hello"""
         )
 
-    elif msg.data == "star":
+    elif msg.data == "srt":
         await msg.message.edit(
-            text=f"✨**Wᴇʟᴄᴏᴍᴇ** {message.from_user.mention}\n💭I ᴀᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**[🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
+            text=f"✨ ʜᴇʟʟᴏ ᴛʜᴇʀᴇ !\n\n💭 ɪ'ᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ** [🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
                ],[
@@ -72,14 +72,14 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥 **Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="star")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
             )
         )
 
     elif msg.data == "help":
         await msg.message.edit(
-            text=f"Hey {msg.from_user.mention}\nI Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules",
+            text=f"Hey {msg.from_user.mention}\n\nI Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("Sticker", callback_data="stck"),
                InlineKeyboardButton("Clean SM", callback_data="clsm"),
@@ -97,7 +97,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("Fun", callback_data="Fns"),
                InlineKeyboardButton("ID's", callback_data="ids")
                ],[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="star")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
             )
         )
