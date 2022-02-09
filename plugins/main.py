@@ -81,21 +81,21 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text=f"Hey {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/bad3726d078ae2d72468c.jpg)I Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("Sticker", callback_data="stck"),
-               InlineKeyboardButton("Clean SM", callback_data="clsm"),
-               InlineKeyboardButton("Telegraph Up", callback_data="tgph")
+               InlineKeyboardButton("sᴛɪᴄᴋᴇʀ", callback_data="stck"),
+               InlineKeyboardButton("ᴄʟᴇᴀɴ sᴍ", callback_data="clsm"),
+               InlineKeyboardButton("ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘ", callback_data="tgph")
                ],[
-               InlineKeyboardButton("Search Yt", callback_data="srch"),
-               InlineKeyboardButton("Jason", callback_data="jsn"),
-               InlineKeyboardButton("Mp4toMp3", callback_data="conv")
+               InlineKeyboardButton("sᴇᴀʀᴄʜ ʏᴛ", callback_data="srch"),
+               InlineKeyboardButton("ᴊsᴏɴ", callback_data="jsn"),
+               InlineKeyboardButton("ᴍᴘ𝟺 ᴛᴏ ᴍᴘ𝟹", callback_data="conv")
                ],[
-               InlineKeyboardButton("Lyrics", callback_data="lyrc"),
-               InlineKeyboardButton("Song Dl", callback_data="sdl"),
-               InlineKeyboardButton("Video Dl", callback_data="vdl")
+               InlineKeyboardButton("ʟʏʀɪᴄs ᴅʟ", callback_data="lyrc"),
+               InlineKeyboardButton("sᴏɴɢ ᴅʟ", callback_data="sdl"),
+               InlineKeyboardButton("ᴠɪᴅᴇᴏ ᴅʟ", callback_data="vdl")
                ],[
-               InlineKeyboardButton("GTranslator", callback_data="gtra"),
-               InlineKeyboardButton("Fun", callback_data="Fns"),
-               InlineKeyboardButton("ID's", callback_data="ids")
+               InlineKeyboardButton("ɢᴛʀᴀɴsʟᴀᴛᴏʀ", callback_data="gtra"),
+               InlineKeyboardButton("ғᴜɴ", callback_data="Fns"),
+               InlineKeyboardButton("ɪᴅ's", callback_data="ids")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
