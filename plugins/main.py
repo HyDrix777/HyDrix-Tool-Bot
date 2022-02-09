@@ -98,7 +98,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🗑➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -107,7 +107,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📜➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ** - __Send me any Photo I'll Upload it into__ Telegra.ph",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -116,7 +116,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🔎➥ /search - __search **YouTube** videos__\n\nEg : `/search Alen Walker`",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -125,7 +125,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📑➥ /json - __Reply To Any Message To Get Json__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -134,7 +134,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📹2🎵➥ **Mp4 to Mp3Conveter** - __Send a Video for converting to Audio.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -143,7 +143,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🎼➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -152,7 +152,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🎵➥ /s - __To download audio songs from YouTube,You can use this in group.__\n\nEg: `/s beggin`",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -161,7 +161,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📹➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n\nEg: `/v alone`",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -170,7 +170,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="**GpyTranslateRoBot**\n\n__GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to few Languages from any other language in world.__\n\n__GpyTranslatorRoBot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use GpyTranslatorRoBot in his private chat & Groups.__\n\n**How To Use**\nClick /list __to find your language code__.\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or pm",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -179,7 +179,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🕹️➥ **ғᴜɴ** - __Click__ /fun __to get fun commands__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
@@ -188,7 +188,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🆔➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. get Your DC❓ - Click /dc to get your DC.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
