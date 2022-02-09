@@ -104,7 +104,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "stck":
         await msg.message.edit(
-            text="🖼️➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __Just send me the Sticker I would reply with it's Id__.",
+            text="[🖼️](https://telegra.ph/file/4080224664799812688b6.jpg)➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __Just send me the Sticker I would reply with it's Id__.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -113,7 +113,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "clsm":
         await msg.message.edit(
-            text="🗑➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__",
+            text="[🗑](https://telegra.ph/file/77451cc75afc43a0cf739.jpg)➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -185,7 +185,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gtra":
         await msg.message.edit(
-            text="**GpyTranslateRoBot**\n\n__GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to few Languages from any other language in world.__\n\n__GpyTranslatorRoBot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use GpyTranslatorRoBot in his private chat & Groups.__\n\n**How To Use**\nClick /list __to find your language code__.\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or pm",
+            text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)**GpyTranslateRoBot**\n\n__GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to few Languages from any other language in world.__\n\n__GpyTranslatorRoBot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use GpyTranslatorRoBot in his private chat & Groups.__\n\n**How To Use**\nClick /list __to find your language code__.\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or pm",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -203,7 +203,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "ids":
         await msg.message.edit(
-            text="🆔➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. get Your DC❓ - Click /dc to get your DC.",
+            text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. get Your DC❓ - Click /dc to get your DC.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
