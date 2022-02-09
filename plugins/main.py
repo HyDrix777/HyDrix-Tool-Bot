@@ -94,7 +94,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-    elif msg.data == stck":
+    elif msg.data == "stck":
         await msg.message.edit(
             text="🖼️➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __Just send me the Sticker I would reply with it's Id.__"
             reply_markup=InlineKeyboardMarkup([[
