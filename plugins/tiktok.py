@@ -15,25 +15,11 @@ DL_BUTTONS=[
         InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
         InlineKeyboardButton('🌠 Watermark', callback_data='wm'),
     ],
-    [InlineKeyboardButton('🔊 Audio', callback_data='nowm')],
+    [InlineKeyboardButton('no Wartmk', callback_data='nowm')],
 ]
 
 
 
-# Helpers
-# Thanks to FridayUB
-async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
-  args = shlex.split(cmd)
-  process = await asyncio.create_subprocess_exec(
-      *args, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
-  )
-  stdout, stderr = await process.communicate()
-  return (
-      stdout.decode("utf-8", "replace").strip(),
-      stderr.decode("utf-8", "replace").strip(),
-      process.returncode,
-      process.pid,
-  )
 
 
 # Downloader for tiktok
