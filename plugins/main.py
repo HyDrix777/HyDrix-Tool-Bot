@@ -60,15 +60,6 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-    elif msg.data == "start":
-        await msg.message.edit(
-            text=f"⍟─────[ᴄᴏᴍᴍ]─────⍟\nHello {msg.from_user.mention} Theis are my help session.\n\n🖼️➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- Just send me the Sticker I would reply with it's Id.\n[🗑](https://telegra.ph/file/9eeb97b97cc859855bfc0.jpg)➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - I Can Delete A Service message like join left and more,add me your group and promote it.\n📜➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ** - Send me any Photo I'll Upload it into Telegra.ph\n🔎➥ /search - search YouTube videos\nEg : `/search Alen Walker`\n🔰➥ /json - Reply To Any Message To Get Json\n📹➥🎵⍟ **Mp4 to Mp3Conveter** - Send a Video for converting to Audio.\n\n🎼➥ /lyric - Send me a Song name I give you a Lyrics.\nEg: `/lyric beggin`\n🎵➥ /s - To download audio songs from YouTube,You can use this in group.\nEg : `/s Believer`\n📹➥ /v - To download Video from YouTube, video downloading is very slowly pls wait it.\n💱➥ **Gᴏᴏɢʟᴇ ᴛʀᴀɴsʟᴀᴛᴏʀ** - You can use me in group's in this command👉🏻 /tr first add me in group.\nClick /list to find your language.\nEg: reply to /tr en 👈🏼\n🕹️➥ **ғᴜɴ** - Click /fun to get fun commands\n\n🆔➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n1. Send any message to get your ID.\n2. Forward any message from any user/bot/channel or anonymous admins to get ID.\n3. Add in group / channel to get ID.\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat.\n5. Your DC❓ - Click /dc to get your DC.\n\n🆎 /about - **Know me** 🙋\n⍟─────────────⍟",
-            reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
-               ]]
-            )
-        )
-
     elif msg.data == "help":
         await msg.message.edit(
             text=f"Hey {msg.from_user.mention}\nI Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules",
@@ -102,6 +93,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
     elif msg.data == "clsm":
         await msg.message.edit(
             text="🗑➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__"
@@ -110,6 +102,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
     elif msg.data == "tgph":
         await msg.message.edit(
             text="📜➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ** - __Send me any Photo I'll Upload it into Telegra.ph__"
@@ -118,6 +111,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
     elif msg.data == "srch":
         await msg.message.edit(
             text="🔎➥ /search - __search YouTube videos__,\n\nEg : `/search Alen Walker`"
@@ -126,6 +120,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
     elif msg.data == "jsn":
         await msg.message.edit(
             text="📝➥ /json - __Reply To Any Message To Get Json__"
@@ -134,6 +129,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "conv":
         await msg.message.edit(
             text="📹2🎵➥ **Mp4 to Mp3Conveter** - __Send a Video for converting to Audio.__"
@@ -142,6 +138,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "lyrc":
         await msg.message.edit(
             text="🎼➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`"
@@ -150,6 +147,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "sdl":
         await msg.message.edit(
             text="🎵📥➥ /s - __To download audio songs from YouTube,You can use this in group.__\n\nEg : `/s Believer`"
@@ -158,6 +156,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "vdl":
         await msg.message.edit(
             text="📹📥➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n\nEg : `/v Believer`"
@@ -166,6 +165,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "gtra":
         await msg.message.edit(
             text="💱➥ **Gᴏᴏɢʟᴇ ᴛʀᴀɴsʟᴀᴛᴏʀ** - __You can me replay to text in group's in this commande__👉🏻 /tr ,__first add me in group.__\nClick /list __to find your language Code.__\n\nEg: reply to /tr en <text>"
@@ -174,6 +174,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "Fns":
         await msg.message.edit(
             text="⍟────Fun────⍟\n🔻**Here is the help for the Fun module**:\n➥ /roll : Roll a dice\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n➥ /run : reply a random string from an array of replie.\n➥ /lnm : find your lucky number.\n ➥ /love : Love 😘\n➥ /toss : Tosses A coin\n➥ /shrug : get shrug XD\n➥ /table : get flip/unflip :v\n➥ /decide : \Randomly answers yes/no/maybe.\n⍟───────────⍟"
@@ -182,6 +183,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
    elif msg.data == "ids":
         await msg.message.edit(
             text="🆔➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n1. Send any message to get your ID.\n2. Forward any message from any user/bot/channel or anonymous admins to get ID.\n3. Add in group / channel to get ID.\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat.\n5. Your DC❓ - Click /dc to get your DC."
