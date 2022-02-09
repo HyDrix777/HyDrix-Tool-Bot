@@ -30,7 +30,7 @@ async def start_message(bot, message):
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
-           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", url="https://t.me/Hydrix777")
+           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")
            ],[
            InlineKeyboardButton("🏃 ᴇxɪᴛ", url="https://t.me/MusicdGalabfdbxy_Dl")
            ]]
@@ -46,17 +46,13 @@ async def hydrix(bot, msg: CallbackQuery):
             text =f"""⍟─────[ᴄᴏᴍᴍ]─────⍟\nHello {msg.from_user.mention} Theis are my help session.\n\n🖼️➥ sᴛɪᴄᴋᴇʀ ɪᴅ❓- Just send me the Sticker I would reply with it's Id.\n[🗑](https://telegra.ph/file/738a362ee817361bbacd6.jpg)➥ ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ - I Can Delete A Service message like join left and more,add me your group and promote it.\n📜➥ ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ - Send me any Photo I'll Upload it into Telegra.ph\n🔎➥ You Can search YouTube videos in nline Mode | copy this and paste it @HTGToolBot\nOr\nsearch YT videos in this command👉🏻 /search\nEg : /search bilever\n🔰➥ /json - Reply To Any Message To Get Json\n📹➥🎵⍟ Mp4 to Mp3Conveter - Send a Video for converting to Audio.\n\n🎼➥ /lyric - Send me a Song name I give you a Lyrics.\nEg: /lyric beggin\n🎵➥ /s - To download audio songs from YouTube,You can use this in group.\nEg : /s Believer\n📹➥ /v - To download Video from YouTube, video downloading is very slowly pls wait it.\n⚫➥ ᴛɪᴋᴛᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅ - Send me Tiktok Video Url here\n💱➥ Gᴏᴏɢʟᴇ ᴛʀᴀɴsʟᴀᴛᴏʀ - You can use me in group's in this command👉🏻 /tr first add me in group.\nClick /list to find your language.\nEg: reply to /tr en 👈🏼\n🕹️➥ ғᴜɴ - Click /fun to get fun commands\n\n🆔➥ ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ\n1. Send any message to get your ID.\n2. Forward any message from any user/bot/channel or anonymous admins to get ID.\n3. Add in group / channel to get ID.\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat.\n5. Your DC❓ - Click /dc to get your DC.\n\n🆎 /about - Know me 🙋\n⍟─────────────⍟"""
         )
 
-# Callback About--------------------
+    elif msg.data == "about":
+        await msg.message.edit(
+            text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
 
-@Client.on_message(filters.private & filters.command("about"))
-async def about(bot: Client, message: Message):
-    await message.reply_text(
-        text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
+
+
+
 
 
 # Fun Comm-----------------
