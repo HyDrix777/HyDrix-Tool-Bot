@@ -49,13 +49,11 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "about":
         await msg.message.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖**Mʏ Nᴀᴍᴇ:** [Tg Tool Bot](https://t.me/HTGToolBot)\n├🧑‍💻**Mʏ Dᴇᴠ:** [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢**Cʜᴀɴɴᴇʟ:** [TGG](https://t.me/Tg_Galaxy)\n├👥**Gʀᴏᴜᴘ:** [MG](https://t.me/Music_Galaxy_Dl)\n├📡**Sᴇʀᴠᴇʀ:** [Heroku](https://Heroku.com)\n├🔣**Language:** [Python](https://python.org/)\n╰───────────⍟",
-
-
-
-
-
-
-# Fun Comm-----------------
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("GP", url="https://t.me/MusicdGalabfdbxy_Dl")
+               ]]
+            )
+        )
 
 @Client.on_message(filters.command("fun"))
 async def fun(bot: Client, message: Message):
