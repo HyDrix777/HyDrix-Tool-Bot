@@ -13,7 +13,7 @@ downloads = './downloads/{}/'
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl"),
-        InlineKeyboardButton('🌠 Watermark', callback_data='wm')
+        InlineKeyboardButton('🌠 Watermark', callback_data='wm'),
     ],
     [InlineKeyboardButton('🔊 Audio', callback_data='nowm')],
 ]
