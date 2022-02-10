@@ -5,6 +5,7 @@ from pyrogram import Client, filters
 
 
 @Client.on_message(filters.command("carbon"))
+@capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
@@ -27,3 +28,20 @@ async def make_carbon(code):
         image = BytesIO(await resp.read())
     image.name = "carbon.png"
     return image
+
+
+def capture_err(func):
+    @wraps(func)
+    async def capture(client, message, *args, **kwargs):
+        try:
+            return await func(client, message, *args, **kwargs)
+        except ChatWriteForbidden:
+            await app.leave_chat(message.chat.id)
+            return
+        except Exception as err:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            errors = traceback.format_exception(
+                etype=exc_type,
+                value=exc_obj,
+                tb=exc_tb,
+            )
