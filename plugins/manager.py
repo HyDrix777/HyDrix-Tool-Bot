@@ -8,8 +8,8 @@ import json
 import subprocess
 
 
-sudo_users = 1520625615 , 1871813121
-owner_id = [1871813121]
+sudo_users = 5013387325 , 784589736
+owner_id = [5013387325]
 
 
 
