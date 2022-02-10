@@ -1,7 +1,10 @@
 from pyrogram import Client, filters
+from plugins.utils.functions import make_carbon
+from plugins.core.decorators.errors import capture_err
 
 
 @Client.on_message(filters.command("carbon"))
+@capture_err
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
