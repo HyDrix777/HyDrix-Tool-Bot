@@ -281,7 +281,9 @@ async def goodbye(bot, message):
 
 @Client.on_message(filters.new_chat_members)
 async def welcome(bot, message):
- await message.delete() 
+ await message.reply_text( 
+     text=f"Hey, {message.from_user.first_name} Welcome to {message.chat.title} group.",
+
 
 # Clean urls commands---------
 
