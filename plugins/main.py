@@ -34,7 +34,7 @@ async def start_message(bot, message):
            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
-           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")
+           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
            InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
            ]]
            )
