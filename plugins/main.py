@@ -283,6 +283,11 @@ async def delete(bot,message):
 async def goodbye(bot, message):
  await message.delete()
 
+# Clean urls commands---------
+
+@Client.on_message(filters.regex("http") | filters.regex("t.me") | filters.regex("youtu.be") | filters.regex("com") | filters.regex("https") | filters.regex("/" ))
+async def delete(bot,message):
+ await message.delete()
 
 # Telegraph---------------------
 
