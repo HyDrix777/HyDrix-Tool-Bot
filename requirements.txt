@@ -16,4 +16,5 @@ gtts
 aiohttp==3.7.4
 aiofiles
 imdbpy
-pillow
+wget==3.2
+psutil==5.9.0
