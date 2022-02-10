@@ -227,7 +227,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📇 /paste [text] - Paste The Given Text On Pasty",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
