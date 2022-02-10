@@ -3,7 +3,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 import os
 import random
 from random import choice
-
 import math
 from PIL import Image, ImageDraw, ImageFont
 
