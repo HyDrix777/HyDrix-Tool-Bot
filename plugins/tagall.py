@@ -4,7 +4,7 @@ from telethon import Button
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
-from pyrogram import Client, filters
+from bot import Client, filters
 
 
 
