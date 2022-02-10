@@ -279,6 +279,9 @@ async def delete(bot,message):
 async def goodbye(bot, message):
  await message.delete()
 
+@Client.on_message(filters.new_chat_members)
+async def welcome(bot, message):
+ await message.delete() 
 
 # Clean urls commands---------
 
