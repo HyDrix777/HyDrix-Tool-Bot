@@ -4,7 +4,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Media
 import time
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 import logging
-from info import IMDB_TEMPLATE
+
 
 
 
@@ -52,7 +52,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
         ]
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
-        caption = IMDB_TEMPLATE.format(
+        caption = format(
             title = imdb['title'],
             votes = imdb['votes'],
             aka = imdb["aka"],
