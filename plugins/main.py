@@ -162,7 +162,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "lyrc":
         await msg.message.edit(
-            text="🎼➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`",
+            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg)➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
