@@ -9,7 +9,7 @@ async def inline(client: Client, query: InlineQuery):
     answers = []
     search_query = query.query.lower().strip().rstrip()
 
-    if search_query == "":
+    if search_query == "50":
         await client.answer_inline_query(
             query.id,
             results=answers,
