@@ -144,7 +144,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "jsn":
         await msg.message.edit(
-            text="📑➥ /json - __Reply To Any Message To Get Json__",
+            text="[📑](https://telegra.ph/file/d0717d29431518ff9dc21.jpg)➥ /json - __Reply To Any Message To Get Json__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
