@@ -97,7 +97,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ғᴜɴ", callback_data="Fns"),
                InlineKeyboardButton("ɪɴғᴏ", callback_data="ids")
                ],[
-               InlineKeyboardButton("IMDB", callback_data="imdb"),
+               InlineKeyboardButton("ʟɪɴᴋs ᴄʟᴇᴀʀ", callback_data="inkc"),
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
@@ -214,11 +214,11 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-    elif msg.data == "imdb":
+    elif msg.data == "inkc":
         await msg.message.edit(
-            text="Soon....",
+            text="__A Bot To remove unwanted https ,http ,t.me , links on **Group** spamming by users.__\njust add me to group and promote.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
