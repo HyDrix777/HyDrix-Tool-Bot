@@ -7,7 +7,6 @@ requests==2.26.0
 lyricsgenius
 youtube_dl
 youtube_search_python
-youtube_search
 ffmpeg-python
 ffmpeg
 yt-dlp
@@ -17,3 +16,4 @@ aiohttp==3.7.4
 aiofiles
 cryptg
 py-youtube
+youtube_search
