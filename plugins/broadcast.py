@@ -1,7 +1,6 @@
-from pyrogram import Client, filters
+from pyrogram import Client, filters, broadcast_messages
 import datetime
 import time
-from utils import broadcast_messages
 import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user & filters.reply)
