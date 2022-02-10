@@ -1,13 +1,10 @@
 from pyrogram import Client, filters
 import datetime
 import time
-from database.users_chats_db import db
-from info import ADMINS
 from utils import broadcast_messages
 import asyncio
         
-@Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
-# https://t.me/JosProjects
+@Client.on_message(filters.command("broadcast") & filters.user & filters.reply)
 async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
@@ -23,7 +20,7 @@ async def verupikkals(bot, message):
 
     success = 0
     async for user in users:
-        pti, sh = await broadcast_messages(int(user['id']), b_msg)
+        pti, sh = await broadcast_messages(int(user['ids']), b_msg)
         if pti:
             success += 1
         elif pti == False:
