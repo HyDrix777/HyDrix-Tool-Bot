@@ -97,6 +97,10 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ғᴜɴ", callback_data="Fns"),
                InlineKeyboardButton("ɪᴅ's", callback_data="ids")
                ],[
+               InlineKeyboardButton("IMDB", callback_data="imdb"),
+               InlineKeyboardButton("soon..", callback_data="soon"),
+               InlineKeyboardButton("soon..", callback_data="soon")
+               ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
             )
@@ -206,6 +210,15 @@ async def hydrix(bot, msg: CallbackQuery):
             text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. get Your DC❓ - Click /dc to get your DC.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "imdb":
+        await msg.message.edit(
+            text="Soon....",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start")
                ]]
             )
         )
