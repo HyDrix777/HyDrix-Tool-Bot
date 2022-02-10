@@ -234,7 +234,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "tts":
         await msg.message.edit(
-            text="🗣️➥ /tts - __Reply To Any Text Message i will Convert As Audio__",
+            text="[🗣️](https://telegra.ph/file/f1cf0da2397558752fba8.jpg)➥ /tts - __Reply To Any Text Message i will Convert As Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
