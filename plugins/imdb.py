@@ -16,7 +16,7 @@ async def imdb_search(client, message):
     if ' ' in message.text:
         k = await message.reply('Searching ImDB')
         r, title = message.text.split(None, 1)
-        movies = await get_poster(title, bulk=True)
+        movies = await get_poster(title, bulk=false)
         if not movies:
             return await message.reply("No results Found")
         btn = [
