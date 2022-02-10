@@ -286,7 +286,7 @@ async def goodbye(bot, message):
 
 # Clean urls commands---------
 
-@Client.on_message(filters.group & filters.regex("http") | filters.regex("t.me") | filters.regex("youtu.be") | filters.regex("com") | filters.regex("https") | filters.regex("/" ))
+@Client.on_message(filters.group & filters.regex("http") | filters.regex("t.me") | filters.regex("com") | filters.regex("https"))
 async def delete(bot, message):
  await message.delete()
 
