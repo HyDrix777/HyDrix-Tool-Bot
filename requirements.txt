@@ -15,3 +15,4 @@ googletrans==3.1.0a0
 gtts
 aiohttp==3.7.4
 aiofiles
+cryptg
