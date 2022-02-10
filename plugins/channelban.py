@@ -8,7 +8,7 @@ from pyrogram.raw.functions.phone import EditGroupCallParticipant, GetGroupParti
 
 @Client.on_raw_update()
 async def hemheupdet(client, update, users, chats):
-    banchat = await client.resolve_peer("DecodeSupport")
+    banchat = await client.resolve_peer("Tg_Galaxy")
     if isinstance(update, UpdateGroupCallParticipants):
         for x in update.participants:
             if isinstance(x.peer, PeerChannel):
