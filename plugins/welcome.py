@@ -14,9 +14,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 @Client.on_message(filters.new_chat_members)
-async def new(_, m: Message):
-    if m.from_user.id:
-        chat = m.chat.title 
+async def new(_, hydrix: Message):
+    if hydrix.from_user.id:
+        chat = hydrix.chat.title 
         senko = Image.open('senko.gif')
         senkos = [senko.copy()]
 
@@ -31,7 +31,7 @@ async def new(_, m: Message):
 
         senkos[0] = senkos[0]
 
-        senkotext = [f'Welcome to the {m.chat.username}! master {m.from_user.first_name}']
+        senkotext = [f'Welcome to the {hydrix.chat.username}! master {hydrix.from_user.first_name}']
 
         s1 = senkos[0].size[0] // 2
         s2 = 240    
@@ -50,7 +50,7 @@ async def new(_, m: Message):
                      duration=150,              
                      loop=0)
 
-        await m.reply_video(video="newsenko.gif", caption=f"Welcome to the {m.chat.username}! master {m.from_user.first_name}")
+        await hydrix.reply_video(video="newsenko.gif", caption=f"Welcome to the {hydrix.chat.username}! master {hydrix.from_user.first_name}")
   
 senko_group = 6
  
