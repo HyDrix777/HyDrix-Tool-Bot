@@ -37,7 +37,7 @@ async def start_message(bot, message):
            InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
            InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")
            ],[
-           InlineKeyboardButton("🏃 ᴇxɪᴛ", url="https://t.me/MusicdGalabfdbxy_Dl")
+           InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
            ]]
            )
        )
@@ -63,7 +63,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton(text="🔎 sᴇᴀʀᴄʜ ʏᴛ", switch_inline_query_current_chat=""),
                InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")
                ],[
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", url="https://t.me/MusicdGalabfdbxy_Dl")
+               InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
                ]]
             )
         )
