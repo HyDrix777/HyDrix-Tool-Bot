@@ -99,7 +99,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("IMDB", callback_data="imdb"),
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
-               InlineKeyboardButton("soon..", callback_data="soon")
+               InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
@@ -226,6 +226,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "past":
         await msg.message.edit(
             text="📇 /paste [text] - Paste The Given Text On Pasty",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "tts":
+        await msg.message.edit(
+            text="🗣️➥ /tts - __Reply To Any Text Message i will Convert As Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
