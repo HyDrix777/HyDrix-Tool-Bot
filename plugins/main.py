@@ -241,14 +241,14 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-# Fun commands-------
 
-@Client.on_message(filters.command("fun"))
-async def fun(bot: Client, message: Message):
+
+@Client.on_message(filters.group & filters.command("help"))
+async def help(bot: Client, message: Message):
     await message.reply_text(
-        text="",
+        text="Contact me in PM for help!",
         reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
+           InlineKeyboardButton("Click me for help!", url="https://t.me/HTGToolBot")
            ]]
            )
        )
