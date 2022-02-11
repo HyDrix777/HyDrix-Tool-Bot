@@ -46,7 +46,7 @@ async def start_message(bot, message):
 async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "start":
         await msg.message.edit(
-            text ="""Hello"""
+            text ="""Sooon...."""
         )
 
     elif msg.data == "srt":
@@ -96,6 +96,10 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʟɪɴᴋs ᴄʟᴇᴀʀ", callback_data="inkc"),
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
+               ],[
+               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
