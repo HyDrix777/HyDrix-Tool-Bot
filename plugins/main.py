@@ -36,6 +36,8 @@ async def start_message(bot, message):
            ],[
            InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
            InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
+           ],[
+           InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bts")
            ]]
            )
        )
@@ -60,6 +62,8 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
                InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
+               ],[
+               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bts")
                ]]
             )
         )
@@ -237,6 +241,15 @@ async def hydrix(bot, msg: CallbackQuery):
             text="[🗣️](https://telegra.ph/file/f1cf0da2397558752fba8.jpg)➥ /tts - __Reply To Any Text Message i will Convert As Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+elif msg.data == "bts":
+        await msg.message.edit(
+            text="╭───────────〄\n├**Mʏ ʙᴏᴛs ʟɪsᴛ**📋\n│\n├[Stylish text bot](http://t.me/StylishText_X_Bot)",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
             )
         )
