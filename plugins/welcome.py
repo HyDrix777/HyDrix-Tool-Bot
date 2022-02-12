@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import Client, filters as Worker
 
-MENTION = "{}"  
+
 MESSAGE = "{} Welcome to {}!" 
 
 @Client.on_message(Worker.new_chat_members)
