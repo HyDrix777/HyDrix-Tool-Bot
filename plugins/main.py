@@ -37,7 +37,7 @@ async def start_message(bot, message):
            InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
            InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
            ],[
-           InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bts")
+           InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots")
            ]]
            )
        )
@@ -63,7 +63,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
                InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
                ],[
-               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bts")
+               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots")
                ]]
             )
         )
@@ -105,7 +105,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="str")
                ]]
             )
         )
@@ -245,9 +245,9 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-elif msg.data == "bts":
+    elif msg.data == "bots":
         await msg.message.edit(
-            text="╭───────────〄\n├**Mʏ ʙᴏᴛs ʟɪsᴛ**📋\n│\n├[Stylish text bot](http://t.me/StylishText_X_Bot)",
+            text="╭───────────〄\n├**Mʏ ʙᴏᴛs ʟɪsᴛ**📋\n│\n├[Stylish text bot](http://t.me/StylishText_X_Bot)\n│\n├[Youtube dl bot](http://t.me/YouTubeDownloader7Bot)\n│\n├[Youtube Playlist dl bot](http://t.me/YoutubePlaylistdowntgbot)\n│\n├[Youtube thumbnail dl](http://t.me/YouTubethumbnaildownbot)\n│\n├[Music dl](http://t.me/Musicdowntgbot)\n│\n├[Mention All Bot](http://t.me/Mentionalltgtbot)\n│\n╰───────────〄",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
                ]]
