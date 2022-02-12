@@ -171,7 +171,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "sdl":
         await msg.message.edit(
-            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg)➥ /s - __To download audio songs from YouTube,You can use this in group, This only work in my PM.__\n\nEg: `/s beggin`",
+            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg)➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n\nEg: `/s beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
