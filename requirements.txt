@@ -17,5 +17,4 @@ aiohttp==3.7.4
 aiofiles
 cryptg
 py-youtube
-youtube_search
 imdbpy
