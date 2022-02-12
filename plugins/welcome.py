@@ -1,5 +1,5 @@
 import asyncio
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker, emoji
+from pyrogram import Client, filters as Worker, emoji
 
 MENTION = "{}"  
 MESSAGE = "{} Welcome to {}!" 
