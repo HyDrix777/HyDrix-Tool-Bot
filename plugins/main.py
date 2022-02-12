@@ -37,7 +37,8 @@ async def start_message(bot, message):
            InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
            InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
            ],[
-           InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots")
+           InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots"),
+           InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
            ]]
            )
        )
@@ -63,7 +64,8 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
                InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
                ],[
-               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots")
+               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots"),
+               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
                ]]
             )
         )
@@ -72,7 +74,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Mʏ Nᴀᴍᴇ** : [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n├🧑‍💻 **Mʏ Dᴇᴠ** : [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📢 **Cʜᴀɴɴᴇʟ** : [ᴛɢɢ](https://t.me/Tg_Galaxy)\n├👥 **Gʀᴏᴜᴘ** : [ᴍɢ](https://t.me/Music_Galaxy_Dl)\n├📡 **Sᴇʀᴠᴇʀ** : [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n├🔣 **Language** : [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n├🥭 **Dᴀᴛᴀʙᴀsᴇ** : [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srt")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt")
                ]]
             )
         )
@@ -105,7 +107,8 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
+               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
                ]]
             )
         )
@@ -254,6 +257,8 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
+    elif msg.data == "delete":
+        await msg.message.delete()
 
 
 @Client.on_message(filters.group & filters.command("help"))
