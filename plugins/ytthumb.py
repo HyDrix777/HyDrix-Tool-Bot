@@ -3,6 +3,7 @@ import time
 import ytthumb
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from youtube_search import YoutubeSearch
 
 
 @Client.on_message(filters.command(["ytthumb", 'dlthumb']))
