@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from plugins.josprojects.help_func.cust_p_filters import (
+from plugins.pin_filter import (
     admin_fliter
 )
 
