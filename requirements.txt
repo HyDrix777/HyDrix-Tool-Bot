@@ -1,6 +1,6 @@
 pyrogram
 tgcrypto
-telegraph
+telegraph==1.4.1
 telethon
 telegram
 requests==2.26.0
