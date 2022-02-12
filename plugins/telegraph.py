@@ -45,9 +45,19 @@ async def telegraph(client, message):
                     InlineKeyboardButton(text="open link", url=f"https://telegra.ph{response[0]}"),
                     InlineKeyboardButton(text="share link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="✗ Close ✗", callback_data="close_data")]
+                [InlineKeyboardButton(text="🏃 Close", callback_data="delete")]
             ]
         )
     )
     finally:
         os.remove(download_location)
+
+@Client.on_callback_query()
+async def hydrix(bot, msg: CallbackQuery):
+    if msg.data == "start":
+        await msg.message.edit(
+            text ="""Sooon...."""
+        )
+
+    elif msg.data == "delete":
+        await msg.message.delete()
