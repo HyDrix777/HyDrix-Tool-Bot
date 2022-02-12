@@ -100,7 +100,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ғᴜɴ", callback_data="Fns"),
                InlineKeyboardButton("ɪɴғᴏ", callback_data="ids")
                ],[
-               InlineKeyboardButton("ʟɪɴᴋs ᴄʟᴇᴀʀ", callback_data="inkc"),
+               InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
@@ -222,15 +222,6 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-    elif msg.data == "inkc":
-        await msg.message.edit(
-            text="__A Bot To remove unwanted https ,http ,t.me , links on **Group** spamming by users.__\njust add me to group and promote.",
-            reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
-               ]]
-            )
-        )
-
     elif msg.data == "past":
         await msg.message.edit(
             text="📇 /paste [text] - Paste The Given Text On Pasty",
@@ -296,13 +287,6 @@ async def stickers(_, message):
 
 @Client.on_message(filters.service)
 async def delete(bot,message):
- await message.delete()
-
-
-# Clean urls commands---------
-
-@Client.on_message(filters.group & filters.regex("http") | filters.regex("t.me") | filters.regex("com") | filters.regex("https"))
-async def delete(bot, message):
  await message.delete()
 
 
