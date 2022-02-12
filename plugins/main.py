@@ -9,13 +9,10 @@ from telegraph import upload_file
 from pyrogram.types import CallbackQuery
 import requests 
 import lyricsgenius
-import asyncio
-from pyrogram import Client, filters as Worker
 
 
 
 
-MESSAGE = "{} Welcome to {}!" 
 
 
 
@@ -276,17 +273,6 @@ async def list(bot: Client, message: Message):
            ]]
            )
        )
-
-# welcome--------
-
-@Client.on_message(Worker.new_chat_members)
-async def welcome(client, message):
-
-    new_members = [MENTION.format(message.from_user.mention) for i in message.new_chat_members]
-
-    dell=await message.reply_text(text, disable_web_page_preview=True)
-    await asyncio.sleep(1000)
-    await dell.delete()
 
 # Sticker id-----------------------
 
