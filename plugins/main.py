@@ -301,33 +301,6 @@ async def delete(bot,message):
 
 # Telegraph---------------------
 
-@Client.on_message(filters.private & filters.photo)
-async def getimage(client, message):
-    location = "./FILES"
-    if not os.path.isdir(location):
-        os.makedirs(location)
-    imgdir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".jpg"
-    dwn = await client.send_message(
-          text="<b>ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...</b>",
-          chat_id = message.chat.id,
-          reply_to_message_id=message.message_id
-          )          
-    await client.download_media(
-            message=message,
-            file_name=imgdir
-        )
-    await dwn.edit_text("<b>ᴜᴘʟᴏᴀᴅɪɴɢ...</b>")
-    try:
-        response = upload_file(imgdir)
-    except Exception as error:
-        await dwn.edit_text(f"Oᴏᴘs sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n{error} Cᴏɴᴛᴀᴄᴛ @HydraLivegrambot")
-        return
-    await dwn.edit_text(f"https://telegra.ph{response[0]}")
-    try:
-        os.remove(imgdir)
-    except:
-        pass
-
 
 
 #  Lyrics--------------------
