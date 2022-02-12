@@ -51,7 +51,7 @@ async def hydrix(bot, msg: CallbackQuery):
             text ="""Sooon...."""
         )
 
-    elif msg.data == "srt":
+    elif msg.data == "srrt":
         await msg.message.edit(
             text=f"✨ ʜᴇʟʟᴏ ᴛʜᴇʀᴇ !\n\n💭 ɪ'ᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ** [🛠️](https://telegra.ph/file/738a362ee817361bbacd6.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
             reply_markup=InlineKeyboardMarkup( [[
@@ -105,7 +105,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="str")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt")
                ]]
             )
         )
