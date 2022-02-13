@@ -1,6 +1,6 @@
 import os
 from pyrogram import Client, filters
-import get_poster
+from imdb import get_poster
 import time
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
