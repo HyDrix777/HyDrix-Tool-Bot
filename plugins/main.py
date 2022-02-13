@@ -252,7 +252,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "bots":
         await msg.message.edit(
-            text="╭───────────〄\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├[Stylish text bot](http://t.me/StylishText_X_Bot)\n│\n├[Youtube dl bot](http://t.me/YouTubeDownloader7Bot)\n│\n├[Youtube Playlist dl bot](http://t.me/YoutubePlaylistdowntgbot)\n│\n├[Mention All Bot](http://t.me/Mentionalltgtbot)\n\n[URL Uploader](http://t.me/UrlUploader_Xrobot)\n│\n╰───────────〄",
+            text="╭───────────〄\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├[Stylish text bot](http://t.me/StylishText_X_Bot)\n│\n├[Youtube dl bot](http://t.me/YouTubeDownloader7Bot)\n│\n├[Youtube Playlist dl bot](http://t.me/YoutubePlaylistdowntgbot)\n│\n├[Mention All Bot](http://t.me/Mentionalltgtbot)\n│\n├[URL Uploader](http://t.me/UrlUploader_Xrobot)\n│\n╰───────────〄",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt")
                ]]
