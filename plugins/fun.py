@@ -899,3 +899,49 @@ async def abuse(_, message):
         await message.reply_to_message.reply_text(effective_string)
     else:
         await message.reply_text(effective_string)
+
+# Cry-----
+
+CRI_STRINGS = (
+    "أ‿أ",
+    "╥﹏╥",
+    "(;﹏;)",
+    "(ToT)",
+    "(┳Д┳)",
+    "(ಥ﹏ಥ)",
+    "（；へ：）",
+    "(T＿T)",
+    "（πーπ）",
+    "(Ｔ▽Ｔ)",
+    "(⋟﹏⋞)",
+    "（ｉДｉ）",
+    "(´Д⊂ヽ",
+    "(;Д;)",
+    "（>﹏<）",
+    "(TдT)",
+    "(つ﹏⊂)",
+    "༼☯﹏☯༽",
+    "(ノ﹏ヽ)",
+    "(ノAヽ)",
+    "(╥_╥)",
+    "(T⌓T)",
+    "(༎ຶ⌑༎ຶ)",
+    "(☍﹏⁰)｡",
+    "(ಥ_ʖಥ)",
+    "(つд⊂)",
+    "(≖͞_≖̥)",
+    "(இ﹏இ`｡)",
+    "༼ಢ_ಢ༽",
+    "༼ ༎ຶ ෴ ༎ຶ༽",
+)
+
+@Client.on_message(
+    filters.command("cry")
+)
+async def cry(_, message):
+    """ /cry strings """
+    effective_string = random.choice(CRI_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
