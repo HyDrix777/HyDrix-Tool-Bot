@@ -18,6 +18,3 @@ cryptg
 py-youtube
 ytthumb
 youtube_search
-lxml
-urllib3
-bs4
