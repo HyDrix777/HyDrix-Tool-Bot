@@ -1,5 +1,5 @@
 from asyncio import sleep
-
+from pyrogram import Client, filters
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
