@@ -610,7 +610,7 @@ DARE_STRINGS = (
     "Join/Start Voice Chat and say, 'Onii Chan no Hentai', in sexy voice.",
     "Let someone from the players log in to your Telegram account.",
     "Send 10 most recent images from your galary.",
-    "Send more suggestions to @A_lonelyPerson",
+    "Send more suggestions to @HydraLivegrambot",
 )
 
 @Client.on_message(
