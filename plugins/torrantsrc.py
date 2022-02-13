@@ -9,7 +9,7 @@ from plugins.tool import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 
 
-
+TorrentBot = Client(session_name=Config.SESSION_NAME)
 DEFAULT_SEARCH_MARKUP = [
                     [InlineKeyboardButton("Search YTS", switch_inline_query_current_chat="!yts "),
                      InlineKeyboardButton("Go Inline", switch_inline_query="!yts ")],
