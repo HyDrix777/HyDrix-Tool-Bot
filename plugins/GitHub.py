@@ -6,7 +6,6 @@ __mod_name__ = "Github"
 
 
 @Client.on_message(filters.command("github"))
-@capture_err
 async def github(_, message):
     if len(message.command) != 2:
         await message.reply_text("/git Username")
