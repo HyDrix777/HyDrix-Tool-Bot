@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, 
 
 
 
-import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
+from plugins.torrantsearch import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 
 SESSION_NAME = os.environ.get("Torrant SeaRch")
