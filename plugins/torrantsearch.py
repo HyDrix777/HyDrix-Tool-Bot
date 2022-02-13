@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import QueryIdInvalid, FloodWait
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, InlineQuery, InlineQueryResultArticle, \
     InputTextMessageContent
-import Config
+
 
 
 
