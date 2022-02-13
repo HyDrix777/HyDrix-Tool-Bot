@@ -580,4 +580,142 @@ async def rather(_, message):
     else:
         await message.reply_text(effective_string)
 
+# Dare-----
 
+DARE_STRINGS = (
+    "Change your profile pic to some naked character for 3 days.",
+    "Do a photograph reveal.",
+    "Share your telegram password.",
+    "Send 'I Love You' to 20 people in your PM [Private Messaging] list and share screenshots of the task.",
+    "Send hentai to 10 people in your PM [Private Messaging list and share screenshots of the task.",
+    "Send your phone number to 10 people in the group and share screenshots of the task.",
+    "Share your every social media account username.",
+    "Send most embarrising photograph.",
+    "Send 'I want your nudes' to 10 people in your PM [Private Messaging list and share screenshots of the task.]",
+    "Make your phone number public for 3 minutes.",
+    "Set your bio as, 'I am gay and I want to sleep with the person reading this right now' for 2 days.",
+    "Send the pictures of your ex's panties.",
+    "Ask for nudes from strangers and share screenshots of the task.",
+    "Share screenshot from most recent chat on WhatsApp.",
+    "Join/Start Voice Chat and sing a song.",
+    "Join/Start Voice Chat and say, 'Ara Ara', in sexy voice",
+    "Go to a random group with its Voice Chat ongoing and members speaking. Join the group and shout 'Fuck you all'. [Screen Record the task and send it in group.]",
+    "Go to a random group with its Voice Chat ongoing and members speaking. Join the group and seduce a person. [Screen Record the task and send it in group.]",
+    "Download a nude pic using google, PM it to a member of random Anime themed Group with caption as, 'These nudes are mine, wanna share yours?'. [Share screenshots of the task.]",
+    "Open the top most chat on your PM List and screen record chat for last 3 days and send it in group.",
+    "Reveal your instagram password to someone who is online.",
+    "Click a photo of yours right now and send it in group.",
+    "Set your bio as, 'Free blowjob if you send your nudes.' for 2 days.",
+    "Join/Start Voice Chat and say, 'Onii Chan no Hentai', in sexy voice.",
+    "Let someone from the players log in to your Telegram account.",
+    "Send 10 most recent images from your galary.",
+    "Send more suggestions to @A_lonelyPerson",
+)
+
+@Client.on_message(
+    filters.command("dare")
+)
+async def dare(_, message):
+    """ /dare strings """
+    effective_string = random.choice(DARE_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
+
+# Tord------
+
+TORD_STRINGS = (
+    "Change your profile pic to a dog.",
+    "Do a photograph reveal.",
+    "Share your telegram password.",
+    "Send 'I Love You' to 20 people in your PM [Private Messaging] list and share screenshots of the task.",
+    "Send hentai to 10 people in your PM [Private Messaging list and share screenshots of the task.",
+    "Send your phone number to 10 people in the group and share screenshots of the task.",
+    "Share your every social media account username.",
+    "Send most embarrising photograph.",
+    "Send 'I want your nudes' to 10 people in your PM [Private Messaging list and share screenshots of the task.",
+    "Make your phone number public for 3 minutes.",
+    "Set your bio as, 'I am gay and I want to sleep with the person reading this right now' for 2 days.",
+    " What’s the last lie you told?",
+    "What was the most embarrassing thing you’ve ever done on a date?",
+    "Have you ever accidentally hit something (or someone!) with your car?",
+    "Name someone you’ve pretended to like but actually couldn’t stand.",
+    "What’s your most bizarre nickname?",
+    "What’s been your most physically painful experience?",
+    "What bridges are you glad that you burned?",
+    "What’s the craziest thing you’ve done on public transportation?",
+    "If you met a genie, what would your three wishes be?",
+    "If you could write anyone on Earth in for President of the United States, who would it be and why?",
+    "What’s the meanest thing you’ve ever said to someone else?",
+    "Who was your worst kiss ever?",
+    "What’s one thing you’d do if you knew there no consequences?",
+    "What’s the craziest thing you’ve done in front of a mirror?",
+    "What’s the meanest thing you’ve ever said about someone else?",
+    "What’s something you love to do with your friends that you’d never do in front of your partner?",
+    "Who are you most jealous of?",
+    "What do your favorite pajamas look like?",
+    "Have you ever faked sick to get out of a party?",
+    "Who’s the oldest person you’ve dated?",
+    "How many selfies do you take a day?",
+    "Meatloaf says he’d do anything for love, but he won’t do “that.” What’s your “that?”",
+    "How many times a week do you wear the same pants?",
+    "Would you date your high school crush today?",
+    "Where are you ticklish?",
+    "Do you believe in any superstitions? If so, which ones?",
+    "What’s one movie you’re embarrassed to admit you enjoy?",
+    "What’s your most embarrassing grooming habit?",
+    "When’s the last time you apologized? What for?",
+    "How do you really feel about the Twilight saga?",
+    "Where do most of your embarrassing odors come from?",
+    "Have you ever considered cheating on a partner?",
+    "Have you ever cheated on a partner?",
+    "Boxers or briefs?",
+    "Have you ever peed in a pool?",
+    "What’s the weirdest place you’ve ever grown hair?",
+    "If you were guaranteed to never get caught, who on Earth would you murder?",
+    "What’s the cheapest gift you’ve ever gotten for someone else?",
+    "What app do you waste the most time on?",
+    "What’s the weirdest thing you’ve done on a plane?",
+    "Have you ever been nude in public?",
+    "How many gossip blogs do you read a day?",
+    "What is the youngest age partner you’d date?",
+    "Have you ever picked your nose in public?",
+    "Have you ever lied about your age?",
+    "If you had to delete one app from your phone, which one would it be?",
+    "What’s your most embarrassing late night purchase?",
+    "What’s the longest you’ve gone without showering?",
+    "Have you ever used a fake ID?",
+    "Who’s your hall pass?",
+    "Who will be your choice to become your boyfriend/girlfriend from the group?",
+    "If you had a chance to kill someone, who would it be from the group?",
+    "Who is the most hated and liked person in your group from your perspective?",
+    "Have you ever loved someone, if so, who was it and for how long, if not, how will you show your love to them?",
+    "If you were asked to propose someone from your friends on Telegram, who will be your first choice and why?",
+    "If you were to hate someone from your friends on Telegram, who will be your first choice and why?",
+    "What are your views on the topic of Human Cannibalism?",
+    "If you were asked to kill someone in your most horrific way, how will it be?",
+    "Join/Start Voice Chat and sing a song.",
+    "Join/Start Voice Chat and say, 'Ara Ara', in sexy voice",
+    "Go to a random group with its Voice Chat ongoing and members speaking. Join the group and shout 'Fuck you all'. [Screen Record the task and send it in group.]",
+    "Go to a random group with its Voice Chat ongoing and members speaking. Join the group and seduce a person. [Screen Record the task and send it in group.]",
+    "Download a nude pic using google, PM it to a member of random Anime themed Group with caption as, 'These nudes are mine, wanna share yours?'. [Share screenshots of the task.]",
+    "Open the top most chat on your PM List and screen record chat for last 3 days and send it in group.",
+    "Reveal your instagram password to someone who is online.",
+    "Click a photo of yours right now and send it in group.",
+    "Set your bio as, 'Free blowjob if you send your nudes.' for 2 days.",
+    "Join/Start Voice Chat and say, 'Onii Chan no Hentai', in sexy voice.",
+    "Let someone from the players log in to your Telegram account.",
+    "Send 10 most recent images from your galary.",
+)
+
+@Client.on_message(
+    filters.command("tord")
+)
+async def tord(_, message):
+    """ /tord strings """
+    effective_string = random.choice(TORD_STRINGS)
+    if message.reply_to_message:
+        await message.reply_to_message.reply_text(effective_string)
+    else:
+        await message.reply_text(effective_string)
