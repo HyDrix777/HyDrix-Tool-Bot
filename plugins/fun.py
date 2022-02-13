@@ -387,6 +387,7 @@ import random
 DCD_STRINGS = (
     "Yes",
     "No",
+    "maybe",
 )
 
 
