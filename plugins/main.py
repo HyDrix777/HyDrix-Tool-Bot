@@ -103,7 +103,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="gith"),
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -248,7 +248,6 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-# main commm--------
 
     elif msg.data == "bots":
         await msg.message.edit(
@@ -259,9 +258,19 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
+    elif msg.data == "gith":
+        await msg.message.edit(
+            text="/github - Get your GitHub profile in my PM\nEg: /github <Username>",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
     elif msg.data == "delete":
         await msg.message.delete()
 
+# main commm--------
 
 @Client.on_message(filters.group & filters.command("help"))
 async def help(bot: Client, message: Message):
