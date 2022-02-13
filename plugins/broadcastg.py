@@ -1,7 +1,6 @@
 from pyrogram import Client, filters
 import datetime
 import time
-import db
 import ADMINS
 import broadcast_messages
 import asyncio
