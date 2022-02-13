@@ -1,6 +1,8 @@
-
+from configs import Config
 import aiohttp
 from requests.utils import requote_uri
+
+
 
 API_1337x = "https://api.abirhasan.wtf/1337x?query={}&limit={}"
 API_YTS = "https://api.abirhasan.wtf/yts?query={}&limit={}"
