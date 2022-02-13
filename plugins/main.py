@@ -205,7 +205,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "Fns":
         await msg.message.edit(
-            text="⍟────[Fun]────⍟\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n➥ /roll : Roll a dice\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n➥ /run : reply a random string from an array of replie.\n➥ /lnm : find your lucky number.\n➥ /love : Love 😘\n➥ /toss : Tosses A coin\n➥ /shrug : get shrug XD\n➥ /table : get flip/unflip :v\n➥ /decide : Randomly answers yes/no/maybe.\n⍟───────────⍟",
+            text="⍟────[Fun]────⍟\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n➥ /roll : __Roll a dice__\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n\n➥ /run : __reply a random string from an array of replie.__\n➥ /lnm : __find your lucky number.__\n➥ /love : __Love__ 😘\n➥ /toss : __Tosses A coin__\n➥ /shrug : __get shrug XD__\n➥ /table : __get flip/unflip__ :v\n➥ /decide : __Randomly answers yes/no/maybe__.\n/truth :__asks you a question__\n/tord : __can be a truth or a dare__.\n/dare : __gives you a dare__\n/rather : __would you rather__\n/goodnight : Good night 😴\n/morning : good morning 😊🌄\n/abuse : labuse 🤬\n/cry : Cry 😭🥲\n⍟───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
