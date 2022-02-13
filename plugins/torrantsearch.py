@@ -12,8 +12,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, 
 from torrantsearch import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 
-SESSION_NAME = os.environ.get("Torrant SeaRch")
-MAX_INLINE_RESULTS = int(os.environ.get("MAX_INLINE_RESULTS", 50))
+
+
 
 API_1337x = "https://api.abirhasan.wtf/1337x?query={}&limit={}"
 API_YTS = "https://api.abirhasan.wtf/yts?query={}&limit={}"
@@ -23,7 +23,7 @@ API_ANIME = "https://api.abirhasan.wtf/anime?query={}&limit={}"
 
 
 
-TorrentBot = Client(session_name=Config.SESSION_NAME)
+TorrentBot = Client(session_name=Config.Torant)
 DEFAULT_SEARCH_MARKUP = [
                     [InlineKeyboardButton("Search YTS", switch_inline_query_current_chat="!yts "),
                      InlineKeyboardButton("Go Inline", switch_inline_query="!yts ")],
@@ -49,7 +49,7 @@ async def torra_handler(_, message: Message):
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
         )
     except FloodWait as e:
-        print(f"[{Config.SESSION_NAME}] - Sleeping for {e.x}s")
+        print(f"[{Config.Torant}] - Sleeping for {e.x}s")
         await asyncio.sleep(e.x)
         await start_handler(_, message)
 
@@ -269,9 +269,9 @@ async def inline_handlers(_, inline: InlineQuery):
             results=answers,
             cache_time=0
         )
-        print(f"[{Config.SESSION_NAME}] - Answered Successfully - {inline.from_user.first_name}")
+        print(f"[{Config.Torant}] - Answered Successfully - {inline.from_user.first_name}")
     except QueryIdInvalid:
-        print(f"[{Config.SESSION_NAME}] - Failed to Answer - {inline.from_user.first_name} - Sleeping for 5s")
+        print(f"[{Config.Torant}] - Failed to Answer - {inline.from_user.first_name} - Sleeping for 5s")
         await asyncio.sleep(5)
         try:
             await inline.answer(
@@ -281,25 +281,25 @@ async def inline_handlers(_, inline: InlineQuery):
                 switch_pm_parameter="start",
             )
         except QueryIdInvalid:
-            print(f"[{Config.SESSION_NAME}] - Failed to Answer Error - {inline.from_user.first_name} - Sleeping for 5s")
+            print(f"[{Config.Torant}] - Failed to Answer Error - {inline.from_user.first_name} - Sleeping for 5s")
             await asyncio.sleep(5)
 
 
 async def Search1337x(query: str):
     async with aiohttp.ClientSession() as session:
-        async with session.get(requote_uri(API_1337x.format(query, Config.MAX_INLINE_RESULTS))) as res:
+        async with session.get(requote_uri(API_1337x.format(query, Config.50))) as res:
             return (await res.json())["results"] if ((await res.json()).get("results", None) is not None) else []
 
 
 async def SearchYTS(query: str):
     async with aiohttp.ClientSession() as session:
-        async with session.get(requote_uri(API_YTS.format(query, Config.MAX_INLINE_RESULTS))) as res:
+        async with session.get(requote_uri(API_YTS.format(query, Config.50))) as res:
             return (await res.json())["results"] if ((await res.json()).get("results", None) is not None) else []
 
 
 async def SearchPirateBay(query: str):
     async with aiohttp.ClientSession() as session:
-        async with session.get(requote_uri(API_PIRATEBAY.format(query, Config.MAX_INLINE_RESULTS))) as res:
+        async with session.get(requote_uri(API_PIRATEBAY.format(query, Config.50))) as res:
             return (await res.json())["results"] if ((await res.json()).get("results", None) is not None) else []
 
 
