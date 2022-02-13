@@ -8,7 +8,7 @@ __mod_name__ = "Github"
 @Client.on_message(filters.command("github"))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("/git Username")
+        await message.reply_text("/github Username")
         return
     username = message.text.split(None, 1)[1]
     URL = f"https://api.github.com/users/{username}"
