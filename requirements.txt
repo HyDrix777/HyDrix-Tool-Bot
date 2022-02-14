@@ -1,7 +1,7 @@
 pyrogram
 tgcrypto
 telegraph==1.4.1
-telethon
+telethon==1.16.4
 telegram
 requests==2.26.0
 lyricsgenius
