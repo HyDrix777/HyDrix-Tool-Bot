@@ -1,7 +1,6 @@
 from platform import python_version as y
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from plugins import pbot
 from plugins import capture_err
 from plugins import make_carbon
 
