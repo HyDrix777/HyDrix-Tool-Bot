@@ -8,7 +8,7 @@ import json
 import os
 import re
 from telethon import events
-from plugins import telethon
+
 
 
 
