@@ -1,4 +1,3 @@
-from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import types, functions
 from pyrogram import Client, filters
 import emoji
