@@ -79,7 +79,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "help":
         await msg.message.edit(
-            text=f"Hey {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/00651cac20faed3c7e3c1.jpg)I Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules",
+            text=f"Hey {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/00651cac20faed3c7e3c1.jpg)__I Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("sᴛɪᴄᴋᴇʀ", callback_data="stck"),
                InlineKeyboardButton("ᴄʟᴇᴀɴ sᴍ", callback_data="clsm"),
