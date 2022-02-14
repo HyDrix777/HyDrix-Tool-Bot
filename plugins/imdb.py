@@ -1,4 +1,4 @@
-from plugins import telethn as tbot
+from plugins import telethn
 import os
 import re
 import bs4
