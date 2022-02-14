@@ -1,5 +1,5 @@
 from telethon import events
-from innexiaBot import telethn
+from plugins import telethn
 
 
 def register(**args):
