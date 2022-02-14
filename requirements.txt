@@ -18,4 +18,4 @@ cryptg
 py-youtube
 ytthumb
 youtube_search
-emoji
+
