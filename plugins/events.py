@@ -1,5 +1,10 @@
 from telethon import events
-from plugins import telethn
+
+
+
+
+
+
 
 
 def register(**args):
