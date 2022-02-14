@@ -1,3 +1,4 @@
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import types, functions
 from pyrogram import Client, filters
 import emoji
@@ -9,6 +10,7 @@ import json
 import os
 import re
 from telethon import events
+from plugins import telethn
 
 
 
@@ -371,7 +373,7 @@ async def replied_user(draw, tot, text, maxlength, title):
                 draw.text((180 + space, 132), letter, font=textfont, fill="white")
                 space += textfont.getsize(letter)[0]
 
-@Client.on(events.NewMessage(pattern="^[!/]q$"))
+@telethn.on(events.NewMessage(pattern="^[!/]q$"))
 async def q(event):
     if event.fwd_from:
         return
@@ -390,9 +392,3 @@ async def q(event):
     
     
 __mod_name__ = "Quotly"
-
-__help__ = """
-⚙️ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱:
-❍ /q [in response to the message]
-❍ make a quote from the message!
-"""
