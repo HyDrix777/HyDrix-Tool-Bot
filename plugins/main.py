@@ -33,8 +33,7 @@ async def start_message(bot, message):
            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
            InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ],[
-           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
-           InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
+           InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")  
            ],[
            InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots"),
            InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
@@ -60,8 +59,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
                InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
                ],[
-               InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about"),
-               InlineKeyboardButton("📦 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/jsnssbssbddbssbdoeeeok")
+               InlineKeyboardButton("🆎 ᴀʙᴏᴜᴛ", callback_data="about")
                ],[
                InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
