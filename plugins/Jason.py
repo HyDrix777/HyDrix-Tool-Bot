@@ -16,16 +16,12 @@ async def jsonify(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="❌ close ❌",
-                        callback_data="delete"
+                        text="⚡",
+                        callback_data="close_data"
                     )
                 ]
             ]
         )
-
-    elif msg.data == "delete":
-        await msg.message.delete()
-
         await message.reply_text(f"<code>{the_real_message}</code>", reply_markup=pk, quote=True)
     except Exception as e:
         with open("json.text", "w+", encoding="utf8") as out_file:
@@ -35,7 +31,7 @@ async def jsonify(_, message):
                 [
                     InlineKeyboardButton(
                         text="✗ close ✗",
-                        callback_data="delete"
+                        callback_data="close_data"
                     )
                 ]
             ]
