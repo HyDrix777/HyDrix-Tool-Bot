@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram import GUESS_COUNT, MAX_GUESSES, SECRET_WORD, API_ID, API_HASH, BOT_TOKEN, START_TXT
+
 
 
 
