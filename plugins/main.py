@@ -102,7 +102,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
                InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="gith"),
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ᴄᴏᴠɪᴅ", callback_data="covi"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
@@ -260,6 +260,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "gith":
         await msg.message.edit(
             text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg)➥ /github - Get your GitHub profile in my PM\nEg: `/github Username`",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+elif msg.data == "covi":
+        await msg.message.edit(
+            text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Avaible Commands**\n\n🦠➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
