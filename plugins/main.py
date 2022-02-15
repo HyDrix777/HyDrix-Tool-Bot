@@ -293,20 +293,11 @@ async def list(bot: Client, message: Message):
            )
        )
 
-# Sticker id-----------------------
-
-
-
-
 # Service clear--------------------
 
 @Client.on_message(filters.service)
 async def delete(bot,message):
  await message.delete()
-
-
-# Telegraph---------------------
-
 
 
 #  Lyrics--------------------
