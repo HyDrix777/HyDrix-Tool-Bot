@@ -104,10 +104,10 @@ async def id_(bot: Client, msg: Message):
 				if msg.reply_to_message.sticker:
 					main += f"\n\nYour Requested Sticker ID is `{msg.reply_to_message.sticker.file_id}`"
 
-@Client.on_message(filters.private("sid"))
+@Client.on_message(filters.private & filters.command("sid"))
 async def sid_(bot: Client, msg: Message):
         if msg.reply_to_message.sticker:
-	       main += f"\n\nYour Requested Sticker ID is `{msg.reply_to_message.sticker.file_id}`"
+	        main += f"\n\nYour Requested Sticker ID is `{msg.reply_to_message.sticker.file_id}`"
 
 
 
