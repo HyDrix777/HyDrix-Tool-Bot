@@ -46,7 +46,7 @@ Latitude : `{latitude}`
 Longitude : `{longitude}`
 Recovered : `{recovered}`
 
-Made by @HTGToolBot ❤️"""
+ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ @HTGToolBot ❤️"""
         return covid_info
     except Exception as error:
         return error
