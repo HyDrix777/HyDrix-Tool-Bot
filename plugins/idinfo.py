@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # User info
 
-@Client.on_message(filters.command("info"))
+@Client.on_message(filters.private & filters.command("info"))
 async def info(bot, hydrix):
     text = f"""
 ╭─────[ɪɴғᴏ]─────〄
