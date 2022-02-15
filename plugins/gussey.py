@@ -1,16 +1,16 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from os import environ
 
 
 
 
 
-GUESS_COUNT = int(environ.get("GUESS_COUNT", ""))
 
-MAX_GUESSES = int(environ.get("MAX_GUESSES", ""))
+GUESS_COUNT = int(m.get("GUESS_COUNT", ""))
 
-SECRET_WORD = environ.get("Any word that you want your users to guess")
+MAX_GUESSES = int(m.get("MAX_GUESSES", ""))
+
+SECRET_WORD = m.get("Any word that you want your users to guess")
 
 
 
