@@ -100,9 +100,9 @@ async def id_(bot: Client, msg: Message):
 		main = f"This {msg.chat.type}'s ɪᴅ is `{msg.chat.id}`"
 		if msg.reply_to_message:
 			if msg.reply_to_message.from_user:
-				main = f"{msg.reply_to_message.from_user.first_name}'s ɪᴅ is `{msg.reply_to_message.from_user.id}`"
+				main = f"{msg.reply_to_message.from_user.first_name} your ɪᴅ is `{msg.reply_to_message.from_user.id}`"
 				if msg.reply_to_message.sticker:
-					main += f"\n\nTʜɪs sᴛɪᴄᴋᴇʀ's ɪᴅ ɪs `{msg.reply_to_message.sticker.file_id}`"
+					main += f"\n\nYour Requested Sticker ID is `{msg.reply_to_message.sticker.file_id}`"
 		await msg.reply(main)
 	else:
 		if len(msg.command) == 1:
