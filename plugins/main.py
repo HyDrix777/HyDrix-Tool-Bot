@@ -266,7 +266,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-elif msg.data == "covi":
+    elif msg.data == "covi":
         await msg.message.edit(
             text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Avaible Commands**\n\n🦠➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
             reply_markup=InlineKeyboardMarkup([[
