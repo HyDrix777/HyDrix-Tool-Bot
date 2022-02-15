@@ -295,10 +295,7 @@ async def list(bot: Client, message: Message):
 
 # Sticker id-----------------------
 
-@Client.on_message(filters.stiker("sticker"))
-async def stickers(_, message):
-    if msg.reply_to_message.sticker:
-       await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
+
 
 
 # Service clear--------------------
