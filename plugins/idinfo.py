@@ -132,6 +132,11 @@ async def id_(bot: Client, msg: Message):
 			except UsernameNotOccupied:
 				await msg.reply("Tʜɪs ᴜsᴇʀɴᴀᴍᴇ ɪs ɴᴏᴛ ᴏᴄᴄᴜᴘɪᴇᴅ ʙʏ ᴀɴʏᴏɴᴇ", quote=True)
 
+# Sticker id-------
+
+@Client.on_message(filters.private & filters.sticker)
+async def stickers(_, message):
+       await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
 
 # Dc finder
 
