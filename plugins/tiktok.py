@@ -6,10 +6,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 
 
 
-
-downloads = './downloads/{}/'
-
-
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 Group", url="https://t.me/Music_Galaxy_Dl"),
@@ -18,10 +14,9 @@ DL_BUTTONS=[
     [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
 ]
 
+downloads = './downloads/{}/'
 
 
-# Helpers
-# Thanks to FridayUB
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
   args = shlex.split(cmd)
   process = await asyncio.create_subprocess_exec(
