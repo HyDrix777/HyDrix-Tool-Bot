@@ -4,17 +4,25 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 
+downloads = './downloads/{}/'
 
+#Button
+START_BUTTONS=[
+    [
+        InlineKeyboardButton('👥 Group', url='https://t.me/musicdowngroup'),
+        InlineKeyboardButton('📣 Channel', url='https://t.me/Tg_Galaxy'),
+    ],
+
+]
 
 DL_BUTTONS=[
     [
-        InlineKeyboardButton("👥 Group", url="https://t.me/Music_Galaxy_Dl"),
+        InlineKeyboardButton('🚫 No Watermark', callback_data='nowm'),
         InlineKeyboardButton('🌠 Watermark', callback_data='wm'),
     ],
-    [InlineKeyboardButton('🚫 No Watermark', callback_data='nowm')],
+    [InlineKeyboardButton('🔊 Audio', callback_data='audio')],
 ]
 
-downloads = './downloads/{}/'
 
 
 async def run_cmd(cmd: str) -> Tuple[str, str, int, int]:
@@ -119,3 +127,4 @@ async def _callbacks(bot, cb: CallbackQuery):
     await run_cmd(cmd)
     await bot.send_audio(update.chat.id, f'{ttid}.mp3',)
     shutil.rmtree(dirs)
+
