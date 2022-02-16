@@ -4,9 +4,6 @@ from pyrogram.types import Message
 
 
 
-COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
-TG_MAX_SELECT_LEN = 100
-
 
 @Client.on_message(
     filters.command("purge") & f_onw_fliter)
