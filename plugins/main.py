@@ -103,7 +103,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="gith"),
                InlineKeyboardButton("ᴄᴏᴠɪᴅ", callback_data="covi"),
-               InlineKeyboardButton("soon..", callback_data="start")
+               InlineKeyboardButton("ғᴏʀᴡᴀʀᴅɪɴɢ", callback_data="forw")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
@@ -269,6 +269,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "covi":
         await msg.message.edit(
             text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Avaible Commands**\n\n[🦠](https://telegra.ph/file/8dfbbf70b17e26d62b18c.jpg) ➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+elif msg.data == "forw":
+        await msg.message.edit(
+            text="📨 **Forward message remover**\n\nI am automatically remove forward message messages from group's,add me your group and promote.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
