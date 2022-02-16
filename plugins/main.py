@@ -106,7 +106,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ғᴏʀᴡᴀʀᴅɪɴɢ", callback_data="forw")
                ],[
                InlineKeyboardButton("ᴘʟᴀʏ sᴛᴏʀᴇ", callback_data="plat"),
-               InlineKeyboardButton("soon.", callback_data="start"),
+               InlineKeyboardButton("ɢʟɪᴛᴄʜ ᴀʀᴛ", callback_data="glit"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
@@ -291,6 +291,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "plat":
         await msg.message.edit(
             text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __hey this is a play store module,\n__This will Search application details of any app and give play store download link.__\n\nClick here /playstore 👈🏼",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "glit":
+        await msg.message.edit(
+            text="🥴 **ɢʟɪᴛᴄʜ ᴀʀᴛ**\n\n⍟ this module help you photo to glitch art in my pm,Just send me the image.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
