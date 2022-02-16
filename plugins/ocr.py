@@ -1,5 +1,3 @@
-
-from telegram import ChatAction,InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters,CallbackQueryHandler,PicklePersistence
 import logging
 import os
