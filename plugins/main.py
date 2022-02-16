@@ -299,7 +299,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "glit":
         await msg.message.edit(
-            text="🥴 **ɢʟɪᴛᴄʜ ᴀʀᴛ**\n\n⍟ this module help you photo to glitch art in my pm,Just send me the image.",
+            text="🥴 **ɢʟɪᴛᴄʜ ᴀʀᴛ**\n\n⍟ __This module help you photo to glitch in my pm,Just send me the image.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
