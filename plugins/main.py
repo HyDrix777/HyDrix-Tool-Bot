@@ -290,7 +290,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "plat":
         await msg.message.edit(
-            text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __Hey this is a play store module, Click__ /playstore __to get play store settings__",
+            text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __Hey this is a play store module,\nClick here /playstore 👈🏼",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
