@@ -29,7 +29,7 @@ async def glitch(bot, update):
             text=f"Error : {error}\nContact @rdgjhalbin_praveen."
         )
         return 
-    await message.edit_text(
+    await replied.edit_text(
         text="Converting to glitch..."
     )
     try:
