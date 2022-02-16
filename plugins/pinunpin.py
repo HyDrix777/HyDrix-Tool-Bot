@@ -4,7 +4,7 @@ from pyrogram.types import Message
 
 
 @Client.on_message(
-    filters.command(["pin"],/) &
+    filters.command(["pin"]) &
     async def admin_filter_f(filt, client, message):
     return await admin_check(message)
 
@@ -21,7 +21,7 @@ async def pin(_, message: Message):
 
 
 @Client.on_message(
-    filters.command(["unpin"],/) &
+    filters.command(["unpin"]) &
     async def admin_filter_f(filt, client, message):
     return await admin_check(message)
 
