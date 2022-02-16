@@ -61,31 +61,3 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "delete":
         await msg.message.delete()
-
-
-@Client.on_message(filters.video)
-async def getvideo(client, message):
-    location = "./FILES"
-    if not os.path.isdir(location):
-        os.makedirs(location)
-    viddir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".mp4"
-    dwn = await client.send_message(
-          text="<b>𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>",
-          chat_id = message.chat.id,
-          reply_to_message_id=message.message_id
-          )          
-    await client.download_media(
-            message=message,
-            file_name=viddir
-        )
-    await dwn.edit_text("<b>𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>")
-    try:
-        response = upload_file(viddir)
-    except Exception as error:
-        await dwn.edit_text(f"𝗢𝗼𝗽𝘀 𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗪𝗲𝗻𝘁 𝗪𝗿𝗼𝗻𝗴\n{error} Contact @HydraLivegrambot")
-        return
-    await dwn.edit_text(f"https://telegra.ph{response[0]}")
-    try:
-        os.remove(viddir)
-    except:
-        pass
