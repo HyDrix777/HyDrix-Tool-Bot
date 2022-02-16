@@ -25,11 +25,11 @@ async def glitch(bot, update):
             file_name=download_location
         )
     except Exception as error:
-        await update.edit_photo(
+        await update.edit_text(
             text=f"Error : {error}\nContact @rdgjhalbin_praveen."
         )
         return 
-    await update.edit_photo(
+    await update.edit_text(
         text="Converting to glitch..."
     )
     try:
