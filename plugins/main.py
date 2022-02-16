@@ -105,7 +105,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴄᴏᴠɪᴅ", callback_data="covi"),
                InlineKeyboardButton("ғᴏʀᴡᴀʀᴅɪɴɢ", callback_data="forw")
                ],[
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ᴘʟᴀʏ sᴛᴏʀᴇ", callback_data="plat"),
                InlineKeyboardButton("soon.", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -288,7 +288,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-elif msg.data == "stck":
+elif msg.data == "plat":
         await msg.message.edit(
             text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __Hey this is a play store module, Click__ /playstore __to get play store settings__",
             reply_markup=InlineKeyboardMarkup([[
