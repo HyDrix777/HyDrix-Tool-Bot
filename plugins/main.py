@@ -308,6 +308,12 @@ async def list(bot: Client, message: Message):
 async def delete(bot,message):
  await message.delete()
 
+# Gp forw
+
+@Client.on_message(filters.forwarded)
+async def forward(bot, message):
+    await message.delete("This group doesn't allow forward messages")
+    await message.delete()
 
 #  Lyrics--------------------
 
