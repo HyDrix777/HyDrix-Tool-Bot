@@ -5,17 +5,8 @@ from pyrogram.types import *
 
 
 
-START_TEXT = """
-𝑯𝒆𝒚 {}, 𝑰 𝒂𝒎 𝒂 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍𝒍 𝒄𝒂𝒍𝒄𝒖𝒍𝒂𝒕𝒐𝒓 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝒃𝒐𝒕. 𝑺𝒆𝒏𝒅 𝒎𝒆 /calculator.
 
-❤️✨
-"""
-START_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('👥 ᴍʏ ɢʀᴏᴜᴘ', url='https://telegram.me/music_Galaxy_dl')
-        ]]
-    )
-CALCULATE_TEXT = "𝑻𝒚𝒑𝒆 𝒚𝒐𝒖𝒓 𝒏𝒖𝒎𝒃𝒆𝒓 𝒕𝒐 𝒄𝒂𝒍𝒄𝒖𝒍𝒂𝒕𝒆 🔢"
+CALCULATE_TEXT = "ᴛʏᴘᴇ ʏᴏᴜʀ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄᴀʟᴄᴜʟᴀᴛᴇ 🔢"
 CALCULATE_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton("DEL", callback_data="DEL"),
@@ -42,6 +33,8 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton("0", callback_data="0"),
         InlineKeyboardButton("=", callback_data="="),
         InlineKeyboardButton("+", callback_data="+"),
+        ],[
+        InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
         ]]
     )
 
