@@ -33,15 +33,13 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton("0", callback_data="0"),
         InlineKeyboardButton("=", callback_data="="),
         InlineKeyboardButton("+", callback_data="+"),
-        ],[
-        InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
         ]]
     )
 
 
 @Client.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
-async def calculate(bot, update):
-    await update.reply_text(
+async def calc(bot, msg):
+    await msg.reply_text(
         text=CALCULATE_TEXT,
         reply_markup=CALCULATE_BUTTONS,
         disable_web_page_preview=True,
@@ -50,10 +48,10 @@ async def calculate(bot, update):
 
 
 @Client.on_callback_query()
-async def cb_data(bot, update):
-        data = update.data
+async def cb_data(bot, msg):
+        data = msg.data
         try:
-            message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
+            message_text = msg.message.text.split("\n")[0].strip().split("=")[0].strip()
             message_text = '' if CALCULATE_TEXT in message_text else message_text
             if data == "=":
                 text = float(eval(message_text))
@@ -63,7 +61,7 @@ async def cb_data(bot, update):
                 text = ""
             else:
                 text = message_text + data
-            await update.message.edit_text(
+            await msg.message.edit_text(
                 text=f"{text}\n\n{CALCULATE_TEXT}",
                 disable_web_page_preview=True,
                 reply_markup=CALCULATE_BUTTONS
@@ -73,8 +71,8 @@ async def cb_data(bot, update):
 
 
 @Client.on_inline_query()
-async def inline(bot, update):
-    if len(update.data) == 0:
+async def inline(bot, msg):
+    if len(msg.data) == 0:
         try:
             answers = [
                 InlineQueryResultArticle(
@@ -91,7 +89,7 @@ async def inline(bot, update):
             print(error)
     else:
         try:
-            message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
+            message_text = msg.message.text.split("\n")[0].strip().split("=")[0].strip()
             data = message_text.replace("×", "*").replace("÷", "/")
             text = float(eval(data))
             answers = [
@@ -106,6 +104,6 @@ async def inline(bot, update):
             ]
         except:
             pass
-    await update.answer(answers)
+    await msg.answer(answers)
 
 
