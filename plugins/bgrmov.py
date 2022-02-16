@@ -12,7 +12,7 @@ UNSCREEN_API = os.environ.get("UNSCREEN_API", "aL8We5F9ttrCqwtJjFqTxW21")
 ERROR_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('Help', callback_data='help'),
+            InlineKeyboardButton('gts', callback_data='help'),
             InlineKeyboardButton('Close', callback_data='close')
         ]
     ]
