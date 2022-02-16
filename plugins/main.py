@@ -313,7 +313,7 @@ async def delete(bot,message):
 @Client.on_message(filters.forwarded)
 async def forward(bot, message):
     await message.delete("This group doesn't allow forward messages")
-    await message.delete()
+    
 
 #  Lyrics--------------------
 
