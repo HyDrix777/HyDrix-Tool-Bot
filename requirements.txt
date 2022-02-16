@@ -19,3 +19,4 @@ py-youtube
 ytthumb
 youtube_search
 play-scraper
+glitchart
