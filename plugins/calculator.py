@@ -6,19 +6,7 @@ from pyrogram.types import *
 
 
 
-START_TEXT = """
-Hello {}, I am Telegram [Calculator-Bot](https://albinpraveen.ml).
 
-▷ Send me /calculator and See my Magic.
-
-Made with by ❤️ [@ALBINPRAVEEN](https://t.me/i_am_albin_praveen)
-"""
-START_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('🔥 DEVELOPER', url='https://t.me/i_am_albin_praveen'),
-        InlineKeyboardButton('GROUP 📢', url='https://t.me/musicwithalby')
-        ]]
-    )
 CALCULATE_TEXT = "▷ Made with by @i_am_albin_praveen"
 CALCULATE_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -50,19 +38,7 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
     )
 
 
-@Client.on_message(filters.command(["std"]))
-async def std(bot, update):
-    text = START_TEXT.format(update.from_user.mention)
-    reply_markup = START_BUTTONS
-    await update.reply_text(
-        text=text,
-        disable_web_page_preview=True,
-        reply_markup=reply_markup,
-        quote=True
-    )
-
-
-@Client.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
+@Client.on_message(filters.group & filters.command(["calc", "calculate", "calculator"]))
 async def calculate(bot, update):
     await update.reply_text(
         text=CALCULATE_TEXT,
