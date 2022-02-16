@@ -277,7 +277,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
 elif msg.data == "forw":
         await msg.message.edit(
-            text="📨 **Forward message remover**\n\nI am automatically remove forward message messages from group's,add me your group and promote.",
+            text="📨 **Forward message remover**\n\n⍟ __I am automatically remove forward message messages from group's,add me your group and promote.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
