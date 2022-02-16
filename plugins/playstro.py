@@ -7,9 +7,9 @@ from pyrogram.types import *
 
 
 
-@Client.on_message(filters.private & filters.command("pstor"))
+@Client.on_message(filters.private & filters.command("playstore"))
 async def pstor(bot, update):
-    text = "▶️ __Search play store apps using below buttons__.\n\nMy group : @Music_Galaxy_Dl"
+    text = "▶️ __Search play store apps & Games using below inline buttons__.\n\nMy music group : @Music_Galaxy_Dl"
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat="")],
