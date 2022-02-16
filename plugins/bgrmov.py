@@ -21,7 +21,7 @@ ERROR_BUTTONS = InlineKeyboardMarkup(
 
 
 
-@Client.on_message(filters.private & (filters.photo | filters.video | filters.document))
+@Client.on_message(filters.private & filters.command("remove"))
 async def remove_background(bot, update):
     if not REMOVEBG_API:
         await update.reply_text(
