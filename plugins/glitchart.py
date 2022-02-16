@@ -12,13 +12,12 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 
 
-@Client.on_message(filters.private & filters.command(["glitch"]))
-async def glitch(bot, update):
-    if not message.reply_to_photo:
+@Client.on_message(filters.private & filters.photo)
+async def glitch_art(bot, update):
     download_path = PATH + "/" + str(update.from_user.id) + "/"
     download_location = download_path + "photo.jpg"
     message = await update.reply_text(
-        text="`Processing...`",
+        text="Processing...",
         quote=True
     )
     try:
@@ -27,11 +26,11 @@ async def glitch(bot, update):
         )
     except Exception as error:
         await message.edit_text(
-            text=f"**Error :** `{error}`\nContact @i_am_albin_praveen."
+            text=f"Error : {error}\nContact @i_am_albin_praveen."
         )
         return 
     await message.edit_text(
-        text="`Converting to glitch...`"
+        text="Converting to glitch..."
     )
     try:
         glitch_art = glitchart.jpeg(download_location)
@@ -40,9 +39,7 @@ async def glitch(bot, update):
         os.remove(glitch_art)
     except Exception as error:
         await message.edit_text(
-            text=f"**Error :** `{error}`\nContact @i_am_albin_praveen."
+            text=f"Error : {error}\nContact @i_am_albin_praveen."
         )
         return
     await message.delete()
-
-
