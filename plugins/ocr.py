@@ -1,7 +1,5 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters,CallbackQueryHandler,PicklePersistence
 import logging
 import os
-from functools import wraps
 import requests
 
 
