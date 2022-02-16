@@ -3,6 +3,13 @@ from typing import Tuple
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
+
+
+
+
+downloads = './downloads/{}/'
+
+
 DL_BUTTONS=[
     [
         InlineKeyboardButton("👥 Group", url="https://t.me/Music_Galaxy_Dl"),
