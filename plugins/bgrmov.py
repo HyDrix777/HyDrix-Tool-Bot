@@ -12,7 +12,7 @@ UNSCREEN_API = os.environ.get("UNSCREEN_API", "aL8We5F9ttrCqwtJjFqTxW21")
 ERROR_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('gts', callback_data='help'),
+            InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Close', callback_data='close')
         ]
     ]
@@ -21,7 +21,7 @@ ERROR_BUTTONS = InlineKeyboardMarkup(
 
 
 
-@Client.on_message(filters.private & filters.command("remove"))
+@Client.on_message(filters.private & (filters.photo | filters.video | filters.document))
 async def remove_background(bot, update):
     if not REMOVEBG_API:
         await update.reply_text(
