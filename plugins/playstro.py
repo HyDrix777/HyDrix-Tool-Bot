@@ -9,11 +9,11 @@ from pyrogram.types import *
 
 @Client.on_message(filters.private & filters.command("pstor"))
 async def pstor(bot, update):
-    text = "Search play store apps using below buttons.\n\nMade by @i_am_albin_praveen\n\nSupport @musicwithalby"
+    text = "▶️ __Search play store apps using below buttons__.\n\nMy group : @Music_Galaxy_Dl"
     reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="Search here", switch_inline_query_current_chat="")],
-            [InlineKeyboardButton(text="Search in another chat", switch_inline_query="")]
+            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat="")],
+            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ɪɴ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀᴛ", switch_inline_query="")]
         ]
     )
     await update.reply_text(
@@ -38,9 +38,9 @@ async def search(bot, update):
         "**Price:** `{}`".format(result["price"]) + "\n" \
         "**Full Price:** `{}`".format(result["full_price"]) + "\n" \
         "**Free:** `{}`".format(result["free"]) + "\n" \
-        "\n" + "Made by @FayasNoushad"
+        "\n" + "ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ @HTGToolBot 🤖"
         reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Play Store", url="https://play.google.com"+result["url"])]]
+            [[InlineKeyboardButton(text="ᴘʟᴀʏ sᴛᴏʀᴇ", url="https://play.google.com"+result["url"])]]
         )
         try:
             answers.append(
