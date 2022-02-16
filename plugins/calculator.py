@@ -6,8 +6,8 @@ from pyrogram.types import *
 
 
 
-CALCULATE_TEXT = "ᴛʏᴘᴇ ʏᴏᴜʀ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄᴀʟᴄᴜʟᴀᴛᴇ 🔢"
-CALCULATE_BUTTONS = InlineKeyboardMarkup(
+CALCUL_TEXT = "ᴛʏᴘᴇ ʏᴏᴜʀ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄᴀʟᴄᴜʟᴀᴛᴇ 🔢"
+CALCUL_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton("DEL", callback_data="DEL"),
         InlineKeyboardButton("AC", callback_data="AC"),
@@ -40,8 +40,8 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
 @Client.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
 async def calc(bot, msg):
     await msg.reply_text(
-        text=CALCULATE_TEXT,
-        reply_markup=CALCULATE_BUTTONS,
+        text=CALCUL_TEXT,
+        reply_markup=CALCUL_BUTTONS,
         disable_web_page_preview=True,
         quote=True
     )
@@ -52,7 +52,7 @@ async def cb_data(bot, msg):
         data = msg.data
         try:
             message_text = msg.message.text.split("\n")[0].strip().split("=")[0].strip()
-            message_text = '' if CALCULATE_TEXT in message_text else message_text
+            message_text = '' if CALCUL_TEXT in message_text else message_text
             if data == "=":
                 text = float(eval(message_text))
             elif data == "DEL":
@@ -62,9 +62,9 @@ async def cb_data(bot, msg):
             else:
                 text = message_text + data
             await msg.message.edit_text(
-                text=f"{text}\n\n{CALCULATE_TEXT}",
+                text=f"{text}\n\n{CALCUL_TEXT}",
                 disable_web_page_preview=True,
-                reply_markup=CALCULATE_BUTTONS
+                reply_markup=CALCUL_BUTTONS
             )
         except Exception as error:
             print(error)
@@ -79,10 +79,10 @@ async def inline(bot, msg):
                     title="Calculator",
                     description=f"New calculator",
                     input_message_content=InputTextMessageContent(
-                        text=CALCULATE_TEXT,
+                        text=CALCUL_TEXT,
                         disable_web_page_preview=True
                     ),
-                    reply_markup=CALCULATE_BUTTONS
+                    reply_markup=CALCUL_BUTTONS
                 )
             ]
         except Exception as error:
