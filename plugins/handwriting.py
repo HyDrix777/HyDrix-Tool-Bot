@@ -7,8 +7,8 @@ import requests
 
 
 
-@Client.on_message(filters.private & filters.text)
-async def text(bot, message):
+@Client.on_message(filters.private & filters.command(['had']))
+async def had(bot, message):
     text = str(message.text)
     chat_id = int(message.chat.id)
     file_name = f"{message.chat.id}.jpg"
