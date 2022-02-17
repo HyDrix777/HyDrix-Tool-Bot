@@ -33,9 +33,6 @@ async def send_msg(user_id, message):
 	except Exception as e:
 		return 500, f"{user_id} : {traceback.format_exc()}\n"
 
-
-
-
 @Client.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
 async def broadcast(bot, update):
 	broadcast_ids = {}
