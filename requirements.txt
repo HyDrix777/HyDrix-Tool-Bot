@@ -20,6 +20,3 @@ ytthumb
 play-scraper
 glitchart
 youtube_search
-string-extract
-hashtags-extract
-domain-extract
