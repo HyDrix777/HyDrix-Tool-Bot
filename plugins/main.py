@@ -108,7 +108,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʀᴇᴍᴏᴠᴇ ʙɢ", callback_data="rmbg"),
                InlineKeyboardButton("ɢʟɪᴛᴄʜ ᴀʀᴛ", callback_data="glit")
                ],[
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ᴅʟᴇ ɪɴʟɪɴᴇ", callback_data="dinl"),
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -312,6 +312,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "glit":
         await msg.message.edit(
             text="🥴 **ɢʟɪᴛᴄʜ ᴀʀᴛ**\n\n⍟ __This module help you photo to glitch in group,Just send me the image in Group not pm__ 😁.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "dinl":
+        await msg.message.edit(
+            text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\nThis module to deletes Inline messages sent Through Bot in Group's.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
