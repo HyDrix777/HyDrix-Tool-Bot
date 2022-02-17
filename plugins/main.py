@@ -320,7 +320,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "dinl":
         await msg.message.edit(
-            text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\nThis module to automatically deletes Inline messages sent Through Bot in Group's.",
+            text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\n⍟ __This module to automatically deletes Inline messages sent Through Bot in Group's__.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
