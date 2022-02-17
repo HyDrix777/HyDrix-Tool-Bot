@@ -351,7 +351,13 @@ async def list(bot: Client, message: Message):
 async def delete(bot,message):
  await message.delete()
 
-# Gp forw
+#Inline search Remove---
+
+@Client.on_message(filters.via_bot & filters.group)
+async def inline(bot,message):
+     await message.delete()
+
+# Group forword rm------
 
 @Client.on_message(filters.forwarded)
 async def forward(bot, message):
