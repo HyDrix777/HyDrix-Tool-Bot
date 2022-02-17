@@ -7,11 +7,7 @@ from pyrogram import Client, filters
 
 
 
-@Client.on_message(filters.private & filters.text)
-async def start(bot, update):
-    await update.reply_text(
-        "Send /gan command with type for gan image"+"\n"+"/gan person - Person Image"+"\n"+"/gan cat - Cat Image"
-    )
+
 
 
 @Client.on_message(filters.private & filters.command("gan"))
