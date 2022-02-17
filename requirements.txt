@@ -17,6 +17,7 @@ aiofiles
 cryptg
 py-youtube
 ytthumb
-youtube_search
+youtube_search_python
 play-scraper
 glitchart
+YoutubeTags
