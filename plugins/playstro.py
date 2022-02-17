@@ -29,16 +29,16 @@ async def search(bot, update):
     results = play_scraper.search(update.query)
     answers = []
     for result in results:
-        details = "**Title:** `{}`".format(result["title"]) + "\n" \
-        "**Description:** `{}`".format(result["description"]) + "\n" \
-        "**App ID:** `{}`".format(result["app_id"]) + "\n" \
-        "**Developer:** `{}`".format(result["developer"]) + "\n" \
-        "**Developer ID:** `{}`".format(result["developer_id"]) + "\n" \
-        "**Score:** `{}`".format(result["score"]) + "\n" \
-        "**Price:** `{}`".format(result["price"]) + "\n" \
-        "**Full Price:** `{}`".format(result["full_price"]) + "\n" \
-        "**Free:** `{}`".format(result["free"]) + "\n" \
-        "\n" + "ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ @HTGToolBot 🤖"
+        details = "**✒️ ᴛɪᴛʟᴇ:** `{}`".format(result["title"]) + "\n" \
+        "**ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:** `{}`".format(result["description"]) + "\n" \
+        "**ᴀᴘᴘ ɪᴅ:** `{}`".format(result["app_id"]) + "\n" \
+        "**ᴅᴇᴠᴇʟᴏᴘᴇʀ:** `{}`".format(result["developer"]) + "\n" \
+        "**ᴅᴇᴠᴇʟᴏᴘᴇʀ ɪᴅ:** `{}`".format(result["developer_id"]) + "\n" \
+        "**sᴄᴏʀᴇ:** `{}`".format(result["score"]) + "\n" \
+        "**ᴘʀɪᴄᴇ:** `{}`".format(result["price"]) + "\n" \
+        "**ғᴜʟʟ ᴘʀɪᴄᴇ:** `{}`".format(result["full_price"]) + "\n" \
+        "**ғʀᴇᴇ:** `{}`".format(result["free"]) + "\n" \
+        "\n" + "ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ @HTGToolBot"
         reply_markup = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="ᴘʟᴀʏ sᴛᴏʀᴇ", url="https://play.google.com"+result["url"])]]
         )
