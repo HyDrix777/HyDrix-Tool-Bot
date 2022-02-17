@@ -379,19 +379,3 @@ async def lrsearch(_, message: Message):
 {S.lyrics}"""
     await m.edit(xxx)
 
-# status-----
-
-@Client.on_message(filters.private & filters.command("status"))
-async def status(bot, update):
-    total_users = await total_users_count()
-    text = "**Bot Status**\n"
-    text += f"\n**Total Users:** `{total_users}`"
-    await update.reply_text(
-        text=text,
-        quote=True,
-        disable_web_page_preview=True
-    )
-
-async def total_users_count(self):
-        count = await self.col.count_documents({})
-        return count
