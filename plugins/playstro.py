@@ -12,7 +12,7 @@ async def playstore(bot, update):
     text = "▶️ __Search play store apps & Games using below inline buttons__.\n\nMy music group : @Music_Galaxy_Dl"
     reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat="")],
+            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat="!ply ")],
             [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ɪɴ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀᴛ", switch_inline_query="")]
         ]
     )
