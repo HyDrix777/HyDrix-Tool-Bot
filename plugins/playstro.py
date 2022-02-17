@@ -13,7 +13,7 @@ async def playstore(bot, update):
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat="!ply ")],
-            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ɪɴ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀᴛ", switch_inline_query="")]
+            [InlineKeyboardButton(text="sᴇᴀʀᴄʜ ɪɴ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀᴛ", switch_inline_query="!ply ")]
         ]
     )
     await update.reply_text(
