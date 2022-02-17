@@ -7,7 +7,7 @@ import requests
 
 
 
-@Client.on_message(filters.text)
+@Client.on_message(filters.private & filters.text)
 async def text(bot, message):
     text = str(message.text)
     chat_id = int(message.chat.id)
