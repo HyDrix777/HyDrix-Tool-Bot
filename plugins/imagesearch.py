@@ -1,0 +1,42 @@
+import os
+import requests
+from pyrogram import Client, filters
+from pyrogram.types import *
+
+
+
+
+API = "https://apibu.herokuapp.com/api/y-images?query="
+
+
+
+
+@Client.on_message(filters.private & filters.command("imgs"))
+async def imgs(bot, update):
+    await update.reply_text(
+        text=f"Click the button below for searching your query.\n\nQuery: `{update.text}`",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton(text="Search Here", switch_inline_query_current_chat=update.text)],
+                [InlineKeyboardButton(text="Search in another chat", switch_inline_query=update.text)]
+            ]
+        ),
+        disable_web_page_preview=True,
+        quote=True
+    )
+
+
+@Client.on_inline_query()
+async def search(bot, update):
+    results = requests.get(API + requests.utils.requote_uri(update.query)).json()["result"][:50]
+    answers = []
+    for result in results:
+        answers.append(
+            InlineQueryResultPhoto(
+                title=update.query.capitalize(),
+                description=result,
+                caption="Made by @dh",
+                photo_url=result
+            )
+        )
+    await update.answer(answers)
