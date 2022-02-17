@@ -19,4 +19,4 @@ py-youtube
 ytthumb
 play-scraper
 glitchart
-YoutubeTags
+youtube_search
