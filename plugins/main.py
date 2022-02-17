@@ -383,7 +383,7 @@ async def lrsearch(_, message: Message):
 
 @Client.on_message(filters.private & filters.command("status"))
 async def status(bot, update):
-    total_users = await.total_users_count()
+    total_users = await total_users_count()
     text = "**Bot Status**\n"
     text += f"\n**Total Users:** `{total_users}`"
     await update.reply_text(
