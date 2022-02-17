@@ -994,20 +994,3 @@ async def runml(_, message):
     else:
         await message.reply_text(effective_string)
 
-# Gif------
-
-GIF_STRINGS = (
-    "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE",
-    "CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA",
-)
-
-@Client.on_message(
-    filters.command("gift")
-)
-async def gift(_, message):
-    """ /gift strings """
-    effective_string = random.choice(GIF_STRINGS)
-    if message.reply_to_message:
-        await message.reply_to_message.reply_text(effective_string)
-    else:
-        await message.reply_text(effective_string)
