@@ -20,3 +20,5 @@ ytthumb
 play-scraper
 glitchart
 youtube_search
+persondoesnotexist
+catdoesnotexist
