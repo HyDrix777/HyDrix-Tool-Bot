@@ -14,7 +14,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 from random import choice
 
 
-
+BOT_OWNER = int(os.environ["784589736"])
 
 
 async def send_msg(user_id, message):
