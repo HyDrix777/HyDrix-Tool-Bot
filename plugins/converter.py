@@ -20,7 +20,7 @@ async def mp3(bot, message):
     
     # convert to audio
     await txt.edit_text("Cᴏɴᴠᴇʀᴛɪɴɢ ᴛᴏ ᴀᴜᴅɪᴏ.....")
-    await message.reply_audio(audio=file_path, caption="@HTGToolBot", quote=True)
+    await message.reply_audio(audio=file_path, caption="ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : @HTGToolBot", quote=True)
     
     # remove file
     try:
