@@ -20,3 +20,4 @@ ytthumb
 play-scraper
 glitchart
 youtube_search
+motor
