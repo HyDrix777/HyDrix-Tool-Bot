@@ -3,6 +3,7 @@ from telethon import Button
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
+from pyrogram import Client, filters
 
 logging.basicConfig(
     level=logging.INFO,
@@ -10,18 +11,14 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("18891187"))
-api_hash = os.environ.get("7d120384f48b2a86fa2b9e9772a28af6")
-bot_token = os.environ.get("5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
-Client = TelegramClient('Client', api_id, api_hash).start(bot_token=bot_token)
 
-@Client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
+@Client.on(events.NewMessage(pattern="^/mhelp$"))
+async def mhelp(event):
   helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mall\n__You can use this command with text what you want to mention others.__\n`Example: /mall Good Night 🌃!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nBot Cloned Owner @HydraLivegrambot"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('📣 Channel', 'https://t.me/T_Galaxy'),
-                      Button.url('👀 Source', 'https://t.me/Tg_Glaxy')]
+                      Button.url('👀 Source', 'https://t.me/Tg_laxy')]
                     ),
                     link_preview=False
                    )
