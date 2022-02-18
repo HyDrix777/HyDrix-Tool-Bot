@@ -246,7 +246,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "ytthumb":
         await msg.message.edit(
-            text="sᴇɴᴅ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʟɪɴᴋ I ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ᴛʜᴜᴍʙɴᴀɪʟ.\n\nExample: `/ytthumb http://www.youtube.com/watch?v=HhjHYkPQ8F0`",
+            text="🔴 **YouTube Thumbnail Dl**\n\nsᴇɴᴅ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʟɪɴᴋ I ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ᴛʜᴜᴍʙɴᴀɪʟ.\n\nExample: `/ytthumb http://www.youtube.com/watch?v=HhjHYkPQ8F0`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
