@@ -12,7 +12,7 @@ logging.basicConfig(
 LOGGER = logging.getLogger(__name__)
 
 
-@Client.on(events.NewMessage(pattern="^/mhelp$"))
+@Client.on_message(events.NewMessage(pattern="^/mhelp$"))
 async def mhelp(event):
   helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mall\n__You can use this command with text what you want to mention others.__\n`Example: /mall Good Night 🌃!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nBot Cloned Owner @HydraLivegrambot"
   await event.reply(helptext,
@@ -23,7 +23,7 @@ async def mhelp(event):
                     link_preview=False
                    )
   
-@Client.on(events.NewMessage(pattern="^/all ?(.*)"))
+@Client.on_message(events.NewMessage(pattern="^/all ?(.*)"))
 async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
