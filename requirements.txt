@@ -20,4 +20,5 @@ ytthumb
 play-scraper
 glitchart
 youtube_search
-countryinfo
+cryptg
+asyncio
