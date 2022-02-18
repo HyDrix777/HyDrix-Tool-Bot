@@ -1,5 +1,6 @@
 import os, logging, asyncio
 from telethon import Button
+from pyrogram import Client, filters
 from telethon import TelegramClient, events
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
@@ -90,5 +91,3 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> BOT STARTED <<")
-client.run_until_disconnected()
