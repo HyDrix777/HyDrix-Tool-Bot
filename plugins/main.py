@@ -138,7 +138,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "tgph":
         await msg.message.edit(
-            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n/tgraph : use this command in reply to Image",
+            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n📚 **Avaible Commands**\n\n/tgraph : use this command in reply to Image",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -147,7 +147,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "srch":
         await msg.message.edit(
-            text="🔎➥ /search - __search **YouTube** videos__\n\nEg : `/search Alen Walker`",
+            text="🔎 **Search YouTube videos**\n\n📚 **Avaible Commands**\n➥ /search - __search **YouTube** videos__\n\nEg : `/search Alen Walker`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -165,7 +165,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "conv":
         await msg.message.edit(
-            text="[📹](https://telegra.ph/file/5489b184451feaf8411d0.jpg)𝟐🎵➥ **Mp4 to Mp3Conveter** - __Send a Video for converting to Audio.__",
+            text="[📹](https://telegra.ph/file/5489b184451feaf8411d0.jpg)𝟐🎵➥ **Mp4 to Mp3Conveter**\n\n__Send a Video for converting to Audio.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -174,7 +174,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "lyrc":
         await msg.message.edit(
-            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg)➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`",
+            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) **Lyrics Download**\n\n📚 **Avaible Commands**\n\n➥ /lyric - __Send me a Song name I give you a Lyrics.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -183,7 +183,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "sdl":
         await msg.message.edit(
-            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg)➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n\nEg: `/s beggin`",
+            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg)\n\n📚 **Avaible Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n\nEg: `/s beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -192,7 +192,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "vdl":
         await msg.message.edit(
-            text="📹➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n\nEg: `/v alone`",
+            text="📹 **Vedio download**\n\n📚 **Avaible Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n\nEg: `/v alone`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -201,7 +201,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gtra":
         await msg.message.edit(
-            text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)➥ **Google Translator Bot**\n\n__**Google Translator** which means , A bot to help you translate text to few Languages from any other language in world.__\n\n__Google Translator bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use Google Translator in his private chat & Groups.__\n\n**How To Use**\n\nClick /list __to find your language code__.\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or my pm",
+            text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)➥ **Google Translator Bot**\n\n__**Google Translator** which means , A bot to help you translate text to few Languages from any other language in world.__\n\n__Google Translator bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use Google Translator in his private chat & Groups.__\n\n**How To Use**\n\nClick /list __to find your language code__.\n📚 **Avaible Commands**\n\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or my pm",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -210,7 +210,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "Fns":
         await msg.message.edit(
-            text="⍟────[Fun]────⍟\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n➥ /roll : __Roll a dice__\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n\n➥ /run : __reply a random string from an array of replie.__\n➥ /runml : __reply a random string from an Malayalam lang array of replie.__ \n➥ /lnm : __find your lucky number.__\n➥ /love : __Love__ 😘\n➥ /toss : __Tosses A coin__\n➥ /shrug : __get shrug XD__\n➥ /table : __get flip/unflip__ :v\n➥ /decide : __Randomly answers yes/no/maybe__.\n➥ /truth :__asks you a question__\n➥ /tord : __can be a truth or a dare__.\n➥ /dare : __gives you a dare__\n➥ /rather : __would you rather__\n➥ /goodnight : Good night 😴\n➥ /morning : good morning 😊🌄\n➥ /abuse : labuse 🤬\n➥ /cry : Cry 😭🥲\n⍟───────────⍟",
+            text="⍟────[Fun]────⍟\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n📚 **Avaible Commands**\n➥ /roll : __Roll a dice__\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n\n➥ /run : __reply a random string from an array of replie.__\n➥ /runml : __reply a random string from an Malayalam lang array of replie.__ \n➥ /lnm : __find your lucky number.__\n➥ /love : __Love__ 😘\n➥ /toss : __Tosses A coin__\n➥ /shrug : __get shrug XD__\n➥ /table : __get flip/unflip__ :v\n➥ /decide : __Randomly answers yes/no/maybe__.\n➥ /truth :__asks you a question__\n➥ /tord : __can be a truth or a dare__.\n➥ /dare : __gives you a dare__\n➥ /rather : __would you rather__\n➥ /goodnight : Good night 😴\n➥ /morning : good morning 😊🌄\n➥ /abuse : labuse 🤬\n➥ /cry : Cry 😭🥲\n⍟───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -219,7 +219,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "ids":
         await msg.message.edit(
-            text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. Your DC❓ : Click /dc to get your DC.\n6. /info : this command to get your all information, only work my Pm.\n- /ginfo : this command to get your group information ℹ️, this only work in group.",
+            text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n📚 **Avaible Commands**\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. Your DC❓ : Click /dc to get your DC.\n6. /info : this command to get your all information, only work my Pm.\n- /ginfo : this command to get your group information ℹ️, this only work in group.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
