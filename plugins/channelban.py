@@ -1,4 +1,4 @@
-from pyrogram import Client, idle
+from pyrogram import Client, filters
 from pyrogram.raw.types import UpdateGroupCallParticipants, PeerChannel
 from pyrogram.raw.functions.channels import EditBanned
 from pyrogram.raw.types import InputPeerChannel, InputChannel, ChatBannedRights, InputGroupCall
