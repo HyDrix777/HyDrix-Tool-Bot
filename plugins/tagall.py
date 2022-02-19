@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 
-@pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
+@Client.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 async def tagall(client, message):
     await message.reply("`Processing.....`")
     sh = get_text(message)
