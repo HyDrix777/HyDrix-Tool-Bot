@@ -13,13 +13,6 @@ import lyricsgenius
 
 
 
-# Welcome bot-----
-
-WELCOME_MESSAGE = "Hello Welcome to group chat"
-
-@Client.on_message(filters.chat & filters.new_chat_members)
-def welcomebot(client, message):
-    message.replay_text(WELCOME_MESSAGE)
 
 
 
