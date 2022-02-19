@@ -1,5 +1,4 @@
 import os
-from database import db
 from pyrogram import Client, filters
 from bot import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
