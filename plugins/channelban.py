@@ -29,9 +29,9 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 async def whitelist_check(chat_id,channel_id=0):
-    if not (await db.is_chat_exist(chat_id)):
-        await db.add_chat_list(chat_id)
-    _chat_list = await db.get_chat_list(chat_id)
+    if not (await msg.is_chat_exist(chat_id)):
+        await msg.add_chat_list(chat_id)
+    _chat_list = await msg.get_chat_list(chat_id)
     if int(channel_id) in _chat_list:
         return True
     else:
@@ -84,9 +84,9 @@ async def chelp_handler(bot, message):
 /del_whitelist [channel_id] : remove channel from whitelist.
 /show_whitelist : Show all white list channels.
 
-for more help ask at @JV_Community""",
-                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Bots Channel", url=f"https://t.me/Universal_Projects"),
-                                                                 InlineKeyboardButton("Support Group", url=f"https://t.me/JV_Community")]]),
+for more help ask at dd""",
+                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Bots Channel", url=f"https://t.me/Univern_Projects"),
+                                                                 InlineKeyboardButton("Support Group", url=f"https://t.me/JVdjhdunity")]]),
                              disable_web_page_preview=True)
 
 
@@ -178,7 +178,7 @@ async def add_whitelist_handler(bot, message):
             return
         if (await whitelist_check(chat_id, a_id)):
             return await message.reply_text("Channel Id already found in whitelist")
-        chk,msg = await db.add_chat_list(chat_id, a_id)
+        chk,msg = await msg.add_chat_list(chat_id, a_id)
         if chk and msg != "":
             await message.reply_text(msg)
         else:
@@ -201,7 +201,7 @@ async def del_whitelist_handler(bot, message):
             return
         if not (await whitelist_check(chat_id, a_id)):
             return await message.reply_text("Channel Id not found in whitelist")
-        chk,msg = await db.del_chat_list(message.chat.id, a_id)
+        chk,msg = await msg.del_chat_list(message.chat.id, a_id)
         if chk:
             await message.reply_text(msg)
         else:
@@ -218,7 +218,7 @@ async def del_whitelist_handler(bot, message):
         pass
     else:
         return
-    show_wl = await db.get_chat_list(chat_id)
+    show_wl = await msg.get_chat_list(chat_id)
     if show_wl:
         await message.reply_text(f"This ids found in whitelist\n\n{show_wl}")
     else:
