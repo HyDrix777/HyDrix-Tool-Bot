@@ -21,5 +21,4 @@ play-scraper
 glitchart
 youtube_search
 asyncio
-dnspython
-motor
+
