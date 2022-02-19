@@ -364,8 +364,13 @@ async def delete(bot,message):
 
 @Client.on_message(filters.new_chat_members)
 async def welcome(bot, message):
- await message.reply_text(
-     text="Hi !",
+    await message.reply_text(
+        text="Hi {message.from_user.first_name}",
+        reply_markup=InlineKeyboardMarkup( [[
+           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
+           ]]
+           )
+       )
 
 #Inline search Remove---
 
@@ -400,4 +405,3 @@ async def lrsearch(_, message: Message):
 **__Lyrics:__**
 {S.lyrics}"""
     await m.edit(xxx)
-
