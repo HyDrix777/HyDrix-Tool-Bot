@@ -360,6 +360,13 @@ async def list(bot: Client, message: Message):
 async def delete(bot,message):
  await message.delete()
 
+# Welcome-------
+
+@Client.on_message(filters.new_chat_members)
+async def welcome(bot, message):
+    await message.reply_text(
+        text="Hi !",
+
 #Inline search Remove---
 
 @Client.on_message(filters.via_bot & filters.group)
