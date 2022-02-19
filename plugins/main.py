@@ -362,8 +362,8 @@ async def delete(bot,message):
 
 # Welcome-------
 
-@Client.on_message(filters.new_chat_members)
-async def welcome(bot, message):
+@Client.on_message(filters.left_chat_member)
+async def goodbye(bot, message):
     await message.reply_text(
         text="Hi {message.from_user.first_name}",
         reply_markup=InlineKeyboardMarkup( [[
