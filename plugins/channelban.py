@@ -1,7 +1,7 @@
 import os
 from database import db
 from pyrogram import Client, filters
-from config import Config
+from bot import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import logging
 from logging.handlers import RotatingFileHandler
