@@ -360,17 +360,6 @@ async def list(bot: Client, message: Message):
 async def delete(bot,message):
  await message.delete()
 
-# Welcome-------
-
-@Client.on_message(filters.left_chat_member)
-async def goodbye(bot, message):
-    await message.reply_text(
-        text="Hi {message.from_user.first_name}",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
-           ]]
-           )
-       )
 
 #Inline search Remove---
 
