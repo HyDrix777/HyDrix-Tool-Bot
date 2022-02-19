@@ -20,5 +20,6 @@ ytthumb
 play-scraper
 glitchart
 youtube_search
-cryptg
 asyncio
+dnspython
+motor
