@@ -27,12 +27,3 @@ pysocks
 Sphinx
 sphinx-autobuild 
 sphinx-rtd-theme
-async-lru
-colorama
-loguru
-codecov 
-flake8 
-tox 
-tox-travis 
-pytest 
-pytest-cov 
