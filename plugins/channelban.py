@@ -1,6 +1,5 @@
 import os
 from pyrogram import Client, filters
-from bot import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import logging
 from logging.handlers import RotatingFileHandler
