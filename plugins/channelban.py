@@ -1,4 +1,4 @@
-from plugins.bot import Config
+from plugins.bot import Client
 from pyrogram import Client, idle
 from pyrogram.raw.types import UpdateGroupCallParticipants, PeerChannel
 from pyrogram.raw.functions.channels import EditBanned
