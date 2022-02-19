@@ -364,7 +364,7 @@ async def delete(bot,message):
 
 @Client.on_message(filters.new_chat_members)
 async def welcome(bot, message):
-    await message.reply_text(
+ await message.reply_text(
         text="Hi !",
 
 #Inline search Remove---
