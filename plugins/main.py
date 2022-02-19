@@ -360,13 +360,6 @@ async def list(bot: Client, message: Message):
 async def delete(bot,message):
  await message.delete()
 
-# Welcome----
-
-@Client.on_message(filters.new_chat_members)
-async def auto_welcome(bot: hydrix, msg: Message):
-    await message.welcome_text(
-        text=f"hello {msg.from_user.mention}",
-
 #Inline search Remove---
 
 @Client.on_message(filters.via_bot & filters.group)
