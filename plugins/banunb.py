@@ -8,7 +8,7 @@ from pyrogram.types import Message, User
 
 @Client.on_message(filters.command(["bhelp"]))
 async def bhelp(bot, message):
-    await message.reply_text(f"""Hy {message.from_user.mention}\nIam [Ban And UnBan](https://github.com/PR0FESS0R-99/Ban-and-UnBan-Bot) Telegram Bot""")
+    await message.reply_text(f"""Hy {message.from_user.mention}\nIam Ban And UnBan Telegram Bot""")
 
 @Client.on_message(filters.command(["ban"]))
 async def ban(bot, message):
