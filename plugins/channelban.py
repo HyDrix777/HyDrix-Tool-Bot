@@ -78,8 +78,8 @@ async def main_handler(bot, message):
 
 
 
-@Client.on_message(filters.command(["help"]) & filters.private)
-async def help_handler(bot, message):
+@Client.on_message(filters.command(["chelp"]) & filters.private)
+async def chelp_handler(bot, message):
     await message.reply_text(text="""/ban [channel_id] : ban channel from sending message as channel.
 /unban [channel_id] : unban channel from sending message as channel.
 /add_whitelist [channel_id] : add channel into whitelist and protect channel for automatic actions.
