@@ -1,6 +1,20 @@
 from pyrogram import Client, filters
 
 
+
+def get_text(message: Message) -> [None, str]:
+    text_to_return = message.text
+    if message.text is None:
+        return None
+    if " " in text_to_return:
+        try:
+            return message.text.split(None, 1)[1]
+        except IndexError:
+            return None
+    else:
+        return None
+
+
 @Client.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 async def tagall(client, message):
     await message.reply("`Processing.....`")
