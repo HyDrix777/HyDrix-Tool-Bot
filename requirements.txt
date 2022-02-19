@@ -21,9 +21,3 @@ play-scraper
 glitchart
 youtube_search
 asyncio
-win32-setctime
-pyaes 
-pysocks
-Sphinx
-sphinx-autobuild 
-sphinx-rtd-theme
