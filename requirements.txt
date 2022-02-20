@@ -22,3 +22,4 @@ glitchart
 youtube_search
 asyncio
 dnspython
+shazamio
