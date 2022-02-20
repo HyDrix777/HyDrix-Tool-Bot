@@ -54,7 +54,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "cancel")
 
 
-@Client.on_message(
+@bot.on_message(
     ~filters.private | ~filters.group
     & filters.text
     & ~filters.command("start")
@@ -79,7 +79,7 @@ async def chat(_, message):
     await type_and_send(message)
 
 
-@Client.on_message(
+@bot.on_message(
     filters.private | ~filters.group
     & ~filters.command("start")
     & ~filters.edited
@@ -91,7 +91,7 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@Client.on_message(filters.command("start") & ~filters.edited)
+@bot.on_message(filters.command("start") & ~filters.edited)
 async def startt(_, message):
     await message.reply_text("Hai✌️, its me Alicia.")
 
@@ -102,5 +102,3 @@ async def main():
     arq = ARQ(ARQ_API_BASE_URL, ARQ_API_KEY, session)
 
     
-loop = get_event_loop()
-loop.run_until_complete(main())
