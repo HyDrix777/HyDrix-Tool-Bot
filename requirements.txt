@@ -1,5 +1,5 @@
 pyrogram
-tgcrypto==1.2.2
+tgcrypto
 telegraph==1.4.1
 telethon
 telegram
@@ -22,4 +22,4 @@ glitchart
 youtube_search
 asyncio
 dnspython
-pymongo
+
