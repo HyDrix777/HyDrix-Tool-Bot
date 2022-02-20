@@ -57,7 +57,7 @@ async def type_and_send(message):
 @bot.on_message(
     ~filters.private | ~filters.group
     & filters.text
-    & ~filters.command("start")
+    & ~filters.command("ai")
     & ~filters.edited,
     group=69,
 )
