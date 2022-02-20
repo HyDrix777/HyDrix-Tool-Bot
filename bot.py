@@ -11,7 +11,7 @@ if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
-    bot = Client(
+    hydrix = Client(
         "Pyrogram Bot",
         bot_token=BOT_TOKEN,
         api_hash=API_HASH,
@@ -19,4 +19,4 @@ if __name__ == "__main__" :
         plugins=plugins
    )
 
-bot.run()
+hydrix.run()
