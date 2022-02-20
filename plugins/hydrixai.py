@@ -81,7 +81,7 @@ async def chat(_, message):
 
 @bot.on_message(
     filters.private | ~filters.group
-    & ~filters.command("start")
+    & ~filters.command("ai")
     & ~filters.edited
 )
 async def chatpm(_, message):
