@@ -91,8 +91,8 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@bot.on_message(filters.command("start") & ~filters.edited)
-async def startt(_, message):
+@bot.on_message(filters.command("ai") & ~filters.edited)
+async def ai(_, message):
     await message.reply_text("Hai✌️, its me Alicia.")
 
 
