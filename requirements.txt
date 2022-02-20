@@ -22,4 +22,5 @@ glitchart
 youtube_search
 asyncio
 dnspython
-
+python-dotenv==0.19.2
+wget==3.2
