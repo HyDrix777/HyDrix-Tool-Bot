@@ -1,7 +1,7 @@
 import os
 import asyncio
 from shazamio import Shazam
-from humanbyte import humanbytes
+from plugins.humanbyte import humanbytes
 from pyrogram import filters, Client
 import datetime
 import requests
