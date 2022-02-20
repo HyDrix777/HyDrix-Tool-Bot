@@ -6,7 +6,7 @@ from pyrogram import Client, filters
 
 
 
-@aqua.on_message(filters.command(["chat"]))
+@Client.on_message(filters.command(["chat"]))
 async def chat (client , message):
     await message.reply_text(text = ''' I AM KANNA-CHAN ✨ 
     \n\n I AM YOUR VIRTUAL FRIEND ✨
