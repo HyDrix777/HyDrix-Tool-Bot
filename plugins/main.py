@@ -110,7 +110,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ɢʟɪᴛᴄʜ ᴀʀᴛ", callback_data="glit")
                ],[
                InlineKeyboardButton("ᴅʟᴇ ɪɴʟɪɴᴇ", callback_data="dinl"),
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("sʜᴀᴢᴀᴍ", callback_data="shaz"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
@@ -332,6 +332,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "dinl":
         await msg.message.edit(
             text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\n⍟ __This module to automatically deletes Inline messages sent Through Bot in Group's__.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "shaz":
+        await msg.message.edit(
+            text="🎶➥ **Shazam Music Finder**\n\n__You have a part of a song, but could not find out what that song is?__\n__Here's the best solution for you. Just send me a audio file sample and I'll tell you what is that song.__\n\n📚 **Avaible Commands**\n\n**Step 1** : __Send me a Audio__\n\n**Step 2** : __Reply your to Audio with this__ /audify __command__\n/audify : __Reply to Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
