@@ -257,7 +257,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "bots":
         await msg.message.edit(
-            text="╭───────────〄\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 Stylish Text bot\n│\n├𝟚 Youtube Dl bot\n│\n├𝟛 Youtube Playlist dl bot\n│\n├𝟜 Mention All bot\n│\n├𝟝 URL Uploader bot\n│\n╰───────────〄",
+            text="╭───────────〄\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 `Stylish Text bot`\n│\n├𝟚 `Youtube Dl bot`\n│\n├𝟛 `Youtube Playlist dl bot`\n│\n├𝟜 `Mention All bot`\n│\n├𝟝 `URL Uploader bot`\n│\n╰───────────〄",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("𝟙. Stylish Text bot", url="https://t.me/StylishText_X_Bot")
                ],[
@@ -267,7 +267,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("𝟜. Mention All bot", url="https://t.me/Mentionalltgtbot")
                ],[
-               InlineKeyboardButton("𝟝. URL Uploader bot", url="https://t.me/@rlUploader_Xrobot")
+               InlineKeyboardButton("𝟝. URL Uploader bot", url="https://t.me/UrlUploader_Xrobot")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
