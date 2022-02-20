@@ -7,7 +7,10 @@ import psutil
 import requests
 import json
 import subprocess
-import configs
+
+
+
+
 
 sudo_users = 18891187 , 784589736
 owner_id = [18891187]
