@@ -23,5 +23,3 @@ youtube_search
 asyncio
 dnspython
 shazamio
-heroku3
-python-arq
