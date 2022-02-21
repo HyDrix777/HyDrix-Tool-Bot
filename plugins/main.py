@@ -15,6 +15,11 @@ import lyricsgenius
 
 
 
+@Clinte.on_message(filters.text & filters.Private) 
+def echobot(cliente, message):
+    message.replay_text(message.text)
+
+
 
 
 
