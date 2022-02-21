@@ -356,6 +356,7 @@ async def hydrix(bot, msg: CallbackQuery):
 async def reload(bot: Client, message: Message):
     await message.reply_text(
         text="✅Bot successfully reloaded!",
+    )
 
 @Client.on_message(filters.group & filters.command("help"))
 async def help(bot: Client, message: Message):
