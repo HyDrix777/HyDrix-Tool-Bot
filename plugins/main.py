@@ -1,5 +1,4 @@
 import os
-from pyrogram import Client
 from pyrogram import Client, filters
 from pyrogram.types import Message, User
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -15,10 +14,6 @@ import lyricsgenius
 
 
 
-
-@Clinte.on_message(filters.text & filters.private) 
-def echobot(bot, msg):
-    message.replay_text(msg.text)
 
 
 
