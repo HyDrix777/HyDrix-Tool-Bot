@@ -23,3 +23,5 @@ youtube_search
 asyncio
 dnspython
 shazamio
+pymongo
+dnspython
