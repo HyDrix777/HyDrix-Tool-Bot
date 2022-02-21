@@ -80,7 +80,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "help":
         await msg.message.edit(
-            text=f"Hey {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/00651cac20faed3c7e3c1.jpg)__I Can Guide You Through All Of Hydrix Tools bot Cool Features And How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules__",
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/00651cac20faed3c7e3c1.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("sᴛɪᴄᴋᴇʀ", callback_data="stck"),
                InlineKeyboardButton("ᴄʟᴇᴀɴ sᴍ", callback_data="clsm"),
@@ -258,7 +258,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "bots":
         await msg.message.edit(
-            text="╭───────────〄\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 `Stylish Text bot`\n│\n├𝟚 `Youtube Dl bot`\n│\n├𝟛 `Youtube Playlist dl bot`\n│\n├𝟜 `Mention All bot`\n│\n├𝟝 `URL Uploader bot`\n│\n╰───────────〄",
+            text="╭───────────⍟\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 `Stylish Text bot`\n│\n├𝟚 `Youtube Dl bot`\n│\n├𝟛 `Youtube Playlist dl bot`\n│\n├𝟜 `Mention All bot`\n│\n├𝟝 `URL Uploader bot`\n│\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("𝟙. Stylish Text bot", url="https://t.me/StylishText_X_Bot")
                ],[
