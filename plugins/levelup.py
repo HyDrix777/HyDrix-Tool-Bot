@@ -13,7 +13,7 @@ MONGO_URL = os.environ.get("mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.m
 async def is_admins(chat_id: int):
     return [
         member.user.id
-        async for member in bot.iter_chat_members(
+        async for member in Client.iter_chat_members(
             chat_id, filter="administrators"
         )
     ]
