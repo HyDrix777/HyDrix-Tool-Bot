@@ -278,7 +278,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gith":
         await msg.message.edit(
-            text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg) **GitHub**\n\n📚 **Avaible Commands**\n\n➥ /github - Get your GitHub profile in my PM\nEg: `/github Username`",
+            text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg) **GitHub**\n\n📚 **Avaible Commands**\n\n➥ /github - Get your [GitHub](https://github.com) profile in my PM\nEg: `/github Username`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
