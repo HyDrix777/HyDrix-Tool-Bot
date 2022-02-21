@@ -114,7 +114,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("sʜᴀᴢᴀᴍ", callback_data="shaz"),
                InlineKeyboardButton("ᴇᴅɪᴛ ᴍsɢ ᴀʟᴇʀᴛ", callback_data="emsa")
                ],[
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ʏᴛ ᴛᴀɢ ғɪɴᴅᴇʀ", callback_data="yttf"),
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -355,6 +355,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "emsa":
         await msg.message.edit(
             text="📝 **Edit Message Alert**\n\n__A Telegram Bot to Show alert when someone edits a message in Group__\n",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "yttf":
+        await msg.message.edit(
+            text="🏷️ **YouTube Tag Finder**\n\n__A telegram Bot That can extract any YouTube video Tag easy__\n__first give me the yt **URL**, and i extract tag for U__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
