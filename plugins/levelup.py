@@ -8,7 +8,7 @@ MONGO_URL = os.environ.get("mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.m
 
 
 
-)
+
 
 async def is_admins(chat_id: int):
     return [
