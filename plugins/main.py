@@ -112,7 +112,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴅʟᴇ ɪɴʟɪɴᴇ", callback_data="dinl"),
                InlineKeyboardButton("sʜᴀᴢᴀᴍ", callback_data="shaz"),
-               InlineKeyboardButton("ᴇᴅɪᴛ ᴍᴇssᴀɢᴇ ᴀʟᴇʀᴛ", callback_data="emsa")
+               InlineKeyboardButton("ᴇᴅɪᴛ ᴍsɢ ᴀʟᴇʀᴛ", callback_data="emsa")
                ],[
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start"),
