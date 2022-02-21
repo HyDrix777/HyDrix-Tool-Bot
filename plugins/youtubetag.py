@@ -16,10 +16,10 @@ async def tag(bot, message):
     link = str(message.text)
     tags = videotags(link) 
     if tags=="":
-         await message.reply_text(" `𝐍𝐨 𝐓𝐚𝐠𝐬 𝐅𝐨𝐮𝐧𝐝 🔖`")
+         await message.reply_text(" `Nᴏ ᴛᴀɢ ғᴏᴜɴᴅ 🔖`")
     else:
-         await message.reply_text(text=f"** 𝑺𝒆𝒍𝒆𝒄𝒕 𝒘𝒉𝒂𝒕 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒂𝒄𝒄𝒐𝒎𝒑𝒍𝒊𝒔𝒉 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏 𝒃𝒆𝒍𝒐𝒘 **\n\n𝓣𝓱𝓮𝓼𝓮 𝓪𝓻𝓮 𝓽𝓱𝓮 𝓽𝓪𝓰𝓼 𝓾𝓼𝓮𝓭 𝓯𝓸𝓻 𝓽𝓱𝓮 𝓿𝓲𝓭𝓮𝓸 𝔂𝓸𝓾 𝓼𝓮𝓷𝓽 𝓶𝓮\n\n\n ` {tags} ` \n\n\n 🔥 Pọwẹrẹɗ Ɓy : @mrkpbots\n\n☘️ 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 : @rajeshsaini2115")
- 
+         await message.reply_text(text=f"__Sᴇʟᴇᴄᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴄᴄᴏᴍᴘʟɪsʜ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ__\n\n__Tʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴛᴀɢs ᴜsᴇᴅ ғᴏʀ ᴛʜᴇ ᴠɪᴅᴇᴏ ʏᴏᴜ sᴇɴᴅ ᴍᴇ__\n\n\n ` {tags} ` \n\n\n ♥️ Pᴏᴡᴇʀᴇᴅ ʙʏ : @HTGToolBot")
+ pbots"
 
 @Client.on_inline_query()
 async def search(client: Client, query: InlineQuery):
@@ -62,6 +62,6 @@ async def search(client: Client, query: InlineQuery):
             await query.answer(
                 results=answers,
                 cache_time=0,
-                switch_pm_text="**Error: Search timed out❌**",
+                switch_pm_text="**Error: Sᴇᴀʀᴄʜ ᴛɪᴍᴇᴅ ᴏᴜᴛ❌**",
                 switch_pm_parameter="",
             )
