@@ -359,12 +359,6 @@ async def reload(bot: Client, message: Message):
         text="✅Bot successfully reloaded!",
     )
 
-@Client.on_message(filters.command("leave") & filters.group)
-async def leave(bot: Client, message: Message):
-          bot.send_message(message.chat.id, "Bye I'm leaving.")
-          bot.leave_chat(message.chat_id)
-    )
-
 @Client.on_message(filters.group & filters.command("help"))
 async def help(bot: Client, message: Message):
     await message.reply_text(
