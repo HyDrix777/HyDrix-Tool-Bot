@@ -1,5 +1,5 @@
 pyrogram
-tgcrypto
+tgcrypto==1.2.2
 telegraph==1.4.1
 telethon
 telegram
