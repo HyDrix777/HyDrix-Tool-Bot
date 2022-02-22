@@ -1,7 +1,7 @@
 from pyrogram import Client , filters
 from pymongo import MongoClient
 import os
-from plugins.users_chats_db import MONGO_URL
+from infog import MONGO_URL
 
 
 MONGO_URL = os.environ.get("MONGO_URL")
