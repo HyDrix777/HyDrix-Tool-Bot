@@ -6,6 +6,7 @@ import re
 import os
 from plugins.users_chats_db import db
 from imdb import IMDb
+from typing import Union
 
 
 
