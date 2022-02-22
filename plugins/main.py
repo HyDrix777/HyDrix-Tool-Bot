@@ -379,7 +379,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "purg":
         await msg.message.edit(
-            text="__Here is the help for the **Purges** module:__\n\n - /purge: deletes all messages between this and the replied to message.__\n__only work in group.__",
+            text="__Here is the help for the **Purges** module:__\n\n - /purge: __deletes all messages between this and the replied to message.__\n__only work in group.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
