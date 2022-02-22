@@ -7,6 +7,17 @@ import os
 from plugins.users_chats_db import db
 
 
+# temp db for banned
+class temp(object):
+    BANNED_USERS = []
+    BANNED_CHATS = []
+    ME = None
+    CURRENT=int(os.environ.get("SKIP", 2))
+    CANCEL = False
+    MELCOW = {}
+    U_NAME = None
+
+
 # Broadcast-----------------------
 
 async def broadcast_messages(user_id, message):
