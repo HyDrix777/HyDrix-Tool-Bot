@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import os
 
 
-MONGO_URL = os.environ.get("MONGO_URL")
+DATABASE_URI = os.environ.get("DATABASE_URI")
 
 
 
@@ -28,7 +28,7 @@ levelnum = [2,5,15,25,35,50,70,100]
     filters.command("level", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def levelsystem(_, message): 
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
    
     toggle = leveldb["ToggleDb"]["Toggle"] 
     if message.from_user:
@@ -63,7 +63,7 @@ async def level(client, message):
     chat = message.chat.id
     user_id = message.from_user.id    
 
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 
@@ -104,7 +104,7 @@ async def rank(client, message):
     chat = message.chat.id
     user_id = message.from_user.id    
     
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 
