@@ -31,16 +31,16 @@ async def github(_, message):
                 followers = result["followers"]
                 following = result["following"]
                 caption = f"""**Info Of {name}**
-**Username:** `{username}`
-**Bio:** `{bio}`
-**Profile Link:** [Here]({url})
-**Company:** `{company}`
-**Created On:** `{created_at}`
-**Repositories:** `{repositories}`
-**Blog:** `{blog}`
-**Location:** `{location}`
-**Followers:** `{followers}`
-**Following:** `{following}`"""
+**👨‍💼 Username:** `{username}`
+**✍️ Bio:** `{bio}`
+**🔗 Profile Link:** [Here]({url})
+**🏢 Company:** `{company}`
+**🔨 Created On:** `{created_at}`
+**⛵️ Repositories:** `{repositories}`
+**🧖 Blog:** `{blog}`
+**📍 Location:** `{location}`
+**➡️ Followers:** `{followers}`
+**⬅️ Following:** `{following}`"""
             except Exception as e:
                 print(str(e))
     await message.reply_photo(photo=avatar_url, caption=caption)
