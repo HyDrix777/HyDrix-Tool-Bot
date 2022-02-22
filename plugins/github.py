@@ -30,7 +30,7 @@ async def github(_, message):
                 repositories = result["public_repos"]
                 followers = result["followers"]
                 following = result["following"]
-                Public = result["public_gists"]
+                public = result["public_gists"]
                 caption = f"""**Info Of {name}**
 **👨‍💼 Username:** `{username}`
 **✍️ Bio:** `{bio}`
