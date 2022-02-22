@@ -379,7 +379,7 @@ async def reload(bot: Client, message: Message):
         text="✅Bot successfully reloaded!",
     )
 
-@Client.on_message(filters.edited)
+@Client.on_message(filters.group & filters.edited)
 async def edited(bot,message):
 	chatid= message.chat.id	
 	await bot.send_message(text=f"{message.from_user.mention} Edited This👉 [Message]({message.link})",chat_id=chatid)
