@@ -116,7 +116,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ʏᴛ ᴛᴀɢ ғɪɴᴅᴇʀ", callback_data="yttf"),
                InlineKeyboardButton("ᴘɪɴ", callback_data="pins"),
-               InlineKeyboardButton("soon..", callback_data="start")
+               InlineKeyboardButton("ᴘᴜʀɢᴇs", callback_data="purg")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
@@ -371,6 +371,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "pins":
         await msg.message.edit(
             text="📌 **Pin**\n\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Avaible Commands**\n\n- /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n- /unpin : __I can Unpin the current pinned message in silently.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "purg":
+        await msg.message.edit(
+            text="__Here is the help for the **Purges** module:__\n\n - /purge: deletes all messages between this and the replied to message.__\n__only work in group.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
