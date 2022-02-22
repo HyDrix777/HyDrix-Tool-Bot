@@ -4,7 +4,7 @@ import os
 from infog import MONGO_URL
 
 
-MONGO_URL = os.environ.get("MONGO_URL")
+
 
 
 
