@@ -4,6 +4,8 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
 API_ID = int(os.environ.get("API_ID", "18891187"))
 API_HASH = os.environ.get("API_HASH", "7d120384f48b2a86fa2b9e9772a28af6")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 
 
 
