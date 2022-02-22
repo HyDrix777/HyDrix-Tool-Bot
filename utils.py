@@ -10,6 +10,8 @@ from typing import Union
 
 
 
+imdb = IMDb()
+
 
 # Broadcast-----------------------
 
