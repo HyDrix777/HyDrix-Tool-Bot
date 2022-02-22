@@ -2,11 +2,12 @@
 from pyrogram import Client, filters
 import datetime
 import time
+from info import ADMINS
 from plugins.users_chats_db import db
 from utils import broadcast_messages
 import asyncio
         
-@Client.on_message(filters.command("broadcast") & filters.user(5013387325 784589736) & filters.reply)
+@Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
 # https://t.me/GetTGLink/4178
 async def verupikkals(bot, message):
     users = await db.get_all_users()
