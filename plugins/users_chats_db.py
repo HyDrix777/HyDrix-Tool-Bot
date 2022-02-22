@@ -1,5 +1,5 @@
 import motor.motor_asyncio
-from bot import DATABASE_NAME, DATABASE_URI
+from infog import DATABASE_NAME, DATABASE_URI
 
 class Database:
     
