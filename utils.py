@@ -9,7 +9,8 @@ from imdb import IMDb
 from typing import Union
 from datetime import datetime
 
-
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 imdb = IMDb()
