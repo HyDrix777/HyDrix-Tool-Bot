@@ -2,11 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from infog import ADMINS
 from plugins.users_chats_db import db
-from Script import script
 from pyrogram.errors import ChatAdminRequired
-
-
-
 
 
 
