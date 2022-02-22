@@ -30,7 +30,6 @@ async def github(_, message):
                 repositories = result["public_repos"]
                 followers = result["followers"]
                 following = result["following"]
-                account_type = result["type"]
                 caption = f"""**Info Of {name}**
 **👨‍💼 Username:** `{username}`
 **✍️ Bio:** `{bio}`
@@ -41,8 +40,7 @@ async def github(_, message):
 **🧖 Blog:** `{blog}`
 **📍 Location:** `{location}`
 **➡️ Followers:** `{followers}`
-**⬅️ Following:** `{following}`
-**📝account_type:** `{type}`"""
+**⬅️ Following:** `{following}`"""
             except Exception as e:
                 print(str(e))
     await message.reply_photo(photo=avatar_url, caption=caption)
