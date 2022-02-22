@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from info import ADMINS
+from infog import ADMINS
 import os 
 from PIL import Image, ImageDraw, ImageFont
 from infog import (
