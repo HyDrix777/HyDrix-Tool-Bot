@@ -89,7 +89,7 @@ async def welcome(bot, msg):
     for member in members:
         if member.id == bot_id:
             await msg.reply(
-                f"Tʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇ! \n\nTʜɪs ɢʀᴏᴜᴘ's ɪᴅ ɪs `{msg.chat.id}`"
+                f"Tʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ in {msg.chat.title}❣️! \n\nTʜɪs ɢʀᴏᴜᴘ ɪᴅ ɪs `{msg.chat.id}`"
             )
 
 # private id
