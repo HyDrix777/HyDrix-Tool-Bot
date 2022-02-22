@@ -1,9 +1,9 @@
 from pyrogram import Client , filters
 from pymongo import MongoClient
 import os
-from infog.plugins import MONGO_URL
 
 
+MONGO_URL = os.environ.get("MONGO_URL")
 
 
 
