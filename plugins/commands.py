@@ -11,7 +11,7 @@ from plugins.sql import add_user, query_msg
 if bool(os.environ.get("ENV", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from infog import Config
 
 
 # ------------------------------- Start Message --------------------------------- #
