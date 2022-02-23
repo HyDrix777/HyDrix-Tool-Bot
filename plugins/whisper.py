@@ -10,8 +10,8 @@ logging.basicConfig(level=logging.INFO)
 
 db = {}
 
-@Client.on(events.NewMessage(pattern="^[!?/]start$"))
-async def stsrt(event):
+@Client.on(events.NewMessage(pattern="^[!?/]st$"))
+async def st(event):
     await event.reply(
             "**Heya, I am a Whisper Bot!**",
             buttons=[
