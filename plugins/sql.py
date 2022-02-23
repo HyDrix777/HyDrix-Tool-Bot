@@ -1,9 +1,9 @@
 import os
 import threading
-from sqlalchemy import create_engine
-from sqlalchemy import Column, TEXT, Numeric
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, scoped_session
+from sql import create_engine
+from sql import Column, TEXT, Numeric
+from sql.ext.declarative import declarative_base
+from sql.orm import sessionmaker, scoped_session
 
 
 if bool(os.environ.get("ENV", False)):
