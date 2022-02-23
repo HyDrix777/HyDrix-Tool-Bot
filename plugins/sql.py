@@ -13,7 +13,7 @@ else:
 
 
 def start() -> scoped_session:
-    engine = create_engine(Config.DB_URI, client_encoding="utf8")
+    engine = create_engine(Config.DB_URI, client_encoding="mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
