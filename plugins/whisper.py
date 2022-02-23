@@ -2,7 +2,7 @@ from telethon import events, TelegramClient, Button
 import logging
 from telethon.tl.functions.users import GetFullUserRequest as us
 import os
-
+from pyrogram import Client, filters
 
 logging.basicConfig(level=logging.INFO)
 
