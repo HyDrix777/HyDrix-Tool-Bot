@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-@Client.on_message(filters.private & filters.command(['cinfo']))
+@Client.on_message(filters.private & filters.text)
 async def countryinfo(bot, update):
 
     country = CountryInfo(update.text)
