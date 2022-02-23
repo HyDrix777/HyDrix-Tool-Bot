@@ -24,4 +24,4 @@ asyncio
 dnspython
 shazamio
 YoutubeTags
-countryinfo
+
