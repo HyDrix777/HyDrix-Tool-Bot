@@ -15,8 +15,8 @@ START_TXT = """Hey {}, Iam a Guess Game Bot
 Hope You Enjoyed The Bot
 """
 
-GUESS_COUNT = int(environ.get("GUESS_COUNT", "9"))
+GUESS_COUNT = int(environ.get("GUESS_COUNT", "14"))
 
-MAX_GUESSES = int(environ.get("MAX_GUESSES", "50"))
+MAX_GUESSES = int(environ.get("MAX_GUESSES", "20"))
 
 SECRET_WORD = environ.get("Any word that you want your users to guess")
