@@ -1,6 +1,7 @@
 import re
 from os import environ
 id_pattern = re.compile(r'^.\d+$')
+import os
 
 
 
@@ -10,3 +11,5 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 TG_MAX_SELECT_LEN = 100
 
+sudo_users = int(os.getenv("sudo_users"))
+owner_id = int(os.getenv("owner_id"))
