@@ -1,7 +1,7 @@
 import re
 from os import environ
 id_pattern = re.compile(r'^.\d+$')
-
+import os
 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '784589736').split()]
