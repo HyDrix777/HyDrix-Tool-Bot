@@ -13,8 +13,8 @@ TG_MAX_SELECT_LEN = 100
 
 
 class Config(object):
-    SESSION_NAME = os.environ.get("Torrent-Search-Bot")
-    API_ID = int(os.environ.get("API_ID", 18891187)
-    API_HASH = os.environ.get("7d120384f48b2a86fa2b9e9772a28af6")
-    BOT_TOKEN = os.environ.get("5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
-    MAX_INLINE_RESULTS = int(os.environ.get("MAX_INLINE_RESULTS", 50))
+SESSION_NAME = os.environ.get("Torrent-Search-Bot")
+API_ID = int(os.environ.get("API_ID", 18891187)
+API_HASH = os.environ.get("7d120384f48b2a86fa2b9e9772a28af6")
+BOT_TOKEN = os.environ.get("5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
+MAX_INLINE_RESULTS = int(os.environ.get("MAX_INLINE_RESULTS", 50))
