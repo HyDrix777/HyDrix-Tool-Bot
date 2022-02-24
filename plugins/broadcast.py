@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 import datetime
 import time
 from plugins.users_chats_db import db
-from infog import ADMINS
+from info import ADMINS
 from utils import broadcast_messages
 import asyncio
         
