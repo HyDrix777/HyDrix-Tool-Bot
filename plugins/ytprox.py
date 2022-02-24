@@ -22,7 +22,7 @@ s2tw = OpenCC('s2tw.json').convert
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
-@Client.on_message(filters.private
+@Client.on_message(filters.group
                    & filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
