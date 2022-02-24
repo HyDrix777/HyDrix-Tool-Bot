@@ -24,3 +24,6 @@ asyncio
 dnspython
 shazamio
 YoutubeTags
+motor==2.4.0
+pymongo[srv]==3.11.4
+umongo==3.0.0
