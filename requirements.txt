@@ -24,7 +24,5 @@ asyncio
 dnspython
 shazamio
 YoutubeTags
-OpenCC
-Pillow
-wget
-TgCrypto
+
+
