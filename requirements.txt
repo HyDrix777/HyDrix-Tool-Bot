@@ -27,3 +27,4 @@ YoutubeTags
 OpenCC
 Pillow
 wget
+TgCrypto
