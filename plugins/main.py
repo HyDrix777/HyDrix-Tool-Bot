@@ -266,7 +266,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "bots":
         await msg.message.edit(
-            text="╭───────────⍟\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 `Stylish Text bot`\n├𝟚 `Youtube Dl bot`\n├𝟛 `Mention All bot`\n├𝟜 `URL Uploader bot`\n├𝟝`Music Dl`\n│\n╰───────────⍟",
+            text="╭───────────⍟\n├──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n│\n├𝟙 `Stylish Text bot`\n├𝟚 `Youtube Dl bot`\n├𝟛 `Mention All bot`\n├𝟜 `URL Uploader bot`\n├𝟝 `Music Dl`\n│\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("𝟙. Stylish Text bot", url="https://t.me/StylishText_X_Bot")
                ],[
