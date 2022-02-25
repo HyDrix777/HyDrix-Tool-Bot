@@ -11,7 +11,6 @@ logging.basicConfig(
 LOGGER = logging.getLogger(__name__)
 
 
-Client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
   
 @Client.on(events.NewMessage(pattern="^/all ?(.*)"))
