@@ -24,6 +24,3 @@ asyncio
 dnspython
 shazamio
 YoutubeTags
-img2pdf
-pytesseract~=0.3.8
-Pillow~=8.3.1
