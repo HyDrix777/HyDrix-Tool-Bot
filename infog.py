@@ -10,7 +10,4 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '784589736').split()]
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 TG_MAX_SELECT_LEN = 100
-MUST_JOIN = os.environ.get('MUST_JOIN', None)
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN.replace("@", "Music_Galaxy_Dl")
-
+MUST_JOIN = os.environ.get('MUST_JOIN', Music_Galaxy_Dl)
