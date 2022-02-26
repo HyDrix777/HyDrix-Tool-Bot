@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 
 
-@Client.on_message(filters.group & filters.incoming(["stk"]))
+@Client.on_message(filters.group & filters.incoming(filters.sticker("st") | filters.photo("ph")))
 async def sticker_image(_, msg: Message):
     user_id = msg.from_user.id
     message_id = msg.message_id
