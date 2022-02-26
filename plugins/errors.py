@@ -1,6 +1,6 @@
 import sys
 import traceback
-from functools import wraps
+from plugins import wraps
 from plugins import pbot as app
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
