@@ -4,8 +4,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-REMOVEBG_API = os.environ.get("REMOVEBG_API", "JysFjacfEDkd95Pf6xgCyyEp")
-UNSCREEN_API = os.environ.get("UNSCREEN_API", "aL8We5F9ttrCqwtJjFqTxW21")
+REMOVEBG_API = os.environ.get("REMOVEBG_API", "stkapTMDWZU1sX1W4KnoALEq")
+UNSCREEN_API = os.environ.get("UNSCREEN_API", "NN9aKNYfZxCmbQE3XGm5B7Sd")
 
 
 
