@@ -12,5 +12,5 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 TG_MAX_SELECT_LEN = 100
 MUST_JOIN = os.environ.get('MUST_JOIN', None)
     if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN.replace("@", "")
+        MUST_JOIN = MUST_JOIN.replace("@", "-1001500208686")
 
