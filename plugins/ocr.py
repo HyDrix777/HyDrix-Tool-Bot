@@ -8,7 +8,7 @@ from pyrogram.errors import MessageEmpty
 
 
 
-@Client.on_message(filters.private & filters.incoming & filters.photo)
+@Client.on_message(filters.group & filters.incoming & filters.photo)
 async def _ocr(_, msg: Message):
     user_id = msg.from_user.id
     message_id = msg.message_id
