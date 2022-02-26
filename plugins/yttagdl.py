@@ -17,4 +17,4 @@ async def tag(bot, message):
     if tags=="":
          await message.reply_text(" Nᴏ ᴛᴀɢ ғᴏᴜɴᴅ 🔖")
     else:
-         await message.reply_text(text=f"Tʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴛᴀɢs ᴜsᴇᴅ ғᴏʀ ᴛʜᴇ ᴠɪᴅᴇᴏ ʏᴏᴜ sᴇɴᴅ ᴍᴇ\n\n\n  {tags}  \n\n\n ♥️ Pᴏᴡᴇʀᴇᴅ ʙʏ : <a href="t.me/htgtoolbot">Hydrix Tools bot</a>)
+         await message.reply_text(text=f"Tʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴛᴀɢs ᴜsᴇᴅ ғᴏʀ ᴛʜᴇ ᴠɪᴅᴇᴏ ʏᴏᴜ sᴇɴᴅ ᴍᴇ\n\n\n  {tags}  \n\n\n ♥️ Pᴏᴡᴇʀᴇᴅ ʙʏ : <a href="t.me/htgtoolbot">Tools bot</a>)
