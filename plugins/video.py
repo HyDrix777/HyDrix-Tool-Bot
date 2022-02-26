@@ -59,7 +59,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("📤Uploading To Telegram")
+    m.edit("📤Upload Started\n\n- video Uploading speed could be slow. Please hold on...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
