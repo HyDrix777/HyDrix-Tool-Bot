@@ -2,7 +2,6 @@ import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 import asyncio
 from pyrogram.types import Message
-from imdb import IMDb
 import asyncio
 from typing import Union
 import re
@@ -12,7 +11,7 @@ from datetime import datetime
 from typing import List
 from pyrogram.types import InlineKeyboardButton
 from plugins.users_chats_db import db
-
+from imdb import IMDb
 
 
 BTN_URL_REGEX = re.compile(
