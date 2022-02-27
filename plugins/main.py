@@ -429,6 +429,11 @@ async def start(bot: Client, message: Message):
            )
        )
 
+# Channel tag Forward RM
+
+@Client.on_message(filters.forwarded & filters.channel)
+async def restricted(bot, message):
+
 # G Translator Language code list
 
 @Client.on_message(filters.private & filters.command("list"))
