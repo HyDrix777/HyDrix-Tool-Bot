@@ -1,5 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
+from imdb import IMDb
 import asyncio
 from pyrogram.types import Message
 import asyncio
@@ -11,7 +12,7 @@ from datetime import datetime
 from typing import List
 from pyrogram.types import InlineKeyboardButton
 from plugins.users_chats_db import db
-from imdb import IMDb
+
 
 
 BTN_URL_REGEX = re.compile(
@@ -23,6 +24,15 @@ SMART_OPEN = '“'
 SMART_CLOSE = '”'
 START_CHAR = ('\'', '"', SMART_OPEN)
 
+
+class temp(object):
+    BANNED_USERS = []
+    BANNED_CHATS = []
+    ME = None
+    CURRENT=int(os.environ.get("SKIP", 2))
+    CANCEL = False
+    MELCOW = {}
+    U_NAME = None
 
 
 async def get_poster(query, bulk=False, id=False):
@@ -77,7 +87,6 @@ async def get_poster(query, bulk=False, id=False):
         'url':f'https://www.imdb.com/title/tt{movieid}'
 
     }
-
 
 async def broadcast_messages(user_id, message):
     try:
