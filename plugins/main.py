@@ -474,9 +474,10 @@ async def lrsearch(_, message: Message):
         return await m.edit("Lʏʀɪᴄs ɴᴏᴛ ғᴏᴜɴᴅ...")
     xxx = f"""
 **Lyrics Search Powered By ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ**
-**Searched Song:-** __{query}__
-**Found Lyrics For:-** __{S.title}__
-**Artist:-** {S.artist}
-**__Lyrics:__**
+**Searched Song:** __{query}__
+**Found Lyrics For:** __{S.title}__
+**Artist:** {S.artist}
+**Requested by:** {message.from_user.mention}
+**Lyrics:**
 {S.lyrics}"""
     await m.edit(xxx)
