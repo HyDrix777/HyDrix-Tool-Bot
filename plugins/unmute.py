@@ -23,9 +23,9 @@ async def un_ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Okay, changed ... now "
+                "Okay fine, "
                 f"{user_first_name} ക്ക് "
-                " You can join the group!"
+                " can speak again.!"
             )
         else:
             await message.reply_text(
