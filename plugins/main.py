@@ -80,7 +80,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "help":
         await msg.message.edit(
-            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs__",
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs__\nfirst thing! this not a group manager bot❗,I'm just only made for education parpose__ 😊",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("sᴛɪᴄᴋᴇʀ", callback_data="stck"),
                InlineKeyboardButton("ᴄʟᴇᴀɴ sᴍ", callback_data="clsm"),
@@ -120,7 +120,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴘɪɴɢ", callback_data="pinj"),
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
-               InlineKeyboardButton("soon...", callback_data="start")
+               InlineKeyboardButton("ɪᴍᴅʙ", callback_data="imbd")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
@@ -394,7 +394,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pinj":
         await msg.message.edit(
-            text="📍 __My ping😁 /ping",
+            text="📍 __My ping😁__\n➥ /ping\n➥ /alive\n🙄😁😜",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -403,7 +403,16 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "mute":
         await msg.message.edit(
-            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Avaible Commands**\n\n- /mute: Mute a user in group.\n- /unmute: Unmute a user in group.",
+            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Avaible Commands**\n\n➥ /mute: Mute a user in group.\n➥ /unmute: Unmute a user in group.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "imbd":
+        await msg.message.edit(
+            text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n📚 **Avaible Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
