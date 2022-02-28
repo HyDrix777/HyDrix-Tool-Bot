@@ -995,23 +995,6 @@ async def runml(_, message):
         await message.reply_text(effective_string)
 
 
-PING_STRING = (
-    "PONG!!",
-    "I am here!",
-)
-
-@Client.on_message(
-    filters.command("ping")
-)
-async def ping(_, message):
-    """ /ping strings """
-    effective_string = random.choice(PING_STRING)
-    if message.reply_to_message:
-        await message.reply_to_message.reply_text(effective_string)
-    else:
-        await message.reply_text(effective_string)
-
-
 ANIME_STRING = (
     "Typical of Goku to say something that crazy…",
     "Excuse me but are you by any chance the oddball in your family?– Ash Ketchum",
