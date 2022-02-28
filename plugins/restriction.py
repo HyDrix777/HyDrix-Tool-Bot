@@ -40,9 +40,9 @@ async def mute_user(_, message):
             await message.reply_text(
                 "👍🏻 "
                 f"<a href='tg://user?id={user_id}'>"
-                "Shut"
+                "Shhh..."
                 "</a>"
-                " Your Mouth! 🤐"
+                " quiet now Muted! 🤐"
             )
 
 
