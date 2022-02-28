@@ -134,9 +134,13 @@ async def id_(bot: Client, msg: Message):
 
 # Sticker id-------
 
-@Client.on_message(filters.private & filters.sticker)
-async def stickers(_, message):
-       await message.reply(f"Your Requested Sticker's ID is👇\n\n* `{message.sticker.file_id}` *", quote=True)
+@Client.on_message(filters.command(["sid"]))
+async def stickerid(bot, message):   
+    if message.reply_to_message.sticker:
+       await message.reply(f"**ʜᴇʀᴇ ɪs ʏᴏᴜʀ sᴛɪᴄᴋᴇʀ ɪᴅ**  \n `{message.reply_to_message.sticker.file_id}` \n \n ** ᴜɴɪǫᴜᴇ ɪᴅ ɪs ** \n\n`{message.reply_to_message.sticker.file_unique_id}`", quote=True)
+    else: 
+       await message.reply("ɴɪᴄᴇ,ɪᴛs ɴᴏᴛ ᴀ sᴛɪᴄᴋᴇʀ")
+
 
 # Dc finder
 
