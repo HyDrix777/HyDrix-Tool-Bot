@@ -400,7 +400,7 @@ async def hydrix(bot, msg: CallbackQuery):
 @Client.on_message(filters.group & filters.command("reload"))
 async def reload(bot: Client, message: Message):
     await message.reply_text(
-        text="✅Bot successfully reloaded!",
+        text="✅ Bot restarted\n✅ Admin list updated!",
     )
 
 @Client.on_message(filters.group & filters.edited)
