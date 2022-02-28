@@ -426,6 +426,11 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "delete":
         await msg.message.delete()
 
+@Client.on_callback_query()
+async def callback_data(bot, msg):
+    if msg.data == "about":
+        await msg.answer("ABOUT")
+
 # main commm--------
 
 @Client.on_message(filters.group & filters.command("reload"))
