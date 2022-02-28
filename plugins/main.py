@@ -441,6 +441,13 @@ async def list(bot: Client, message: Message):
            )
        )
 
+# Kick----
+
+@Client.on_message(filters.group & filters.command("ban"))
+def ban(bot, message):
+    bot.kick_chat_member(message.chat.id, message.reply_to_message.from_user.id)
+    bot.send_message(message.chat.id, f"(message.reply_to_message.from_user_mention) Banned!")
+
 # Service clear--------------------
 
 @Client.on_message(filters.service)
