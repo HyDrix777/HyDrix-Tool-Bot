@@ -42,7 +42,7 @@ async def mute_user(_, message):
                 f"<a href='tg://user?id={user_id}'>"
                 "Shhh..."
                 "</a>"
-                " quiet now Muted! 🤐"
+                " quiet now. Muted! 🤐"
             )
 
 
