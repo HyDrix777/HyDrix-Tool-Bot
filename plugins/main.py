@@ -119,7 +119,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴘᴜʀɢᴇs", callback_data="purg")
                ],[
                InlineKeyboardButton("ᴘɪɴɢ", callback_data="pinj"),
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
                InlineKeyboardButton("soon...", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
@@ -395,6 +395,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "pinj":
         await msg.message.edit(
             text="📍 __My ping😁 /ping",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "mute":
+        await msg.message.edit(
+            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Avaible Commands**\n\n- /mute: Mute a user in group.\n- /unmute: Unmute a user in group.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
