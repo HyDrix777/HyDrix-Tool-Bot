@@ -7,6 +7,17 @@ import os
 
 USE_AS_BOT = os.environ.get("USE_AS_BOT", True)
 
+def f_sudo_filter(filt, client, message):
+    return bool(
+        message.from_user.id in AUTH_USERS
+    )
+
+
+sudo_filter = filters.create(
+    func=f_sudo_filter,
+    name="SudoFilter"
+)
+
 
 def onw_filter(filt, client, message):
     if USE_AS_BOT:
@@ -24,7 +35,6 @@ f_onw_fliter = filters.create(
     func=onw_filter,
     name="OnwFilter"
 )
-
 
 
 async def admin_filter_f(filt, client, message):
