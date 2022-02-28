@@ -29,9 +29,9 @@ async def un_ban_user(_, message):
             )
         else:
             await message.reply_text(
-                "Okay, changed ... now "
+                "Okay fine, "
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
-                " You can join the group!"
+                " can speak again.!"
             )
