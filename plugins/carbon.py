@@ -1,7 +1,7 @@
-from pyrogram import Client, filters
+from pyrogram import filters
 from io import BytesIO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+from bot import Client
 
 from pyrogram.types import Message
 
@@ -35,7 +35,7 @@ BUTTON = InlineKeyboardMarkup(
             ]
           )
 
-@Client.on_message(filters.command(["carbon"]))
+@Client.on_message(filters.private & filters.command(["carbon"]))
 async def carbon_func(client, message):
     TEXT = f"""
 Carbon Genarated Successfully✅
