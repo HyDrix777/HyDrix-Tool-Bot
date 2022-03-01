@@ -65,7 +65,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🔍<b>Tʀᴀᴄᴋ Dᴏᴡɴʟᴏᴀᴅᴇᴅ</b>\n\n🎙️ <b>ᴛɪᴛʟᴇ:</b> <a href="{link}">{title[:35]}</a>\n\n⌚ <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> `{duration}`\n👁️‍🗨️ <b>ᴠɪᴇᴡs:</b> `{views}`\n🔴 <b>ᴄʜᴀɴɴᴇʟ:</b> {channel}\n\n⚡<i>Youtube Inline Download Powered By Hydrix Tool Bot</i>'
+        rep =  f'🔍<b>Tʀᴀᴄᴋ Dᴏᴡɴʟᴏᴀᴅᴇᴅ</b>\n\n🎙️ <b>ᴛɪᴛʟᴇ:</b> <a href="{link}">{title[:35]}</a>\n\n⌚ <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> `{duration}`\n👁️‍🗨️ <b>ᴠɪᴇᴡs:</b> `{views}`\n🎥 <b>ᴄʜᴀɴɴᴇʟ:</b> {channel}\n\n⚡<i>Youtube Inline Download Powered By Hydrix Tool Bot</i>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
