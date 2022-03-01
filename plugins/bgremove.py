@@ -12,6 +12,8 @@ UNSCREEN_API = os.environ.get("UNSCREEN_API", "NN9aKNYfZxCmbQE3XGm5B7Sd")
 @Client.on_message(filters.private & filters.command("bgr"))
 async def remove_background(bot, update):
         await message.reply_text("/search needs an argument!")
+
+
     if not REMOVEBG_API:
         await update.reply_text(
             text="Error :- Remove BG Api is error",
