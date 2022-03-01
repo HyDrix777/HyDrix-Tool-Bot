@@ -6,8 +6,8 @@ from youtube_search import YoutubeSearch
 
 
 
-@Client.on_message(filters.command(["search"]))
-async def search(_, message: Message):
+@Client.on_message(filters.command(["ytsearch"]))
+async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
             await message.reply_text("/search needs an argument!")
