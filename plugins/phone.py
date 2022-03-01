@@ -6,7 +6,7 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from plugins.events import register,telethn
+from plugins.events import register, telethon
 
 
 async def is_register_admin(chat, user):
