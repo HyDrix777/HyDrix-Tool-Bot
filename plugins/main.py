@@ -161,7 +161,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "srch":
         await msg.message.edit(
-            text="🔎 **Search YouTube videos**\n\n📚 **Avaible Commands**\n\n➥ /search - __search **YouTube** videos__\n\nEg : `/search Alen Walker`",
+            text="🔎 **Search YouTube videos**\n\n📚 **Avaible Commands**\n\n➥ /ytsearch - __search **YouTube** videos__\n\nEg : `/search Alen Walker`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
