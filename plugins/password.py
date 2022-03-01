@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 
 
 
-@Bot.on_message(filters.private & filters.command("password"))
+@Client.on_message(filters.private & filters.command("password"))
 async def password(bot, update):
     
     message = await message.reply_text('`Processing...`')
