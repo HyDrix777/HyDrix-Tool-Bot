@@ -1,4 +1,4 @@
-from pyrogram import filters
+from pyrogram import Client, filters
 from io import BytesIO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
