@@ -122,7 +122,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
                InlineKeyboardButton("ɪᴍᴅʙ", callback_data="imbd")
                ],[
-               InlineKeyboardButton("soon.", callback_data="start"),
+               InlineKeyboardButton("sᴛʏʟɪsʜ ᴛ", callback_data="styl"),
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon...", callback_data="start")
                ],[
@@ -417,6 +417,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "imbd":
         await msg.message.edit(
             text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n📚 **Avaible Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "styl":
+        await msg.message.edit(
+            text="🖋️ **Stylish Text**\n\n__a module for stylish text__\n__i can help you to get stylish fonts.__\n__just send me the some text & Reply to a text message to make stylish Text.__\n\n📚 **Avaible Commands**\n\n➥ /text : __Reply to a text message as to make S Text__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
