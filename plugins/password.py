@@ -6,8 +6,6 @@ from pyrogram import Client, filters
 
 @Client.on_message(filters.private & filters.command("password"))
 async def password(bot, update):
-    replied = message.reply_to_message
-    if not replied:
         await message.reply("Reply to a supported media file")
     message = await message.reply_text('`Processing...`')
     password = "abcdefghijklmnopqrstuvwxyz"+"1234567890"+"!@#$%^&*()_+".lower()
