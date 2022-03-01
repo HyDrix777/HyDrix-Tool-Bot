@@ -1,12 +1,10 @@
-
-
 import json
 import requests
 
 from telethon import types
 from telethon.tl import functions
 
-from plugins.events import register, telethon
+from plugins.events import register
 
 
 async def is_register_admin(chat, user):
