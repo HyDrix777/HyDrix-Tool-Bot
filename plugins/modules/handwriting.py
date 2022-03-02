@@ -6,7 +6,7 @@ import requests
 
 
 
-@Client.on_message(filters.command("h"))
+@Client.on_message(filters.private & filters.command("h"))
 async def text(bot, message):
     await message.reply_text("Example:👇🏼\n/h your text")
     text = str(message.text)
