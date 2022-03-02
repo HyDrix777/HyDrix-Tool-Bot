@@ -15,9 +15,6 @@ logging.basicConfig(
 
 
 
-
-
-
 @Client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
@@ -91,3 +88,4 @@ async def cancel_spam(event):
     except:
       pass
     return await event.respond('__Stopped.__')
+
