@@ -8,7 +8,7 @@ import requests
 
 @Client.on_message(filters.command("h"))
 async def text(bot, message):
-    await msg.reply_text("/h to handwriting")
+    await message.reply_text("/h to handwriting")
     text = str(message.text)
     chat_id = int(message.chat.id)
     file_name = f"{message.chat.id}.jpg"
