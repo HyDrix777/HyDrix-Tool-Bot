@@ -16,7 +16,7 @@ async def is_administrator(user_id: int, message):
 
 
 @Client.on(events.NewMessage(pattern="^/pur"))
-async def purge(event):
+async def pur(event):
     chat = event.chat_id
     msgs = []
 
