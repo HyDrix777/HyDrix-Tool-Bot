@@ -123,7 +123,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ɪᴍᴅʙ", callback_data="imbd")
                ],[
                InlineKeyboardButton("sᴛʏʟɪsʜ ᴛ", callback_data="styl"),
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ʜᴀɴᴅᴡʀɪᴛ", callback_data="hand"),
                InlineKeyboardButton("soon...", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
@@ -432,13 +432,17 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
+    elif msg.data == "hand":
+        await msg.message.edit(
+            text="🖊️ **Handwriting**\n\n📚 **Avaible Commands**\n➥ /h your text",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
     elif msg.data == "delete":
         await msg.message.delete()
-
-@Client.on_callback_query()
-async def callback_data(bot, msg):
-    if msg.data == "about":
-        await msg.answer("ABOUT")
 
 # main commm--------
 
