@@ -2,7 +2,7 @@ import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
-from pyrogram import Client, filters
+from pyrogram import Client
 
 async def is_administrator(user_id: int, message):
     admin = False
