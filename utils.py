@@ -4,6 +4,7 @@ from imdb import IMDb
 import asyncio
 from pyrogram.types import Message
 from typing import Union
+from typing import List
 import re
 import os
 from datetime import datetime
