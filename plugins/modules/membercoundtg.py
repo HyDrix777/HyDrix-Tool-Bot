@@ -7,9 +7,6 @@ from decouple import config
 from pyrogram import Client, filters
 from pyrogram.types import User, Message, Sticker, Document, ChatMember
 
-    
-
-
 
 
 
@@ -360,3 +357,20 @@ async def sticker_group(bot, message):
       
       else : 
             txt = await message.reply_text(f"Hey {message.from_user.first_name}, Welcome to {message.chat.title} 🥳💖\n**We are Happy to Have you as Our** `{count} th Member`🤩❣️")
+           
+           
+            
+   except Exception as error:
+            await message.reply("@admins , \nAs per Your Group Permission Members of This Group Can't send Stickers to this Chat (`I'm a Member, Not an Admin`) .\n**To Solve this Issue add me as Admin Or Give permission to send stickers in the Chat** \n\n\n ©@BugHunterBots")
+
+
+@Client.on_message(filters.channel & filters.command(["start"]))
+async def sticker_channel(bot, message):
+ chat_id = int(message.chat.id)
+ await bot.send_message(text="We Are Working On It",chat_id=chat_id)
+ 
+
+@Client.on_message(filters.command(["hp"]))
+async def hp(bot, message):
+ chat_id = str(message.chat.id)
+ await bot.send_sticker(chat_id,"CAACAgIAAxkBAAEEDq1g6Y5LLm2DtFwCV2pPNCddwwZQHgAC6AkAAowucAABsFGHedLEzeUgBA")  
