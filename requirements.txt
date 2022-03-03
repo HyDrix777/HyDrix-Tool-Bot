@@ -33,3 +33,5 @@ imdbpy
 PyPDF2
 humanize
 python-decouple
+pypdf2
+gtts
