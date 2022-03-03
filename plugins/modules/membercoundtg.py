@@ -5,7 +5,6 @@ import pyrogram
 import time
 from decouple import config
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import User, Message, Sticker, Document, ChatMember
 
     
