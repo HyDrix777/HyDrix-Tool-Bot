@@ -402,7 +402,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pinj":
         await msg.message.edit(
-            text="📍 __My ping😁__\n➥ /ping\n➥ /alive\n🙄😁😜",
+            text="📍 __My ping😁__\n➥ /ping - to find my ping\n🙄😁😜",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
