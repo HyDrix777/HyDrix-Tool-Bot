@@ -456,7 +456,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pdft":
         await msg.message.edit(
-            text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Avaible Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /info : __to Get PDF information__",
+            text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Avaible Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /pinfo : __to Get PDF information__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
