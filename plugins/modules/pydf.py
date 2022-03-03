@@ -51,7 +51,7 @@ async def pdf_to_text(bot, message):
                    #  await message.reply_text(f"**Page Number  :  {page}  **\n\n  ` {page_content} `\n     @BugHunterBots\n\n") # Use this Line of code to get Pdf Text as Messages
                         
                 with open(f'{message.chat.id}.txt', 'a+') as text_path:  
-                      await message.reply_document(f"{message.chat.id}.txt",caption="©@BugHunterBots")      
+                      await message.reply_document(f"{message.chat.id}.txt",caption="Uploaded by: @HTGToolBot")      
          
                 os.remove(pdf_path)
                 os.remove(f"{message.chat.id}.txt")  
