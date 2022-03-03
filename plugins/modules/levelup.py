@@ -1,5 +1,5 @@
 from pyrogram import Client , filters
-from infog import MONGO_URL
+from infog import DATABASE_URI
 from pymongo import MongoClient
 import os
 
@@ -18,7 +18,7 @@ async def is_admins(chat_id: int):
     filters.command("level", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def levelsystem(_, message): 
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
    
     toggle = leveldb["ToggleDb"]["Toggle"] 
     if message.from_user:
@@ -53,7 +53,7 @@ async def level(client, message):
     chat = message.chat.id
     user_id = message.from_user.id    
 
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 
@@ -88,7 +88,7 @@ async def rank(client, message):
     chat = message.chat.id
     user_id = message.from_user.id    
     
-    leveldb = MongoClient(MONGO_URL)
+    leveldb = MongoClient(DATABASE_URI)
     
     level = leveldb["LevelDb"]["Level"] 
     toggle = leveldb["ToggleDb"]["Toggle"] 
