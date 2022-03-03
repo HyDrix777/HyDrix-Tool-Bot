@@ -18,11 +18,6 @@ path = './DOWNLOADS/txt/bughunter0.txt'
 Disclaimer = """ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE """  
 
 
-@Client.on_message(filters.document | (filters.document & filters.forwarded)) 
-async def document(bot, message):
-  message_id=int(message.message_id)
-  chat_id=int(message.chat.id)
-  await bot.send_message(text="**Extract pdf to text file**\n\n➥ /pdf2txt - Extract text to Txt file \n➥ /pinfo to Get PDF information\n\n**Pdf Audiobook**\n\n➥ /audiobook : Please Reply to PDF file",reply_to_message_id=message_id,chat_id=chat_id)
   
 @Client.on_message(filters.command(["pdf2txt"])) # PdfToText 
 async def pdf_to_text(bot, message):
