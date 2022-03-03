@@ -361,7 +361,3 @@ async def sticker_group(bot, message):
       
       else : 
             txt = await message.reply_text(f"Hey {message.from_user.first_name}, Welcome to {message.chat.title} 🥳💖\n**We are Happy to Have you as Our** `{count} th Member`🤩❣️")
-           
-           
-            
-   
