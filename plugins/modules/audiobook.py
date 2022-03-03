@@ -17,7 +17,7 @@ Thanks = """ Thats the End of Your Audio Book, Join BugHunterBots on Telegram To
 
 CHANNEL_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/BughunterBots')
+        InlineKeyboardButton('❣️Join my group❣️', url='http://t.me/Music_Galaxy_Dl')
         ]]
     )
 
@@ -43,7 +43,7 @@ async def pdf_to_text(bot, message):
                   for page in range (0,num_of_pages):              
                       page_no = pdf_reader.getPage(page) # Iteration of page number
                       page_content += page_no.extractText()
-                await txt.edit(f"Creating Your Audio Book...\n Please Don't Do Anything \n**Join :** `@BugHunterBots`")
+                await txt.edit(f"Creating Your Audio Book...\n Please Don't Do Anything \n**Join :** `@Music_Galaxy_Dl`")
                 output_text = Disclaimer + page_content + Thanks
               # Change Voice by editing the Language
                 language = 'en-in'  # 'en': ['en-us', 'en-ca', 'en-uk', 'en-gb', 'en-au', 'en-gh', 'en-in',
@@ -51,8 +51,8 @@ async def pdf_to_text(bot, message):
                 tts_file = gTTS(text=output_text, lang=language, slow=False) 
                 tts_file.save(f"{message.chat.id}.mp3")      
                 with open(f"{message.chat.id}.mp3", "rb") as speech:
-                      await bot.send_voice(chat_id, speech, caption ="@BugHunterBots",reply_markup=CHANNEL_BUTTON)   
-                await txt.edit("Join @BugHunterBots")    
+                      await bot.send_voice(chat_id, speech, caption ="@Music_Galaxy_Dl",reply_markup=CHANNEL_BUTTON)   
+                await txt.edit("Join @Music_Galaxy_Dl")    
                 os.remove(pdf_path)  
                 
                 
