@@ -128,7 +128,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴘᴅғ ᴛᴏ ᴛᴇxᴛ", callback_data="pdft"),
                InlineKeyboardButton("ᴀᴜᴅɪᴏʙᴏᴏᴋ", callback_data="audi"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", callback_data="repo")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
@@ -468,6 +468,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "audi":
         await msg.message.edit(
             text="📄➥🗣️ **Pdf to Audiobook**\n\n__A Telegram Bot which converts PDF TO Audio Using Pypdf2 and gTTS__\n__first Send Me a Pdf then im Convert to AudioBook__\n\n📚 **Avaible Commands**\n\n➥ /audiobook : __Please Reply to PDF file__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "repo":
+        await msg.message.edit(
+            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__Also Sents the message , Reporter Details and Reported message in All admins PM.__\n\n📚 **Avaible Commands**\n\n➥ /report : reply to your reporting message\n\n➥ @admins ",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
