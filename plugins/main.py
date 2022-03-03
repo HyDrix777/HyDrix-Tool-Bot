@@ -492,7 +492,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "repo":
         await msg.message.edit(
-            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__Also Sents the message , Reporter Details and Reported message in All admins PM.__\n\n📚 **Avaible Commands**\n\n➥ /report : reply to your reporting message\n\n➥ @admins ",
+            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Avaible Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
