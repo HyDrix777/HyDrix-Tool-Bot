@@ -10,7 +10,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 
 
-@bot.on(events.NewMessage(pattern="^/news ?(.*)"))
+@Client.on(events.NewMessage(pattern="^/news ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
