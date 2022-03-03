@@ -22,7 +22,7 @@ Disclaimer = """ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 async def document(bot, message):
   message_id=int(message.message_id)
   chat_id=int(message.chat.id)
-  await bot.send_message(text=" ◆ /pdf2txt - Extract text to Txt file \n ◆ /pinfo to Get PDF information",reply_to_message_id=message_id,chat_id=chat_id)
+  await bot.send_message(text="**Extract pdf to text file**\n\n➥ /pdf2txt - Extract text to Txt file \n➥ /pinfo to Get PDF information\n\n**Pdf Audiobook**\n\n➥ /audiobook : Please Reply to PDF file",reply_to_message_id=message_id,chat_id=chat_id)
   
 @Client.on_message(filters.command(["pdf2txt"])) # PdfToText 
 async def pdf_to_text(bot, message):
