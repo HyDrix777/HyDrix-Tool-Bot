@@ -3,6 +3,7 @@ from telethon import TelegramClient
 from telethon import events
 import os
 import logging
+from pyrogram import Client
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
