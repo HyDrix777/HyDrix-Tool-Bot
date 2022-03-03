@@ -15,7 +15,7 @@ from pyrogram.types import User, Message, Sticker, Document, ChatMember
 async def sticker_group(bot, message):
    try:
       chat_id = int(message.chat.id)
-      count = await bughunter0.get_chat_members_count(chat_id)
+      count = await Client.get_chat_members_count(chat_id)
       if count == 3:
                     await bot.send_sticker(chat_id,"CAACAgUAAxkBAAIFKmDd2r4NMyGSyWgVu2v-fQxvJxBxAAL1AgACufE4VgHHxPJeyWOKHgQ")
       elif count == 5:
