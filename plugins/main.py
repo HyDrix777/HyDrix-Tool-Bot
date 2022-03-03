@@ -141,7 +141,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ɴᴏ ʟɪɴᴋ's", callback_data="nlng"),
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
@@ -411,7 +411,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "purg":
         await msg.message.edit(
-            text="__Here is the help for the **Purges** module:__\n\n - /purge: __deletes all messages between this and the replied to message.__\n__only work in group.__",
+            text="✴️ **Purge**\n\n__Here is the help for the **Purges** module:__\n\n - /purge: __deletes all messages between this and the replied to message.__\n__only work in group.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -493,6 +493,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "repo":
         await msg.message.edit(
             text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__Also Sents the message , Reporter Details and Reported message in All admins PM.__\n\n📚 **Avaible Commands**\n\n➥ /report : reply to your reporting message\n\n➥ @admins ",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "stck":
+        await msg.message.edit(
+            text="🔗🚫 **Remove URLs in group**\n\n__This module for who sends any kind of link ,remove all links from group.__\n\n➥ List of Links I delete!👇🏼\nhttps\nhttp\nt.me\nwww\ncom",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
