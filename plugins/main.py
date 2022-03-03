@@ -499,7 +499,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-    elif msg.data == "stck":
+    elif msg.data == "nlng":
         await msg.message.edit(
             text="🔗🚫 **Remove URLs in group**\n\n__This module for who sends any kind of link ,remove all links from group.__\n\n➥ List of Links I delete!👇🏼\nhttps\nhttp\nt.me\nwww\ncom",
             reply_markup=InlineKeyboardMarkup([[
