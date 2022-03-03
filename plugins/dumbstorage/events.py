@@ -1,5 +1,5 @@
 from telethon import events
-from plugins.modules import client
+from plugins.modules.phoneInf import client
 
 
 def register(**args):
