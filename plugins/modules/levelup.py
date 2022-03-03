@@ -1,5 +1,6 @@
 from pyrogram import Client , filters
-from infog import MongoClient
+from infog import MONGO_URL
+from pymongo import MongoClient
 import os
 
 
