@@ -131,7 +131,19 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", callback_data="repo")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
+               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete"),
+               InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next")
+               ]]
+            )
+        )
+
+    elif msg.data == "next":
+        await msg.message.edit(
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start")
                ]]
             )
         )
