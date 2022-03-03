@@ -1,5 +1,5 @@
 from telethon import events
-
+from dumbstorage import client
 
 
 def register(**args):
