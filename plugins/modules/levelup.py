@@ -8,7 +8,7 @@ import os
 async def is_admins(chat_id: int):
     return [
         member.user.id
-        async for member in bot.iter_chat_members(
+        async for member in Client.iter_chat_members(
             chat_id, filter="administrators"
         )
     ]
