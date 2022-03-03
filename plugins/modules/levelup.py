@@ -1,5 +1,5 @@
 from pyrogram import Client , filters
-from pymongo import MongoClient
+from infog import MongoClient
 import os
 
 
