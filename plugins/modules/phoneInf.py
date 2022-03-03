@@ -4,6 +4,7 @@ import json
 import time
 import urllib
 import os
+from dumbstorage import client
 from plugins.dumbstorage.events import register
 
 
