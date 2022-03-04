@@ -24,7 +24,14 @@ SMART_OPEN = '“'
 SMART_CLOSE = '”'
 START_CHAR = ('\'', '"', SMART_OPEN)
 
-
+class temp(object):
+    BANNED_USERS = []
+    BANNED_CHATS = []
+    ME = None
+    CURRENT=int(os.environ.get("SKIP", 2))
+    CANCEL = False
+    MELCOW = {}
+    U_NAME = None
 
 
 async def get_poster(query, bulk=False, id=False, file=None):
