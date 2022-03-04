@@ -15,7 +15,13 @@ import lyricsgenius
 
 
 
+@Client.on_message(filters.regex("hello") | filters.regex("Hello"))
+async def regex(bot, msg):
+    await msg.reply_text("Hello Friend!❣️")
 
+@Client.on_message(filters.regex("hi") | filters.regex("Hi"))
+async def regex(bot, msg):
+    await msg.reply_text(f"Hi {msg.from_user.first_name}, How are you.🥰 ")
 
 
 
