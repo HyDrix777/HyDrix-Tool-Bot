@@ -22,7 +22,7 @@ async def regex_1(bot, msg):
     await msg.reply_text(f"Hi {msg.from_user.first_name}, How are you.🥰")
 
 @Client.on_message(filters.regex("hello") | filters.regex("Hello"))
-async regex_2(bot, msg):
+async def regex_2(bot, msg):
     await msg.reply_text("Hello {msg.from_user.first_name} bro👋")
 
 
