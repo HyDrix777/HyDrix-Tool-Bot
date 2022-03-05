@@ -17,7 +17,6 @@ from config import Config
 async def music(bot, m):
     fname = m.audio.file_name
     file = await m.download("temp/file.mp3")
-    await m.delete()
     music = load_file("temp/file.mp3")
     t = f"{music['title']}"
     a = f"{music['artist']}"
