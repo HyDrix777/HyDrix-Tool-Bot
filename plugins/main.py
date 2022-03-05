@@ -150,7 +150,7 @@ async def hydrix(bot, msg: CallbackQuery):
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɴᴏ ʟɪɴᴋ's", callback_data="nlng"),
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ᴍᴜsɪᴄ ᴛᴀɢ", callback_data="must"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
@@ -510,6 +510,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "nlng":
         await msg.message.edit(
             text="🔗🚫 **Remove URLs in group**\n\n__This module for who sends any kind of link ,remove all links from group.__\n\n➥ List of Links I delete!👇🏼\nhttps\nhttp\nt.me\nwww\ncom",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+elif msg.data == "must":
+        await msg.message.edit(
+            text="🔖 **Music tag adder**\n\ni can manage your music channel or group with some cool features like musics tags, getting a short demo of the musics and posting the musics artworks.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
