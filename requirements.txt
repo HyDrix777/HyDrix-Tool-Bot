@@ -35,3 +35,5 @@ humanize
 python-decouple
 pypdf2
 gtts
+music_tag
+mutagen
