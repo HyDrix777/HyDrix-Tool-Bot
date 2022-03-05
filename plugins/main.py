@@ -588,7 +588,7 @@ async def inline(bot,message):
 
 # Group forword rm------
 
-@Client.on_message(filters.forwarded)
+@Client.on_message(filters.group & filters.forwarded)
 async def forward(bot, message):
     await message.delete("This group doesn't allow forward messages")
     
