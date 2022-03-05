@@ -516,7 +516,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-elif msg.data == "must":
+    elif msg.data == "must":
         await msg.message.edit(
             text="🔖 **Music tag adder**\n\ni can manage your music channel or group with some cool features like musics tags, getting a short demo of the musics and posting the musics artworks.",
             reply_markup=InlineKeyboardMarkup([[
