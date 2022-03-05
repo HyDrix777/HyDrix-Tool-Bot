@@ -25,21 +25,10 @@ from database.databeta import (
     updateTotalQuestions, 
     updateWrongGuess)
 
-from strings import AKI_FIRST_QUESTION, AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG
+from akinator.strings import AKI_FIRST_QUESTION, AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG
 import akinator
 
 
-def aki_start(update: Update, context: CallbackContext) -> None:
-    #/start command.
-    user_id = update.effective_user.id
-    first_name = update.effective_user.first_name
-    last_name = update.effective_user.last_name
-    user_name = update.effective_user.username
-    #Adding user to the database.
-    addUser(user_id, first_name, last_name, user_name)
-    update.message.reply_text(START_MSG.format(first_name), 
-                              parse_mode=ParseMode.HTML, 
-                              reply_markup=START_KEYBOARD)
 
 
 def aki_find(update: Update, context: CallbackContext) -> None:
