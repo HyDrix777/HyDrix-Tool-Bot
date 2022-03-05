@@ -1,7 +1,7 @@
 import os
 
 class Config(object):
-    USERNAME = os.environ.get('false')
+    USERNAME = os.environ.get("@HTGToolBot")
     CAPTION = os.environ.get("false")
     CUSTOM_TAG = os.environ.get("false")
     if CUSTOM_TAG:
