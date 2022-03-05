@@ -6,7 +6,7 @@ from pprint import pprint
 from akinator.keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
-from config import BOT_TOKEN
+from infog import BOT_TOKEN
 from database.databeta import (
     addUser, 
     getChildMode, 
