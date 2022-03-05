@@ -13,7 +13,7 @@ from config import Config
 
 
     
-@Client.on_message(filters.group & filters.audio)
+@Client.on_message(filters.group & filters.audio | filters.channel & filters.audio)
 async def music(bot, m):
     fname = m.audio.file_name
     file = await m.download("temp/file.mp3")
