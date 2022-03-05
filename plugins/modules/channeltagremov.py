@@ -16,3 +16,13 @@ async def fwdrmv(c, m):
             await m.delete()
     except FloodWait as e:
         await asyncio.sleep(e.x)
+
+@Client.on_message(filters.private | filters.group)
+async def fwdrm(c, m):
+    try:
+        if m.media and not (m.video_note or m.sticker):
+            await m.copy(m.chat.id, caption = m.caption if m.caption else None)
+        else:
+            await m.copy(m.chat.id)
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
