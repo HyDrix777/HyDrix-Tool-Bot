@@ -6,6 +6,8 @@ import os
 
 
 
+AKI_MONGO_HOST = os.environ.get('aki_mongo_host', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+BOT_TOKEN = os.environ.get('bot_token', "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
