@@ -1,4 +1,4 @@
-from strings import AKI_LANG_CODE, DEV_URL, GITHUB_URL
+from akinator.strings import AKI_LANG_CODE, DEV_URL, GITHUB_URL
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 START_KEYBOARD = InlineKeyboardMarkup(
