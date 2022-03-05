@@ -37,3 +37,5 @@ pypdf2
 gtts
 music_tag
 mutagen
+python-telegram-bot
+akinator.py
