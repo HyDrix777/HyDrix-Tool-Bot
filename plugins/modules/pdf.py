@@ -61,6 +61,20 @@ if Config.MAX_FILE_SIZE:
 
 
 
+@bot.on_message(filters.command(["feedback"]))
+async def feedback(bot, message):
+    
+    try:
+        await bot.send_chat_action(
+            message.chat.id, "typing"
+        )
+        await bot.send_message(
+            message.chat.id, Msgs.feedbackMsg,
+            disable_web_page_preview = True
+        )
+        
+    except Exception:
+        pass
 
 
 # /deletes : Deletes current Images to pdf Queue
