@@ -216,7 +216,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "lyrc":
         await msg.message.edit(
-            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) **Here is the help for Lyrics Download:**\n\n📚 **Avaible Commands**\n\n➥ /lyric - __[Music Name] Searches Lyrics for the particular Music on web.__\n\nEg: `/lyric beggin`",
+            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) Here is the help for **Lyrics Download:**\n\n📚 **Avaible Commands**\n\n➥ /lyric - __[Music Name] Searches Lyrics for the particular Music on web.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
