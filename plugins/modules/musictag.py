@@ -116,5 +116,3 @@ async def tag(bot, m):
                 caption=caption,
                 audio='temp/file.mp3'
             )
-    except Exception as e:
-        print(e)
