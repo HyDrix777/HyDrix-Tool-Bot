@@ -48,7 +48,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await app.send_message()
+                await Client.send_message()
             raise err
 
     return capture
