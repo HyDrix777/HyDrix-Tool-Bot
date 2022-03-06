@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 CAPTION = os.environ.get("@my_channel")
 if 'CUSTOM_TAG' in os.environ:
-    custom_tag = " [" + os.environ.get("CUSTOM_TAG") + "]"
+    custom_tag = " [" + os.environ.get("TRUE") + "]"
 else:
     custom_tag = ""
 
