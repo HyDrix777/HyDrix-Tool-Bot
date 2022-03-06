@@ -1,7 +1,7 @@
 import sys
 import traceback
 from functools import wraps
-from bot import Client
+from pyrogram import Client, filters
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 
