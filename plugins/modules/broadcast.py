@@ -12,7 +12,7 @@ import time
 import os
 from random import choice
 from infog import ADMINS
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client, filters as Worker
 from database.broadcast_db import Database
 from pyrogram.errors import UserNotParticipant, FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
