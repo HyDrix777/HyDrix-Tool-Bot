@@ -17,7 +17,7 @@ else:
 
 
    
-@Client.on_message(filters.private & filters.audio)
+@Client.on_message(filters.channel & filters.audio | filters.group & filters.audio)
 async def tag(bot, m):
     fname = m.audio.file_name
     await m.download("temp/file.mp3")
