@@ -101,7 +101,7 @@ async def music(bot, m):
     music.save()
 
     if Config.CAPTION == "TRUE":
-        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g + "\n\n" + f"🆔👉 {Config.USERNAME}"
+        caption = "✏️ Title: " + t + "\n" + "👤 Artist: " + a + "\n" + "💽 Album: " + al + "\n" + "🎼 Genre: " + g + "\n\n" + f"🔰 {Config.USERNAME}"
     else:
         caption = m.caption if m.caption else " "
 
