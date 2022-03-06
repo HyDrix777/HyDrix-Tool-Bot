@@ -12,7 +12,7 @@ CAPTION = os.environ.get("@my_channel")
 if 'CUSTOM_TAG' in os.environ:
     custom_tag = " [" + os.environ.get("CUSTOM_TAG") + "]"
 else:
-    custom_tag = "TRUE"
+    custom_tag = ""
 
 
 
@@ -116,3 +116,5 @@ async def tag(bot, m):
                 caption=caption,
                 audio='temp/file.mp3'
             )
+     except Exception as e:
+         print(e)
