@@ -37,4 +37,4 @@ pypdf2
 gtts
 music_tag
 mutagen
-bs4
+
