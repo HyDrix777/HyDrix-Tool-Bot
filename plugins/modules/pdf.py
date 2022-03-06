@@ -61,7 +61,7 @@ if Config.MAX_FILE_SIZE:
 
 
 
-@bot.on_message(filters.command(["feedback"]))
+@Client.on_message(filters.command(["feedback"]))
 async def feedback(bot, message):
     
     try:
