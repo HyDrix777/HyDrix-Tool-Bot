@@ -8,9 +8,9 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-CAPTION = os.environ.get("TRUE")
+CAPTION = os.environ.get("DYNAMIC_CAPTION")
 if 'CUSTOM_TAG' in os.environ:
-    custom_tag = " [" + os.environ.get("@tg_galaxy") + "]"
+    custom_tag = " [" + os.environ.get("CUSTOM_TAG") + "]"
 else:
     custom_tag = " "
 
