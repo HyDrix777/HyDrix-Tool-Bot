@@ -71,7 +71,7 @@ async def music(bot, m):
         try:
             await bot.send_photo(
                 chat_id=m.chat.id,
-                caption="🎤" + a + " - " + t + "🎼" + "\n\n" + f"🆔👉 {Config.USERNAME}",
+                caption="🎤" + a + " - " + t + "🎼" + "\n" + "👤 Artist: " + a + "\n\n" + f"🆔👉 {Config.USERNAME}",
                 photo=open('artwork.jpg', 'rb')
             )
         except Exception as e:
