@@ -8,7 +8,7 @@ from music_tag import load_file
 from PIL import Image
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config import Config
+from configs import Config
 
 
 
