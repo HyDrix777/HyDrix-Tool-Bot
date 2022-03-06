@@ -16,6 +16,10 @@ class Config(object):
 
 
 class Msgs(object):
+
+    feedbackMsg = """
+[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+"""
     
     fullPdfSplit = """If you want to split a pdf,
 
