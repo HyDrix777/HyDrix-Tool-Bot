@@ -21,7 +21,7 @@ else:
 
 
    
-@Bot.on_message(filters.private & filters.audio)
+@Client.on_message(filters.private & filters.audio)
 async def tag(bot, m):
     fname = m.audio.file_name
     await m.download("temp/file.mp3")
@@ -118,6 +118,3 @@ async def tag(bot, m):
             )
     except Exception as e:
         print(e)
-
-
-Bot.run()
