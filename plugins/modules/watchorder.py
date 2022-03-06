@@ -2,6 +2,7 @@ from requests import get
 from pyrogram import filters , Client
 from pyrogram.types import *
 from bs4 import BeautifulSoup
+from plugins import help_message
 
 
 
