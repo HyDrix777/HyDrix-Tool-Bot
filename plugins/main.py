@@ -17,7 +17,7 @@ import lyricsgenius
 
 
 
-@Client.on_message(filters.regex("hi") | filters.regex("Hi"))
+@Client.on_message(filters.group & filters.regex("hi") | filters.group & filters.regex("Hi"))
 async def regex_1(bot, msg):
     await msg.reply_text(f"Hey {msg.from_user.first_name}🤗! How are you.😅")
 
