@@ -547,7 +547,7 @@ async def help(bot: Client, message: Message):
     await message.reply_text(
         text="Contact me in PM for help!",
         reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("Click me for help!", url="https://t.me/HTGToolBot")
+           InlineKeyboardButton("Click me for help!", url="https://t.me/HTGToolBot?start")
            ]]
            )
        )
@@ -557,7 +557,7 @@ async def start(bot: Client, message: Message):
     await message.reply_text(
         text="`Yes I'm still alive.`😌✨",
         reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("Click me(◠ᴥ◕ʋ)", url="https://t.me/HTGToolBot")
+           InlineKeyboardButton("Click me(◠ᴥ◕ʋ)", url="https://t.me/HTGToolBot?start")
            ]]
            )
        )
