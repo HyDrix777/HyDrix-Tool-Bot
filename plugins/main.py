@@ -225,7 +225,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "sdl":
         await msg.message.edit(
-            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg) Here is the help for **Music Download**:\n\n📚 **Avaible Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n\nEg: `/s beggin`",
+            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg) Here is the help for **Music Download**:\n\n📚 **Avaible Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -234,7 +234,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "vdl":
         await msg.message.edit(
-            text="📹 **Vedio download**\n\n📚 **Avaible Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n\nEg: `/v alone`",
+            text="📹 **Vedio download**\n\n📚 **Avaible Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
