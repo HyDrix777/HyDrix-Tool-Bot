@@ -15,3 +15,4 @@ TG_MAX_SELECT_LEN = 100
 LONG_IMDB_DESCRIPTION = bool(environ.get("LONG_IMDB_DESCRIPTION", True))
 IMDB = bool((environ.get('IMDB', True)))
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
+BOT_USERNAME = getenv("BOT_USERNAME", "HTGToolBot")
