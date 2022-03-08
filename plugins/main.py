@@ -180,7 +180,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "tgph":
         await msg.message.edit(
-            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Avaible Commands**\n\n/tgraph : use this command in reply to Image",
+            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n📚 **Avaible Commands**\n\n/tgraph : use this command in reply to Image",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -446,7 +446,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "imbd":
         await msg.message.edit(
-            text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n📚 **Avaible Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
+            text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Avaible Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
