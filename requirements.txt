@@ -39,6 +39,3 @@ music_tag
 mutagen
 wget
 
-beautifulsoup4
-urllib3
-lxml
