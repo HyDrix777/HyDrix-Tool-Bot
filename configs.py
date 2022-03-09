@@ -1,6 +1,7 @@
 import os
 
 class Config(object):
+    DOWNLOAD_LOCATION = "./DOWNLOADS"
     USERNAME = os.environ.get("@my_channel")
     CAPTION = os.environ.get("TRUE")
     CUSTOM_TAG = os.environ.get("@HTGToolBot")
