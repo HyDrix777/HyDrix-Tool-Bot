@@ -1,4 +1,3 @@
-START = "Yes, I'm Kazuma."
 RESTART = "Re;Starting Bot in Another Instance from Zero."
 GITPULL = "Re;Starting Bot in Another Instance from the Latest Commit."
 NOT_SUDO = "This is a developer restricted command.\nYou do not have permissions to run this."
