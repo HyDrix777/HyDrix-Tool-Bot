@@ -143,7 +143,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("sᴛɪᴋʀ ᴛᴏ ɪᴍɢ", callback_data="stki")
                ],[
                InlineKeyboardButton("sʜᴀʀᴇ", callback_data="shar"),
-               InlineKeyboardButton("soon.", callback_data="start"),
+               InlineKeyboardButton("ᴜʀʟ sʜᴏʀᴛ", callback_data="urls"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
@@ -529,7 +529,16 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "shar":
         await msg.message.edit(
-            text="✈️ **Share Text**\n\n📚 **Avaible Commands**\n\n➥ /share - get shareable link of any text or link.",
+            text="✈️ **Share Text**\n\n📚 **Avaible Commands**\n\n➥ /share - __get shareable link of any text or link.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "urls":
+        await msg.message.edit(
+            text="⛓️ **𝖴𝗋𝗅 S𝗁𝗈𝗋𝗍𝗇𝖾𝗋**\n__This command help you to short a Url__\n\n📚 **Avaible Commands**\n\n➥ /short : __𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌__\n⍟ **Example**👇🏼\n/short https://t.me/Music_Galaxy_Dl",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
