@@ -30,7 +30,7 @@ async def regex_2(bot, msg):
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
     await message.reply_sticker(
-        sticker="CAACAgEAAxkBAAIf02IrVj1zGTDbbhFyhyY0nPDPXjfCAAIqAQAC-80IRr3HNr1Ct65OHgQ"             
+        sticker="CAACAgEAAxkBAAIf0WIrV0iMw1aY_ld7pNmDl91WwOWsAAKVAQACXQ_AR292s2GZoFb7HgQ"             
     )
 
 
