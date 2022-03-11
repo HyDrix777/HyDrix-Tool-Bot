@@ -142,7 +142,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴍᴜsɪᴄ ᴛᴀɢ", callback_data="must"),
                InlineKeyboardButton("sᴛɪᴋʀ ᴛᴏ ɪᴍɢ", callback_data="stki")
                ],[
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("sʜᴀʀᴇ", callback_data="shar"),
                InlineKeyboardButton("soon.", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -523,6 +523,15 @@ async def hydrix(bot, msg: CallbackQuery):
             text="🖼️➥ɪᴍɢ **Sticker to Image converter**\n\nYou can use this module to **Sticker to Image**,\nfirst send me the Sticker, then i give you a Image.\n\nDon't send me animated sticker or video sticker.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               ]]
+            )
+        )
+
+    elif msg.data == "shar":
+        await msg.message.edit(
+            text="✈️ **Share Text**\n\n📚 **Avaible Commands**\n\n➥ /share - get shareable link of any text or link.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
         )
