@@ -9,7 +9,22 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 LIST = {}
 
 
+@Client.on_message(filters.private & filters.reply(["ppdf"])
+async def pdf(client,message):
+ 
+ if not isinstance(LIST.get(message.from_user.id), list):
+   LIST[message.from_user.id] = []
 
+  
+ 
+ file_id = str(message.photo.file_id)
+ ms = await message.reply_text("Converting to PDF 🔁......")
+ file = await client.download_media(file_id)
+ 
+ image = Image.open(file)
+ img = image.convert('RGB')
+ LIST[message.from_user.id].append(img)
+ await ms.edit(f"{len(LIST[message.from_user.id])}Successfully Converted yor Image to PDF. If you want to convert more Images to PDF, Send them one by one.\n\n **If your process was over, click here 👉 /convert** ")
 
 @Client.on_message(filters.command(['convert']))
 async def done(client,message):
