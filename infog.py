@@ -17,3 +17,7 @@ IMDB = bool((environ.get('IMDB', True)))
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 BOT_USERNAME = environ.get("BOT_USERNAME", "HTGToolBot")
 COMMAND_PREFIXES = (environ.get("COMMAND_PREFIXES", "/ ! .").split())
+
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001784386455'))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001545646994')).split()]
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
