@@ -20,6 +20,6 @@ COMMAND_PREFIXES = (environ.get("COMMAND_PREFIXES", "/ ! .").split())
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001784386455'))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001545646994')).split()]
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = (is_enabled(environ.get('PUBLIC_FILE_STORE', "True")), True)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
