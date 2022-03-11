@@ -3,16 +3,20 @@ Syntax: .purge"""
 
 import asyncio
 from pyrogram import Client, filters
-from infog import (
-    COMMAND_HAND_LER,
-    TG_MAX_SELECT_LEN
-)
+
 from plugins.admin_check import admin_check
 from plugins.cust_p_filters import f_onw_fliter
 
 
+
+
+
+TG_MAX_SELECT_LEN = 100
+
 @Client.on_message(
-    filters.command("purge") & f_onw_fliter)
+    filters.command("purge") &
+    f_onw_fliter
+)
 async def purge(client, message):
     """ purge upto the replied message """
     if message.chat.type not in (("supergroup", "channel")):
@@ -35,7 +39,7 @@ async def purge(client, message):
             message.message_id
         ):
             message_ids.append(a_s_message_id)
-            if len(message_ids) == 4123:
+            if len(message_ids) == TG_MAX_SELECT_LEN:
                 await client.delete_messages(
                     chat_id=message.chat.id,
                     message_ids=message_ids,
