@@ -1,7 +1,6 @@
 import os
 from pyrogram import Client, filters
 from urllib.parse import quote
-from infog import SUPPORT_CHAT
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def share_link(text: str) -> str:
@@ -23,7 +22,7 @@ async def share_text(client, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "Support Chat", url=f"https://t.me/{SUPPORT_CHAT}")
+                            "My Group", url="https://t.me/Music_Galaxy_Dl")
                     ]                
                 ]
             ),
