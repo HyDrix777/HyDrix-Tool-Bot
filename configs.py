@@ -17,6 +17,7 @@ class Config(object):
         custom_tag = " {" + CUSTOM_TAG + "}"
     else:
         custom_tag = " "
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@HTGToolBot")
 
 
 bot = Config.BOT_USERNAME
