@@ -9,8 +9,8 @@ from PIL import Image
 from telegram.ext import Updater, CommandHandler, run_async
 from telegram import Bot, TelegramError, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 
-import strings import as s
-import database.stickerdatabase import as sql
+from strings import as s
+from database.stickerdatabase import as sql
 
 @run_async
 def steal(update, context):
