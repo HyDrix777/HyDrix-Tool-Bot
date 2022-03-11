@@ -151,7 +151,7 @@ async def hydrix(bot, msg: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɴᴏ ʟɪɴᴋ's", callback_data="nlng"),
                InlineKeyboardButton("ᴍᴜsɪᴄ ᴛᴀɢ", callback_data="must"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("sᴛɪᴄᴋᴇʀ ᴛᴏ ɪᴍɢ", callback_data="stki")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete"),
@@ -519,6 +519,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "must":
         await msg.message.edit(
             text="🔖 **Music tag adder**\n\ni can manage your music channel or group with some cool features like musics tags, getting a short demo of the musics and posting the musics artworks.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        )
+
+    elif msg.data == "stki":
+        await msg.message.edit(
+            text="🖼️➥ɪᴍɢ **Sticker to Image converter**\n\nYou can use this module to **Sticker to Image**,\nfirst send me the image, then i give you a Image 🖼️",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
