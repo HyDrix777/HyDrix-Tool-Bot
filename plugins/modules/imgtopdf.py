@@ -10,7 +10,7 @@ LIST = {}
 
 
 @Client.on_message(filters.private & filters.reply(["ppdf"])
-async def pdf(client,message):
+async def ppdf(client,message):
  
  if not isinstance(LIST.get(message.from_user.id), list):
    LIST[message.from_user.id] = []
