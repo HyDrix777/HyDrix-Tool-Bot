@@ -1,4 +1,13 @@
 import os
+import logging
+
+
+LOGGER = logging.getLogger(__name__)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+
+
+
 
 class Config(object):
     USERNAME = os.environ.get("@my_channel")
@@ -9,3 +18,7 @@ class Config(object):
     else:
         custom_tag = " "
 
+
+bot = Config.BOT_USERNAME
+class CMD(object):
+    RENAME = ["rename", f"rename@{bot}"]
