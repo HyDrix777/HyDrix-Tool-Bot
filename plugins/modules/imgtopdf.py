@@ -9,8 +9,8 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 LIST = {}
 
 
-@Client.on_message(filters.private & filters.reply(["ppdf"])
-async def ppdf(client,message):
+@Client.on_message(filters.private & filters.reply(("pdf"))
+async def pdf(client,message):
  
  if not isinstance(LIST.get(message.from_user.id), list):
    LIST[message.from_user.id] = []
