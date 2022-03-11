@@ -6,6 +6,11 @@ from pyrogram.types import (InlineKeyboardButton,  InlineKeyboardMarkup)
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 
+LIST = {}
+
+
+
+
 @Client.on_message(filters.command(['convert']))
 async def done(client,message):
  images = LIST.get(message.from_user.id)
