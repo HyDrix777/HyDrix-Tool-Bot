@@ -39,4 +39,3 @@ music_tag
 mutagen
 wget
 pyshorteners
-EmojiCaptcha==0.1.2
