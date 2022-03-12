@@ -7,7 +7,10 @@ import os
 
 
 class Config(object):
-    DATABASE_URI = (environ.get('DATABASE_URI', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
+    API_ID = int(os.environ.get("API_ID", "1234")
+    API_HASH = os.environ.get("API_HASH")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    DATABASE_URL = os.environ.get("DATABASE_URL")
 
     USERNAME = os.environ.get("@my_channel")
     CAPTION = os.environ.get("TRUE")
