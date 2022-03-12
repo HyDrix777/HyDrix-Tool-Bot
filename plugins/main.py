@@ -19,7 +19,7 @@ import lyricsgenius
 @Client.on_message(filters.private & filters.command("start"))
 async def start_message(bot, message):
     await message.reply_sticker(
-        sticker="CAACAgQAAxkBAAIfx2IsLl7_pX4XqfutIon1RBxbfAR5AALdAANLae4Qs0OllFm0k-seBA"             
+        sticker="CAACAgQAAxkBAAIg5WIsoeHJ6NPJQWVJxYccrii6UHZdAAKgCAACp0h3Bfo4mn6VPDjmHgQ"             
     )
 
 
