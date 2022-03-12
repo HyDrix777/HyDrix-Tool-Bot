@@ -32,7 +32,7 @@ async def send_thumbnail(bot, update):
         await message.delete()
     except Exception as error:
         await message.edit_text(
-            text="**Please Use** /ytthumb (youtube link)\n\n**Example:** `/ytthumb https://youtu.be/h6PtzFYaMxQ`",
+            text="**Please Use** /ytthumb (youtube link)\n\n**Example:** `/ytthumb http://www.youtube.com/watch?v=HhjHYkPQ8F0`",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('ᴍʏ ɢʀᴏᴜᴘ', url='https://t.me/Music_Galaxy_Dl')]])
         )
