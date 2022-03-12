@@ -10,7 +10,7 @@ from YoutubeTags import videotags
 
 
 
-@Client.on_message(filters.group & filters.regex("https://www.youtube.com") | filters.regex("http://www.youtube.com") | filters.regex("https://youtu.be/") | filters.regex("https://www.youtu.be/") | filters.regex("http://www.youtu.be/"))
+@Client.on_message(filters.group & filters.regex("https://www.youtube.com") | filters.group & filters.regex("http://www.youtube.com") | filters.group & filters.regex("https://youtu.be/") | filters.group & filters.regex("https://www.youtu.be/") | filters.group & filters.regex("http://www.youtu.be/"))
 async def tag(bot, message):
     link = str(message.text)
     tags = videotags(link) 
