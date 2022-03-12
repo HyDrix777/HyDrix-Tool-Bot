@@ -236,7 +236,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gtra":
         await msg.message.edit(
-            text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)➥ **Google Translator Bot**\n\n__**Google Translator** which means , A bot to help you translate text to few Languages from any other language in world.__\n\n__Google Translator bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use Google Translator in his private chat & Groups.__\n\n**How To Use**\n\n➥ Click /list __to find your language code__.\n\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or my pm",
+            text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)➥ **Google Translator Bot**\n\n__**Google Translator** which means , A bot to help you translate text to few Languages from any other language in world.__\n\n__Google Translator bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use Google Translator in his private chat & Groups.__\n\n**How To Use**\n\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or my pm\n➥ 👇🏼Click **lang list** __botton to find your language code__.👇🏼",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
                InlineKeyboardButton("📜 ʟᴀɴɢ ʟɪsᴛ", callback_data="lagl")
