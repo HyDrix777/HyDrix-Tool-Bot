@@ -10,7 +10,7 @@ from YoutubeTags import videotags
 
 
 
-@Client.on_message(filters.private & filters.command("tag")
+@Client.on_message(filters.private & filters.reply("tag")
 async def tag(bot, message):
     link = str(message.text)
     tags = videotags(link) 
