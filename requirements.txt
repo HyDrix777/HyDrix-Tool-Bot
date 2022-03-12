@@ -39,6 +39,3 @@ music_tag
 mutagen
 wget
 pyshorteners
-SQLAlchemy~=1.4.21
-psycopg2
-pytz~=2021.1
