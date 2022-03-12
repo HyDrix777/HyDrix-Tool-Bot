@@ -173,7 +173,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "tgph":
         await msg.message.edit(
-            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n📚 **Avaible Commands**\n\n/tgraph : use this command in reply to Photo,gif,png.",
+            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n📚 **Available Commands**\n\n/tgraph : use this command in reply to Photo,gif,png.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -182,7 +182,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "srch":
         await msg.message.edit(
-            text="🔎 **Search YouTube videos**\n\n📚 **Avaible Commands**\n\n➥ /ytsearch - __search **YouTube** videos__\n\nEg : `/ytsearch Alen Walker`",
+            text="🔎 **Search YouTube videos**\n\n📚 **Available Commands**\n\n➥ /ytsearch - __search **YouTube** videos__\n\nEg : `/ytsearch Alen Walker`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -191,7 +191,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "jsn":
         await msg.message.edit(
-            text="📚 **Avaible Command**\n\n[📑](https://telegra.ph/file/d0717d29431518ff9dc21.jpg)➥ /json - __Reply To Any Message To Get Json__",
+            text="📚 **Available Command**\n\n[📑](https://telegra.ph/file/d0717d29431518ff9dc21.jpg)➥ /json - __Reply To Any Message To Get Json__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -209,7 +209,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "lyrc":
         await msg.message.edit(
-            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) Here is the help for **Lyrics Download:**\n\n📚 **Avaible Commands**\n\n➥ /lyric - __[Music Name] Searches Lyrics for the particular Music on web.__\n\nEg: `/lyric beggin`",
+            text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) Here is the help for **Lyrics Download:**\n\n📚 **Available Commands**\n\n➥ /lyric - __[Music Name] Searches Lyrics for the particular Music on web.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -218,7 +218,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "sdl":
         await msg.message.edit(
-            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg) Here is the help for **Music Download**:\n\n📚 **Avaible Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
+            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg) Here is the help for **Music Download**:\n\n📚 **Available Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -227,7 +227,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "vdl":
         await msg.message.edit(
-            text="📹 **Vedio download**\n\n📚 **Avaible Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
+            text="📹 **Vedio download**\n\n📚 **Available Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -245,7 +245,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "Fns":
         await msg.message.edit(
-            text="»────[Fun]────»\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n📚 **Avaible Commands**\n\n➥ /roll : __Roll a dice__\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n\n➥ /run : __reply a random string from an array of replie.__\n➥ /runml : __reply a random string from an Malayalam lang array of replie.__ \n➥ /lnm : __find your lucky number.__\n➥ /love : __Love__ 😘\n➥ /toss : __Tosses A coin__\n➥ /shrug : __get shrug XD__\n➥ /table : __get flip/unflip__ :v\n➥ /decide : __Randomly answers yes/no/maybe__.\n➥ /truth :__asks you a question__\n➥ /tord : __can be a truth or a dare__.\n➥ /dare : __gives you a dare__\n➥ /rather : __would you rather__\n➥ /goodnight : Good night 😴\n➥ /morning : good morning 😊🌄\n➥ /abuse : labuse 🤬\n➥ /cry : Cry 😭🥲\n➥ /anime : Anime",
+            text="»────[Fun]────»\n[🔻](https://telegra.ph/file/a3a5895a4e312e9f3d803.jpg) **Here is the help for the Fun module**:\n\n📚 **Available Commands**\n\n➥ /roll : __Roll a dice__\n➥ /ball\n➥ /pog\n➥ /throw\n➥ /goal\n➥ /luck\n\n➥ /run : __reply a random string from an array of replie.__\n➥ /runml : __reply a random string from an Malayalam lang array of replie.__ \n➥ /lnm : __find your lucky number.__\n➥ /love : __Love__ 😘\n➥ /toss : __Tosses A coin__\n➥ /shrug : __get shrug XD__\n➥ /table : __get flip/unflip__ :v\n➥ /decide : __Randomly answers yes/no/maybe__.\n➥ /truth :__asks you a question__\n➥ /tord : __can be a truth or a dare__.\n➥ /dare : __gives you a dare__\n➥ /rather : __would you rather__\n➥ /goodnight : Good night 😴\n➥ /morning : good morning 😊🌄\n➥ /abuse : labuse 🤬\n➥ /cry : Cry 😭🥲\n➥ /anime : Anime",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -254,7 +254,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "ids":
         await msg.message.edit(
-            text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n📚 **Avaible Commands**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. Your DC❓ : Click /dc to get your DC.\n6. /info : this command to get your all information, only work my Pm.\n- /ginfo : this command to get your group information ℹ️, this only work in group.",
+            text="[🆔](https://telegra.ph/file/8671a3c153c0f609dc697.jpg)➥ **ᴜsᴇʀ's, ɢʀᴏᴜᴘ's, Bᴏᴛ's, ᴄʜᴀɴɴᴇʟ's Iᴅ Fɪɴᴅᴇʀ**\n\n📚 **Available Commands**\n\n1. __Send any message to get your ID.__\n2. __Forward any message from any user/bot/channel/group or anonymous admins to get ID.__\n3. __Add in group / channel to get ID.__\n4. Use /id command:\n- in private: To get ID through username\n- in group/channel: To get ID of that chat\n5. Your DC❓ : Click /dc to get your DC.\n6. /info : this command to get your all information, only work my Pm.\n- /ginfo : this command to get your group information ℹ️, this only work in group.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -272,7 +272,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "tts":
         await msg.message.edit(
-            text="[🗣️](https://telegra.ph/file/f1cf0da2397558752fba8.jpg) **ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ** - ᴛᴛs\n\n__A Module To Convert TEXT To Voice With Language Support__\n\n📚 **Avaible Command**\n\n⍟ /tts : __Reply To Any TEXT message I will Convert As Audio__",
+            text="[🗣️](https://telegra.ph/file/f1cf0da2397558752fba8.jpg) **ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ** - ᴛᴛs\n\n__A Module To Convert TEXT To Voice With Language Support__\n\n📚 **Available Command**\n\n⍟ /tts : __Reply To Any TEXT message I will Convert As Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -281,7 +281,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "ytthumb":
         await msg.message.edit(
-            text="🔴 **YouTube Thumbnail Dl**\n\nsᴇɴᴅ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʟɪɴᴋ I ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ᴛʜᴜᴍʙɴᴀɪʟ.\n\n📚 **Avaible Commands**\n\n/ytthumb use this command to Yt link, to get thumbnail.\nExample: `/ytthumb http://www.youtube.com/watch?v=HhjHYkPQ8F0`",
+            text="🔴 **YouTube Thumbnail Dl**\n\nsᴇɴᴅ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʟɪɴᴋ I ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ᴛʜᴜᴍʙɴᴀɪʟ.\n\n📚 **Available Commands**\n\n/ytthumb use this command to Yt link, to get thumbnail.\nExample: `/ytthumb http://www.youtube.com/watch?v=HhjHYkPQ8F0`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -313,7 +313,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gith":
         await msg.message.edit(
-            text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg) **GitHub**\n\n📚 **Avaible Commands**\n\n➥ /github - Get your [GitHub](https://github.com) profile in my PM\nEg: `/github Username`",
+            text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg) **GitHub**\n\n📚 **Available Commands**\n\n➥ /github - Get your [GitHub](https://github.com) profile in my PM\nEg: `/github Username`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -322,7 +322,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "covi":
         await msg.message.edit(
-            text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Avaible Commands**\n\n[🦠](https://telegra.ph/file/8dfbbf70b17e26d62b18c.jpg) ➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
+            text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Available Commands**\n\n[🦠](https://telegra.ph/file/8dfbbf70b17e26d62b18c.jpg) ➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -340,7 +340,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "plat":
         await msg.message.edit(
-            text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __hey this is a play store module,\n__This will Search application details of any app and give play store download link.__\n\n📚 **Avaible Commands**\n\nClick here /playstore 👈🏼",
+            text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __hey this is a play store module,\n__This will Search application details of any app and give play store download link.__\n\n📚 **Available Commands**\n\nClick here /playstore 👈🏼",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -376,7 +376,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "shaz":
         await msg.message.edit(
-            text="[🎶](https://telegra.ph/file/d67ebb887ee63d33d970c.jpg)➥ **Shazam Music Finder**\n\n__You have a part of a song, but could not find out what that song is?__\n__Here's the best solution for you. Just send me a audio file sample and I'll tell you what is that song.__\n\n📚 **Avaible Commands**\n\n**Step 1** : __Send me a Audio__\n\n**Step 2** : __Reply your to Audio with this__ /audify __command__\n/audify : __Reply to Audio__",
+            text="[🎶](https://telegra.ph/file/d67ebb887ee63d33d970c.jpg)➥ **Shazam Music Finder**\n\n__You have a part of a song, but could not find out what that song is?__\n__Here's the best solution for you. Just send me a audio file sample and I'll tell you what is that song.__\n\n📚 **Available Commands**\n\n**Step 1** : __Send me a Audio__\n\n**Step 2** : __Reply your to Audio with this__ /audify __command__\n/audify : __Reply to Audio__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -403,7 +403,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pins":
         await msg.message.edit(
-            text="📌 **Pin**\n\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Avaible Commands**\n\n- /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n- /unpin : __I can Unpin the current pinned message in silently.__",
+            text="📌 **Pin**\n\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Available Commands**\n\n- /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n- /unpin : __I can Unpin the current pinned message in silently.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -430,7 +430,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "mute":
         await msg.message.edit(
-            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Avaible Commands**\n\n➥ /mute: Mute a user in group.\n➥ /unmute: Unmute a user in group.",
+            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Available Commands**\n\n➥ /mute: Mute a user in group.\n➥ /unmute: Unmute a user in group.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -439,7 +439,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "imbd":
         await msg.message.edit(
-            text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Avaible Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
+            text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Available Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -448,7 +448,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "styl":
         await msg.message.edit(
-            text="🖋️ **Stylish Text**\n\n__a module for stylish text__\n__i can help you to get stylish fonts.__\n__just send me the some text & Reply to a text message to make stylish Text.__\n\n📚 **Avaible Commands**\n\n➥ /text : __Reply to a text message as to make S Text__",
+            text="🖋️ **Stylish Text**\n\n__a module for stylish text__\n__i can help you to get stylish fonts.__\n__just send me the some text & Reply to a text message to make stylish Text.__\n\n📚 **Available Commands**\n\n➥ /text : __Reply to a text message as to make S Text__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -457,7 +457,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "hand":
         await msg.message.edit(
-            text="🖊️ **Handwriting**\n\n📚 **Avaible Commands**\n➥ /h your text",
+            text="🖊️ **Handwriting**\n\n📚 **Available Commands**\n➥ /h your text",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -475,7 +475,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pdft":
         await msg.message.edit(
-            text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Avaible Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /pinfo : __to Get PDF information__",
+            text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Available Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /pinfo : __to Get PDF information__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -484,7 +484,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "audi":
         await msg.message.edit(
-            text="📄➥🗣️ **Pdf to Audiobook**\n\n__A Telegram Bot which converts PDF TO Audio Using Pypdf2 and gTTS__\n__first Send Me a Pdf then im Convert to AudioBook__\n\n📚 **Avaible Commands**\n\n➥ /audiobook : __Please Reply to PDF file__",
+            text="📄➥🗣️ **Pdf to Audiobook**\n\n__A Telegram Bot which converts PDF TO Audio Using Pypdf2 and gTTS__\n__first Send Me a Pdf then im Convert to AudioBook__\n\n📚 **Available Commands**\n\n➥ /audiobook : __Please Reply to PDF file__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -493,7 +493,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "repo":
         await msg.message.edit(
-            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Avaible Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
+            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Available Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -529,19 +529,19 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "shar":
         await msg.message.edit(
-            text="✈️ **Share Text**\n\n📚 **Avaible Commands**\n\n➥ /share - __get shareable link of any text or link.__",
+            text="✈️ **Share Text**\n\n📚 **Available Commands**\n\n➥ /share - __get shareable link of any text or link.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
 
     elif msg.data == "urls":
         await msg.message.edit(
-            text="⛓️ **𝖴𝗋𝗅 S𝗁𝗈𝗋𝗍𝗇𝖾𝗋**\n__This command help you to short a Url__\n\n📚 **Avaible Commands**\n\n➥ /short : __𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌__\n⍟ **Example**👇🏼\n/short https://t.me/Music_Galaxy_Dl",
+            text="⛓️ **𝖴𝗋𝗅 S𝗁𝗈𝗋𝗍𝗇𝖾𝗋**\n__This command help you to short a Url__\n\n📚 **Available Commands**\n\n➥ /short : __𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌__\n⍟ **Example**👇🏼\n/short https://t.me/Music_Galaxy_Dl",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
