@@ -597,7 +597,7 @@ async def start(bot: Client, message: Message):
 @Client.on_message(filters.private & filters.command("list"))
 async def list(bot: Client, message: Message):
     await message.reply_text(
-        text="",
+        text="he🙄🙄",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("👥 Gʀᴏᴜᴘ", url="https://t.me/Music_Galaxy_Dl")
            ]]
