@@ -17,5 +17,5 @@ async def password(bot, update):
     else:
         random_value = "".join(random.sample(password, limit))
         text = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**\n\nJoin @Music_Galaxy_Dl",
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Movie channel', url='https://t.me/Music_Galaxy_Dl')]])
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Group', url='https://t.me/Music_Galaxy_Dl')]])
     await message.edit_text(text, True)
