@@ -1,4 +1,5 @@
 import os, logging, asyncio
+from pyrogram import Client
 from telethon import Button
 from telethon import TelegramClient, events
 from telethon.tl.types import ChannelParticipantAdmin
@@ -20,7 +21,7 @@ spam_chats = []
 
 
   
-@Client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
+
 @Client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
