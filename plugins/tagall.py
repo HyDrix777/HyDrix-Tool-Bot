@@ -1,5 +1,5 @@
 import os, logging, asyncio
-from pyrogram import Client filters
+from pyrogram import Client
 from telethon import Button
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
