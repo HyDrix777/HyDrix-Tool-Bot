@@ -3,11 +3,11 @@ import datetime
 import config
 import logging
 
-from handlers.database import Database
+from database.databaseb import Database
 
-DB_URL = config.DB_URL
-DB_NAME = config.DB_NAME
-LOG_CHANNEL = config.LOG_CHANNEL
+DB_URL = infog.DB_URL
+DB_NAME = infog.DB_NAME
+LOG_CHANNEL = infog.LOG_CHANNEL
 
 db = Database(DB_URL, DB_NAME)
 
