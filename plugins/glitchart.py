@@ -26,7 +26,7 @@ async def glitch_art(bot, update):
         )
     except Exception as error:
         await message.edit_text(
-            text=f"Error : {error}\nContact @i_am_albin_praveen."
+            text=f"Error : {error}\nContact @Tgx."
         )
         return 
     await message.edit_text(
