@@ -1,5 +1,3 @@
-# (c) N A C BOTS
-
 import datetime
 
 import motor.motor_asyncio
