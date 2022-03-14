@@ -6,6 +6,12 @@ import os
 
 
 
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001784386455"))
+AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DB_NAME", "Cluster0")
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
+
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
