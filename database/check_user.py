@@ -1,6 +1,6 @@
 import datetime
 
-import config
+import infog
 import logging
 
 from database.databaseb import Database
