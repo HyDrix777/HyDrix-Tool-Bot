@@ -16,13 +16,13 @@ from pyrogram import StopPropagation, filters
 import infog
 from database.broadcast import broadcast
 from database.check_user import handle_user_status
-from database.database import Database
+from database.databaseb import Database
 
 
-LOG_CHANNEL = config.LOG_CHANNEL
-AUTH_USERS = config.AUTH_USERS
-DB_URL = config.DB_URL
-DB_NAME = config.DB_NAME
+LOG_CHANNEL = infog.LOG_CHANNEL
+AUTH_USERS = infog.AUTH_USERS
+DB_URL = infog.DB_URL
+DB_NAME = infog.DB_NAME
 
 db = Database(DB_URL, DB_NAME)
 
