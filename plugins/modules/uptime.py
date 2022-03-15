@@ -1,23 +1,30 @@
 import time
 from pyrogram import Client, filters
 
+
+
 class Main:
-	des = "Можно узнать время с момента запуска"
+	des = "тэгает всех в чате"
 	ver = "1.0"
 	cmd_list = {
-		"uptime": "просмотр времени"
+		"tagall": "тэгнуть"
 	}
-	
-timer = time.time()
 
-def uptime():
-  now = time.time() - timer
-  return int(now)
-
-@Client.on_message(filters.command("uptime"))
-def uptimer(_, message):
-  hours = int((uptime() - uptime() % 60) / 3600)
-  minutes = uptime() - hours * 3600
-  minutes = int((minutes - minutes % 60) / 60)
-  seconds = int(uptime() % 60) 
-  message.edit(f"ЮБ работает уже {hours} час(ов), {minutes} минут(ы) и {seconds} секунд(ы)") 
+@Client.on_message(filters.private & filters.command("tagall", "."))
+def tag_all(app, msg):
+	chat_id = msg.chat.id
+	string = ""
+	limit = 1
+	for member in app.iter_chat_members(chat_id):
+		tag = member.user.username
+		if limit <= 5:
+			if tag != None:
+				string += f"@{tag}\n"
+			else:
+				string += f"{member.user.mention}\n"
+			limit += 1
+		else:
+			app.send_message(chat_id, text=string)
+			limit = 1
+			string = ""
+			time.sleep(5)
