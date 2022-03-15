@@ -187,7 +187,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("sʜᴀʀᴇ", callback_data="shar"),
                InlineKeyboardButton("ᴜʀʟ sʜᴏʀᴛ", callback_data="urls"),
-               InlineKeyboardButton("soon..", callback_data="start")
+               InlineKeyboardButton("ᴛᴀɢ ᴀʟʟ", callback_data="taga")
                ],[
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start"),
@@ -604,6 +604,15 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
+
+    elif msg.data == "taga":
+        await msg.message.edit(
+            text="☯️ **TagAll**\n\nA module for Tagall, i can tag all members in group.\n\n📚 **Available Commands**\n\n/tagall : just send this command in your group.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               ]]
+            )
+        ).
 
     elif msg.data == "delete":
         await msg.message.delete()
