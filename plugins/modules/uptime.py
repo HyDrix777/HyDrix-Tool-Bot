@@ -14,7 +14,7 @@ def uptime():
   now = time.time() - timer
   return int(now)
 
-@Client.on_message(filters.me & filters.command("uptime","#"))
+@Client.on_message(filters.command("uptime"))
 def uptimer(_, message):
   hours = int((uptime() - uptime() % 60) / 3600)
   minutes = uptime() - hours * 3600
