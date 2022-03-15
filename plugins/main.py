@@ -127,6 +127,17 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴘᴀsᴛᴇ", callback_data="past"),
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
+               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete"),
+               InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next")
+               ]]
+            )
+        )
+# Next Module-------
+    elif msg.data == "next":
+        await msg.message.edit(
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
+            reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="gith"),
                InlineKeyboardButton("ᴄᴏᴠɪᴅ", callback_data="covi"),
                InlineKeyboardButton("ғᴏʀᴡᴀʀᴅɪɴɢ", callback_data="forw")
@@ -147,6 +158,19 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
                InlineKeyboardButton("ɪᴍᴅʙ", callback_data="imbd")
                ],[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
+               InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next2")
+               ],[
+               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete")
+               ]]
+            )
+        )
+
+    elif msg.data == "next2":
+        await msg.message.edit(
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
+            reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("sᴛʏʟɪsʜ ᴛxᴛ", callback_data="styl"),
                InlineKeyboardButton("ʜᴀɴᴅᴡʀɪᴛ", callback_data="hand"),
                InlineKeyboardButton("ᴀʟɪᴠᴇ", callback_data="aliv")
@@ -155,17 +179,6 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴀᴜᴅɪᴏʙᴏᴏᴋ", callback_data="audi"),
                InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", callback_data="repo")
                ],[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete"),
-               InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next")
-               ]]
-            )
-        )
-
-    elif msg.data == "next":
-        await msg.message.edit(
-            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
-            reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɴᴏ ʟɪɴᴋ's", callback_data="nlng"),
                InlineKeyboardButton("ᴍᴜsɪᴄ ᴛᴀɢ", callback_data="must"),
                InlineKeyboardButton("sᴛɪᴋʀ ᴛᴏ ɪᴍɢ", callback_data="stki")
@@ -174,13 +187,20 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴜʀʟ sʜᴏʀᴛ", callback_data="urls"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
+               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("soon..", callback_data="start")
+               ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete"),
-               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt")
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
+               InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="start")
+               ],[
+               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete")
                ]]
             )
         )
 
+# futures------
     elif msg.data == "stck":
         await msg.message.edit(
             text="[🖼️](https://telegra.ph/file/4080224664799812688b6.jpg)➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __First send me the Sticker , and reply to sticker this command👉🏻__ /stickerid.\n\n📚 **Available Commands**\n\n- /stickerid : Reply to sticker",
