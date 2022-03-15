@@ -374,7 +374,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="[🐈](https://telegra.ph/file/d428512e34fd9594ab1c3.jpg) **GitHub**\n\n📚 **Available Commands**\n\n➥ /github - Get your [GitHub](https://github.com) profile in my PM\nEg: `/github Username`",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -383,7 +383,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🌍 **Covid Information**\n\n__A Module To Find All Country Informations. Use This Module To Get Covid Informations Of All Countries__\n\n📚 **Available Commands**\n\n[🦠](https://telegra.ph/file/8dfbbf70b17e26d62b18c.jpg) ➥ /covid [country name] - __Use This Method To Get Covid Informations.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -392,7 +392,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📨 **Forward message remover**\n\n⍟ __I am automatically remove forward messages from group, add me your group and promote.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -401,7 +401,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="[🧩](https://telegra.ph/file/42d7e70b678f4ea03e1b5.jpg) **ᴘʟᴀʏ sᴛᴏʀᴇ**\n\n⍟ __hey this is a play store module,\n__This will Search application details of any app and give play store download link.__\n\n📚 **Available Commands**\n\nClick here /playstore 👈🏼",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -410,7 +410,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🎴 **ᴘʜᴏᴛᴏ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ʀᴇᴍᴏᴠᴇ**\n\n⍟ __I'm photo background remover, send me the photo i will send the photo without background__.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -419,7 +419,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🥴 **ɢʟɪᴛᴄʜ ᴀʀᴛ**\n\n⍟ __This module help you photo to glitch in group,Just send me the image in Group not pm__ 😁.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -428,7 +428,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\n⍟ __This module to automatically deletes Inline messages sent Through Bot in Group's__.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -437,7 +437,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="[🎶](https://telegra.ph/file/d67ebb887ee63d33d970c.jpg)➥ **Shazam Music Finder**\n\n__You have a part of a song, but could not find out what that song is?__\n__Here's the best solution for you. Just send me a audio file sample and I'll tell you what is that song.__\n\n📚 **Available Commands**\n\n**Step 1** : __Send me a Audio__\n\n**Step 2** : __Reply your to Audio with this__ /audify __command__\n/audify : __Reply to Audio__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -446,7 +446,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📝 **Edit Message Alert**\n\n__A Telegram Bot to Show alert when someone edits a message in Group__\n",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -455,7 +455,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🏷️ **YouTube Tag Finder**\n\n__A telegram Bot That can extract any YouTube video Tag easy__\n__first give me the yt **URL**, and i extract tag for U__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -464,7 +464,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📌 **Pin**\n\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Available Commands**\n\n- /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n- /unpin : __I can Unpin the current pinned message in silently.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -473,7 +473,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="✴️ **Purge**\n\n__Here is the help for the **Purges** module:__\n\n - /purge: __deletes all messages between this and the replied to message.__\n__only work in group.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -482,7 +482,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📍 Here is the help for **Ping**:\n\n➥ /ping - __Check if Bot is alive or not.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -491,7 +491,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Available Commands**\n\n➥ /mute: Mute a user in group.\n➥ /unmute: Unmute a user in group.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -500,7 +500,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Available Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -509,7 +509,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🖋️ **Stylish Text**\n\n__a module for stylish text__\n__i can help you to get stylish fonts.__\n__just send me the some text & Reply to a text message to make stylish Text.__\n\n📚 **Available Commands**\n\n➥ /text : __Reply to a text message as to make S Text__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -518,7 +518,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🖊️ **Handwriting**\n\n📚 **Available Commands**\n➥ /h your text",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -527,7 +527,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🙄 **Alive**\n\n😒To Find Out If I'm 🤒Dead Or Not\n➥ /alive - dead or not",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -536,7 +536,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Available Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /pinfo : __to Get PDF information__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -545,7 +545,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📄➥🗣️ **Pdf to Audiobook**\n\n__A Telegram Bot which converts PDF TO Audio Using Pypdf2 and gTTS__\n__first Send Me a Pdf then im Convert to AudioBook__\n\n📚 **Available Commands**\n\n➥ /audiobook : __Please Reply to PDF file__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -554,7 +554,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Available Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -563,7 +563,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🔗🚫 **Remove URLs in group**\n\n__This module for who sends any kind of link ,remove all links from group.__\n\n➥ List of Links I delete!👇🏼\nhttps\nhttp\nt.me\nwww\ncom",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -572,7 +572,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🔖 **Music tag adder**\n\ni can manage your music channel or group with some cool features like musics tags, getting a short demo of the musics and posting the musics artworks.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -581,7 +581,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🖼️➥ɪᴍɢ **Sticker to Image converter**\n\nYou can use this module to **Sticker to Image**,\nfirst send me the Sticker, then i give you a Image.\n\nDon't send me animated sticker or video sticker.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -590,7 +590,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="✈️ **Share Text**\n\n📚 **Available Commands**\n\n➥ /share - __get shareable link of any text or link.__",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
@@ -600,7 +600,7 @@ async def hydrix(bot, msg: CallbackQuery):
             text="⛓️ **𝖴𝗋𝗅 S𝗁𝗈𝗋𝗍𝗇𝖾𝗋**\n__This command help you to short a Url__\n\n📚 **Available Commands**\n\n➥ /short : __𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌__\n⍟ **Example**👇🏼\n/short https://t.me/Music_Galaxy_Dl",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
