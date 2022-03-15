@@ -612,7 +612,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
             )
-        ).
+        )
 
     elif msg.data == "delete":
         await msg.message.delete()
