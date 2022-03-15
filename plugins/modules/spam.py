@@ -14,7 +14,7 @@ class Main():
 access = [1145153004, 1187033330, 1035284483]
 
 start = ["True"]
-@Client.on_message(filters.me & filters.command("sss", "."))
+@Client.on_message(filters.command("sss", "."))
 def ass(client, message):
   if start[0] == "True":
     start[0] = "False"
@@ -26,7 +26,7 @@ def ass(client, message):
   message.delete()
   print(start)
 
-@Client.on_message(filters.me & filters.command("spam", "."))
+@Client.on_message(filters.command("spam", "."))
 def spammer(app, message):
 	chat_id = message.chat.id
 	try:
@@ -39,7 +39,7 @@ def spammer(app, message):
 		for i in range(100):
 			app.send_message(chat_id, f"{i}")
 
-@Client.on_message(filters.reply & filters.me & filters.command("mediaspam", "."))
+@Client.on_message(filters.reply & filters.command("mediaspam", "."))
 def sticker_spam(app, message):
 	chat_id = message.chat.id
 	stick = message.reply_to_message.sticker
