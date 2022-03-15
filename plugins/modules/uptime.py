@@ -1,5 +1,5 @@
 import time
-from pyrogram import Client as app, filters
+from pyrogram import Client, filters
 
 class Main:
 	des = "Можно узнать время с момента запуска"
