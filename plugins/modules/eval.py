@@ -2,7 +2,6 @@ from pyrogram import Client, filters
 import sys
 import os
 from io import StringIO
-from meval import meval
 import traceback
 
 class Main:
