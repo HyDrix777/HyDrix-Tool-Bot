@@ -10,7 +10,7 @@ class Main:
 		"tagall": "тэгнуть"
 	}
 
-@Client.on_message(filters.private & filters.command("tagall", "."))
+@Client.on_message(filters.command("tagall", "."))
 def tag_all(app, msg):
 	chat_id = msg.chat.id
 	string = ""
