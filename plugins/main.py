@@ -609,7 +609,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="☯️ **TagAll**\n\nA module for Tagall, i can tag all members in group.\n\n📚 **Available Commands**\n\n/tagall : just send this command in your group.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data=next2")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
             )
         )
