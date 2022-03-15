@@ -131,7 +131,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next")
                ],[
-               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete")
+               InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
                ]]
             )
         )
@@ -164,7 +164,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="next2")
                ],[
-               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete")
+               InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
                ]]
             )
         )
@@ -197,7 +197,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="start")
                ],[
-               InlineKeyboardButton("✘ ᴇxɪᴛ ✘", callback_data="delete")
+               InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
                ]]
             )
         )
