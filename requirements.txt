@@ -39,3 +39,4 @@ music_tag
 mutagen
 wget
 pyshorteners
+hachoir
