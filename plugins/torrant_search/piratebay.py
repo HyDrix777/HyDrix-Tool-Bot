@@ -10,10 +10,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
-m = None
-i = 0
-a = None
-query = None
 
 
 @Client.on_message(filters.command(["find"]))
