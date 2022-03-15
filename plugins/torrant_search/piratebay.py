@@ -3,7 +3,7 @@ import aiohttp
 import json
 from pyrogram import Client, filters, emoji
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
+from plugins.torrant_search
 
 
 
