@@ -20,7 +20,7 @@ caches = {}
 color = {}
 
 
-@Client.on_message(filters.private & filters.command("carbon"))
+@Client.on_message(filters.private & filters.command("car"))
 async def carbon_func(client: bot, message: Message):
     keyboard = InlineKeyboard(row_width=3)
     keyboard.add(
