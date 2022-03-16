@@ -73,7 +73,7 @@ async def start_message(bot, message):
 async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "start":
         await msg.message.edit(
-            text =f"""Sooon....🙄 ||പെവേർ ആയോ {msg.from_user.first_name} മോനൂസ് 😜||"""
+            text =f"""Sooon....🙄||{msg.from_user.first_name}😁||"""
         )
 
     elif msg.data == "srrt":
