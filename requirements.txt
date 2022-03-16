@@ -41,6 +41,3 @@ wget
 pyshorteners
 hachoir
 
-pyromod
-pykeyboard
-carbonnow
