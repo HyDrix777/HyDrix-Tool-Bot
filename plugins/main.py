@@ -202,6 +202,11 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
+@Client.on_callback_query()
+async def callback_data(bot, query):
+    if query.data == "alert_1":
+        await query.answer("Soon..", show_alert=False)
+
 # futures------
     elif msg.data == "stck":
         await msg.message.edit(
@@ -616,12 +621,6 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "delete":
         await msg.message.delete()
-
-
-@Client.on_callback_query()
-async def callback_data(bot, query):
-    if query.data == "alert_1":
-        await query.answer("Soon..", show_alert=False)
 
 # main commm--------
 
