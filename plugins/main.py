@@ -189,7 +189,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴜʀʟ sʜᴏʀᴛ", callback_data="urls"),
                InlineKeyboardButton("ᴛᴀɢ ᴀʟʟ", callback_data="taga")
                ],[
-               InlineKeyboardButton("soon..", callback_data="alert_1"),
+               InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
@@ -201,11 +201,6 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
-
-@Client.on_callback_query()
-async def callback_data(bot, query):
-    if query.data == "alert_1":
-        await query.answer("Soon..", show_alert=True)
 
 # futures------
     elif msg.data == "stck":
