@@ -204,8 +204,8 @@ async def hydrix(bot, msg: CallbackQuery):
 
 @Client.on_callback_query()
 async def callback_data(bot, query):
-    if query.data == "alert_1":
-        await query.answer("Soon..", show_alert=False)
+    elif query.data == "alert_1":
+        await query.answer("Soon..", show_alert=True)
 
 # futures------
     elif msg.data == "stck":
