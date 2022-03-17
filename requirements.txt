@@ -40,6 +40,4 @@ mutagen
 wget
 pyshorteners
 hachoir
-pyromod
-music_tag
-Pillow
+
