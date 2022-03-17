@@ -7,8 +7,6 @@ import os
 
 
 class Config(object):
-    # the download location, where the HTTP Server runs
-    DOWNLOAD_LOCATION = "./DOWNLOADS"
 
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
     USERNAME = os.environ.get("@my_channel")
