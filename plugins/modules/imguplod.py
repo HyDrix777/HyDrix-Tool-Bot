@@ -1,6 +1,6 @@
 import os
 from pyrogram import Client
-from pyrogram import filters as Filters
+from pyrogram import filters
 from hurry.filesize import size
 import requests
 import shutil 
@@ -15,8 +15,12 @@ async def progress(current, total):
 
 
 # This only pass http values   
-@Client.on_message(Filters.regex(pattern=".*http.*"))
+@Client.on_message(filters private & filters.command("link"))
 async def echo(bot , update):
+    rsr1 = await edit_or_reply(message, "⏳")
+    if not message.reply_to_message:
+        await rsr1.edit("Reply Audio or Video.")
+        return
     status = await bot.send_message(
         chat_id=update.chat.id,
         text=f"Processing your request...",
