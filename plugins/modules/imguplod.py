@@ -1,5 +1,5 @@
 import os
-from pyrogram import Clie
+from pyrogram import Client
 from pyrogram import filters as Filters
 from hurry.filesize import size
 import requests
