@@ -17,7 +17,7 @@ async def progress(current, total):
 # This only pass http values   
 @Client.on_message(filters private & filters.command("link"))
 async def echo(bot , update):
-    if not message.reply_to_message:
+    if not update.reply_to_message:
         await rsr1.edit("Reply Audio or Video.")
         return
     status = await bot.send_message(
