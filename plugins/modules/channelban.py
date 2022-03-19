@@ -52,8 +52,6 @@ async def get_channel_id_from_input(bot, message):
             return False
     return a_id
 
-
-
 custom_message_filter = filters.create(lambda _, __, message: False if message.forward_from_chat or message.from_user else True)
 custom_chat_filter = filters.create(lambda _, __, message: True if message.sender_chat else False)
 
@@ -73,8 +71,6 @@ async def main_handler(bot, message):
                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Unban", callback_data=f"unban_{chat_id}_{a_id}")]]),
                               )
     await message.delete()
-
-
 
 @Client.on_callback_query()
 async def cb_handler(bot, query):
@@ -148,7 +144,6 @@ async def uncban_handler(bot, message):
         print(e)
         await message.reply_text(e)
 
-
 @Client.on_message(filters.command(["add_whitelist"]) & filters.group)
 async def add_whitelist_handler(bot, message):
     chat_id = message.chat.id
@@ -171,7 +166,6 @@ async def add_whitelist_handler(bot, message):
     except Exception as e:
         print(e)
 
-
 @Client.on_message(filters.command(["del_whitelist"]) & filters.group)
 async def del_whitelist_handler(bot, message):
     chat_id = message.chat.id
@@ -193,7 +187,6 @@ async def del_whitelist_handler(bot, message):
             await message.reply_text("Something wrong happend")
     except Exception as e:
         print(e)
-
 
 @Client.on_message(filters.command(["show_whitelist"]) & filters.group)
 async def del_whitelist_handler(bot, message):
