@@ -13,7 +13,7 @@ load_dotenv()
 
 
 
-
+sleep_threshold=3600
 
 
 @Client.on_message(filters.command(["count"]))
