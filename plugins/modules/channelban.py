@@ -1,5 +1,5 @@
 import os
-from database.bandatabas import db
+from bandatabas import db
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import logging
