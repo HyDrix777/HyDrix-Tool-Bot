@@ -40,3 +40,4 @@ mutagen
 wget
 pyshorteners
 hachoir
+python-dotenv
