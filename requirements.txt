@@ -40,5 +40,3 @@ mutagen
 wget
 pyshorteners
 hachoir
-pyTelegramBotAPI
-python-dotenv
