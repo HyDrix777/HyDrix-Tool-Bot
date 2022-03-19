@@ -40,4 +40,5 @@ mutagen
 wget
 pyshorteners
 hachoir
-hurry.filesize
+pyTelegramBotAPI
+python-dotenv
