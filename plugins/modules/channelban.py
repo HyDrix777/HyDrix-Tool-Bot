@@ -2,7 +2,7 @@ import os
 from telebot.types import Message
 from telebot import TeleBot
 from dotenv import load_dotenv
-from pyrogram import Client filters
+from pyrogram import Client 
 
 load_dotenv()
 
