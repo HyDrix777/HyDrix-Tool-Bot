@@ -52,7 +52,6 @@ async def start_message(bot, message):
     await message.reply_sticker(
         sticker="CAACAgIAAxkBAAIlzmI2xm3UuXP6mqI94DS-RHcyV_eBAAISGAACEB6ZSL8EBB9VGEvhHgQ"             
     )
-    
     m = datetime.datetime.now()
 
     time = m.hour
@@ -62,10 +61,9 @@ async def start_message(bot, message):
     elif time < 15:
 	get="Good Afternoon"
     elif time < 20:
-	get="Good Evaning"
+        get="Good Evaning"
     else:
 	get="Good Night"
-
     await message.reply_text(
         text=f"✨ **ʜᴇʟʟᴏ** {get} ||{message.from_user.mention}||!\n\n💭 ɪ'ᴍ **ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ** [🛠️](https://telegra.ph/file/ea82bbb4deebdbf9d68e8.jpg)\n\n💡 Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!",
         reply_markup=InlineKeyboardMarkup( [[
