@@ -1,4 +1,4 @@
-import datetime
+
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message, User
@@ -49,19 +49,6 @@ async def start_message(bot, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-
-    m = datetime.datetime.now()
-
-    time = m.hour
- 
-    if time < 12:
-        get="Good Morning"
-    elif time < 15:
-	get="Good Afternoon"
-    elif time < 20:
-        get="Good Evaning"
-    else:
-	get="Good Night"
 
     await message.reply_sticker(
         sticker="CAACAgIAAxkBAAIlzmI2xm3UuXP6mqI94DS-RHcyV_eBAAISGAACEB6ZSL8EBB9VGEvhHgQ"             
