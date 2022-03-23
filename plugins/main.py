@@ -659,7 +659,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "gofl":
         await msg.message.edit(
-            text="🗂️ **Go File**\n\n__What is Gofile🤔__\n__Gofile is a free and unlimited file sharing and storage platform.\nYou can use it as a file manager to store all your data, or as a sharing platform to send your files to others. All types of files are supported (files, images, music, videos, pdf etc...). There is no limit, you download at the maximum speed of your connection and most of the service is free.__\n\n➥what is the use of this module ❓👇🏼\nI can upload any media to gofile.io and return the link easily.\nFirst give me any file img anything\n➥ /go - Replay to any files, then i upload to gofile.io and give you a link of telegram file.",
+            text="🗂️ **Go File**\n\n__What is Gofile🤔__\n__Gofile is a free and unlimited file sharing and storage platform.\nYou can use it as a file manager to store all your data, or as a sharing platform to send your files to others. All types of files are supported (files, images, music, videos, pdf etc...). There is no limit, you download at the maximum speed of your connection and most of the service is free.__\n\nWhat is the use of this module ❓👇🏼\nI can upload any media to gofile.io and return the link easily.\n\n📚 **Available Commands**\n\nFirst give me any file img anything\n➥ /go - Replay to any files, then i upload to gofile.io and give you a link of telegram file.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
