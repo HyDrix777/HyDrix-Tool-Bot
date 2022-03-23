@@ -135,7 +135,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
-# Next Module-------
+# Next Module2-------
     elif msg.data == "next":
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
@@ -167,7 +167,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ]]
             )
         )
-
+# Next Module3-------
     elif msg.data == "next2":
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
@@ -195,7 +195,23 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next"),
                InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
                InlineKeyboardButton("🚶 ᴇxɪᴛ", callback_data="delete"),
-               InlineKeyboardButton("ɴᴇxᴛ-𝟹 ➡️", callback_data="start")
+               InlineKeyboardButton("ɴᴇxᴛ-𝟹 ➡️", callback_data="next3")
+               ]]
+            )
+        )
+# Next Module4-------
+    elif msg.data == "next3":
+        await msg.message.edit(
+            text="ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg)__ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
+               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("soon..", callback_data="start")
+               ],[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
+               InlineKeyboardButton("🚶 ᴇxɪᴛ", callback_data="delete"),
+               InlineKeyboardButton("ɴᴇxᴛ-4 ➡️", callback_data="start")
                ]]
             )
         )
@@ -637,6 +653,15 @@ async def hydrix(bot, msg: CallbackQuery):
             text="📝 **Renamer module**\n\nHello I'Am a Simple file **Renamer** module.Downbelow my working steps👇🏼\n\n📚 **Available Commands**\n\n•First give me a File\n/rename : Reply To An File With /rename Filename.extension For Renaming.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
+               ]]
+            )
+        )
+
+    elif msg.data == "gofl":
+        await msg.message.edit(
+            text="🗂️ **Go File**\n\n__What is Gofile🤔__\n__Gofile is a free and unlimited file sharing and storage platform.\nYou can use it as a file manager to store all your data, or as a sharing platform to send your files to others. All types of files are supported (files, images, music, videos, pdf etc...). There is no limit, you download at the maximum speed of your connection and most of the service is free.__\n\n➥what is the use of this module ❓👇🏼\nI can upload any media to gofile.io and return the link easily.\nFirst give me any file img anything\n➥ /go - Replay to any files, then i upload to gofile.io and give you a link of telegram file.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
             )
         )
