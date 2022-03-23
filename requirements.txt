@@ -23,7 +23,7 @@ youtube_search
 asyncio
 dnspython
 shazamio
-YoutubeTags
+PyYouTube
 requests
 pymongo[srv]==3.11.4
 motor==2.4.0
