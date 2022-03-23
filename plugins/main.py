@@ -191,7 +191,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴛᴀɢ ᴀʟʟ", callback_data="taga")
                ],[
                InlineKeyboardButton("ᴡᴇʙ-sᴄʀᴀᴘᴘᴇʀ", callback_data="wpsp"),
-               InlineKeyboardButton("soon..", callback_data="start"),
+               InlineKeyboardButton("ᴜɴᴢɪᴘᴇʀ", callback_data="unzp"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next"),
@@ -620,6 +620,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "wpsp":
         await msg.message.edit(
             text="📑 **Web Scrapper**\n\n__This is a web scrapper module, Send me any link for scrapping.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
+               ]]
+            )
+        )
+
+    elif msg.data == "unzp":
+        await msg.message.edit(
+            text="📎 **Unziper**\n\ni can unzip Zip file's.\n\n📚 **Available Commands**\n\nfirst send me zip file.\nthen /unzip to replay  zip file",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
