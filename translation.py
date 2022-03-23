@@ -1,4 +1,5 @@
 class Translation(object):
+# Unziper module
     UNZIP_SUPPORTED_EXTENSIONS = ("zip", "rar")
     DOWNLOAD_START = " 📥DownloadinG📥 \n\nWait⏳ untill it completed."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
@@ -7,6 +8,16 @@ class Translation(object):
     EXTRACT_ZIP_INTRO_ONE = "Send a compressed file first, Then reply /unzip command to the file."
     EXTRACT_ZIP_STEP_TWO = """Select file_name to upload from the below options.
 You can use /rename command after receiving file to rename it with custom thumbnail support."""
+
+# Renamer module
+    CUSTOM_CAPTION_UL_FILE = "@htgtoolbot"
+    DOWNLOAD_FILE = " 📥DownloadinG📥 File "
+    FILE_NOT_FOUND = "Error, File not Found!!"
+    RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
+    UPLOAD_START = " 📤UploadinG📤 "
+    AFTER_SUCCESSFUL_UPLOAD_MSG = " JOIN : https://t.me/tg_galaxy\nchannel"
+    REPLY_TO_DOC_FOR_RENAME_FILE = "Reply to a Telegram media to /ren with custom thumbnail support"
+
 
 
 
