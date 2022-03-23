@@ -30,7 +30,7 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-@Client.on_message(pyrogram.filters.command(["ren"]))
+@Client.on_message(pyrogram.filters.command(["rename"]))
 async def rename_doc(bot, update):
     if update.from_user.id  in Config.BANNED_USERS:
         await bot.delete_messages(
