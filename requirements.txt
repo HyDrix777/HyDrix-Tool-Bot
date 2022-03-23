@@ -42,4 +42,4 @@ hachoir
 python-dotenv
 beautifulsoup4
 html5lib
-
+YoutubeTags
