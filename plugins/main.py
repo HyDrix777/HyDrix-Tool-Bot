@@ -129,7 +129,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴛᴛs", callback_data="tts")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="srrt"),
-               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ-𝟷 ➡️", callback_data="next")
                ],[
                InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
@@ -162,7 +162,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ɪᴍᴅʙ", callback_data="imbd")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
-               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ-𝟸 ➡️", callback_data="next2")
                ],[
                InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
@@ -192,10 +192,10 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴡᴇʙ-sᴄʀᴀᴘᴘᴇʀ", callback_data="wpsp"),
                InlineKeyboardButton("ᴜɴᴢɪᴘᴇʀ", callback_data="unzp"),
-               InlineKeyboardButton("soon..", callback_data="start")
+               InlineKeyboardButton("ʀᴇɴᴀᴍᴇʀ", callback_data="rnmr")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next"),
-               InlineKeyboardButton("ʜᴏᴍᴇ 🏠", callback_data="srrt"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
                InlineKeyboardButton("ɴᴇxᴛ-𝟹 ➡️", callback_data="start")
                ],[
                InlineKeyboardButton("✘─────ᴇxɪᴛ─────✘", callback_data="delete")
@@ -629,6 +629,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "unzp":
         await msg.message.edit(
             text="📎 **Unziper**\n\ni can unzip Zip file's.\n\n📚 **Available Commands**\n\nfirst send me zip file.\nthen /unzip to replay  zip file",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
+               ]]
+            )
+        )
+
+    elif msg.data == "rnmr":
+        await msg.message.edit(
+            text="📝 **Renamer module**\n\nHello I'Am a Simple file **Renamer** module.Downbelow my working steps👇🏼\n\n📚 **Available Commands**\n\n•First give me a File\n/rename : Reply To An File With /rename Filename.extension For Renaming.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2")
                ]]
