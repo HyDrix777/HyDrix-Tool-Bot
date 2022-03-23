@@ -20,7 +20,7 @@ from translation import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
+from database.display_progress import progress_for_pyrogram, humanbytes
 
 
 @Client.on_message(pyrogram.filters.command(["unzip"]))
