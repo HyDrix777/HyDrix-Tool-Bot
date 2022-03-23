@@ -20,7 +20,7 @@ You can use /rename command after receiving file to rename it with custom thumbn
 
 # Go fileupload module
     GO_FILE_UPLOAD = " 📤 Uploading \n\n To  gofile.io "
-    AFTER_GET_GOFILE_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n<b>File MD5 Checksum :</b> <code>{}</code>\n\n<b>⚡Link⚡ :</b> <code>{}</code>\n\n Valid untill 10 days of inactivity\nJoin : @HTgToolbot"
+    AFTER_GET_GOFILE_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n<b>File MD5 Checksum :</b> <code>{}</code>\n\n<b>🔗Link :</b> <code>{}</code>\n\n Valid untill 10 days of inactivity\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     
 
