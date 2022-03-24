@@ -11,9 +11,9 @@ from pyrogram import Client, filters
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
+    from configs import Config
 else:
-    from config import Config
+    from configs import Config
 
 # the Strings used for this "thing"
 from translation import Translation
@@ -21,8 +21,8 @@ from translation import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from helper_funcs.display_progress import progress_for_pyrogram
-from helper_funcs.ran_text import random_char
+from database.display_progress import progress_for_pyrogram
+from database.ran_text import random_char
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
