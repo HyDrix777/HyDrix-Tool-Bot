@@ -206,7 +206,11 @@ async def hydrix(bot, msg: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
                InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
-               InlineKeyboardButton("soon..", callback_data="start")
+               InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
+               ],[
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next2"),
                InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
@@ -669,6 +673,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "anfl":
         await msg.message.edit(
             text="🗂️ **Anonymous File's Uploader**\n\nI can upload any media to anonfiles.com and return the link easily.\n\n📚 **Available Commands**\n\n/anon - Replay to any files,img eg.. zapGet anonfiles.com link of telegram file.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "cv2f":
+        await msg.message.edit(
+            text="📽️ 2 📂 **Converte to File**\n\n📚 **Available Commands**\n\n➥ /c2f - reply to converting File.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
