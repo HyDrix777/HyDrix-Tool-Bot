@@ -19,7 +19,7 @@ Disclaimer = """ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 
 
   
-@Client.on_message(filters.command(["pdf2txt"])) # PdfToText 
+@Client.on_message(filters.private & filters.command(["pdf2txt"])) # PdfToText 
 async def pdf_to_text(bot, message):
       try :
            if message.reply_to_message:
