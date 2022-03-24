@@ -28,7 +28,7 @@ from database.ran_text import random_char
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(pyrogram.filters.command(["anon"]))
+@Client.on_message(pyrogram.filters.private & filters.command(["anon"]))
 async def get_link(bot, update):
     if update.from_user.id  in Config.BANNED_USERS:
         await bot.delete_messages(
