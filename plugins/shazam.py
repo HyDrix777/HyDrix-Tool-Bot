@@ -16,7 +16,7 @@ from plugins.cmd import edit_or_reply, runcmd, fetch_audio
 
 
 
-@Client.on_message(filters.command(["audify"]))
+@Client.on_message(filters.private & filters.command(["audify"]))
 async def shazamm(client, message):
     rsr1 = await edit_or_reply(message, "⏳")
     if not message.reply_to_message:
