@@ -20,8 +20,8 @@ from translation import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from helper_funcs.display_progress import progress_for_pyrogram
-from helper_funcs.ran_text import random_char
+from database.display_progress import progress_for_pyrogram
+from database.ran_text import random_char
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
