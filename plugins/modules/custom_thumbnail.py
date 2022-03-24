@@ -22,8 +22,8 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-@Client.on_message(pyrogram.filters.command(["set_thumb"]))
-async def generate_custom_thumbnail(bot, update):
+@Client.on_message(pyrogram.filters.command(["setthumb"]))
+async def setthumb(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
             chat_id=update.chat.id,
