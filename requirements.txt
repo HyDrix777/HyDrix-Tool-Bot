@@ -45,21 +45,3 @@ html5lib
 YoutubeTags
 moviepy
 
-async-lru
-colorama
-loguru
-codecov 
-flake8 
-tox 
-tox-travis 
-pytest 
-pytest-cov 
-Sphinx
-sphinx-autobuild 
-sphinx-rtd-theme
-black
-isort 
-pyaes
-pyaes 
-pysocks 
-win32-setctime
