@@ -264,7 +264,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "conv":
         await msg.message.edit(
-            text="[📹](https://telegra.ph/file/5489b184451feaf8411d0.jpg)➋🎵➥ **Mp4 to Mp3Conveter**\n\n__Send a Video for converting to Audio.__",
+            text="[📹](https://telegra.ph/file/5489b184451feaf8411d0.jpg)➋🎵➥ **Video to Mp3Conveter**\n__Send a Video for converting to Audio.__\n\n📚 **Available Commands**\n\nFirst send me the video file,\n/convertaudio - 👈🏼 Reply to video file then im Convert to audio.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
