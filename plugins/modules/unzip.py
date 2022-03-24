@@ -23,7 +23,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from database.display_progress import progress_for_pyrogram, humanbytes
 
 
-@Client.on_message(pyrogram.filters.command(["unzip"]))
+@Client.on_message(pyrogram.filters.private & filters.command(["unzip"]))
 async def unzip(bot, update):
     if update.from_user.id  in Config.BANNED_USERS:
         await bot.delete_messages(
