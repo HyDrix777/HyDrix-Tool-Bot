@@ -136,6 +136,6 @@ async def convert_to_audio(bot, update):
     else:
         await bot.send_message(
             chat_id=update.chat.id,
-            text=f"**Reply** with a telegram video file to convert.",
+            text=f"/convertaudio **Reply** with a telegram video file to convert.",
             reply_to_message_id=update.message_id
         )
