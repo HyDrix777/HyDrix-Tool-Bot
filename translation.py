@@ -42,6 +42,9 @@ You can use /rename command after receiving file to rename it with custom thumbn
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
     FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "A saved media already exists. Please send /storageinfo to know the current media details."
     
+# Screenshot Module
+    REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
+    
 
 
 
