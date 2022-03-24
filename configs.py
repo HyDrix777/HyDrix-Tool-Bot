@@ -7,7 +7,6 @@ import os
 
 
 class Config(object):
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
     DEF_WATER_MARK_FILE = "Uploaded by: @HTgToobot"
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     DOWNLOAD_LOCATION = "./DOWNLOADS"
