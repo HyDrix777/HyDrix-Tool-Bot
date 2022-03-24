@@ -25,6 +25,6 @@ You can use /rename command after receiving file to rename it with custom thumbn
     
 # Anon upload module
     ANNO_UPLOAD = " 📤 Uploading \n\n To  anonfiles.com "
-    AFTER_GET_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n\n<b>⚡Link⚡ :</b> <code>{}</code>\n\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
+    AFTER_GET_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n\n<b> 🔗 Link :</b> <code>{}</code>\n\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
     
 
