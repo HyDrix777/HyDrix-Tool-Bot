@@ -30,3 +30,6 @@ You can use /rename command after receiving file to rename it with custom thumbn
 # Converter to audio module
     AFTER_SUCCESSFUL_UPLOAD_MSG = " JOIN My Group ❤️: https://t.me/music_galaxy_dl"
     
+# Converter to file
+    REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
+    
