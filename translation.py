@@ -23,4 +23,8 @@ You can use /rename command after receiving file to rename it with custom thumbn
     AFTER_GET_GOFILE_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n<b>File MD5 Checksum :</b> <code>{}</code>\n\n<b>🔗Link :</b> <code>{}</code>\n\n Valid untill 10 days of inactivity\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     
+# Anon upload module
+    ANNO_UPLOAD = " 📤 Uploading \n\n To  anonfiles.com "
+    AFTER_GET_LINK = " <b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n\n<b>⚡Link⚡ :</b> <code>{}</code>\n\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
+    
 
