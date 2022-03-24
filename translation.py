@@ -27,4 +27,8 @@ You can use /rename command after receiving file to rename it with custom thumbn
     ANNO_UPLOAD = " 📤 Uploading \n\n To  anonfiles.com "
     AFTER_GET_LINK = " anonfiles.com\n\n<b>File Name :</b> <code>{}</code>\n<b>File Size :</b> {}\n\n<b> 🔗 Link :</b> <code>{}</code>\n\nUploaded by: @HTgToolbot\nJoin my group: @Music_Galaxy_Dl"
     
-
+# Screenshot module
+    SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
+    AFTER_SUCCESSFUL_UPLOAD_MSG = " JOIN MY GROUP: https://t.me/Music_galaxy_dl"
+    REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
+    
