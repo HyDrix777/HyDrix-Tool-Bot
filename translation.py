@@ -33,3 +33,18 @@ You can use /rename command after receiving file to rename it with custom thumbn
 # Converter to file
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     
+# All modules
+    FF_MPEG_RO_BOT_AD_VER_TISE_MENT = "Join : @Tg_Galaxy \n For talking with the owner. "
+    FF_MPEG_RO_BOT_RE_SURRECT_ED = """Syntax: /trim HH:MM:SS for screenshot of that specific time."""
+    FF_MPEG_RO_BOT_STEP_TWO_TO_ONE = "First send /downloadmedia to any media so that it can be downloaded to my local. \nSend /storageinfo to know the media, that is currently downloaded."
+    FF_MPEG_RO_BOT_STOR_AGE_INFO = "Video Duration: {}\nSend /clearffmpegmedia to delete this media, from my storage.\nSend /trim HH:MM:SS [HH:MM:SS] to cu[l]t a small photo / video, from the above media."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
+    SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "A saved media already exists. Please send /storageinfo to know the current media details."
+    
+
+
+
+
+
+
