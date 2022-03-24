@@ -40,7 +40,9 @@ async def github(_, message):
 **🧖 Blog:** `{blog}`
 **📍 Location:** `{location}`
 **➡️ Followers:** `{followers}`
-**⬅️ Following:** `{following}`"""
+**⬅️ Following:** `{following}`
+
+**Powered by:** @HTGToolBot"""
             except Exception as e:
                 print(str(e))
     await message.reply_photo(photo=avatar_url, caption=caption)
