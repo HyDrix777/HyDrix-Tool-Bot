@@ -44,8 +44,3 @@ beautifulsoup4
 html5lib
 YoutubeTags
 moviepy
-
-bs4
-urllib3
-cloudscraper
-lxml
