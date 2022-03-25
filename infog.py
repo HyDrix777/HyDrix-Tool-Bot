@@ -4,8 +4,8 @@ id_pattern = re.compile(r'^.\d+$')
 import os
 
 
-
-
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001784386455')).split()]
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001784386455"))
 AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
