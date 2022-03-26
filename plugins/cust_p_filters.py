@@ -1,7 +1,7 @@
 from pyrogram import (
     filters
 )
-from plugins.admin_check import admin_check
+from plugins.string_handling.admin_check import admin_check
 import os
 
 
