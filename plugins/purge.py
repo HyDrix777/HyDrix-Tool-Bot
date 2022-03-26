@@ -5,7 +5,7 @@ import asyncio
 from pyrogram import Client, filters
 
 from plugins.string_handling.admin_check import admin_check
-from plugins.cust_p_filters import f_onw_fliter
+from plugins.string_handling.cust_p_filters import f_onw_fliter
 
 
 
