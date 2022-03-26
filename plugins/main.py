@@ -521,7 +521,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "mute":
         await msg.message.edit(
-            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Available Commands**\n\n➥ /mute: Mute a user in group.\n➥ /unmute: Unmute a user in group.",
+            text="🔕 **Mute & Unmute**\n\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Available Commands**\n\n➥ /mute: `Mute a user in group.`\n➥ /unmute: `Unmute a user in group.`\n/tmute : 𝖳𝗈 𝗍𝖾𝗆𝗉𝗈𝗋𝖺𝗋𝗂𝗅𝗒 𝗆𝗎𝗍𝖾 𝖺 𝗎𝗌𝖾𝗋.\n\n➥ **𝖭𝗈𝗍𝖾:**\n𝖶𝗁𝗂𝗅𝖾 𝗎𝗌𝗂𝗇𝗀 /tmute 𝗒𝗈𝗎 𝗌𝗁𝗈𝗎𝗅𝖽 𝗌𝗉𝖾𝖼𝗂𝖿𝗒 𝗍𝗁𝖾 𝗍𝗂𝗆𝖾 𝗅𝗂𝗆𝗂𝗍.\n\n➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾: /𝗍𝗆𝗎𝗍𝖾 2𝖽.\n\n`𝖸𝗈𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗏𝖺𝗅𝗎𝖾𝗌`: 𝗆/𝗁/𝖽.\n • 𝗆 = 𝗆𝗂𝗇𝗎𝗍𝖾𝗌\n • 𝗁 = 𝗁𝗈𝗎𝗋𝗌\n • 𝖽 = 𝖽𝖺𝗒𝗌",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
