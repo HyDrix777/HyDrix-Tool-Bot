@@ -9,7 +9,7 @@ import os
 class Config(object):
     DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
     CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
-    INPUT_REQUIRED = "❗ **Arguments Required**"
+    INPUT_REQUIRED = """❗ **Arguments Required**"""
     KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Provided."""
     ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
     START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
