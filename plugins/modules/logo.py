@@ -2,11 +2,11 @@ from pyrogram import Client, filters
 from infog import ADMINS
 import os 
 from PIL import Image, ImageDraw, ImageFont
-from infog import (
-    COMMAND_HAND_LER
-)
 
-@Client.on_message(filters.command('logo', COMMAND_HAND_LER))
+
+
+
+@Client.on_message(filters.private & filters.command("logo")
 async def lego(event):
  quew = event.pattern_match.group(100)
  if event.sender_id == ADMINS:
