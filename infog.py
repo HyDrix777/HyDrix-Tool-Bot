@@ -5,10 +5,19 @@ import os
 
 
 
+id_pattern = re.compile(r'^.\d+$')
+def is_enabled(value, default):
+    if value.lower() in ["true", "yes", "1", "enable", "y"]:
+        return True
+    elif value.lower() in ["false", "no", "0", "disable", "n"]:
+        return False
+    else:
+        return default
+
 
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-PUBLIC_FILE_STORE = (is_enabled(environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True")), True)
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001784386455')).split()]
 
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001784386455"))
