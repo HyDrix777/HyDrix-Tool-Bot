@@ -1,5 +1,5 @@
 from infog import ADMINS
-from Script import script
+from configs import Config
 from time import time, sleep
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
