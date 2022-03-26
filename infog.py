@@ -6,10 +6,6 @@ import os
 
 
 
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files') 
-PUBLIC_FILE_STORE = (environ.get('PUBLIC_FILE_STORE', "True"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001784386455')).split()]
 
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001784386455"))
 AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
