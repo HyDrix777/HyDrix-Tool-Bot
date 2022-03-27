@@ -36,7 +36,7 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**Covid 19 Information**--
 
-🌎 **Globle Covid 19 Stats** 🌎
+[🌎](https://telegra.ph/file/fdab89d0bbd71cc078a07.jpg) **Globle Covid 19 Stats** 🌎
 🗺️ Country : `{country}`
 🔖 Actived : `{active}`
 📊 Confirmed : `{confirmed}`
