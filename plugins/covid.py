@@ -36,17 +36,18 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**Covid 19 Information**--
 
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
+🌎 **Globle Covid 19 Stats** 🌎
+🗺️ Country : `{country}`
+🔖 Actived : `{active}`
+📊 Confirmed : `{confirmed}`
+☠️ Deaths : `{deaths}`
+📟 ID : `{info_id}`
+😷 Last Update : `{last_update}`
+🔽 Latitude : `{latitude}`
+🔼 Longitude : `{longitude}`
+🧑‍⚕️ Recovered : `{recovered}`
 
-ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ @HTGToolBot ❤️"""
+⚡Powered by: @HTGToolBot"""
         return covid_info
     except Exception as error:
         return error
