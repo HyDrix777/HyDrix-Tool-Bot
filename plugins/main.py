@@ -209,7 +209,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
                ],[
                InlineKeyboardButton("ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ", callback_data="fltv"),
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ᴘᴀss ɢᴇɴᴇʀᴀᴛ", callback_data="pasg"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("soon", callback_data="start"),
@@ -703,6 +703,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "fltv":
         await msg.message.edit(
             text="📂 2 📽️ **File to video**\n\nthis module for file to video converte,\n\n📚 **Available Commands**\n\nFist give me a file\n/convert2video - Replay to file for converting to video.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "pasg":
+        await msg.message.edit(
+            text="🔢 **Password Generater**\n\nThis is a password generator Module, you can generate password from here\n\n📚 **Available Commands**\n\n➥ /genpassword",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
