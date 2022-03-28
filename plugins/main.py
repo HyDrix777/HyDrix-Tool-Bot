@@ -210,7 +210,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ", callback_data="fltv"),
                InlineKeyboardButton("ᴘᴀss ɢᴇɴᴇʀᴀᴛ", callback_data="pasg"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ᴢᴏᴍʙɪᴇs", callback_data="zomb")
                ],[
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start"),
@@ -712,6 +712,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "pasg":
         await msg.message.edit(
             text="🔢 **Password Generater**\n\nThis is a password generator Module, you can generate password from here\n\n📚 **Available Commands**\n\n➥ /genpassword",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "zomb":
+        await msg.message.edit(
+            text="🧟 **Zombies**\n\n__Kick incative members from group. Add me as admin full permission in group.__\n\n📚 **Available Commands**\n\n➥ /inkick - command with required arguments and i will kick members from group.\n➥  /instatus - to check current status of chat member from group.\n➥ /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.\n➥ /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.\n/dkick - to kick deleted accounts",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
