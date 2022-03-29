@@ -16,7 +16,7 @@ from pyrogram.types import Message
 
 from alita import DEV_USERS, LOGGER, OWNER_ID, SUPPORT_GROUP, SUPPORT_STAFF
 from alita.bot_class import Alita
-from alita.database.approve_db import Approve
+from database.approve_db import Approve
 from alita.database.reporting_db import Reporting
 from alita.tr_engine import tlang
 from alita.utils.caching import ADMIN_CACHE, TEMP_ADMIN_CACHE_BLOCK, admin_cache_reload
