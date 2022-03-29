@@ -14,23 +14,23 @@ class Config:
     BOT_TOKEN = config("BOT_TOKEN", default=None)
     APP_ID = int(config("APP_ID", default=8441220))
     API_HASH = config("API_HASH", default=None)
-    OWNER_ID = int(config("OWNER_ID", default=1198820588))
-    MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-100))
-    DEV_USERS = [int(i) for i in config("DEV_USERS", default="").split()]
-    SUDO_USERS = [int(i) for i in config("SUDO_USERS", default="").split()]
+    OWNER_ID = int(config("OWNER_ID", default=784589736))
+    MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-1001784386455))
+    DEV_USERS = [int(i) for i in config("DEV_USERS", default="784589736").split()]
+    SUDO_USERS = [int(i) for i in config("SUDO_USERS", default="784589736").split()]
     WHITELIST_USERS = [int(i) for i in config("WHITELIST_USERS", default="").split()]
-    DB_URI = config("DB_URI", default="")
-    DB_NAME = config("DB_NAME", default="alita_robot")
+    DB_URI = config("DB_URI", default="mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    DB_NAME = config("DB_NAME", default="Cluster0")
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="DivideProjectsDiscussion")
-    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="DivideProjects")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="songdownload_group")
+    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="Tg_galaxy")
     ENABLED_LOCALES = [str(i) for i in config("ENABLED_LOCALES", default="en").split()]
     VERSION = config("VERSION", default="v2.0")
     WORKERS = int(config("WORKERS", default=16))
-    BOT_USERNAME = ""
-    BOT_ID = ""
-    BOT_NAME = ""
+    BOT_USERNAME = "@HTGToolBot"
+    BOT_ID = "5219376297"
+    BOT_NAME = "Hydrix Tool Bot"
 
 
 class Development:
@@ -41,17 +41,17 @@ class Development:
     BOT_TOKEN = "YOUR BOT_TOKEN"
     APP_ID = 12345  # Your APP_ID from Telegram
     API_HASH = "YOUR API HASH"  # Your APP_HASH from Telegram
-    OWNER_ID = 12345  # Your telegram user id
-    MESSAGE_DUMP = -100  # Your Private Group ID for logs
+    OWNER_ID = 784589736  # Your telegram user id
+    MESSAGE_DUMP = -1001784386455  # Your Private Group ID for logs
     DEV_USERS = []
     SUDO_USERS = []
     WHITELIST_USERS = []
-    DB_URI = "mongodb+srv://Jijin123:Jijin123@cluster0.cklbe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-    DB_NAME = "alita_robot"
+    DB_URI = "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    DB_NAME = "Cluster0"
     NO_LOAD = []
     PREFIX_HANDLER = ["!", "/"]
-    SUPPORT_GROUP = "SUPPORT_GROUP"
-    SUPPORT_CHANNEL = "SUPPORT_CHANNEL"
+    SUPPORT_GROUP = "songdownload_group"
+    SUPPORT_CHANNEL = "Tg_galaxy"
     ENABLED_LOCALES = ["ENABLED_LOCALES"]
     VERSION = "VERSION"
     WORKERS = 8
