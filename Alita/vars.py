@@ -12,8 +12,8 @@ class Config:
 
     LOGGER = True
     BOT_TOKEN = config("BOT_TOKEN", default=None)
-    APP_ID = int(config("APP_ID", default=8441220))
-    API_HASH = config("API_HASH", default=7d120384f48b2a86fa2b9e9772a28af6)
+    APP_ID = int(config("APP_ID", default=None))
+    API_HASH = config("API_HASH", default=None)
     OWNER_ID = int(config("OWNER_ID", default=784589736))
     MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-1001784386455))
     DEV_USERS = [int(i) for i in config("DEV_USERS", default="").split()]
@@ -39,10 +39,10 @@ class Development:
     # Fill in these vars if you want to use Traditional method of deploying
     LOGGER = True
     BOT_TOKEN = "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w"
-    APP_ID = 18891187  # Your APP_ID from Telegram
+    APP_ID = "18891187"  # Your APP_ID from Telegram
     API_HASH = "7d120384f48b2a86fa2b9e9772a28af6"  # Your APP_HASH from Telegram
-    OWNER_ID = 784589736  # Your telegram user id
-    MESSAGE_DUMP = -1001784386455  # Your Private Group ID for logs
+    OWNER_ID = "784589736"  # Your telegram user id
+    MESSAGE_DUMP = "-1001784386455"  # Your Private Group ID for logs
     DEV_USERS = []
     SUDO_USERS = ["784589736"]
     WHITELIST_USERS = []
