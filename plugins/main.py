@@ -214,7 +214,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴡᴀʀɴs", callback_data="warn"),
                InlineKeyboardButton("ɢʀᴇᴇᴛɪɴɢs", callback_data="wlcm"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ʟᴏᴄᴋs", callback_data="lock")
                ],[
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start"),
@@ -739,6 +739,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "wlcm":
         await msg.message.edit(
             text="👋 **Welcome**\n\n__Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!__\n\n📚 **Available Commands**\n\n➥ /setwelcome <reply/text>: Sets welcome text for group.\n➥ /welcome <yes/no/on/off>: Enables or Disables welcome setting for group.\n➥ /resetwelcome: Resets the welcome message to default.\n➥ /setgoodbye <reply/text>: Sets goodbye text for group.\n➥ /resetgoodbye: Resets the goodbye message to default.\n➥ /cleanservice <yes/no/on/off>: Delete all service messages such as 'x joined the group' notification.\n➥ /cleanwelcome <yes/no/on/off>: Delete the old welcome message, whenever a new member joins.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "lock":
+        await msg.message.edit(
+            text="🔐 **Lock**\n\n__Do stickers annoy you? or want to avoid people sharing links? or pictures? You're in the right place!__\n\n__The locks module allows you to lock away some common items in the telegram world; the bot will automatically delete them!__\n\n📚 **Available Commands**\n\n➥ /lock <permission>: Lock Chat permission.\n➥ /unlock <permission>: Unlock Chat permission.\n/locks: View Chat permission.\n/locktypes: Check available lock types!\n\n__Locks can be used to restrict a group's users.__\n__Locking urls will auto-delete all messages with urls, locking stickers will delete all stickers, etc.__\n__Locking bots will stop non-admins from adding bots to the chat.__\n**Example:**\n/lock media: this locks all the media messages in the chat.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
