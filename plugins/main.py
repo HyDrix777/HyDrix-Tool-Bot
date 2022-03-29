@@ -794,12 +794,6 @@ async def list(bot: Client, message: Message):
            )
        )
 
-# Service clear--------------------
-
-@Client.on_message(filters.service)
-async def delete(bot,message):
- await message.delete()
-
 #Inline search Remove---
 
 @Client.on_message(filters.via_bot & filters.group)
