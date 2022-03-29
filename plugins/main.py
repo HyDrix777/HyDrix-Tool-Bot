@@ -212,7 +212,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴘᴀss ɢᴇɴᴇʀᴀᴛ", callback_data="pasg"),
                InlineKeyboardButton("ᴢᴏᴍʙɪᴇs", callback_data="zomb")
                ],[
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ᴡᴀʀɴs", callback_data="warn"),
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
@@ -721,6 +721,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "zomb":
         await msg.message.edit(
             text="🧟 **Zombies**\n\n__Kick incative members from group. Add me as admin full permission in group.__\n\n📚 **Available Commands**\n\n➥ /inkick - command with required arguments and i will kick members from group.\n➥  /instatus - to check current status of chat member from group.\n➥ /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.\n➥ /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.\n➥ /dkick - to kick deleted accounts",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "warn":
+        await msg.message.edit(
+            text="📛 **Warns**\n\n__Keep your members in check with warnings; stop them getting out of control!__\n__If you're looking for automated warnings, go read about the blocklist module.__\n\n📚 **Available Commands**\n\n➥ /warn <reason>: Warn a user.\n➥ /dwarn <reason>: Warn a user by reply, and delete their message.\n➥ /swarn <reason>: Silently warn a user, and delete your message.\n➥ /warns: See a user's warnings.\n➥ /rmwarn: Remove a user's latest warning.\n➥ /resetwarn: Reset all of a user's warnings to 0.\n➥ /resetallwarns: Delete all the warnings in a chat. All users return to 0 warns.\n➥ /warnings: Get the chat's warning settings.\n➥ /setwarnmode <ban/kick/mute>: Set the chat's warn mode.\n➥ /setwarnlimit <number>: Set the number of warnings before users are punished.\n\n- Examples:\n-> /warn @user For disobeying the rules.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
