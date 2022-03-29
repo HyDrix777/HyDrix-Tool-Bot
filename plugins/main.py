@@ -216,9 +216,9 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ɢʀᴇᴇᴛɪɴɢs", callback_data="wlcm"),
                InlineKeyboardButton("ʟᴏᴄᴋs", callback_data="lock")
                ],[
-               InlineKeyboardButton("soon", callback_data="start"),
-               InlineKeyboardButton("soon", callback_data="start"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ᴀᴘᴘʀᴏᴠᴀʟ", callback_data="aprl"),
+               InlineKeyboardButton("ɴᴏᴛᴇs", callback_data="note"),
+               InlineKeyboardButton("ʀᴜʟᴇs", callback_data="rule")
                ],[
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start"),
@@ -750,6 +750,33 @@ async def hydrix(bot, msg: CallbackQuery):
             text="🔐 **Lock**\n\n__Do stickers annoy you? or want to avoid people sharing links? or pictures? You're in the right place!__\n\n__The locks module allows you to lock away some common items in the telegram world; the bot will automatically delete them!__\n\n📚 **Available Commands**\n\n➥ /lock <permission>: Lock Chat permission.\n➥ /unlock <permission>: Unlock Chat permission.\n➥ /locks: View Chat permission.\n➥ /locktypes: Check available lock types!\n\n__Locks can be used to restrict a group's users.__\n__Locking urls will auto-delete all messages with urls, locking stickers will delete all stickers, etc.__\n__Locking bots will stop non-admins from adding bots to the chat.__\n**Example:**\n/lock media: this locks all the media messages in the chat.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "aprl":
+        await msg.message.edit(
+            text="🔶 **Approval**\n\n__Sometimes, you might trust a user not to send unwanted content.__\n__Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.__\n__Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.__\nThat's what approvals are for - approve of trustworthy users to allow them to send__\n\n📚 **Admin Commands**\n\n**User commands**\n\n➥ /approval: Check a user's approval status in this chat.\n\n**Admin Commands**\n\n➥ /approve: Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.\n➥ /unapprove: Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.\n➥ /approved: List all approved users.\n\n**Group Owner**\n\n➥ /unapproveall: Unapprove ALL users in a chat. This cannot be undone.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "note":
+        await msg.message.edit(
+            text="📖 **Notes**\n\n__Save data for future users with notes!__\n__Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!__\n\n📚 **Admin Commands**\n\n➥ /get <notename>: Get a note.\n➥ \n\nAdmin commands\n\n➥ /save <notename> <note text>: Save a new note called "word". Replying to a message will save that message. Even works on media!\n➥ /clear <notename>: Delete the associated note.\n/notes: List all notes in the current chat.\n➥ /saved: Same as /notes.\n➥ /clearall: Delete ALL notes in a chat. This cannot be undone.\n➥ /privatenotes: Whether or not to send notes in PM. Will send a message with a button which users can click to get the note in PM.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "rule":
+        await msg.message.edit(
+            text="📜 **Rules**\n\n__Every chat works with different rules; this module will help make those rules clearer!__\n\n📚 **Admin Commands**\n\nUser commands\n\n➥ /rules: Check the current chat rules.\n\nAdmin commands\n\n➥ /setrules <text>: Set the rules for this chat.\n➥ /privaterules <yes/no/on/off>: Enable/disable whether the rules should be sent in private.\n➥ /resetrules: Reset the chat rules to default\n➥ /rulesbtn <custom text>: Sets the text of rules button.\n➥ /resetrulesbutton: Reset the text of rules button to default.\n➥ /resetrulesbtn: Same as above.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next 3")
                ]]
             )
         )
