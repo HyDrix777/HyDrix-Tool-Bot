@@ -13,10 +13,10 @@ class Config:
     LOGGER = True
     BOT_TOKEN = config("BOT_TOKEN", default=None)
     APP_ID = int(config("APP_ID", default=8441220))
-    API_HASH = config("API_HASH", default=None)
+    API_HASH = config("API_HASH", default=7d120384f48b2a86fa2b9e9772a28af6)
     OWNER_ID = int(config("OWNER_ID", default=784589736))
     MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-1001784386455))
-    DEV_USERS = [int(i) for i in config("DEV_USERS", default="784589736").split()]
+    DEV_USERS = [int(i) for i in config("DEV_USERS", default="").split()]
     SUDO_USERS = [int(i) for i in config("SUDO_USERS", default="784589736").split()]
     WHITELIST_USERS = [int(i) for i in config("WHITELIST_USERS", default="").split()]
     DB_URI = config("DB_URI", default="mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
@@ -38,13 +38,13 @@ class Development:
 
     # Fill in these vars if you want to use Traditional method of deploying
     LOGGER = True
-    BOT_TOKEN = "YOUR BOT_TOKEN"
-    APP_ID = 12345  # Your APP_ID from Telegram
-    API_HASH = "YOUR API HASH"  # Your APP_HASH from Telegram
+    BOT_TOKEN = "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w"
+    APP_ID = 18891187  # Your APP_ID from Telegram
+    API_HASH = "7d120384f48b2a86fa2b9e9772a28af6"  # Your APP_HASH from Telegram
     OWNER_ID = 784589736  # Your telegram user id
     MESSAGE_DUMP = -1001784386455  # Your Private Group ID for logs
     DEV_USERS = []
-    SUDO_USERS = []
+    SUDO_USERS = ["784589736"]
     WHITELIST_USERS = []
     DB_URI = "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     DB_NAME = "Cluster0"
