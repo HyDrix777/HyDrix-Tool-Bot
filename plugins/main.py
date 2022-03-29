@@ -213,7 +213,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴢᴏᴍʙɪᴇs", callback_data="zomb")
                ],[
                InlineKeyboardButton("ᴡᴀʀɴs", callback_data="warn"),
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ɢʀᴇᴇᴛɪɴɢs", callback_data="wlcm"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("soon", callback_data="start"),
@@ -730,6 +730,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "warn":
         await msg.message.edit(
             text="📛 **Warns**\n\n__Keep your members in check with warnings; stop them getting out of control!__\n__If you're looking for automated warnings, go read about the blocklist module.__\n\n📚 **Available Commands**\n\n➥ /warn <reason>: Warn a user.\n➥ /dwarn <reason>: Warn a user by reply, and delete their message.\n➥ /swarn <reason>: Silently warn a user, and delete your message.\n➥ /warns: See a user's warnings.\n➥ /rmwarn: Remove a user's latest warning.\n➥ /resetwarn: Reset all of a user's warnings to 0.\n➥ /resetallwarns: Delete all the warnings in a chat. All users return to 0 warns.\n➥ /warnings: Get the chat's warning settings.\n➥ /setwarnmode <ban/kick/mute>: Set the chat's warn mode.\n➥ /setwarnlimit <number>: Set the number of warnings before users are punished.\n\n- Examples:\n-> /warn @user For disobeying the rules.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "wlcm":
+        await msg.message.edit(
+            text="👋 **Welcome**\n\n__Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!__\n\n📚 **Available Commands**\n\n➥ /setwelcome <reply/text>: Sets welcome text for group.\n➥ /welcome <yes/no/on/off>: Enables or Disables welcome setting for group.\n➥ /resetwelcome: Resets the welcome message to default.\n➥ /setgoodbye <reply/text>: Sets goodbye text for group.\n➥ /resetgoodbye: Resets the goodbye message to default.\n➥ /cleanservice <yes/no/on/off>: Delete all service messages such as 'x joined the group' notification.\n➥ /cleanwelcome <yes/no/on/off>: Delete the old welcome message, whenever a new member joins.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
