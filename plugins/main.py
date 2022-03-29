@@ -765,7 +765,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "note":
         await msg.message.edit(
-            text="📖 **Notes**\n\n__Save data for future users with notes!__\n__Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!__\n\n📚 **Admin Commands**\n\n➥ /get <notename>: Get a note.\n➥ \n\nAdmin commands\n\n➥ /save <notename> <note text>: Save a new note called word. Replying to a message will save that message. Even works on media!\n➥ /clear <notename>: Delete the associated note.\n/notes: List all notes in the current chat.\n➥ /saved: Same as /notes.\n➥ /clearall: Delete ALL notes in a chat. This cannot be undone.\n➥ /privatenotes: Whether or not to send notes in PM. Will send a message with a button which users can click to get the note in PM.",
+            text="📖 **Notes**\n\n__Save data for future users with notes!__\n__Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!__\n\n📚 **Admin Commands**\n\n➥ /get <notename>: Get a note.\n\n**Admin commands**\n\n➥ /save <notename> <note text>: Save a new note called word. Replying to a message will save that message. Even works on media!\n➥ /clear <notename>: Delete the associated note.\n➥ /notes: List all notes in the current chat.\n➥ /saved: Same as /notes.\n➥ /clearall: Delete ALL notes in a chat. This cannot be undone.\n➥ /privatenotes: Whether or not to send notes in PM. Will send a message with a button which users can click to get the note in PM.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
