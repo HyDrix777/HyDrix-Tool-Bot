@@ -19,7 +19,7 @@ from Alita import (
     load_cmds,
 )
 from database import MongoDB
-from Alita.plugins import all_plugins
+from Alita.utils import all_plugins
 from Alita.tr_engine import lang_dict
 from Alita.vars import Config
 
