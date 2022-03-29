@@ -44,3 +44,4 @@ beautifulsoup4
 html5lib
 YoutubeTags
 moviepy
+prettyconf==2.2.1
