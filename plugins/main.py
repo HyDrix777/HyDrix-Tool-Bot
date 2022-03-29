@@ -503,7 +503,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "purg":
         await msg.message.edit(
-            text="✴️ **Purge**\n\n__Here is the help for the **Purges** module:__\n\n - /purge: __deletes all messages between this and the replied to message.__\n__only work in group.__",
+            text="❗ **Purge**\n\n__Here is the help for the **Purges** module:__\n\n📚 **Available Commands**\n\n➥ /purge: deletes all messages between this and the replied to message.\n➥ /spurge: Same as purge, but doesnt send the final confirmation message.\n➥ /del: deletes the message you replied to.\n\nExample:\n`/purge Delete all messages from the replied to message, until now.`\n- Mark the first message to purge from (as a reply).\n/purge",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next")
                ]]
