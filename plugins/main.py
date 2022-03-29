@@ -352,7 +352,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "past":
         await msg.message.edit(
-            text="📇➥ /paste [text] - Paste The Given Text On Pasty",
+            text="📇 **Paste**\n\n__Paste some texts or documents on a website!__\n\n📚 **Available Commands**\n➥ /paste [text] - Paste The Given Text On Pasty\n\n__These commands works on both pm and group.__\n__These commands can be used by any group member.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help")
                ]]
