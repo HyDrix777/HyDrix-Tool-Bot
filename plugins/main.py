@@ -220,7 +220,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ɴᴏᴛᴇs", callback_data="note"),
                InlineKeyboardButton("ʀᴜʟᴇs", callback_data="rule")
                ],[
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ᴀᴅᴍɪɴ", callback_data="admi"),
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
@@ -775,6 +775,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "rule":
         await msg.message.edit(
             text="📜 **Rules**\n\n__Every chat works with different rules; this module will help make those rules clearer!__\n\n📚 **Admin Commands**\n\n**User commands**\n\n➥ /rules: Check the current chat rules.\n\n**Admin commands**\n\n➥ /setrules <text>: Set the rules for this chat.\n➥ /privaterules <yes/no/on/off>: Enable/disable whether the rules should be sent in private.\n➥ /resetrules: Reset the chat rules to default\n➥ /rulesbtn <custom text>: Sets the text of rules button.\n➥ /resetrulesbutton: Reset the text of rules button to default.\n➥ /resetrulesbtn: Same as above.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "admi":
+        await msg.message.edit(
+            text="👮 **Admin**\n\n__Make it easy to promote and demote users with the admin module!__\n\n📚 **Available Commands**\n\n➥ /setgpic :  reply to an image to set as group photo\n➥ /title : [entity] [title]: sets a custom title for an admin. If no [title] provided defaults to Admin\n➥ /setgdes [text] : set group Bio\n➥ /setgtitle : [text] set group title\n➥ /demote : Demote a reply to user message.\n➥ /promote : Promote a reply to user message.\n➥ /fullpromote promote: Promote a member with max rights\n➥ /adminlist: List the admins in the current chat.\n➥ /zombies : Ban deleted accounts\n\n__Sometimes, you promote or demote an admin manually, and Rose doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally. This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the__ /admincache __command; that'll force Rose to check who the admins are again.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
