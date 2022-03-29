@@ -49,7 +49,7 @@ async def start_message(bot, message):
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     await message.reply_sticker(
-        sticker="CAACAgIAAxkBAAIqCmJCBdSsYiDGySHfL36cnT0_kmegAAIkFwACuvPwSL6GupiSPc_pHgQ"             
+        sticker="CAACAgUAAxkBAAIq12JDWsb86A1GlqGRS09ZpDe9yxFcAAIyBAACczrAV77GQavxGOdFHgQ"             
     )
 
     await message.reply_text(
