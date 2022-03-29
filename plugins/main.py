@@ -776,7 +776,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📜 **Rules**\n\n__Every chat works with different rules; this module will help make those rules clearer!__\n\n📚 **Admin Commands**\n\nUser commands\n\n➥ /rules: Check the current chat rules.\n\nAdmin commands\n\n➥ /setrules <text>: Set the rules for this chat.\n➥ /privaterules <yes/no/on/off>: Enable/disable whether the rules should be sent in private.\n➥ /resetrules: Reset the chat rules to default\n➥ /rulesbtn <custom text>: Sets the text of rules button.\n➥ /resetrulesbutton: Reset the text of rules button to default.\n➥ /resetrulesbtn: Same as above.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next 3")
+               InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="next3")
                ]]
             )
         )
