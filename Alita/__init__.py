@@ -50,7 +50,7 @@ except Exception as ef:
     sysexit(1)
 
 LOGGER.info("------------------------")
-LOGGER.info("|      Alita_Robot     |")
+LOGGER.info("|     Hydrix_Robot     |")
 LOGGER.info("------------------------")
 LOGGER.info(f"Version: {Config.VERSION}")
 LOGGER.info(f"Owner: {str(Config.OWNER_ID)}")
