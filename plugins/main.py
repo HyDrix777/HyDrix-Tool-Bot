@@ -222,7 +222,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴀᴅᴍɪɴ", callback_data="admi"),
                InlineKeyboardButton("ʙᴀɴs", callback_data="bans"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ғɪʟᴛᴇʀs", callback_data="fltr")
                ],[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next2"),
                InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
@@ -793,6 +793,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "bans":
         await msg.message.edit(
             text="🚷 **Bans**\n\n__Someone annoying entered your group?__\n__Want to ban/restriction him/her?__\n__This is the plugin for you, easily kick, ban and unban members in a group.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /kick: Kick the user replied or tagged.\n➥ /skick: Kick the user replied or tagged and delete your messsage.\n➥ /dkick: Kick the user replied and delete their message.\n➥ /ban: Bans the user replied to or tagged.\n➥ /sban: Bans the user replied or tagged and delete your messsage.\n➥ /dban: Bans the user replied and delete their message.\n➥ /tban userhandle x(m/h/d): Bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /stban userhandle x(m/h/d): Silently bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /dtban userhandle x(m/h/d): Silently bans a user for x time and delete the replied message. (via reply). m = minutes, h = hours, d = days.\n➥ /unban: Unbans the user replied to or tagged.\n\n**Example**:\n`/ban @username` : this bans a user in the chat.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "fltr":
+        await msg.message.edit(
+            text="💾 **Filters**\n\n__Filters are case insensitive; every time someone says your trigger words, Rose will reply something else! can be used to create your own commands, if desired.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /filters: List all active filters saved in the chat.\n\n**Admin only:**\n➥ /filter ‹keyword› ‹reply message›: Add a filter to this chat. The bot will now reply that message whenever 'keyword'is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.\n\n**Example**:\n`Set a filter:`\n/filter hello Hello there! How are you?\n/filter "filtername1|filtername2" Reply Text\n__Using the you can make a single filter work on 2 filternames without manually adding another one.__\n\n/stop ‹filter keyword›: Stop that filter.\n**Note:** __For filters with aliases, if you stop one alias, the filter will stop working on other aliases too.__\n**For Example:** If you stop the "filtername1" from above example, the bot will not respond to "filtername2\n\n**Chat creator only:**\n\n➥ /removeallfilters: Remove all chat filters at once.\n\n**Note:**\n__Currently there is a limit of 50 filters and 120 aliases per chat.All filter keywords are in lowercase.__",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
