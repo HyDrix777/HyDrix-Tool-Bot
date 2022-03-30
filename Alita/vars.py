@@ -28,7 +28,7 @@ class Config:
     ENABLED_LOCALES = [str(i) for i in config("ENABLED_LOCALES", default="en").split()]
     VERSION = config("VERSION", default="v2.0")
     WORKERS = int(config("WORKERS", default=16))
-    BOT_USERNAME = "@HTGToolBot"
+    BOT_USERNAME = "HTGToolBot"
     BOT_ID = "5219376297"
     BOT_NAME = "Hydrix Tool Bot"
 
