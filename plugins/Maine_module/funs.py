@@ -4,12 +4,12 @@ from secrets import choice
 from pyrogram.errors import MessageTooLong
 from pyrogram.types import Message
 
-from alita import LOGGER
-from alita.bot_class import Alita
-from alita.tr_engine import tlang
-from alita.utils import fun_strings
-from alita.utils.custom_filters import command
-from alita.utils.extract_user import extract_user
+from Alita import LOGGER
+from Alita.bot_class import Alita
+from Alita.tr_engine import tlang
+from Alita.utils import fun_strings
+from Alita.utils.custom_filters import command
+from Alita.utils.extract_user import extract_user
 
 
 @Alita.on_message(command("shout"))
