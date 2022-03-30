@@ -88,7 +88,7 @@ async def deleteconnection(client,message):
     chat_type = message.chat.type
 
     if chat_type == "private":
-        await message.reply_text("Run /connections to view or disconnect from groups!", quote=True)
+        await message.reply_text("/connections to view or disconnect groups", quote=True)
 
     elif (chat_type == "group") or (chat_type == "supergroup"):
         group_id = message.chat.id
@@ -99,9 +99,9 @@ async def deleteconnection(client,message):
 
         delcon = await delete_connection(str(userid), str(group_id))
         if delcon:
-            await message.reply_text("Successfully disconnected from this chat", quote=True)
+            await message.reply_text("Successfully disconnected this chat", quote=True)
         else:
-            await message.reply_text("This chat isn't connected to me!\nDo /connect to connect.", quote=True)
+            await message.reply_text("This chat is connected to me!\nDo /connect to connect.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
@@ -136,7 +136,7 @@ async def connections(client,message):
             pass
     if buttons:
         await message.reply_text(
-            "Your connected group details ;\n\n",
+            "Connected group details:",
             reply_markup=InlineKeyboardMarkup(buttons),
             quote=True
         )
