@@ -738,7 +738,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "wlcm":
         await msg.message.edit(
-            text="👋 **Welcome**\n\n__Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!__\n\n📚 **Available Commands**\n\n➥ /setwelcome <reply/text>: Sets welcome text for group.\n➥ /welcome <yes/no/on/off>: Enables or Disables welcome setting for group.\n➥ /resetwelcome: Resets the welcome message to default.\n➥ /setgoodbye <reply/text>: Sets goodbye text for group.\n➥ /resetgoodbye: Resets the goodbye message to default.\n➥ /cleanservice <yes/no/on/off>: Delete all service messages such as 'x joined the group' notification.\n➥ /cleanwelcome <yes/no/on/off>: Delete the old welcome message, whenever a new member joins.",
+            text="👋 **Welcome**\n\n__Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!__\n\n📚 **Available Commands**\n\n➥ /setwelcome reply/text: Set welcome text for group.\n➥ /welcome yes/no/on/off: Enables or Disables welcome setting for group.\n➥ /goodbye <on/off> | noformat : enable/disable | Shows the current goodbye message | settings.\n➥ /resetwelcome: Resets the welcome message to default.\n➥ /setgoodbye reply/text: Sets goodbye text for group.\n➥ /resetgoodbye: Resets the goodbye message to default.\n\n➥ /cleanwelcome yes/no/on/off: Delete the old welcome message, whenever a new member joins.\n➥ /cleangoodbye on/off : Shows or sets the current clean goodbye settings.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
