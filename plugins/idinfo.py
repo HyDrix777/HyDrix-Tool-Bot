@@ -39,6 +39,7 @@ async def ginfo(bot, hydrix):
 │**Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
 │**Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 │**Gʀᴏᴜᴘ ɪᴅ** : `{hydrix.chat.id}`
+ Total members : {hydrix.chat.members_count}
 │**Scam** : {hydrix.chat.description}
 ╰────[ɢ-ɪɴғᴏ]───⍟
 """
