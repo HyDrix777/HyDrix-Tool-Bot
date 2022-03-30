@@ -831,7 +831,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "unfl":
         await msg.message.edit(
-            text="🌟 **Unlimited Filter**\n\n__This is an advanced filter bot with many capabilities!__\n__There is no practical limits for my filtering capacity.__\n\n📚 **Available Commands**\n`Filter Commands:`\n➥ /add filter name reply  -  Add filter for name\n➥ /del filter name  -  Delete filter\n➥ /delall</code>  -  Delete entire filters ⟨Group Owner Only!⟩\n➥ /viewfilters  -  List all filters in chat\n\n**Connection Commands**\n\n➥ /connect groupid  -  Connect your group to my PM. You can also simply use,\n➥ /connections  -  Manage your connections.\n➥ /disconnect - Send this command in your group to disconnect.",
+            text="🌟 **Unlimited Filter**\n\n__This is an advanced filter module with many capabilities!__\n__Filter is the feature were users can set automated replies for a particular keyword and Minato will respond whenever a keyword is found the message.__\n__There is no practical limits for my filtering capacity.__\n\n📚 **Available Commands**\n`Filter Commands:`\n➥ /add filter name reply  -  Add filter for name\n➥ /del filter name  -  Delete filter\n➥ /delall</code>  -  Delete entire filters ⟨Group Owner Only!⟩\n➥ /viewfilters  -  List all filters in chat\n\n**Connection Commands**\n\n➥ /connect groupid  -  Connect your group to my PM. You can also simply use,\n➥ /connections  -  Manage your connections.\n➥ /disconnect - Send this command in your group to disconnect.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
