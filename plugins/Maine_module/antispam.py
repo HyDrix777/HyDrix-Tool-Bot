@@ -5,16 +5,16 @@ from traceback import format_exc
 from pyrogram.errors import MessageTooLong, PeerIdInvalid, UserIsBlocked
 from pyrogram.types import Message
 
-from alita import LOGGER, MESSAGE_DUMP, SUPPORT_GROUP, SUPPORT_STAFF
-from alita.bot_class import Alita
-from alita.database.antispam_db import GBan
-from alita.database.users_db import Users
-from alita.tr_engine import tlang
-from alita.utils.clean_file import remove_markdown_and_html
-from alita.utils.custom_filters import command
-from alita.utils.extract_user import extract_user
-from alita.utils.parser import mention_html
-from alita.vars import Config
+from Alita import LOGGER, MESSAGE_DUMP, SUPPORT_GROUP, SUPPORT_STAFF
+from Alita.bot_class import Alita
+from database.antispam_db import GBan
+from database.users_db import Users
+from Alita.tr_engine import tlang
+from Alita.utils.clean_file import remove_markdown_and_html
+from Alita.utils.custom_filters import command
+from Alita.utils.extract_user import extract_user
+from Alita.utils.parser import mention_html
+from Alita.vars import Config
 
 # Initialize
 db = GBan()
