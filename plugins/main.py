@@ -202,7 +202,7 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module4-------
     elif msg.data == "next3":
         await msg.message.edit(
-            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😊",
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😌\nthis module some commands are not working 🙂",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
                InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
@@ -221,7 +221,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ʀᴜʟᴇs", callback_data="rule")
                ],[
                InlineKeyboardButton("ᴀᴅᴍɪɴ", callback_data="admi"),
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ʙᴀɴs", callback_data="bans"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next2"),
@@ -784,6 +784,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "admi":
         await msg.message.edit(
             text="👮 **Admin**\n\n__Make it easy to promote and demote users with the admin module!__\n\n📚 **Available Commands**\n\n➥ /setgpic :  reply to an image to set as group photo\n➥ /title : [entity] [title]: sets a custom title for an admin. If no [title] provided defaults to Admin\n➥ /setgdes [text] : set group Bio\n➥ /setgtitle : [text] set group title\n➥ /demote : Demote a reply to user message.\n➥ /promote : Promote a reply to user message.\n➥ /fullpromote promote: Promote a member with max rights\n➥ /adminlist: List the admins in the current chat.\n➥ /zombies : Ban deleted accounts\n\n__Sometimes, you promote or demote an admin manually, and Hydrix doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally. This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the__ /admincache __command; that'll force Hydrix to check who the admins are again.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+elif msg.data == "bans":
+        await msg.message.edit(
+            text="🚷 Bans\n\nSomeone annoying entered your group?\nWant to ban/restriction him/her?\nThis is the plugin for you, easily kick, ban and unban members in a group.\n\n📚 Available Commands\nAdmin only:\n\n➥ /kick: Kick the user replied or tagged.\n➥ /skick: Kick the user replied or tagged and delete your messsage.\n➥ /dkick: Kick the user replied and delete their message.\n➥ /ban: Bans the user replied to or tagged.\n➥ /sban: Bans the user replied or tagged and delete your messsage.\n➥ /dban: Bans the user replied and delete their message.\n/tban userhandle x(m/h/d): Bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /stban userhandle x(m/h/d): Silently bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /dtban userhandle x(m/h/d): Silently bans a user for x time and delete the replied message. (via reply). m = minutes, h = hours, d = days.\n➥ /unban: Unbans the user replied to or tagged.\n\nExample:\n/ban @username: this bans a user in the chat.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
