@@ -204,7 +204,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n__This is a group manager module__\nthis module some commands are not working 🙂",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("ᴜɴʟɪᴍɪᴛᴇᴅ ғɪʟᴛᴇʀ", callback_data="unfl"),
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
@@ -823,6 +823,15 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "fltr":
         await msg.message.edit(
             text="💾 **Filters**\n\n__Filters are case insensitive; every time someone says your trigger words, Rose will reply something else! can be used to create your own commands, if desired.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /filters: List all active filters saved in the chat.\n\n**Admin only:**\n➥ /filter ‹keyword› ‹reply message›: Add a filter to this chat. The bot will now reply that message whenever 'keyword'is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.\n\n**Example**:\n`Set a filter:`\n/filter hello Hello there! How are you?\n/filter filtername1|filtername2 Reply Text\n__Using the you can make a single filter work on 2 filternames without manually adding another one.__\n\n/stop ‹filter keyword›: Stop that filter.\n**Note:** __For filters with aliases, if you stop one alias, the filter will stop working on other aliases too.__\n**For Example:** If you stop the filtername1 from above example, the bot will not respond to filtername2\n\n**Chat creator only:**\n\n➥ /removeallfilters: Remove all chat filters at once.\n\n**Note:**\n__Currently there is a limit of 50 filters and 120 aliases per chat.All filter keywords are in lowercase.__",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "unfl":
+        await msg.message.edit(
+            text="🌟 **Unlimited Filter**\n\n__This is an advanced filter bot with many capabilities!__\n__There is no practical limits for my filtering capacity.__\n\n📚 **Available Commands**\n`Filter Commands:`\n➥ /add filter name reply  -  Add filter for name\n➥ /del filter name  -  Delete filter\n➥ /delall</code>  -  Delete entire filters ⟨Group Owner Only!⟩\n➥ /viewfilters  -  List all filters in chat\n\n**Connection Commands**\n\n➥ /connect groupid  -  Connect your group to my PM. You can also simply use,\n➥ /connections  -  Manage your connections.\n➥ /disconnect - Send this command in your group to disconnect.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
