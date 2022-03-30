@@ -7,6 +7,14 @@ import os
 
 
 class Config(object):
+    ADD_FILTER_CMD = os.environ.get("ADD_FILTER_CMD", "add")
+    DELETE_FILTER_CMD = os.environ.get("DELETE_FILTER_CMDD", "del")
+    DELETE_ALL_CMD = os.environ.get("DELETE_ALL_CMDD", "delall")
+    CONNECT_COMMAND = os.environ.get("CONNECT_COMMANDD", "connect")
+    DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
+    DATABASE_NAME = str(os.environ.get("DATABASE_NAME", "Cluster0"))
+    DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+
     DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
     CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
     INPUT_REQUIRED = """❗ **Arguments Required**"""
