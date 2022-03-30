@@ -202,11 +202,11 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module4-------
     elif msg.data == "next3":
         await msg.message.edit(
-            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😌\nthis module some commands are not working 🙂",
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n__This is a group manager module__\nthis module some commands are not working 🙂",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
-               InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
-               InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start")
                ],[
                InlineKeyboardButton("ᴘɪɴ", callback_data="pins"),
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
@@ -225,6 +225,27 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ғɪʟᴛᴇʀs", callback_data="fltr")
                ],[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next2"),
+               InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
+               InlineKeyboardButton("🚶 ᴇxɪᴛ", callback_data="delete"),
+               InlineKeyboardButton("ɴᴇxᴛ »", callback_data="next4")
+               ]]
+            )
+        )
+
+# Next Module5-------
+    elif msg.data == "next4":
+        await msg.message.edit(
+            text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n➥ __first thing! I'm just only created for this bot education parpose__ 😌\nthis module some commands are not working 🙂",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
+               InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
+               InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
+               ],[
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start"),
+               InlineKeyboardButton("soon", callback_data="start")
+               ],[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3"),
                InlineKeyboardButton("ʜᴏᴍᴇ 🏕️", callback_data="srrt"),
                InlineKeyboardButton("🚶 ᴇxɪᴛ", callback_data="delete"),
                InlineKeyboardButton("ɴᴇxᴛ »", callback_data="start")
@@ -677,7 +698,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="[🗂️](https://telegra.ph/file/f8629bb506f9afcd27ff4.jpg) **Go File**\n\n__What is Gofile🤔__\n__Gofile is a free and unlimited file sharing and storage platform.\nYou can use it as a file manager to store all your data, or as a sharing platform to send your files to others. All types of files are supported (files, images, music, videos, pdf etc...). There is no limit, you download at the maximum speed of your connection and most of the service is free.__\n\nWhat is the use of this module ❓👇🏼\nI can upload any media to gofile.io and return the link easily.\n\n📚 **Available Commands**\n\n➥First give me any file img anything\n➥ /go - Replay to any files, then i upload to gofile.io and give you a link of telegram file.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next4")
                ]]
             )
         )
@@ -686,7 +707,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🗂️ **Anonymous File's Uploader**\n\nI can upload any media to anonfiles.com and return the link easily.\n\n📚 **Available Commands**\n\n/anon - Replay to any files,img eg.. zapGet anonfiles.com link of telegram file.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next4")
                ]]
             )
         )
@@ -695,7 +716,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📽️ 2 📂 **Converte to File**\n\n📚 **Available Commands**\n\n➥ /c2f - reply to converting File.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next4")
                ]]
             )
         )
