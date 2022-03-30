@@ -790,7 +790,7 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
 
-elif msg.data == "bans":
+    elif msg.data == "bans":
         await msg.message.edit(
             text="🚷 **Bans**\n\n__Someone annoying entered your group?__\n__Want to ban/restriction him/her?__\n__This is the plugin for you, easily kick, ban and unban members in a group.__\n\n📚 **Available Commands**\n**Admin only:**\n\n➥ /kick: Kick the user replied or tagged.\n➥ /skick: Kick the user replied or tagged and delete your messsage.\n➥ /dkick: Kick the user replied and delete their message.\n➥ /ban: Bans the user replied to or tagged.\n➥ /sban: Bans the user replied or tagged and delete your messsage.\n➥ /dban: Bans the user replied and delete their message.\n/tban userhandle x(m/h/d): Bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /stban userhandle x(m/h/d): Silently bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /dtban userhandle x(m/h/d): Silently bans a user for x time and delete the replied message. (via reply). m = minutes, h = hours, d = days.\n➥ /unban: Unbans the user replied to or tagged.\n\n**Example**:\n`/ban @username` : this bans a user in the chat.",
             reply_markup=InlineKeyboardMarkup([[
