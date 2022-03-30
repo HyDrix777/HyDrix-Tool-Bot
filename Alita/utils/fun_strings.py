@@ -1,21 +1,3 @@
-RUN_STRINGS = (
-    "Huh? what? did they get away?",
-    "Get back here!",
-    "Look out for the wall!",
-    "Don't leave me alone with them!!",
-    "You've got company!",
-    "Chotto matte!",
-    "Yare yare daze",
-    "Hey take responsibilty for what you just did!",
-    "May the odds be ever in your favour.",
-    "Run everyone, they just dropped a bomb 💣💣",
-    "And they disappeared forever, never to be seen again.",
-    "Legend has it, they're still running.",
-    "Hasta la vista, baby.",
-    "Ah, what a waste. I liked that one.",
-    "As The Doctor would say... RUN!",
-)
-
 SLAP_ALITA_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Don't again dare to slap me asshole.",
@@ -389,9 +371,4 @@ REACTIONS = (
     "(ﾉ≧∀≦)ﾉ ‥…━━━★",
     "╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ",
     "(∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)",
-)
-
-TOSS = (
-    "Heads",
-    "Tails",
 )
