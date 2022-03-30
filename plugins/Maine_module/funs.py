@@ -37,11 +37,7 @@ async def fun_shout(_, m: Message):
         return
 
 
-@Alita.on_message(command("runs"))
-async def fun_run(_, m: Message):
-    await m.reply_text(choice(fun_strings.RUN_STRINGS))
-    LOGGER.info(f"{m.from_user.id} runed in {m.chat.id}")
-    return
+
 
 
 @Alita.on_message(command("slap"))
@@ -76,22 +72,6 @@ async def fun_slap(c: Alita, m: Message):
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
     await reply_text(reply)
     LOGGER.info(f"{m.from_user.id} slaped in {m.chat.id}")
-    return
-
-
-@Alita.on_message(command("roll"))
-async def fun_roll(_, m: Message):
-    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
-    await reply_text(choice(range(1, 7)))
-    LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
-    return
-
-
-@Alita.on_message(command("tosss"))
-async def fun_tosss(_, m: Message):
-    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
-    await reply_text(choice(fun_strings.TOSS))
-    LOGGER.info(f"{m.from_user.id} tossed in {m.chat.id}")
     return
 
 
@@ -157,9 +137,6 @@ _DISABLE_CMDS_ = [
 
     "react",
     "bluetext",
-    "toss",
-    "roll",
     "slap",
-    "runs",
     "shout",
 ]
