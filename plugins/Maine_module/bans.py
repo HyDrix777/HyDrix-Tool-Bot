@@ -15,15 +15,15 @@ from pyrogram.types import (
     Message,
 )
 
-from alita import LOGGER, OWNER_ID, SUPPORT_GROUP, SUPPORT_STAFF
-from alita.bot_class import Alita
-from alita.tr_engine import tlang
-from alita.utils.caching import ADMIN_CACHE, admin_cache_reload
-from alita.utils.custom_filters import command, restrict_filter
-from alita.utils.extract_user import extract_user
-from alita.utils.parser import mention_html
-from alita.utils.string import extract_time
-from alita.vars import Config
+from Alita import LOGGER, OWNER_ID, SUPPORT_GROUP, SUPPORT_STAFF
+from Alita.bot_class import Alita
+from Alita.tr_engine import tlang
+from Alita.utils.caching import ADMIN_CACHE, admin_cache_reload
+from Alita.utils.custom_filters import command, restrict_filter
+from Alita.utils.extract_user import extract_user
+from Alita.utils.parser import mention_html
+from Alita.utils.string import extract_time
+from Alita.vars import Config
 
 
 @Alita.on_message(command("tban") & restrict_filter)
