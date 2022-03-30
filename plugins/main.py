@@ -153,7 +153,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴇᴅɪᴛ ᴍsɢ ᴀʟᴇʀᴛ", callback_data="emsa")
                ],[
                InlineKeyboardButton("ʏᴛ ᴛᴀɢ ғɪɴᴅᴇʀ", callback_data="yttf"),
-               InlineKeyboardButton("ᴘɪɴ", callback_data="pins"),
+               InlineKeyboardButton("ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ", callback_data="fltv"),
                InlineKeyboardButton("ᴘᴜʀɢᴇs", callback_data="purg")
                ],[
                InlineKeyboardButton("ᴘɪɴɢ", callback_data="pinj"),
@@ -208,7 +208,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
                InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
                ],[
-               InlineKeyboardButton("ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ", callback_data="fltv"),
+               InlineKeyboardButton("ᴘɪɴ", callback_data="pins"),
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
                InlineKeyboardButton("ᴢᴏᴍʙɪᴇs", callback_data="zomb")
                ],[
