@@ -714,7 +714,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "cv2f":
         await msg.message.edit(
-            text="📽️ 2 📂 **Converte to File**\n\n📚 **Available Commands**\n\n➥ /c2f - reply to converting File.",
+            text="📽️ 2 📂 **Video to File**\n\n📚 **Available Commands**\n\n➥ /c2f - reply to converting File.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next4")
                ]]
@@ -725,7 +725,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="📂 2 📽️ **File to video**\n\nthis module for file to video converte,\n\n📚 **Available Commands**\n\nFist give me a file\n/convert2video - Replay to file for converting to video.",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
@@ -734,7 +734,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="🔢 **Password Generater**\n\nThis is a password generator Module, you can generate password from here\n\n📚 **Available Commands**\n\n➥ /genpassword",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next")
                ]]
             )
         )
