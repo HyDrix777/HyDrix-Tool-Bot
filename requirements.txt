@@ -44,10 +44,9 @@ beautifulsoup4
 html5lib
 YoutubeTags
 moviepy
+speedtest-cli
 
 prettyconf==2.2.1
 datetime
 cachetools==4.2.4; python_version >= "3.5" and python_version < "4.0"
 regex==2021.11.10
-
-countryinfo
