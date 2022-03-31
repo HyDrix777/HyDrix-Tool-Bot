@@ -854,10 +854,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
 @Client.on_message(filters.group & filters.command("reload"))
 async def reload(bot: Client, message: Message):
-    if message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIscGI_NIFP4RCJvnzCmKNYrL0P76aPAAIEAAPBJDExieUdbguzyBAeBA") 
-        await asyncio.sleep(1)
-    elif message.reply_text(
+    await message.reply_text(
         text="✅ Bot restarted\n✅ Admin list updated!",
     )
 
