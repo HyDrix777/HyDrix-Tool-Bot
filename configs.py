@@ -7,6 +7,7 @@ import os
 
 
 class Config(object):
+    AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "784589736").split())
     SAVE_USER = os.environ.get("SAVE_USER", "no").lower()
     ADD_FILTER_CMD = os.environ.get("ADD_FILTER_CMD", "add")
     DELETE_FILTER_CMD = os.environ.get("DELETE_FILTER_CMDD", "del")
