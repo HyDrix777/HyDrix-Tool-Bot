@@ -515,7 +515,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "pins":
         await msg.message.edit(
-            text="📌 **Pin**\n\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Available Commands**\n\n- /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n- /unpin : __I can Unpin the current pinned message in silently.__",
+            text="📌 **Pin**\n\n____Here you find find all help related to groups pins and how to manage them via me.\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Available Commands**\n\n➥ /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n➥ /unpin : __I can Unpin the current pinned message in silently.__\n➥ /unpinall: Unpins all the pinned message in the current chat.\n➥ /pinned: Gives the current pinned message of the chat.\n➥ /cleanlinked `<on/off/yes/no>`: Toggle cleanlinked status. All the messages from linked channel will be deleted if enabled!\n➥ /permapin `<text>`: Pin a custom messages via bot. This message can contain markdown, and can be used in replies to the media include additional buttons and text.\n➥ /antichannelpin `<on/off/yes/no>`: Toggle antichannelpin status. All the messages from linked channel will be unpinned if enabled!\n",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
