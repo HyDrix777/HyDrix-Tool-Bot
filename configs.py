@@ -7,6 +7,7 @@ import os
 
 
 class Config(object):
+    SAVE_USER = os.environ.get("SAVE_USER", "no").lower()
     ADD_FILTER_CMD = os.environ.get("ADD_FILTER_CMD", "add")
     DELETE_FILTER_CMD = os.environ.get("DELETE_FILTER_CMDD", "del")
     DELETE_ALL_CMD = os.environ.get("DELETE_ALL_CMDD", "delall")
