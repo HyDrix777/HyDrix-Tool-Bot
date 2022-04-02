@@ -10,7 +10,7 @@ from gtts import gTTS
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
-Disclaimer = """ Disclaimer Notice , This Audio Is Generated automatically Through AudioBook Bot, Join BugHunterBots on Telegram for More Bots .     You are Now Listening to your Audio  ."""
+Disclaimer = """ Disclaimer Notice , This Audio Is Generated automatically Through AudioBook from hydrix tool bot, Join songdownload group on Telegram .     You are Now Listening to your Audio  ."""
   
 Thanks = """ Thats the End of Your Audio Book, Join BugHunterBots on Telegram To find more Interesting bots , And Thanks for Using this Service"""
 
