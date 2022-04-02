@@ -30,14 +30,14 @@ async def info(bot, hydrix):
 @Client.on_message(filters.group & filters.command("ginfo"))
 async def ginfo(bot, hydrix):
     text = f"""
-╭────•**User info**
+╭──•**User info**
 │**Fɪʀsᴛ ɴᴀᴍᴇ** : {hydrix.from_user.first_name}
 │**Usᴇʀɴᴀᴍᴇ** : @{hydrix.from_user.username}
 │**Usᴇʀ ɪᴅ** : `{hydrix.from_user.id}`
 │
-├──•**Group info**
-│**Gʀᴏᴜᴘ ɴᴀᴍᴇ** : {hydrix.chat.title}
-│**Gʀᴏᴜᴘ ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
+├────•**Group info**
+│**ɴᴀᴍᴇ** : {hydrix.chat.title}
+│**ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 │**Gʀᴏᴜᴘ ɪᴅ** : `{hydrix.chat.id}`
 │**Scam** : {hydrix.chat.description}
 ╰────[ɢ-ɪɴғᴏ]───⍟
