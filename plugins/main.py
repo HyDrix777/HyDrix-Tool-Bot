@@ -154,7 +154,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ʏᴛ ᴛᴀɢ ғɪɴᴅᴇʀ", callback_data="yttf"),
                InlineKeyboardButton("ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ", callback_data="fltv"),
-               InlineKeyboardButton("ᴘᴜʀɢᴇs", callback_data="purg")
+               InlineKeyboardButton("ᴠɪᴅᴇᴏ𝟸-ғɪʟᴇ", callback_data="cv2f")
                ],[
                InlineKeyboardButton("ᴘɪɴɢ", callback_data="pinj"),
                InlineKeyboardButton("ᴘᴀss ɢᴇɴᴇʀᴀᴛ", callback_data="pasg"),
@@ -178,7 +178,7 @@ async def hydrix(bot, msg: CallbackQuery):
                ],[
                InlineKeyboardButton("ᴘᴅғ ᴛᴏ ᴛᴇxᴛ", callback_data="pdft"),
                InlineKeyboardButton("ᴀᴜᴅɪᴏʙᴏᴏᴋ", callback_data="audi"),
-               InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", callback_data="repo")
+               InlineKeyboardButton("ᴄᴀʀʙᴏɴ", callback_data="crbn")
                ],[
                InlineKeyboardButton("ɴᴏ ʟɪɴᴋ's", callback_data="nlng"),
                InlineKeyboardButton("ᴍᴜsɪᴄ ᴛᴀɢ", callback_data="must"),
@@ -205,8 +205,8 @@ async def hydrix(bot, msg: CallbackQuery):
             text=f"ʜᴇʏ {msg.from_user.mention}\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\n__This is a group manager module__\nthis module some commands are not working 🙂",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ᴜɴʟɪᴍɪᴛᴇᴅ ғɪʟᴛᴇʀ", callback_data="unfl"),
-               InlineKeyboardButton("soon", callback_data="start"),
-               InlineKeyboardButton("soon", callback_data="start")
+               InlineKeyboardButton("ᴘᴜʀɢᴇs", callback_data="purg"),
+               InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", callback_data="repo")
                ],[
                InlineKeyboardButton("ᴘɪɴ", callback_data="pins"),
                InlineKeyboardButton("ᴍᴜᴛᴇ", callback_data="mute"),
@@ -239,9 +239,9 @@ async def hydrix(bot, msg: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("ɢᴏ-ғɪʟᴇ", callback_data="gofl"),
                InlineKeyboardButton("ᴀɴᴏɴғɪʟᴇs", callback_data="anfl"),
-               InlineKeyboardButton("ᴄᴏɴᴠᴇʀᴛ𝟸-ғɪʟᴇ", callback_data="cv2f")
+               InlineKeyboardButton("soon", callback_data="start")
                ],[
-               InlineKeyboardButton("ᴄᴀʀʙᴏɴ", callback_data="crbn"),
+               InlineKeyboardButton("sOon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start"),
                InlineKeyboardButton("soon", callback_data="start")
                ],[
