@@ -840,7 +840,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "crbn":
         await msg.message.edit(
-            text="🔳 **Carbon Image**\n\n__A Module To Make Carbon Image From TEXT__\n\n📚 **Avaible Command:**\n◉ /carbon : Reply To Any TEXT To Make Carbon Image",
+            text="[🔳](https://telegra.ph/file/003d78ebbcddfdb489136.jpg) **Carbon Image**\n\n__A Module To Make Carbon Image From TEXT__\n\n📚 **Avaible Command:**\n◉ /carbon : Reply To Any TEXT To Make Carbon Image",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next2")
                ]]
