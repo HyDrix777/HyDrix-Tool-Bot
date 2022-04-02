@@ -59,7 +59,7 @@ async def forwarded(_, msg):
         if msg.forward_from.username:
             text += f'@{msg.forward_from.username} \nɪᴅ : `{msg.forward_from.id}`'
         else:
-            text += f'ɪᴅ : `{msg.forward_from.id}`'
+            text += f'ɪᴅ : `{msg.forward_from.id}`\nDc id: {msg.forward_from.dc_id}'
         await msg.reply(text, quote=True)
     else:
         hidden = msg.forward_sender_name
