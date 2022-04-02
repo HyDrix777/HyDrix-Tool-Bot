@@ -52,7 +52,7 @@ async def pdf_to_text(bot, message):
                 tts_file.save(f"{message.chat.id}.mp3")      
                 with open(f"{message.chat.id}.mp3", "rb") as speech:
                       await bot.send_voice(chat_id, speech, caption ="@songdownload_group",reply_markup=CHANNEL_BUTTON)   
-                await txt.edit("Join @songdownload_group)    
+                await txt.edit("Join @songdownload_group")    
                 os.remove(pdf_path)  
                 
                 
