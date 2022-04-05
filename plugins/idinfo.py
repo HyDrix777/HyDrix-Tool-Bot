@@ -5,16 +5,7 @@ from pyrogram.errors import UsernameInvalid, UsernameNotOccupied
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-
-
-@Client.on_message(filters.command("messageid"))
-async def messageid_(bot: Client, msg: Message):
-	if not msg.chat.type == "private":
-		main = f"**This Message Id is:**\n`{msg.message_id}`"
-		if msg.reply_to_message:
-			if msg.reply_to_message.from_user:
-				main = f"{msg.reply_to_message.from_user.first_name} your Message id is:\n`{msg.reply_to_message.message_id}`"
-				
+		
 
 # User info
 
@@ -110,7 +101,7 @@ async def id_(bot: Client, msg: Message):
 		main = f"**This {msg.chat.type} ɪᴅ is** `{msg.chat.id}`\n**User Id is:** `{msg.from_user.id}`"
 		if msg.reply_to_message:
 			if msg.reply_to_message.from_user:
-				main = f"{msg.reply_to_message.from_user.first_name} your id is `{msg.reply_to_message.from_user.id}`"
+				main = f"{msg.reply_to_message.from_user.first_name} your id is `{msg.reply_to_message.from_user.id}`\n\n**Message_id:**\n{msg.reply_to_message.from_user.id}"
 				if msg.reply_to_message.sticker:
 					main += f"\n\nYour Requested Sticker ID is `{msg.reply_to_message.sticker.file_id}`"
 
