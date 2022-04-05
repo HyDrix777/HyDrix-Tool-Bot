@@ -41,7 +41,7 @@ class Config(object):
         custom_tag = " "
     
 
-    UPDATE_CHANNEL = os.environ.get(("UPDATE_CHANNEL", "Tg_galaxy"))
+    UPDATE_CHANNEL = (os.environ.get("UPDATE_CHANNEL", "Tg_galaxy"))
     
     
     # get convertAPI secret (Optional)
