@@ -1,13 +1,10 @@
-# fileName : plugins/dm/generate.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import shutil
-from pdf import PDF
+from infog import PDF
 from time import sleep
 from pyrogram import filters
-from Configs.dm import Config
-from pyrogram import Client as ILovePDF
+from configs import Config
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -31,8 +28,8 @@ button=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "😉 Create your Own 😉",
-                    url="https://github.com/nabilanavab/ilovepdf"
+                    "😉 CLICK HERE",
+                    url="https://t.me/tg_galaxy"
                 )
             ]
        ]
@@ -42,7 +39,7 @@ button=InlineKeyboardMarkup(
 #--------> REPLY TO /generate MESSAGE
 #------------------->
 
-@ILovePDF.on_message(filters.private & filters.command(["generate"]) & ~filters.edited)
+@Client.on_message(filters.private & filters.command(["generate"]) & ~filters.edited)
 async def generate(bot, message):
     try:
         if (message.chat.id in BANNED_USERS) or (
