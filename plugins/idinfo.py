@@ -98,7 +98,7 @@ async def welcome(bot, msg):
 @Client.on_message(filters.command("id"))
 async def id_(bot: Client, msg: Message):
 	if not msg.chat.type == "private":
-		main = f"**This {msg.chat.type} ɪᴅ is** `{msg.chat.id}`\n**User Id is:** `{msg.from_user.id}`\n**Message id**:\n`{msg.from_user.message_id}`"
+		main = f"**This {msg.chat.type} ɪᴅ is** `{msg.chat.id}`\n**User Id is:** `{msg.from_user.id}`"
 		if msg.reply_to_message:
 			if msg.reply_to_message.from_user:
 				main = f"{msg.reply_to_message.from_user.first_name} your id is `{msg.reply_to_message.from_user.id}`\n\n**Message_id:**\nhttps://t.me/{msg.chat.username}/{msg.reply_to_message.message_id}"
