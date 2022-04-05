@@ -5,13 +5,13 @@ import os
 import time
 import shutil
 from time import sleep
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
 from plugins.progress import progress
-from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from pyrogram import Client 
+from Pdfmodule.fileSize import get_size_format as gSF
 from PDFNetPython3.PDFNetPython import PDFDoc, Optimizer, SDFDoc, PDFNet
 
 #--------------->
@@ -31,7 +31,7 @@ PDF_THUMBNAIL=Config.PDF_THUMBNAIL
 
 compress = filters.create(lambda _, __, query: query.data in ["compress", "Kcompress"])
 
-@ILovePDF.on_callback_query(compress)
+@Client.on_callback_query(compress)
 async def _compress(bot, callbackQuery):
     try:
         # CHECKS IF BOT DOING ANY WORK
