@@ -1,9 +1,6 @@
-# fileName : Plugins/dm/delete.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import shutil
-from pdf import PDF
+from infog import PDF
 from pyrogram import filters
 from pyrogram import Client as ILovePDF
 
