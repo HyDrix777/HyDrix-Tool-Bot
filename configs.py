@@ -41,3 +41,28 @@ class Config(object):
         custom_tag = " "
     
 
+    UPDATE_CHANNEL = os.environ.get(("UPDATE_CHANNEL", "Tg_galaxy"))
+    
+    
+    # get convertAPI secret (Optional)
+    CONVERT_API = os.environ.get(("CONVERT_API", "708095915"))
+    
+    
+    # set maximum file size for preventing overload (Optional)
+    MAX_FILE_SIZE = os.environ.get("MAX_FILE_SIZE")
+    
+    
+    # add admins Id list by space seperated (Optional)
+    ADMINS = list(set(int(x) for x in os.environ.get("ADMINS", "784589736").split()))
+    if ADMINS:
+        # Bot only for admins [True/False] (Optional)
+        ADMIN_ONLY = os.environ.get("ADMIN_ONLY", False)
+    
+    
+    # banned Users cant use this bot (Optional)
+    BANNED_USERS = list(set(int(x) for x in os.environ.get("BANNED_USERS", "0").split()))
+    if not BANNED_USERS:
+        BANNED_USERS = []
+    
+    # thumbnail
+    PDF_THUMBNAIL = "./thumbnail.jpeg"
