@@ -6,7 +6,7 @@ from infog import PROCESS
 from pyrogram import filters
 from configs import Config
 from Pdfmodule.checkPdf import checkPdf
-from plugins.progress import progress
+from Pdfmodule.progress import progress
 from pyrogram import Client 
 from Pdfmodule.fileSize import get_size_format as gSF
 from PDFNetPython3.PDFNetPython import PDFDoc, Optimizer, SDFDoc, PDFNet
