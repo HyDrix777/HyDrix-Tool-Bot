@@ -1,9 +1,6 @@
-# fileName : plugins/dm/callBack/asImgOrDoc.py
-# copyright ©️ 2021 nabilanavab
-
 from pyrogram import filters
-from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from pyrogram import Client 
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -83,7 +80,7 @@ KD = filters.create(lambda _, __, query: query.data.startswith("KD|"))
 
 
 # Extract pgNo (with unknown pdf page number)
-@ILovePDF.on_callback_query(I)
+@Client.on_callback_query(I)
 async def _I(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -106,7 +103,7 @@ async def _I(bot, callbackQuery):
         pass
 
 # Extract pgNo (with unknown pdf page number)
-@ILovePDF.on_callback_query(D)
+@Client.on_callback_query(D)
 async def _D(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -129,7 +126,7 @@ async def _D(bot, callbackQuery):
         pass
 
 # Extract pgNo (with known pdf page number)
-@ILovePDF.on_callback_query(KI)
+@Client.on_callback_query(KI)
 async def _KI(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -153,7 +150,7 @@ async def _KI(bot, callbackQuery):
         pass
 
 # Extract pgNo (with known pdf page number)
-@ILovePDF.on_callback_query(KD)
+@Client.on_callback_query(KD)
 async def _KD(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -177,7 +174,7 @@ async def _KD(bot, callbackQuery):
         pass
 
 # pdf to images (with unknown pdf page number)
-@ILovePDF.on_callback_query(toImage)
+@Client.on_callback_query(toImage)
 async def _toImage(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -198,7 +195,7 @@ async def _toImage(bot, callbackQuery):
         pass
 
 # pdf to images (with known page Number)
-@ILovePDF.on_callback_query(KtoImage)
+@Client.on_callback_query(KtoImage)
 async def _KtoImage(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -220,7 +217,7 @@ async def _KtoImage(bot, callbackQuery):
         pass
 
 # back to pdf message (unknown page number)
-@ILovePDF.on_callback_query(BTPM)
+@Client.on_callback_query(BTPM)
 async def _BTPM(bot, callbackQuery):
     try:
         fileName=callbackQuery.message.reply_to_message.document.file_name
@@ -236,7 +233,7 @@ async def _BTPM(bot, callbackQuery):
         pass
 
 # back to pdf message (with known page Number)
-@ILovePDF.on_callback_query(KBTPM)
+@Client.on_callback_query(KBTPM)
 async def _KBTPM(bot, callbackQuery):
     try:
         fileName = callbackQuery.message.reply_to_message.document.file_name
