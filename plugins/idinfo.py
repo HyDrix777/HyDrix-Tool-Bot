@@ -7,7 +7,14 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-
+@Client.on_message(filters.command("messageid"))
+async def messageid_(bot: Client, msg: Message):
+	if not msg.chat.type == "private":
+		main = f"**This Message Id is:**\n`{msg.message_id}`"
+		if msg.reply_to_message:
+			if msg.reply_to_message.from_user:
+				main = f"{msg.reply_to_message.from_user.first_name} your Message id is:\n`{msg.reply_to_message.message_id}`"
+				
 
 # User info
 
@@ -39,7 +46,7 @@ async def ginfo(bot, hydrix):
 │**ɴᴀᴍᴇ** : {hydrix.chat.title}
 │**ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 │**Gʀᴏᴜᴘ ɪᴅ** : `{hydrix.chat.id}`
-Message id : {hydrix.message_id}
+│**Mᴇssᴀɢᴇ ɪᴅ** : `{hydrix.message_id}`
 │**Scam** : {hydrix.chat.description}
 ╰────[ɢ-ɪɴғᴏ]───⍟
 """
@@ -60,7 +67,7 @@ async def forwarded(_, msg):
         if msg.forward_from.username:
             text += f'@{msg.forward_from.username} \nɪᴅ : `{msg.forward_from.id}`'
         else:
-            text += f'ɪᴅ : `{msg.forward_from.id}`\nDc id: {msg.forward_from.dc_id}'
+            text += f'ɪᴅ : `{msg.forward_from.id}'
         await msg.reply(text, quote=True)
     else:
         hidden = msg.forward_sender_name
