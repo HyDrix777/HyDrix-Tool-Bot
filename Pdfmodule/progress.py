@@ -1,10 +1,7 @@
-# fileName : plugins/progress.py
-# copyright ©️ 2021 nabilanavab
-
 import time, math
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
