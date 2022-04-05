@@ -1,9 +1,6 @@
-# fileName : Plugins/dm/feedback.py
-# copyright ©️ 2021 nabilanavab
-
 from pyrogram import filters
-from Configs.dm import Config
-from pyrogram import Client as ILovePDF
+from configs import Config
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -21,14 +18,14 @@ ADMINS=Config.ADMINS
 
 UCantUse = "For Some Reason You Can't Use This Bot 🛑"
 
-feedbackMsg = "[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)"
+feedbackMsg = "[Write a feedback 📋](https://t.me/nabilhggchanneluh0)"
 
 button=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "😉 Create your Own 😉",
-                    url="https://github.com/nabilanavab/ilovepdf"
+                    "🔴 Click here",
+                    url="http://t.me/tg_galaxy"
                 )
             ]
        ]
@@ -38,7 +35,7 @@ button=InlineKeyboardMarkup(
 #--------> REPLY TO /feedback
 #------------------->
 
-@ILovePDF.on_message(filters.private & filters.command(["feedback"]) & ~filters.edited)
+@Client.on_message(filters.private & filters.command(["feedback"]) & ~filters.edited)
 async def feedback(bot, message):
     try:
         await message.reply_chat_action("typing")
