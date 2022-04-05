@@ -1,8 +1,5 @@
-# fileName : plugins/toKnown.py
-# copyright ©️ 2021 nabilanavab
-
 from pyrogram.types import Message
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
