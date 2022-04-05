@@ -1,20 +1,17 @@
-# fileName : plugins/dm/callBack/toImages.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import fitz
 import time
 import shutil
 from PIL import Image
-from pdf import PROCESS
+from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
 from pyrogram.types import ForceReply
 from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InputMediaPhoto, InputMediaDocument
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -59,7 +56,7 @@ EXTRACT = filters.create(lambda _, __, query: query.data in ["IA", "DA", "IR", "
 KEXTRACT = filters.create(lambda _, __, query: query.data.startswith(tuple(KcbExtract)))
 
 # Extract pgNo (with unknown pdf page number)
-@ILovePDF.on_callback_query(EXTRACT)
+@Client.on_callback_query(EXTRACT)
 async def _EXTRACT(bot, callbackQuery):
     try:
         # CALLBACK DATA
@@ -513,7 +510,7 @@ async def _EXTRACT(bot, callbackQuery):
 
 
 # Extract pgNo (with known pdf page number)
-@ILovePDF.on_callback_query(KEXTRACT)
+@Client.on_callback_query(KEXTRACT)
 async def _KEXTRACT(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
