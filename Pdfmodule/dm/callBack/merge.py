@@ -1,18 +1,15 @@
-# fileName : plugins/dm/callBack/merge.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import time
 import shutil
 from time import sleep
-from pdf import PROCESS
+from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from Configs.dm import Config
+from configs import Config
 from PyPDF2 import PdfFileMerger
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
-from pyrogram import Client as ILovePDF
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
+from pyrogram import Client 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -35,7 +32,7 @@ PDF_THUMBNAIL = Config.PDF_THUMBNAIL
 
 merge = filters.create(lambda _, __, query: query.data == "merge")
 
-@ILovePDF.on_callback_query(merge)
+@Client.on_callback_query(merge)
 async def _merge(bot, callbackQuery):
     try:
         # CHECK IF BOT DOING ANY WORK
