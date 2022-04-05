@@ -1,9 +1,6 @@
-# fileName : plugins/dm/callBack/underDev.py
-# copyright ©️ 2021 nabilanavab
-
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from pyrogram import Client as ILovePDF
+from pyrogram import Client 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -20,7 +17,7 @@ cancelP2I = filters.create(lambda _, __, query: query.data == "cancelP2I")
 notEncrypted = filters.create(lambda _, __, query: query.data == "notEncrypted")
 
 
-@ILovePDF.on_callback_query(underDev)
+@Client.on_callback_query(underDev)
 async def _underDev(bot, callbackQuery):
     try:
         await callbackQuery.answer(
@@ -30,7 +27,7 @@ async def _underDev(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(error)
+@Client.on_callback_query(error)
 async def _error(bot, callbackQuery):
     try:
         await callbackQuery.answer(
@@ -40,7 +37,7 @@ async def _error(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(closeme)
+@Client.on_callback_query(closeme)
 async def _closeme(bot, callbackQuery):
     try:
         try:
@@ -55,7 +52,7 @@ async def _closeme(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(notEncrypted)
+@Client.on_callback_query(notEncrypted)
 async def _notEncrypted(bot, callbackQuery):
     try:
         await callbackQuery.answer(
@@ -65,7 +62,7 @@ async def _notEncrypted(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(closeALL)
+@Client.on_callback_query(closeALL)
 async def _closeALL(bot, callbackQuery):
     try:
         await callbackQuery.message.delete()
@@ -74,7 +71,7 @@ async def _closeALL(bot, callbackQuery):
         print(e)
 
 
-@ILovePDF.on_callback_query(cancelP2I)
+@Client.on_callback_query(cancelP2I)
 async def _cancelP2I(bot, callbackQuery):
     try:
         await callbackQuery.message.edit_reply_markup(
@@ -89,7 +86,7 @@ async def _cancelP2I(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(canceled)
+@Client.on_callback_query(canceled)
 async def _canceled(bot, callbackQuery):
     try:
         await callbackQuery.answer(
