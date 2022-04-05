@@ -1,16 +1,13 @@
-# fileName : plugins/dm/callBack/text.py
-# copyright ©️ 2021 nabilanavab
-
 import time
 import fitz
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
-from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
+from pyrogram import Client 
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -57,7 +54,7 @@ KtoText = filters.create(lambda _, __, query: query.data.startswith("KtoText|"))
 
 
 # pdf to images (with unknown pdf page number)
-@ILovePDF.on_callback_query(toText)
+@Client.on_callback_query(toText)
 async def _toText(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -80,7 +77,7 @@ async def _toText(bot, callbackQuery):
         pass
 
 # pdf to images (with known page Number)
-@ILovePDF.on_callback_query(KtoText)
+@Client.on_callback_query(KtoText)
 async def _KtoText(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -104,7 +101,7 @@ async def _KtoText(bot, callbackQuery):
         pass
 
 # to Text file (with unknown pdf page number)
-@ILovePDF.on_callback_query(T)
+@Client.on_callback_query(T)
 async def _T(bot, callbackQuery):
     try:
         # CHECH USER PROCESS
@@ -170,7 +167,7 @@ async def _T(bot, callbackQuery):
             pass
 
 # to Text message (with unknown pdf page number)
-@ILovePDF.on_callback_query(M)
+@Client.on_callback_query(M)
 async def _M(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
@@ -229,7 +226,7 @@ async def _M(bot, callbackQuery):
             pass
 
 # to Html file (with unknown pdf page number)
-@ILovePDF.on_callback_query(H)
+@Client.on_callback_query(H)
 async def _H(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
@@ -291,7 +288,7 @@ async def _H(bot, callbackQuery):
             pass
 
 # to Text file (with unknown pdf page number)
-@ILovePDF.on_callback_query(J)
+@Client.on_callback_query(J)
 async def _J(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
