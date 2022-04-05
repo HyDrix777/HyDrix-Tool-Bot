@@ -41,15 +41,15 @@ class Config(object):
         custom_tag = " "
     
 
-    UPDATE_CHANNEL = (os.environ.get("UPDATE_CHANNEL", "Tg_galaxy"))
+    UPDATE_CHANNEL = set(os.environ.get("UPDATE_CHANNEL", "Tg_galaxy"))
     
     
     # get convertAPI secret (Optional)
-    CONVERT_API = (os.environ.get("CONVERT_API", "GN4pzf2BHGr7nzHE"))
+    CONVERT_API = set(os.environ.get("CONVERT_API", "GN4pzf2BHGr7nzHE"))
     
     
     # set maximum file size for preventing overload (Optional)
-    MAX_FILE_SIZE = (os.environ.get("MAX_FILE_SIZE", "10"))
+    MAX_FILE_SIZE = set(os.environ.get("MAX_FILE_SIZE", "10"))
     
     
     # add admins Id list by space seperated (Optional)
