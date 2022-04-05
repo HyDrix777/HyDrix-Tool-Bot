@@ -39,7 +39,7 @@ async def ginfo(bot, hydrix):
 │**ɴᴀᴍᴇ** : {hydrix.chat.title}
 │**ᴜsᴇʀNᴀᴍᴇ** : @{hydrix.chat.username}
 │**Gʀᴏᴜᴘ ɪᴅ** : `{hydrix.chat.id}`
-Message id : {hydrix.from_user.imessage_id}
+Message id : {hydrix.from_user.message_id}
 │**Scam** : {hydrix.chat.description}
 ╰────[ɢ-ɪɴғᴏ]───⍟
 """
