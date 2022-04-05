@@ -1,9 +1,6 @@
-# fileName : plugins/dm/cancel.py
-# copyright ©️ 2021 nabilanavab
-
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
+from configs import Config
 from pyrogram import Client as ILovePDF
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import InlineKeyboardMarkup
@@ -26,8 +23,8 @@ button=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "😉 Create your Own 😉",
-                    url="https://github.com/nabilanavab/ilovepdf"
+                    "🔴 Click here",
+                    url="http://t.me/tg_galaxy"
                 )
             ]
        ]
