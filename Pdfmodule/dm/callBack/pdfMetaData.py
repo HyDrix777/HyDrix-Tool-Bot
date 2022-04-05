@@ -1,14 +1,11 @@
-# fileName : plugins/dm/Callback/pdfMetaData.py
-# copyright ©️ 2021 nabilanavab
-
 import fitz
 import time
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from plugins.progress import progress
-from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.progress import progress
+from pyrogram import Client 
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -36,7 +33,7 @@ File Size: `{}`
 pdfInfo = filters.create(lambda _, __, query: query.data == "pdfInfo")
 KpdfInfo = filters.create(lambda _, __, query: query.data.startswith("KpdfInfo"))
 
-@ILovePDF.on_callback_query(pdfInfo)
+@Client.on_callback_query(pdfInfo)
 async def _pdfInfo(bot, callbackQuery):
     try:
         # CHECKS PROCESS
@@ -167,7 +164,7 @@ async def _pdfInfo(bot, callbackQuery):
         except Exception:
             pass
 
-@ILovePDF.on_callback_query(KpdfInfo)
+@Client.on_callback_query(KpdfInfo)
 async def _KpdfInfo(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
