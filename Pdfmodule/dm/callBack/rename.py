@@ -1,15 +1,12 @@
-# fileName : plugins/dm/callBack/rename.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import time
-from pdf import PROCESS
+from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.progress import progress
+from configs import Config
+from Pdfmodule.progress import progress
 from pyrogram.types import ForceReply
-from pyrogram import Client as ILovePDF
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -24,7 +21,7 @@ PDF_THUMBNAIL = Config.PDF_THUMBNAIL
 
 rename = filters.create(lambda _, __, query: query.data.startswith("rename"))
 
-@ILovePDF.on_callback_query(rename)
+@Client.on_callback_query(rename)
 async def _encrypt(bot, callbackQuery):
     try:
         # CHECKS PROCESS
