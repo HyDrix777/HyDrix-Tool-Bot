@@ -2,13 +2,13 @@ import os
 import shutil
 from infog import PDF
 from pyrogram import filters
-from pyrogram import Client as ILovePDF
+from pyrogram import Client
 
 #--------------->
 #--------> DELETS CURRENT IMAGES TO PDF QUEUE (/delete)
 #------------------->
 
-@ILovePDF.on_message(filters.command(["delete"]))
+@Client.on_message(filters.command(["delete"]))
 async def _cancelI2P(bot, message):
     try:
         await message.reply_chat_action("typing")
