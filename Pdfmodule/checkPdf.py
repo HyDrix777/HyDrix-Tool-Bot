@@ -1,12 +1,9 @@
-# fileName : plugins/checkPdf.py
-# copyright ©️ 2021 nabilanavab
-
 import fitz
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram.types import Message
-from plugins.toKnown import toKnown
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.toKnown import toKnown
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
