@@ -1,18 +1,15 @@
-# fileName : plugins/dm/document.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import fitz
 import shutil
 import convertapi
-from pdf import PDF
+from infog import PDF
 from PIL import Image
 from time import sleep
 from pdf import invite_link
 from pyrogram import filters
-from Configs.dm import Config
+from configs import Config
 from pyrogram import Client as ILovePDF
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
