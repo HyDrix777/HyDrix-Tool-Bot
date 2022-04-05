@@ -1,12 +1,9 @@
-# fileName : Plugins/dm/txt2pdf.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 from fpdf import FPDF
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
-from pyrogram import Client as ILovePDF
+from configs import Config
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -42,7 +39,7 @@ button=InlineKeyboardMarkup(
 #--------> REPLY TO /txt2pdf
 #------------------->
 
-@ILovePDF.on_message(filters.private & filters.command(["txt2pdf"]) & ~filters.edited)
+@Client.on_message(filters.private & filters.command(["txt2pdf"]) & ~filters.edited)
 async def feedback(bot, message):
     try:
         await message.reply_chat_action("typing")
@@ -77,7 +74,7 @@ async def feedback(bot, message):
 
 txt2pdf = filters.create(lambda _, __, query: query.data.startswith("font"))
 
-@ILovePDF.on_callback_query(txt2pdf)
+@Client.on_callback_query(txt2pdf)
 async def _txt2pdf(bot, callbackQuery):
     try:
         _, font = callbackQuery.data.split("|")
@@ -100,7 +97,7 @@ async def _txt2pdf(bot, callbackQuery):
 
 txt2pdfBack = filters.create(lambda _, __, query: query.data == "txt2pdfBack")
 
-@ILovePDF.on_callback_query(txt2pdfBack)
+@Client.on_callback_query(txt2pdfBack)
 async def _txt2pdfBack(bot, callbackQuery):
     try:
         await callbackQuery.message.edit(
@@ -127,7 +124,7 @@ async def _txt2pdfBack(bot, callbackQuery):
 
 pgSize = filters.create(lambda _, __, query: query.data.startswith("pgSize"))
 
-@ILovePDF.on_callback_query(pgSize)
+@Client.on_callback_query(pgSize)
 async def _pgSize(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
