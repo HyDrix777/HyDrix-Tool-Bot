@@ -1,18 +1,15 @@
-# fileName : plugins/dm/callBack/decrypt.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import time
 import fitz
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.progress import progress
-from plugins.checkPdf import checkPdf
+from configsonfigs import Config
+from Pdfmodule.progress import progress
+from Pdfmodule.checkPdf import checkPdf
 from pyrogram.types import ForceReply
-from pyrogram import Client as ILovePDF
+from pyrogram import Client 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -28,7 +25,7 @@ PDF_THUMBNAIL = Config.PDF_THUMBNAIL
 decrypts = ["decrypt", "Kdecrypt"]
 decrypt = filters.create(lambda _, __, query: query.data.startswith(tuple(decrypts)))
 
-@ILovePDF.on_callback_query(decrypt)
+@Client.on_callback_query(decrypt)
 async def _decrypt(bot, callbackQuery):
     try:
         # CHECKS IF BOT DOING ANY WORK
