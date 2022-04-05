@@ -1,18 +1,15 @@
-# fileName : plugins/dm/callBack/preview.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import fitz
 import time
 import shutil
 from PIL import Image
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
 from pyrogram.types import ForceReply
-from pyrogram import Client as ILovePDF
+from pyrogram import Client 
 from pyrogram.types import InputMediaPhoto
 
 #--------------->
@@ -30,7 +27,7 @@ media = {}
 preview = filters.create(lambda _, __, query: query.data in ["Kpreview", "preview"])
 
 # Extract pgNo (with unknown pdf page number)
-@ILovePDF.on_callback_query(preview)
+@Client.on_callback_query(preview)
 async def _preview(bot, callbackQuery):
     try:
         # CALLBACK DATA
