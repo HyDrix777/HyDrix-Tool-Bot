@@ -10,7 +10,7 @@ from configs import Config
 from Pdfmodule.checkPdf import checkPdf
 from Pdfmodule.progress import progress
 from pyrogram.types import ForceReply
-from pyrogram import Client as ILovePDF
+from pyrogram import Client
 from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InputMediaPhoto, InputMediaDocument
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
