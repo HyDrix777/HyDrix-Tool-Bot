@@ -96,7 +96,7 @@ async def _canceled(bot, callbackQuery):
         pass
 
 
-@ILovePDF.on_callback_query(completed)
+@Client.on_callback_query(completed)
 async def _completed(bot, callbackQuery):
     try:
         await callbackQuery.answer(
