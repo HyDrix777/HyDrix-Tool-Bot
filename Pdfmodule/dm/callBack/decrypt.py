@@ -5,7 +5,7 @@ import shutil
 from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from configsonfigs import Config
+from configs import Config
 from Pdfmodule.progress import progress
 from Pdfmodule.checkPdf import checkPdf
 from pyrogram.types import ForceReply
