@@ -45,18 +45,18 @@ class Config(object):
     
     
     # get convertAPI secret (Optional)
-    CONVERT_API = os.environ.get(("CONVERT_API", "708095915"))
+    CONVERT_API = os.environ.get(("CONVERT_API", "GN4pzf2BHGr7nzHE"))
     
     
     # set maximum file size for preventing overload (Optional)
-    MAX_FILE_SIZE = os.environ.get("MAX_FILE_SIZE")
+    MAX_FILE_SIZE = os.environ.get(("MAX_FILE_SIZE", "10"))
     
     
     # add admins Id list by space seperated (Optional)
     ADMINS = list(set(int(x) for x in os.environ.get("ADMINS", "784589736").split()))
     if ADMINS:
         # Bot only for admins [True/False] (Optional)
-        ADMIN_ONLY = os.environ.get("ADMIN_ONLY", False)
+        ADMIN_ONLY = os.environ.get("ADMIN_ONLY", True)
     
     
     # banned Users cant use this bot (Optional)
