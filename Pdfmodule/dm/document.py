@@ -5,7 +5,7 @@ import convertapi
 from infog import PDF
 from PIL import Image
 from time import sleep
-from pdf import invite_link
+from infog import invite_link
 from pyrogram import filters
 from configs import Config
 from pyrogram import Client
