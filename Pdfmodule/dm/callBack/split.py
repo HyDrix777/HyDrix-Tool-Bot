@@ -1,18 +1,15 @@
-# fileName : plugins/dm/callBack/split.py
-# copyright ©️ 2021 nabilanavab
-
 import time
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyromod import listen
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
 from pyrogram.types import ForceReply
-from pyrogram import Client as ILovePDF
+from pyrogram import Client 
 from PyPDF2 import PdfFileWriter, PdfFileReader
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
@@ -41,7 +38,7 @@ KsplitS = filters.create(lambda _, __, query: query.data.startswith("KsplitS|"))
 
 
 # Split pgNo (with unknown pdf page number)
-@ILovePDF.on_callback_query(split)
+@Client.on_callback_query(split)
 async def _split(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -62,7 +59,7 @@ async def _split(bot, callbackQuery):
         pass
 
 # Split pgNo (with known pdf page number)
-@ILovePDF.on_callback_query(Ksplit)
+@Client.on_callback_query(Ksplit)
 async def _Ksplit(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -84,7 +81,7 @@ async def _Ksplit(bot, callbackQuery):
         pass
 
 # Split (with unknown pdf page number)
-@ILovePDF.on_callback_query(splitR)
+@Client.on_callback_query(splitR)
 async def _splitROrS(bot, callbackQuery):
     try:
         # CHECKS IF USER IN PROCESS
@@ -219,7 +216,7 @@ async def _splitROrS(bot, callbackQuery):
             pass
 
 # Split (with unknown pdf page number)
-@ILovePDF.on_callback_query(splitS)
+@Client.on_callback_query(splitS)
 async def _splitS(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
@@ -333,7 +330,7 @@ async def _splitS(bot, callbackQuery):
             pass
 
 # Split (with known pdf page number)
-@ILovePDF.on_callback_query(KsplitR)
+@Client.on_callback_query(KsplitR)
 async def _KsplitR(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
@@ -460,7 +457,7 @@ async def _KsplitR(bot, callbackQuery):
             pass
 
 # Split (with unknown pdf page number)
-@ILovePDF.on_callback_query(KsplitS)
+@Pdfmodule.on_callback_query(KsplitS)
 async def _KsplitS(bot, callbackQuery):
     try:
         if callbackQuery.message.chat.id in PROCESS:
