@@ -1,7 +1,7 @@
 from infog import PROCESS
 from pyrogram import filters
 from configs import Config
-from pyrogram import Client as ILovePDF
+from pyrogram import Client 
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -35,7 +35,7 @@ button=InlineKeyboardMarkup(
 #------------------->
 
 
-@ILovePDF.on_message(filters.private & ~filters.edited & filters.command(["cancel"]))
+@Client.on_message(filters.private & ~filters.edited & filters.command(["cancel"]))
 async def cancelP2I(bot, message):
     try:
         if (message.chat.id in BANNED_USERS) or (
