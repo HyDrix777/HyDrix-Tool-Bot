@@ -46,6 +46,13 @@ YoutubeTags
 moviepy
 speedtest-cli
 
+pillow
+PyMuPdf
+convertapi
+PDFNetPython3==8.1.0
+pyromod
+fpdf
+
 prettyconf==2.2.1
 datetime
 cachetools==4.2.4; python_version >= "3.5" and python_version < "4.0"
