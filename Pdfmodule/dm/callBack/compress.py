@@ -1,6 +1,3 @@
-# fileName : plugins/dm/callBack/compress.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import time
 import shutil
