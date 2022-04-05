@@ -8,7 +8,7 @@ from time import sleep
 from pdf import invite_link
 from pyrogram import filters
 from configs import Config
-from pyrogram import Client as ILovePDF
+from pyrogram import Client
 from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -145,7 +145,7 @@ ADMINS=Config.ADMINS
 #--------> REPLY TO DOCUMENTS/FILES
 #------------------->
 
-@ILovePDF.on_message(filters.private & filters.document & ~filters.edited)
+@Client.on_message(filters.private & filters.document & ~filters.edited)
 async def documents(bot, message):
     try:
         global invite_link
