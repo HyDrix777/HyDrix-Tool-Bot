@@ -1,17 +1,14 @@
-# fileName : plugins/dm/callBack/rotate.py
-# copyright ©️ 2021 nabilanavab
-
 import os
 import time
 import shutil
-from pdf import PROCESS
+from infog import PROCESS
 from pyrogram import filters
-from Configs.dm import Config
-from plugins.checkPdf import checkPdf
-from plugins.progress import progress
-from pyrogram import Client as ILovePDF
+from configs import Config
+from Pdfmodule.checkPdf import checkPdf
+from Pdfmodule.progress import progress
+from pyrogram import Client 
 from PyPDF2 import PdfFileWriter, PdfFileReader
-from plugins.fileSize import get_size_format as gSF
+from Pdfmodule.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 #--------------->
@@ -31,7 +28,7 @@ rotate = filters.create(lambda _, __, query: query.data == "rotate")
 Krotate = filters.create(lambda _, __, query: query.data.startswith("Krotate|"))
 
 # rotate PDF (unknown pg no)
-@ILovePDF.on_callback_query(rotate)
+@Client.on_callback_query(rotate)
 async def _rotate(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
@@ -54,7 +51,7 @@ async def _rotate(bot, callbackQuery):
         pass
 
 # rotate PDF (only change in back button)
-@ILovePDF.on_callback_query(Krotate)
+@Client.on_callback_query(Krotate)
 async def _Krotate(bot, callbackQuery):
     try:
         _, number_of_pages = callbackQuery.data.split("|")
@@ -77,7 +74,7 @@ async def _Krotate(bot, callbackQuery):
     except Exception:
         pass
 
-@ILovePDF.on_callback_query(rot)
+@Client.on_callback_query(rot)
 async def _rot(bot, callbackQuery):
     try:
         # CALLBACK DATA
@@ -179,7 +176,7 @@ async def _rot(bot, callbackQuery):
         except Exception:
             pass
 
-@ILovePDF.on_callback_query(rot360)
+@Client.on_callback_query(rot360)
 async def _rot360(bot, callbackQuery):
     try:
         await callbackQuery.answer(
