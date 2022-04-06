@@ -27,4 +27,4 @@ async def ping(_, message):
     rm = await message.reply_text("...")
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
-    await rm.edit(f"HyDrix Tools Bot is working good with a ping of `{time_taken_s:.3f} ms`\n\n[🏓](https://telegra.ph/file/a064672a214fca3be84ca.jpg) `PONG!!`\n⚡ `{time_taken_s:.3f} ms`")
+    await rm.edit(f"HyDrix Tools Bot is working good with a ping of `{time_taken_s:.3f} ms`\n\n[🏓](https://telegra.ph/file/7d66427c5f1edf094715b.jpg) `PONG!!`\n⚡ `{time_taken_s:.3f} ms`")
