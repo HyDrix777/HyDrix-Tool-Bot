@@ -14,7 +14,7 @@ from pyrogram.errors import (
     RPCError,
 )
 from pyrogram.types import Message
-from speedtest import Speedtest
+
 
 from Alita import LOGFILE, LOGGER, MESSAGE_DUMP, UPTIME
 from Alita.bot_class import Alita
@@ -70,27 +70,6 @@ async def group_info(c: Alita, m: Message):
     await replymsg.edit_text(msg)
     return
 
-
-@Alita.on_message(command("speedtest", dev_cmd=True))
-async def test_speed(c: Alita, m: Message):
-    await c.send_message(
-        MESSAGE_DUMP,
-        f"#SPEEDTEST\n\n**User:** {(await mention_markdown(m.from_user.first_name, m.from_user.id))}",
-    )
-    sent = await m.reply_text(tlang(m, "dev.speedtest.start_speedtest"))
-    s = Speedtest()
-    bs = s.get_best_server()
-    dl = round(s.download() / 1024 / 1024, 2)
-    ul = round(s.upload() / 1024 / 1024, 2)
-    await sent.edit_text(
-        (tlang(m, "dev.speedtest.speedtest_txt")).format(
-            host=bs["sponsor"],
-            ping=int(bs["latency"]),
-            download=dl,
-            upload=ul,
-        ),
-    )
-    return
 
 
 @Alita.on_message(command("neofetch", dev_cmd=True))
