@@ -22,7 +22,6 @@ from database.chats_db import Chats
 from Alita.tr_engine import tlang
 from Alita.utils.clean_file import remove_markdown_and_html
 from Alita.utils.custom_filters import command
-from Alita.utils.http_helper import HTTPx
 from Alita.utils.kbhelpers import ikb
 from Alita.utils.parser import mention_markdown
 from Alita.vars import Config
@@ -206,20 +205,6 @@ async def execution(_, m: Message):
     return
 
 
-@Alita.on_message(command("ip", dev_cmd=True))
-async def public_ip(c: Alita, m: Message):
-    ip = await HTTPx.get("https://api.ipify.org")
-    await c.send_message(
-        MESSAGE_DUMP,
-        f"#IP\n\n**User:** {(await mention_markdown(m.from_user.first_name, m.from_user.id))}",
-    )
-    await m.reply_text(
-        (tlang(m, "dev.bot_ip")).format(ip=f"<code>{ip.text}</code>"),
-        quote=True,
-    )
-    return
-
-
 @Alita.on_message(command("chatlist", dev_cmd=True))
 async def chats(c: Alita, m: Message):
     exmsg = await m.reply_text(tlang(m, "dev.chatlist.exporting"))
@@ -328,4 +313,3 @@ async def chat_broadcast(c: Alita, m: Message):
     return
 
 
-_DISABLE_CMDS_ = ["ping"]
