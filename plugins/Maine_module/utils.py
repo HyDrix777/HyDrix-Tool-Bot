@@ -34,7 +34,7 @@ from Alita.vars import Config
 gban_db = GBan()
 
 
-@Alita.on_message(command("wiki"))
+@Alita.on_message(filters.command("wiki"))
 async def wiki(_, m: Message):
     LOGGER.info(f"{m.from_user.id} used wiki cmd in {m.chat.id}")
 
@@ -72,7 +72,7 @@ async def wiki(_, m: Message):
     await m.stop_propagation()
 
 
-@Alita.on_message(command("gdpr"))
+@Alita.on_message(filters.command("gdpr"))
 async def gdpr_remove(_, m: Message):
     if m.from_user.id in SUPPORT_STAFF:
         await m.reply_text(
@@ -93,9 +93,7 @@ async def gdpr_remove(_, m: Message):
     await m.stop_propagation()
 
 
-@Alita.on_message(
-    command("lyricss") & (filters.group | filters.private),
-)
+@Alita.on_message(filters.command("lyricss"))
 async def get_lyrics(_, m: Message):
     if len(m.text.split()) <= 1:
         await m.reply_text(tlang(m, "general.check_help"))
@@ -131,9 +129,7 @@ async def get_lyrics(_, m: Message):
     return
 
 
-@Alita.on_message(
-    command("ids") & (filters.group | filters.private),
-)
+@Alita.on_message(filters.command("ids"))
 async def id_info(c: Alita, m: Message):
     LOGGER.info(f"{m.from_user.id} used id cmd in {m.chat.id}")
 
@@ -185,9 +181,7 @@ async def id_info(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(
-    command("gifid") & (filters.group | filters.private),
-)
+@Alita.on_message(filters.command("gifid"))
 async def get_gifid(_, m: Message):
     if m.reply_to_message and m.reply_to_message.animation:
         LOGGER.info(f"{m.from_user.id} used gifid cmd in {m.chat.id}")
@@ -200,9 +194,7 @@ async def get_gifid(_, m: Message):
     return
 
 
-@Alita.on_message(
-    command("gith") & (filters.group | filters.private),
-)
+@Alita.on_message(filters.command("gith"))
 async def github(_, m: Message):
     if len(m.text.split()) == 2:
         username = m.text.split(None, 1)[1]
@@ -245,9 +237,7 @@ async def github(_, m: Message):
     return
 
 
-@Alita.on_message(
-    command("inf") & (filters.group | filters.private),
-)
+@Alita.on_message(filters.command("inf"))
 async def my_info(c: Alita, m: Message):
     try:
         user_id, name, user_name = await extract_user(c, m)
@@ -318,7 +308,7 @@ async def my_info(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(command("paster"))
+@Alita.on_message(filters.command("paster"))
 async def paste_it(_, m: Message):
     replymsg = await m.reply_text((tlang(m, "utils.paste.pasting")), quote=True)
     try:
@@ -346,7 +336,7 @@ async def paste_it(_, m: Message):
     return
 
 
-@Alita.on_message(command("tra"))
+@Alita.on_message(filters.command("tra"))
 async def translate(_, m: Message):
     trl = Translator()
     if m.reply_to_message and (m.reply_to_message.text or m.reply_to_message.caption):
@@ -380,14 +370,14 @@ async def translate(_, m: Message):
 
 __PLUGIN__ = "utils"
 _DISABLE_CMDS_ = [
-    "paste",
+    "paster",
     "wiki",
-    "id",
+    "ids",
     "gifid",
-    "lyrics",
-    "tr",
-    "github",
+    "lyricss",
+    "tra",
+    "gith",
     "git",
-    "info",
+    "inf",
 ]
 __alt_name__ = ["util", "misc", "tools"]
