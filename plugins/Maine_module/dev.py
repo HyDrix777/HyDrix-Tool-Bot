@@ -28,14 +28,6 @@ from Alita.utils.parser import mention_markdown
 from Alita.vars import Config
 
 
-@Alita.on_message(command("pong", sudo_cmd=True))
-async def ping(_, m: Message):
-    LOGGER.info(f"{m.from_user.id} used ping cmd in {m.chat.id}")
-    start = time()
-    replymsg = await m.reply_text((tlang(m, "utils.ping.pinging")), quote=True)
-    delta_ping = time() - start
-    await replymsg.edit_text(f"<b>Pong!</b>\n{delta_ping * 1000:.3f} ms")
-    return
 
 
 @Alita.on_message(command("logs", dev_cmd=True))
