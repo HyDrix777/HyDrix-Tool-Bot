@@ -28,7 +28,7 @@ from Alita.utils.parser import mention_markdown
 from Alita.vars import Config
 
 
-@Alita.on_message(command("ping", sudo_cmd=True))
+@Alita.on_message(command("pong", sudo_cmd=True))
 async def ping(_, m: Message):
     LOGGER.info(f"{m.from_user.id} used ping cmd in {m.chat.id}")
     start = time()
@@ -56,7 +56,7 @@ async def send_log(c: Alita, m: Message):
     return
 
 
-@Alita.on_message(command("ginfo", sudo_cmd=True))
+@Alita.on_message(command("ginf", sudo_cmd=True))
 async def group_info(c: Alita, m: Message):
     if len(m.text.split()) != 2:
         await m.reply_text(
