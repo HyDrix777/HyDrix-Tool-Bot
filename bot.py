@@ -3,7 +3,7 @@ import os
 from pytgcalls import PyTgCalls
 from infog import SESSION_NAME
 
-
+call_py = PyTgCalls(user, overload_quiet_mode=True)
 
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
@@ -28,5 +28,4 @@ user = Client(
     api_id=API_ID,
     api_hash=API_HASH,
 
-call_py = PyTgCalls(user, overload_quiet_mode=True)
 Client.run()
