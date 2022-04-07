@@ -17,12 +17,16 @@ if __name__ == "__main__" :
     )
     Client = Client(
         "Pyrogram Bot",
-        SESSION_NAME,
         bot_token=BOT_TOKEN,
         api_hash=API_HASH,
         api_id=API_ID,
         plugins=plugins
    )
+
+user = Client(
+    SESSION_NAME,
+    api_id=API_ID,
+    api_hash=API_HASH,
 
 call_py = PyTgCalls(user, overload_quiet_mode=True)
 
