@@ -1,8 +1,4 @@
-
-
-
-
-from config import BOT_USERNAME
+from infog import BOT_USERNAME
 from pyrogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
