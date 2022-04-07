@@ -1,14 +1,7 @@
 from driver.queues import QUEUE
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from infog import (
-    ASSISTANT_NAME,
-    BOT_NAME,
-    BOT_USERNAME,
-    GROUP_SUPPORT,
-    OWNER_NAME,
-    UPDATES_CHANNEL,
-)
+
 
 
 
