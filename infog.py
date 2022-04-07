@@ -20,7 +20,7 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://hydra92074:hydra92074@cluster0.
 DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
 
----------
+
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hydra92074:hydra92074@cluster0.ktfkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '784589736').split()]
@@ -32,7 +32,7 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 BOT_USERNAME = environ.get("BOT_USERNAME", "HTGToolBot")
 COMMAND_PREFIXES = (environ.get("COMMAND_PREFIXES", "/ ! .").split())
 
-----------
+
 BOT_TOKEN = getenv("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
 API_ID = int(getenv("API_ID", "18891187"))
 API_HASH = getenv("API_HASH", "7d120384f48b2a86fa2b9e9772a28af6")
