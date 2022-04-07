@@ -1,5 +1,5 @@
 from pyrogram import filters
-from Alita import Alita
+from pyrogram import Client as Alita
 import requests
 
 @Alita.on_message(filters.command("webss") & ~filters.edited)
