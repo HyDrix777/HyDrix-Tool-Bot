@@ -1,10 +1,6 @@
 from driver.queues import QUEUE
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from infog import (
-    GROUP_SUPPORT,
-    UPDATES_CHANNEL,
-)
 
 
 
@@ -28,9 +24,6 @@ async def cbmenu(_, query: CallbackQuery):
                   ],[
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
-                  ],[
-                      InlineKeyboardButton("👥 Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton("📢 Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                   ],[
                       InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
