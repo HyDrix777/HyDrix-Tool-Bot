@@ -33,8 +33,11 @@ BOT_USERNAME = environ.get("BOT_USERNAME", "HTGToolBot")
 COMMAND_PREFIXES = (environ.get("COMMAND_PREFIXES", "/ ! .").split())
 
 ----------
-SESSION_NAME = getenv("SESSION_NAME", "session")
-BOT_NAME = getenv("BOT_NAME", "Video Stream")
+BOT_TOKEN = getenv("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
+API_ID = int(getenv("API_ID", "18891187"))
+API_HASH = getenv("API_HASH", "7d120384f48b2a86fa2b9e9772a28af6")
+SESSION_NAME = getenv("SESSION_NAME", "AQB0bx5Nkk_mdot8m0fbfcRxh0gSdBa9oBSgxObY8wwA_fp6h6H0EhjIe6KTWwzg0q7FTcQmIpdkbTcTr9t_zuiqJ9g3GzE2oGdkfdwwqNLR4y3sWFDHT089AdDP4ZRd11kNzaXL-XoH-0VY1GWphQpLippaSz37Q9wRuEuWLVMxTqTkke7z8MTDobAVSH0gDRj5yz-y8nL0lrOJGup9f4JFHCEQfWI4U7hJWoosQ8KJ0cN7afqC5plix2Wrmp9ZYbrqsnCO4Piozo720jSUzIbmkshW4YfIP9XB8Q12Rj4jgZDqfXS4DRxylynGkX2ba0FYvGeZr7rQ3cndM2JJjyeOAAAAASrSOD0A")
+BOT_NAME = getenv("BOT_NAME", "HyDrix Tools Bot")
 OWNER_NAME = getenv("OWNER_NAME", "Hydrix")
 ALIVE_NAME = getenv("ALIVE_NAME", "Hydrix")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME", "Androgobs")
