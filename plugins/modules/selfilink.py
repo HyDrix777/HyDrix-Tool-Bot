@@ -1,7 +1,7 @@
 from os import environ
 from requests import get
 from pyrogram import Client, filters
-from configs import Config AUTH_USERS
+from configs import Config 
 
 
 
