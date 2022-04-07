@@ -53,13 +53,3 @@ regex==2021.11.10
 wikipedia==1.4.0
 tswift==0.7.0
 
-py-tgcalls
-git+https://github.com/pyrogram/pyrogram@master
-youtube-search-python==1.4.9
-youtube-search
-httpx==0.13.3
-dnspython
-gitpython
-heroku3
-psutil
-future
