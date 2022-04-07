@@ -8,7 +8,7 @@ from pyrogram import Client, filters
 from os import system, execle, environ
 from driver.decorators import sudo_users_only
 from git.exc import InvalidGitRepositoryError
-from config import UPSTREAM_REPO, BOT_USERNAME
+from infog import UPSTREAM_REPO, BOT_USERNAME
 
 
 def gen_chlog(repo, diff):
