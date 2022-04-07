@@ -30,7 +30,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
                       InlineKeyboardButton("👥 Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton("📢 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton("📢 Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                   ],[
                       InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
