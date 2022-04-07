@@ -7,7 +7,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from pyrogram import Client, filters
-from plugins.messages import caption
+
+
+
+caption = """
+**👇 Click Here To Watch 👇
+200MB - Click
+400MB - Click
+700MB - Click
+1.40GB - Click
+Join - T.me/t2links**
+"""
+
 
 
 options = webdriver.ChromeOptions()
