@@ -1,14 +1,16 @@
 from os import environ
 from requests import get
 from pyrogram import Client, filters
-from configs import Config
+from configs import Config AUTH_USERS
 
+
+
+
+AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS").split())
 DLINK_KEY = environ.get("DLINK_KEY", None)
 SNACKLINK_KEY = environ.get("SNACKLINK_KEY", None)
 ADTIVAL_KEY = environ.get("ADTIVAL_KEY", None)
 SHRINKADS_KEY = environ.get("SHRINKADS_KEY", None)
-
-
 
 
 
