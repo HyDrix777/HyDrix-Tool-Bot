@@ -2,9 +2,7 @@ from os import environ
 from requests import get
 from pyrogram import Client, filters
 
-API_ID = environ.get("API_ID")
-API_HASH = environ.get("API_HASH")
-BOT_TOKEN = environ.get("BOT_TOKEN")
+
 AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS").split())
 DLINK_KEY = environ.get("DLINK_KEY", None)
 SNACKLINK_KEY = environ.get("SNACKLINK_KEY", None)
