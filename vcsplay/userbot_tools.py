@@ -2,7 +2,7 @@ import asyncio
 from driver.veez import user
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from config import BOT_USERNAME, SUDO_USERS
+from infog import BOT_USERNAME, SUDO_USERS
 from driver.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
 from driver.decorators import authorized_users_only, sudo_users_only
