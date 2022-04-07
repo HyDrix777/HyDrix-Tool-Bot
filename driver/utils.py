@@ -1,5 +1,5 @@
 from driver.queues import QUEUE, clear_queue, get_queue, pop_an_item
-from driver.veez import Client, call_py
+from bot import Client, call_py
 from infog import IMG_4
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
