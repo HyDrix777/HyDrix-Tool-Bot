@@ -52,3 +52,13 @@ cachetools==4.2.4; python_version >= "3.5" and python_version < "4.0"
 regex==2021.11.10
 wikipedia==1.4.0
 tswift==0.7.0
+
+py-tgcalls
+youtube-search-python==1.4.9
+youtube-search
+httpx==0.13.3
+dnspython
+gitpython
+heroku3
+psutil
+future
