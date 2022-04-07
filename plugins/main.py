@@ -328,7 +328,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "vdl":
         await msg.message.edit(
-            text="📹 **Vedio download**\n\n📚 **Available Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
+            text="[📹](https://telegra.ph/file/341e13067287db1b820d7.jpg) **Vedio download**\n\n__You can use this command for download videos from youtube__\n\n📚 **Available Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
