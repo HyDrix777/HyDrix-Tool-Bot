@@ -1,5 +1,10 @@
 from pyrogram import Client
 import os
+from pytgcalls import PyTgCalls
+from infog import SESSION_NAME
+
+
+
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5219376297:AAFydXWjPg47TlZ4QnVkc2egji4mPMq0_2w")
 API_ID = int(os.environ.get("API_ID", "18891187"))
@@ -12,10 +17,13 @@ if __name__ == "__main__" :
     )
     Client = Client(
         "Pyrogram Bot",
+        SESSION_NAME,
         bot_token=BOT_TOKEN,
         api_hash=API_HASH,
         api_id=API_ID,
         plugins=plugins
    )
+
+call_py = PyTgCalls(user, overload_quiet_mode=True)
 
 Client.run()
