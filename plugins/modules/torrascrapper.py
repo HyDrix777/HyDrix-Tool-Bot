@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from pyrogram import Client, filters
-from database.messages import caption
+from plugins.messages import caption
 
 
 options = webdriver.ChromeOptions()
