@@ -964,7 +964,7 @@ async def broadcast_handler_open(_, m):
         await broadcast(m, db)
 
 
-@Client.on_message(filters.private & filters.command("stats"))
+@Client.on_message(filters.private & filters.command("stat"))
 async def sts(c, m):
     if m.from_user.id not in AUTH_USERS:
         await m.delete()
