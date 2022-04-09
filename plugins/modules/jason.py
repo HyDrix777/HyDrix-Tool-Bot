@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 
-@Client.on_message(filters.command(["json", 'js', 'showjson']))
+@Client.on_message(filters.group & filters.command(["json", 'js', 'showjson']))
 async def jsonify(_, message):
     the_real_message = None
     reply_to_id = None
