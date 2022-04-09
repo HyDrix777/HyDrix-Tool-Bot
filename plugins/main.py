@@ -96,7 +96,7 @@ async def hydrix(bot, msg: CallbackQuery):
                
     elif msg.data == "about":
         await msg.message.edit(
-            text="╭────•[ᴀʙᴏᴜᴛ]\n│[🤖](https://telegra.ph/file/65005f9a58ca27140cdc0.jpg) **Mʏ Nᴀᴍᴇ** : [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n│🧑‍💻 **Mʏ Dᴇᴠ** : [Hʏᴅʀɪx](https://t.me/HydraLivegrambot)\n│📢 **Cʜᴀɴɴᴇʟ** : [ᴛɢɢ](https://t.me/Tg_Galaxy)\n│👥 **Gʀᴏᴜᴘ** : [ᴍɢ](https://t.me/songdownload_group)\n│📡 **Sᴇʀᴠᴇʀ** : [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n│🔣 **Language** : [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n│🥭 **Dᴀᴛᴀʙᴀsᴇ** : [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n╰───────────⍟",
+            text="╭────•[ᴀʙᴏᴜᴛ]\n│[🤖](https://telegra.ph/file/65005f9a58ca27140cdc0.jpg) **ᴍʏ ɴᴀᴍᴇ**: [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n│⚡ **ᴄʀᴇᴀᴛᴏʀ**: [Hʏᴅʀɪx](https://t.me/HydraLivegrambot)\n│📢 **ᴄʜᴀɴɴᴇʟ**: [ᴛɢɢ](https://t.me/Tg_Galaxy)\n│👥 **ɢʀᴏᴜᴘ**: [ᴍɢ](https://t.me/songdownload_group)\n│📡 **sᴇʀᴠᴇʀ**: [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n│📔 **ʟɪʙʀᴀʀʏ**: [ᴘʏʀᴏɢʀᴀᴍ](https://docs.pyrogram.org/)\n│🔣 **ʟᴀɴɢᴜᴀɢᴇ**: [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n│💾 **ᴅᴀᴛᴀʙᴀsᴇ**: [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n│**ʙᴜɪʟᴅ sᴛᴀᴛᴜs**: v4.0.1 [ʙᴇᴛᴀ]\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="srrt"),
                InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
