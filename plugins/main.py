@@ -99,7 +99,7 @@ async def hydrix(bot, msg: CallbackQuery):
             text="╭───[•](https://telegra.ph/file/65005f9a58ca27140cdc0.jpg)[ᴀʙᴏᴜᴛ]\n│➪ **ᴍʏ ɴᴀᴍᴇ**: [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n│➪ **ᴄʀᴇᴀᴛᴏʀ**: [ʜʏᴅʀɪx](https://t.me/HydraLivegrambot)\n│➪ **ᴄʜᴀɴɴᴇʟ**: [ᴛɢɢ](https://t.me/Tg_Galaxy)\n│➪ **ɢʀᴏᴜᴘ**: [ᴍɢ](https://t.me/songdownload_group)\n│➪ **sᴇʀᴠᴇʀ**: [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n│➪ **ʟɪʙʀᴀʀʏ**: [ᴘʏʀᴏɢʀᴀᴍ](https://docs.pyrogram.org/)\n│➪ **ʟᴀɴɢᴜᴀɢᴇ**: [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n│➪ **ᴅᴀᴛᴀʙᴀsᴇ**: [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n│➪ **ʙᴜɪʟᴅ sᴛᴀᴛᴜs**: `v4.0.1 [ʙᴇᴛᴀ]`\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="srrt"),
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
+               InlineKeyboardButton("✗ ᴇxɪᴛ ✗", callback_data="delete")
                ]]
             )
         )
@@ -418,7 +418,7 @@ async def hydrix(bot, msg: CallbackQuery):
                InlineKeyboardButton("𝟟. AntiChannel Ban", url="https://t.me/AntiChannelBan_xbot")
                ],[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="srrt"),
-               InlineKeyboardButton("🏃 ᴇxɪᴛ", callback_data="delete")
+               InlineKeyboardButton("✗ ᴇxɪᴛ ✗", callback_data="delete")
                ]]
             )
         ) 
