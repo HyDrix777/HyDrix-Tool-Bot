@@ -13,16 +13,16 @@ async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "start":
 
         reply1 = await msg.message.reply_text("●○○○")
-        await asyncio.sleep(5.5)
+        await asyncio.sleep(9.5)
 
         reply2 = await reply1.edit("●●○○")
-        await asyncio.sleep(5.5)
+        await asyncio.sleep(9.5)
 
         reply3 = await reply2.edit("●●●○")
-        await asyncio.sleep(5.5)
+        await asyncio.sleep(9.5)
 
         reply4 = await reply3.edit("●●●●")
-        await asyncio.sleep(5.5)
+        await asyncio.sleep(9.5)
 
         await reply4.delete()
 
@@ -313,6 +313,21 @@ async def hydrix(bot, msg: CallbackQuery):
 
 # futures------
     elif msg.data == "stck":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🖼️](https://telegra.ph/file/4080224664799812688b6.jpg)➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __First send me the Sticker , and reply to sticker this command👉🏻__ /stickerid.\n\n📚 **Available Commands**\n\n- /stickerid : Reply to sticker",
             reply_markup=InlineKeyboardMarkup([[
@@ -322,6 +337,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "clsm":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🗑️](https://telegra.ph/file/c311d906b5bb2db7cf03e.jpg)➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__\n\n📚 **Available Commands**\n\n➥ /cleanservice [ON or Off]- turn on the service cleaner or off it.",
             reply_markup=InlineKeyboardMarkup([[
@@ -331,6 +361,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "tgph":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg)➥ **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n__Send me any Photo,gif,png I'll Upload it into__ Telegra.ph\n\n📚 **Available Commands**\n\n/tgraph : use this command in reply to Photo,gif,png.",
             reply_markup=InlineKeyboardMarkup([[
@@ -340,6 +385,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "srch":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔎 **Search YouTube videos**\n\n📚 **Available Commands**\n\n➥ /ytsearch - __search **YouTube** videos__\n\nEg : `/ytsearch Alen Walker`",
             reply_markup=InlineKeyboardMarkup([[
@@ -349,6 +409,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "jsn":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📚 **Available Command**\n\n[📑](https://telegra.ph/file/d0717d29431518ff9dc21.jpg)➥ /json - __Reply To Any Message To Get Json__",
             reply_markup=InlineKeyboardMarkup([[
@@ -358,6 +433,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "conv":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[📹](https://telegra.ph/file/5489b184451feaf8411d0.jpg)➋🎵➥ **Video to Mp3Conveter**\n__Send a Video for converting to Audio.__\n\n📚 **Available Commands**\n\nFirst send me the video file,\n/convertaudio - 👈🏼 Reply to video file then im Convert to audio.",
             reply_markup=InlineKeyboardMarkup([[
@@ -367,6 +457,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "lyrc":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🎼](https://telegra.ph/file/12155873bb98142cc2759.jpg) Here is the help for **Lyrics Download:**\n\n📚 **Available Commands**\n\n➥ /lyric - __[Music Name] Searches Lyrics for the particular Music on web.__\n\nEg: `/lyric beggin`",
             reply_markup=InlineKeyboardMarkup([[
@@ -376,6 +481,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "sdl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🎵](https://telegra.ph/file/83ece4c8a4764fac97c4d.jpg) Here is the help for **Music Download**:\n\n📚 **Available Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
             reply_markup=InlineKeyboardMarkup([[
@@ -385,6 +505,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "vdl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[📹](https://telegra.ph/file/341e13067287db1b820d7.jpg) **Vedio download**\n\n__You can use this command for download videos from youtube__\n\n📚 **Available Command**\n\n➥ /v - __To download Video from YouTube, video downloading is very slowly pls wait it.__\n/video - __use this command to fast download videos from YouTube__\n\nEg: `/v alone`\n`/video alone`",
             reply_markup=InlineKeyboardMarkup([[
@@ -394,6 +529,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "gtra":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[💱](https://telegra.ph/file/e655830a9d113c27a28ee.jpg)➥ **Google Translator Bot**\n\n__**Google Translator** which means , A bot to help you translate text to few Languages from any other language in world.__\n\n__Google Translator bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.__\n\n__You can use Google Translator in his private chat & Groups.__\n\n**How To Use**\n\n➥ /tr (language code) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘs or my pm\n➥ 👇🏼Click **lang list** __botton to find your language code__.👇🏼",
             reply_markup=InlineKeyboardMarkup([[
@@ -403,6 +553,21 @@ async def hydrix(bot, msg: CallbackQuery):
             )
         )
     elif msg.data == "lagl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="────[ʟɪsᴛ]────\n**List is in the form**\n__Language code => Language__\n\n`af` -> Afrikaans\n`sq` -> Albanian\n`am` -> Amharic\n`ar` -> Arabic\n`hy` -> Armenian\n`az` -> Azerbaijani\n`eu` -> Basque\n`be` -> Belarusian\n`bn` -> Bengali\n`bs` -> Bosnian\n`bg` -> Bulgarian\n`ca` -> Catalan\n`ceb` -> Cebuano\n`ny` -> Chichewa\n`zh`-`cn` -> Chinese\n`co` -> Corsican\n`hr` -> Croatian\n`cs` -> Czech\n`da` -> Danish\n`nl` -> Dutch\n`en` -> English\n`eo` -> Esperanto\n`et` -> Estonian\n`tl` -> Filipino\n`fi` -> Finnish\n`fr` -> French\n`fy` -> Frisian\n`gl` -> Galician\n`ka` -> Georgian\n`de` -> German\n`el` -> Greek\n`gu` -> Gujarati\n`ht` -> Haitian creole\n`ha` -> Hausa\n`haw` -> Hawaiian\n`iw` -> Hebrew\n`hi` -> Hindi\n`hmn` -> Hmong\n`hu` -> Hungarian\n`is` -> Icelandic\n`ig` -> Igbo\n`id` -> Indonesian\n`ga` -> Irish\n`it` -> Italian\n`ja` -> Japanese*\n`jw` -> Javanese\n`kn` -> Kannada\n`kk` -> Kazakh\n`km` -> Khmer\n`rw` -> Kinyarwanda\n`ko` -> Korean\n`ku` -> Kurdish (kurmanji)\n`ky` -> Kyrgyz\n`lo` -> Lao\n`la` -> Latin\n`lv` -> Latvian\n`lt` -> Lithuanian\n`lb` -> Luxembourgish\n`mk` -> Macedonian\n`mg` -> Malagasy\n`ms` -> Malay\n`ml` -> Malayalam\n`mt` -> Maltese\n`mi` -> Maori\n`mr` -> Marathi\n`mn` -> Mongolian\n`my` -> Myanmar\n`ne` -> Nepali\n`no` -> Norwegian\n`or` -> Oriya\n`ps` -> Pashto\n`fa` -> Persian\n`pl` -> Polish\n`pt` -> Portuguese\n`pa` -> Punjabi\n`ro` -> Romanian\n`ru` -> Russian\n`sm` -> Samoan*\n`gd` -> Scots gaelic\n`sr` -> Serbian\n`st` -> Sesotho\n`sn` -> Shona\n`sd` -> Sindhi\n`si` -> Sinhala\n`sk` -> Slovak\n`sl` -> Slovenian\n`so` -> Somali\n`es` -> Spanish\n`su` -> Sundanese\n`sw` -> Swahili\n`sv` -> Swedish\n`tg` -> Tajik\n`ta` -> Tamil\n`tt` -> Tatar\n`te` -> Telugu\n`th` -> Thai\n`tr` -> Turkish\n`tk` -> Turkmen\n`ug` -> Uighur\n`uk` -> Ukrainian\n`ur` -> Urdu\n`uz` -> Uzbek\n`vi` -> Vietnamese\n`cy` -> Welsh\n`xh` -> Xhosa\n`yi` -> Yiddish\n`yo` -> Yoruba\n`zu` -> Zulu \n\n───────────",
             reply_markup=InlineKeyboardMarkup([[
