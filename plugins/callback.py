@@ -1671,6 +1671,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "admi":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="👮 **Admin**\n\n__Make it easy to promote and demote users with the admin module!__\n\n📚 **Available Commands**\n\n➥ /setgpic :  reply to an image to set as group photo\n➥ /title : [entity] [title]: sets a custom title for an admin. If no [title] provided defaults to Admin\n➥ /setgdes [text] : set group Bio\n➥ /setgtitle : [text] set group title\n➥ /demote : Demote a reply to user message.\n➥ /promote : Promote a reply to user message.\n➥ /fullpromote promote: Promote a member with max rights\n➥ /adminlist: List the admins in the current chat.\n➥ /zombies : Ban deleted accounts\n\n__Sometimes, you promote or demote an admin manually, and Hydrix doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally. This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the__ /admincache __command; that'll force Hydrix to check who the admins are again.__",
             reply_markup=InlineKeyboardMarkup([[
@@ -1680,6 +1695,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "bans":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🚷 **Bans**\n\n__Someone annoying entered your group?__\n__Want to ban/restriction him/her?__\n__This is the plugin for you, easily kick, ban and unban members in a group.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /kick: Kick the user replied or tagged.\n➥ /skick: Kick the user replied or tagged and delete your messsage.\n➥ /dkick: Kick the user replied and delete their message.\n➥ /ban: Bans the user replied to or tagged.\n➥ /sban: Bans the user replied or tagged and delete your messsage.\n➥ /dban: Bans the user replied and delete their message.\n➥ /tban userhandle x(m/h/d): Bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /stban userhandle x(m/h/d): Silently bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➥ /dtban userhandle x(m/h/d): Silently bans a user for x time and delete the replied message. (via reply). m = minutes, h = hours, d = days.\n➥ /unban: Unbans the user replied to or tagged.\n\n**Example**:\n`/ban @username` : this bans a user in the chat.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1689,6 +1719,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "fltr":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="💾 **Filters**\n\n__Filters are case insensitive; every time someone says your trigger words, Rose will reply something else! can be used to create your own commands, if desired.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /filters: List all active filters saved in the chat.\n\n**Admin only:**\n➥ /filter ‹keyword› ‹reply message›: Add a filter to this chat. The bot will now reply that message whenever 'keyword'is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.\n\n**Example**:\n`Set a filter:`\n/filter hello Hello there! How are you?\n/filter filtername1|filtername2 Reply Text\n__Using the you can make a single filter work on 2 filternames without manually adding another one.__\n\n/stop ‹filter keyword›: Stop that filter.\n**Note:** __For filters with aliases, if you stop one alias, the filter will stop working on other aliases too.__\n**For Example:** If you stop the filtername1 from above example, the bot will not respond to filtername2\n\n**Chat creator only:**\n\n➥ /removeallfilters: Remove all chat filters at once.\n\n**Note:**\n__Currently there is a limit of 50 filters and 120 aliases per chat.All filter keywords are in lowercase.__",
             reply_markup=InlineKeyboardMarkup([[
@@ -1698,6 +1743,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "unfl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🌟 **Unlimited Filter**\n\n__This is an advanced filter module with many capabilities!__\n__Filter is the feature were users can set automated replies for a particular keyword and **HyDrix** will respond whenever a keyword is found the message.__\n__There is no practical limits for my filtering capacity.__\n\n📚 **Available Commands**\n`Filter Commands:`\n➥ /add filter name reply  -  Add filter for name\n➥ /dele filter name  -  Delete filter\n➥ /delall</code>  -  Delete entire filters ⟨Group Owner Only!⟩\n➥ /viewfilters  -  List all filters in chat\n\n**Connection Commands**\n\n➥ /connect groupid  -  Connect your group to my PM. You can also simply use,\n➥ /connections  -  Manage your connections.\n➥ /disconnect - Send this command in your group to disconnect.",
             reply_markup=InlineKeyboardMarkup([[
