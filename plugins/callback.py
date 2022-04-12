@@ -1217,6 +1217,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "repo":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Available Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
             reply_markup=InlineKeyboardMarkup([[
@@ -1226,6 +1241,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "nlng":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔗🚫 **Remove URLs in group**\n\n__This module for who sends any kind of link ,remove all links from group.__\n\n➥ List of Links I delete!👇🏼\nhttps\nhttp\nt.me\nwww\ncom",
             reply_markup=InlineKeyboardMarkup([[
@@ -1235,6 +1265,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "must":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔖 **Music tag adder**\n\ni can manage your music channel or group with some cool features like musics tags, getting a short demo of the musics and posting the musics artworks.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1244,6 +1289,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "stki":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🖼️➥ɪᴍɢ **Sticker to Image converter**\n\nYou can use this module to **Sticker to Image**,\nfirst send me the Sticker, then i give you a Image.\n\nDon't send me animated sticker or video sticker.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1253,6 +1313,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "shar":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="✈️ **Share Text**\n\n📚 **Available Commands**\n\n➥ /share - __get shareable link of any text or link.__",
             reply_markup=InlineKeyboardMarkup([[
@@ -1262,6 +1337,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "urls":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="⛓️ **𝖴𝗋𝗅 S𝗁𝗈𝗋𝗍𝗇𝖾𝗋**\n__This command help you to short a Url__\n\n📚 **Available Commands**\n\n➥ /short : __𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌__\n⍟ **Example**👇🏼\n/short https://t.me/Music_Galaxy_Dl",
             disable_web_page_preview=True,
@@ -1272,6 +1362,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "taga":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="☯️ **TagAll**\n\n__A module for Tagall, i can tag all members in group.__\n\n📚 **Available Commands**\n\n/tagall : just send this command in your group.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1281,6 +1386,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "wpsp":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📑 **Web Scrapper**\n\n__This is a web scrapper module, Send me any link for scrapping.__",
             reply_markup=InlineKeyboardMarkup([[
@@ -1290,6 +1410,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "unzp":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📎 **Unziper**\n\ni can unzip Zip file's.\n\n📚 **Available Commands**\n\nfirst send me zip file.\nthen /unzip to replay  zip file",
             reply_markup=InlineKeyboardMarkup([[
@@ -1299,6 +1434,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "rnmr":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📝 **Renamer module**\n\nHello I'Am a Simple file **Renamer** module.Downbelow my working steps👇🏼\n\n📚 **Available Commands**\n\n•First give me a File\n/rename : Reply To An File With /rename Filename.extension For Renaming.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1452,6 +1602,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "crbn":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🔳](https://telegra.ph/file/003d78ebbcddfdb489136.jpg) **Carbon Image**\n\n__A Module To Make Carbon Image From TEXT__\n\n📚 **Avaible Command:**\n◉ /carbon : Reply To Any TEXT To Make Carbon Image",
             reply_markup=InlineKeyboardMarkup([[
