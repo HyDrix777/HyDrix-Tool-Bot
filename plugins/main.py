@@ -75,13 +75,13 @@ async def start_message(bot, message):
     Hydrix = Min.hour
 
     if Hydrix < 12 :
-        hydrax = "Good morning"
+        Hydrax = "Good morning"
     elif Hydrix < 16 :
         Hydrax = "Good Afternoon"
     elif Hydrix < 20 :
-        hydrax = "Good Evening"
+        Hydrax = "Good Evening"
     else:
-        hydrax = "Good night"
+        Hydrax = "Good night"
 
 # Callback----------------
 
