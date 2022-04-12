@@ -45,10 +45,10 @@ async def start_message(bot, message):
         if LOG_CHANNEL:
             await bot.send_message(
                 LOG_CHANNEL,
-                f"#NEWUSER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) started @{BOT_USERNAME} !!",
+                f"#NEWUSER: \n\nNew User [{message.from_user.mention}](tg://user?id={message.from_user.id}) started @{BOT_USERNAME} !!",
             )
         else:
-            logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
+            logging.info(f"#NewUser :- Name : {message.from_user.mention}\n ID : {message.from_user.id}")
     await message.reply_sticker(
         sticker="CAACAgIAAxkBAAIupmJOkAXmE1GMXhehhHk2_WHHC0ayAALTAANWnb0K9TKPl9US-T0eBA"             
     )
