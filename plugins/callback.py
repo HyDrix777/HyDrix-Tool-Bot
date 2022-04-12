@@ -11,6 +11,21 @@ import asyncio
 @Client.on_callback_query()
 async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "start":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(1.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(1.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(1.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(1.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text =f"""Sooon....🙄||{msg.from_user.first_name}😁||"""
         )
