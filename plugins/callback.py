@@ -1626,6 +1626,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "wlcm":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="👋 **Welcome**\n\n__Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!__\n\n📚 **Available Commands**\n\n➥ /setwelcome reply/text: Set welcome text for group.\n➥ /welcome yes/no/on/off: Enables or Disables welcome setting for group.\n➥ /goodbye <on/off> | noformat : enable/disable | Shows the current goodbye message | settings.\n➥ /resetwelcome: Resets the welcome message to default.\n➥ /setgoodbye reply/text: Sets goodbye text for group.\n➥ /resetgoodbye: Resets the goodbye message to default.\n\n➥ /cleanwelcome yes/no/on/off: Delete the old welcome message, whenever a new member joins.\n➥ /cleangoodbye on/off : Shows or sets the current clean goodbye settings.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1644,6 +1659,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "aprl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔶 **Approval**\n\n__Sometimes, you might trust a user not to send unwanted content.__\n__Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.__\n__Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.__\nThat's what approvals are for - approve of trustworthy users to allow them to send__\n\n📚 **Admin Commands**\n\n**User commands**\n\n➥ /approval: Check a user's approval status in this chat.\n\n**Admin Commands**\n\n➥ /approve: Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.\n➥ /unapprove: Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.\n➥ /approved: List all approved users.\n\n**Group Owner**\n\n➥ /unapproveall: Unapprove ALL users in a chat. This cannot be undone.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1653,6 +1683,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "note":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📖 **Notes**\n\n__Save data for future users with notes!__\n__Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!__\n\n📚 **Admin Commands**\n\n➥ /get <notename>: Get a note.\n\n**Admin commands**\n\n➥ /save <notename> <note text>: Save a new note called word. Replying to a message will save that message. Even works on media!\n➥ /clear <notename>: Delete the associated note.\n➥ /notes: List all notes in the current chat.\n➥ /saved: Same as /notes.\n➥ /clearall: Delete ALL notes in a chat. This cannot be undone.\n➥ /privatenotes: Whether or not to send notes in PM. Will send a message with a button which users can click to get the note in PM.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1662,6 +1707,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "rule":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📜 **Rules**\n\n__Every chat works with different rules; this module will help make those rules clearer!__\n\n📚 **Admin Commands**\n\n**User commands**\n\n➥ /rules: Check the current chat rules.\n\n**Admin commands**\n\n➥ /setrules <text>: Set the rules for this chat.\n➥ /privaterules <yes/no/on/off>: Enable/disable whether the rules should be sent in private.\n➥ /resetrules: Reset the chat rules to default\n➥ /rulesbtn <custom text>: Sets the text of rules button.\n➥ /resetrulesbutton: Reset the text of rules button to default.\n➥ /resetrulesbtn: Same as above.",
             reply_markup=InlineKeyboardMarkup([[
