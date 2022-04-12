@@ -12,6 +12,8 @@ import lyricsgenius
 import traceback
 import logging
 from pyrogram import StopPropagation, filters
+import datetime
+import pytz
 
 import infog
 from database.broadcast import broadcast
@@ -53,7 +55,7 @@ async def start_message(bot, message):
     )
 
     await message.reply_text(
-        text=f"✨ **ʜᴇʟʟᴏ** ||{message.from_user.mention}||!\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ **ʜʏᴅʀɪx** ᴛᴏᴏʟs ʙᴏᴛ [🛠️](https://telegra.ph/file/f1ba9b8c2ce7e659e51f6.mp4)\n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
+        text=f"✨ {get} ||{message.from_user.mention}||!\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ **ʜʏᴅʀɪx** ᴛᴏᴏʟs ʙᴏᴛ [🛠️](https://telegra.ph/file/f1ba9b8c2ce7e659e51f6.mp4)\n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
         reply_markup=InlineKeyboardMarkup( [[
            InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ➕", url="http://t.me/HTGToolBot?startgroup=botstart")
            ],[
@@ -67,6 +69,19 @@ async def start_message(bot, message):
            ]]
            )
        )
+
+    Out = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+
+    Time = Out.hour
+
+    if Time < 12 :
+        get = "Good morning"
+    elif Time < 16 :
+        get = "Good Afternoon"
+    elif Time < 20 :
+        get = "Good Evening"
+    else:
+        get = "Good night"
 
 # Callback----------------
 
