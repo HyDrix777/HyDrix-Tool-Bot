@@ -881,6 +881,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "dinl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🤖 **ʀᴇᴍᴏᴠᴇ ɪɴʟɪɴᴇ ᴍᴇssᴀɢᴇ**\n\n⍟ __This module to automatically deletes Inline messages sent Through Bot in Group's__.",
             reply_markup=InlineKeyboardMarkup([[
@@ -890,6 +905,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "shaz":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🎶](https://telegra.ph/file/d67ebb887ee63d33d970c.jpg)➥ **Shazam Music Finder**\n\n__You have a part of a song, but could not find out what that song is?__\n__Here's the best solution for you. Just send me a audio file sample and I'll tell you what is that song.__\n\n📚 **Available Commands**\n\n**Step 1** : __Send me a Audio__\n\n**Step 2** : __Reply your to Audio with this__ /audify __command__\n/audify : __Reply to Audio__",
             reply_markup=InlineKeyboardMarkup([[
@@ -899,6 +929,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "emsa":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📝 **Edit Message Alert**\n\n__A Telegram Bot to Show alert when someone edits a message in Group__\n",
             reply_markup=InlineKeyboardMarkup([[
@@ -908,6 +953,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "yttf":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🏷️ **YouTube Tag Finder**\n\n__A telegram Bot That can extract any YouTube video Tag easy__\n__first give me the yt **URL**, and i extract tag for U__",
             reply_markup=InlineKeyboardMarkup([[
@@ -917,6 +977,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "pins":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📌 **Pin**\n\n____Here you find find all help related to groups pins and how to manage them via me.\n__All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!__\n\n📚 **Available Commands**\n\n➥ /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.__\n➥ /unpin : __I can Unpin the current pinned message in silently.__\n➥ /unpinall: Unpins all the pinned message in the current chat.\n➥ /pinned: Gives the current pinned message of the chat.\n➥ /cleanlinked `<on/off/yes/no>`: Toggle cleanlinked status. All the messages from linked channel will be deleted if enabled!\n➥ /permapin `<text>`: Pin a custom messages via bot. This message can contain markdown, and can be used in replies to the media include additional buttons and text.\n➥ /antichannelpin `<on/off/yes/no>`: Toggle antichannelpin status. All the messages from linked channel will be unpinned if enabled!\n",
             reply_markup=InlineKeyboardMarkup([[
@@ -926,6 +1001,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "purg":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="❗ **Purge**\n\n__Here is the help for the **Purges** module:__\n\n📚 **Available Commands**\n\n➥ /purge: deletes all messages between this and the replied to message.\n➥ /spurge: Same as purge, but doesnt send the final confirmation message.\n➥ /del: deletes the message you replied to.\n\nExample:\n`/purge Delete all messages from the replied to message, until now.`\n- Mark the first message to purge from (as a reply).\n/purge",
             reply_markup=InlineKeyboardMarkup([[
@@ -935,6 +1025,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "pinj":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📍 Here is the help for **Ping**:\n\n➥ /ping - __Check if Bot is alive or not.__",
             reply_markup=InlineKeyboardMarkup([[
@@ -944,6 +1049,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "mute":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔕 **Mute & Unmute**\n\n__Want someone to keep quite for a while in the group?__\n__Mute plugin is here to help, mute or unmute any user easily!__\n__This module allows you to do mute & unmute in group easily, by exposing some common actions!__\n\n📚 **Available Commands**\n\n➥ /mute : Mute the user replied to or mentioned.\n➥ /unmute: Unmutes the user mentioned or replied to.\n➪ /smute: silences a user without notifying. Can also be used as a reply, muting the replied to user.\n➪  /dmute: Mute a user by reply, and delete their message.\n➥ /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.\n➪ /stmute <userhandle> x(m/h/d): mutes a user for x time without notifying. (via handle, or reply). m = minutes, h = hours, d = days.\n➪ /dtmute <userhandle> x(m/h/d): Mute the replied user, and delete the replied message. (via reply). m = minutes, h = hours, d = days\n\n➥ **𝖭𝗈𝗍𝖾:**\n𝖶𝗁𝗂𝗅𝖾 𝗎𝗌𝗂𝗇𝗀 /tmute 𝗒𝗈𝗎 𝗌𝗁𝗈𝗎𝗅𝖽 𝗌𝗉𝖾𝖼𝗂𝖿𝗒 𝗍𝗁𝖾 𝗍𝗂𝗆𝖾 𝗅𝗂𝗆𝗂𝗍.\n\n➛**𝖤𝗑𝖺𝗆𝗉𝗅𝖾:**\n/mute @username`; this mutes a user.\n/𝗍𝗆𝗎𝗍𝖾 2𝖽.\n\n`𝖸𝗈𝗎 𝖼𝖺𝗇 𝗎𝗌𝖾 𝗏𝖺𝗅𝗎𝖾𝗌`: 𝗆/𝗁/𝖽.\n • 𝗆 = 𝗆𝗂𝗇𝗎𝗍𝖾𝗌\n • 𝗁 = 𝗁𝗈𝗎𝗋𝗌\n • 𝖽 = 𝖽𝖺𝗒𝗌",
             reply_markup=InlineKeyboardMarkup([[
@@ -953,6 +1073,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "imbd":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🎞️ **Movie Information**\n\n__A Module To Get The Movie Informations. Use This Module To Get Movie Informations__\n\n[📚](https://telegra.ph/file/ceb40ac901886eb603c5a.jpg) **Available Commands**\n\n➥ /imdb : __Get The Film Information From IMDB Source__\n➥ /search : __Get The Movie Information From Various Sources__",
             reply_markup=InlineKeyboardMarkup([[
@@ -962,6 +1097,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "styl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+     
         await msg.message.edit(
             text="🖋️ **Stylish Text**\n\n__a module for stylish text__\n__i can help you to get stylish fonts.__\n__just send me the some text & Reply to a text message to make stylish Text.__\n\n📚 **Available Commands**\n\n➥ /text : __Reply to a text message as to make S Text__",
             reply_markup=InlineKeyboardMarkup([[
@@ -971,6 +1121,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "hand":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🖊️ **Handwriting**\n\n📚 **Available Commands**\n➥ /h your text",
             reply_markup=InlineKeyboardMarkup([[
@@ -980,6 +1145,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "aliv":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🙄 **Alive**\n\n😒To Find Out If I'm 🤒Dead Or Not\n➥ /alive - dead or not",
             reply_markup=InlineKeyboardMarkup([[
@@ -989,6 +1169,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "pdft":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📄 **Pdf to Text**\n\n- __a modular Telegram Bot which provides Pdf Tools using PyPdf2 Fork, Send me a pdf file to Move on.__\n\n📚 **Available Commands**\n\n➥ /pdf2txt : __Extract text to Txt file__\n➥ /pinfo : __to Get PDF information__",
             reply_markup=InlineKeyboardMarkup([[
@@ -998,6 +1193,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "audi":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📄➥🗣️ **Pdf to Audiobook**\n\n__A Telegram Bot which converts PDF TO Audio Using Pypdf2 and gTTS__\n__first Send Me a Pdf then im Convert to AudioBook__\n\n📚 **Available Commands**\n\n➥ /audiobook : __Please Reply to PDF file__",
             reply_markup=InlineKeyboardMarkup([[
