@@ -1458,6 +1458,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "gofl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="[🗂️](https://telegra.ph/file/f8629bb506f9afcd27ff4.jpg) **Go File**\n\n__What is Gofile🤔__\n__Gofile is a free and unlimited file sharing and storage platform.\nYou can use it as a file manager to store all your data, or as a sharing platform to send your files to others. All types of files are supported (files, images, music, videos, pdf etc...). There is no limit, you download at the maximum speed of your connection and most of the service is free.__\n\nWhat is the use of this module ❓👇🏼\nI can upload any media to gofile.io and return the link easily.\n\n📚 **Available Commands**\n\n➥First give me any file img anything\n➥ /go - Replay to any files, then i upload to gofile.io and give you a link of telegram file.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1467,6 +1482,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "anfl":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🗂️ **Anonymous File's Uploader**\n\nI can upload any media to anonfiles.com and return the link easily.\n\n📚 **Available Commands**\n\n/anon - Replay to any files,img eg.. zapGet anonfiles.com link of telegram file.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1476,6 +1506,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "cv2f":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📽️ 2 📂 **Video to File**\n\n📚 **Available Commands**\n\n➥ /c2f - reply to converting File.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1485,6 +1530,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "fltv":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📂 2 📽️ **File to video**\n\nthis module for file to video converte,\n\n📚 **Available Commands**\n\nFist give me a file\n/convert2video - Replay to file for converting to video.",
             reply_markup=InlineKeyboardMarkup([[
@@ -1494,6 +1554,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "pasg":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🔢 **Password Generater**\n\nThis is a password generator Module, you can generate password from here\n\n📚 **Available Commands**\n\n➥ /genpassword",
             reply_markup=InlineKeyboardMarkup([[
@@ -1503,6 +1578,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "zomb":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="🧟 **Zombies**\n\n__Kick incative members from group. Add me as admin full permission in group.__\n\n📚 **Available Commands**\n\n➥ /inkick - command with required arguments and i will kick members from group.\n➥  /instatus - to check current status of chat member from group.\n➥ /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.\n➥ /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.\n➥ /dkick - to kick deleted accounts",
             reply_markup=InlineKeyboardMarkup([[
@@ -1512,6 +1602,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "warn":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="📛 **Warns**\n\n__Keep your members in check with warnings; stop them getting out of control!__\n__If you're looking for automated warnings, go read about the blocklist module.__\n\n📚 **Available Commands**\n\n➥ /warn <reason>: Warn a user.\n➥ /dwarn <reason>: Warn a user by reply, and delete their message.\n➥ /swarn <reason>: Silently warn a user, and delete your message.\n➥ /warns: See a user's warnings.\n➥ /rmwarn: Remove a user's latest warning.\n➥ /resetwarn: Reset all of a user's warnings to 0.\n➥ /resetallwarns: Delete all the warnings in a chat. All users return to 0 warns.\n➥ /warnings: Get the chat's warning settings.\n➥ /setwarnmode <ban/kick/mute>: Set the chat's warn mode.\n➥ /setwarnlimit <number>: Set the number of warnings before users are punished.\n\n- Examples:\n-> /warn @user For disobeying the rules.",
             reply_markup=InlineKeyboardMarkup([[
