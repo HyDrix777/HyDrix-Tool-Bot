@@ -70,11 +70,11 @@ async def start_message(bot, message):
            )
        )
 
-    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+    Min = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
 
-    Hydrix = m.hour
+    Hydrix = Min.hour
 
-    if Hydrix < 12:
+    if Hydrix < 12 :
         hydrax = "Good morning"
     elif Hydrix < 16 :
         Hydrax = "Good Afternoon"
