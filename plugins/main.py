@@ -319,7 +319,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "sdl":
         await msg.message.edit(
-            text="[🎵](https://telegra.ph/file/b785946b7ae9244a2580a.jpg) Here is the help for **Music Download**:\n\n📚 **Available Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
+            text="[🎵](https://telegra.ph/file/83ece4c8a4764fac97c4d.jpg) Here is the help for **Music Download**:\n\n📚 **Available Commands**\n\n➥ /s - __To download audio songs from YouTube, This only work in my PM.__\n/song - __use this command to fast download songs from YouTube__\n\nEg: `/s beggin`\n`/song beggin`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
@@ -401,7 +401,7 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "bots":
         await msg.message.edit(
-            text="╭──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/6220090a10c440bd8a2d9.jpg)\n├•**Tʜᴇɪs ᴀʀᴇ ᴍʏ ᴏᴛʜᴇʀ ʙᴏᴛs**\n│\n├•𝟙. `Stylish Text bot`\n├•𝟚. `Youtube Dl bot`\n├•𝟛. `Mention All bot`\n├•𝟜. `URL Uploader bot`\n├•𝟝. `Music Dl bot`\n├•𝟞. `Google Translator bot`\n├•𝟟. AntiChannel Ban bot\n│\n╰───────────⍟",
+            text="╭──•**Mʏ ʙᴏᴛs ʟɪsᴛ**[📋](https://telegra.ph/file/4953f6bfb4688acdf6649.jpg)\n├•**Tʜᴇɪs ᴀʀᴇ ᴍʏ ᴏᴛʜᴇʀ ʙᴏᴛs**\n│\n├•𝟙. `Stylish Text bot`\n├•𝟚. `Youtube Dl bot`\n├•𝟛. `Mention All bot`\n├•𝟜. `URL Uploader bot`\n├•𝟝. `Music Dl bot`\n├•𝟞. `Google Translator bot`\n├•𝟟. AntiChannel Ban bot\n│\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("𝟙. Stylish Text bot", url="https://t.me/StylishText_X_Bot")
                ],[
