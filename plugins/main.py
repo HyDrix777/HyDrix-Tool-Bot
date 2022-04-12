@@ -12,7 +12,6 @@ import lyricsgenius
 import traceback
 import logging
 from pyrogram import StopPropagation, filters
-import datetime
 
 import infog
 from database.broadcast import broadcast
@@ -68,19 +67,6 @@ async def start_message(bot, message):
            ]]
            )
        )
-
-    min = datetime.datetime.now()
-
-    Hydrix = min.hour
-
-    if Hydrix < 12:
-        timex = "Good morning"
-    elif Hydrix < 16:
-        timex = "Good Afternoon"
-    elif Hydrix < 20:
-        timex = "Good Evening"
-    else:
-        timex = "Good night"
 
 # Callback----------------
 
