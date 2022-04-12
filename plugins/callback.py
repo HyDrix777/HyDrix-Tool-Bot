@@ -13,16 +13,16 @@ async def hydrix(bot, msg: CallbackQuery):
     if msg.data == "start":
 
         reply1 = await msg.message.reply_text("●○○○")
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(5.5)
 
         reply2 = await reply1.edit("●●○○")
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(5.5)
 
         reply3 = await reply2.edit("●●●○")
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(5.5)
 
         reply4 = await reply3.edit("●●●●")
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(5.5)
 
         await reply4.delete()
 
