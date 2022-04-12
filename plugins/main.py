@@ -13,7 +13,6 @@ import traceback
 import logging
 from pyrogram import StopPropagation, filters
 import datetime
-import pytz
 
 import infog
 from database.broadcast import broadcast
@@ -70,7 +69,7 @@ async def start_message(bot, message):
            )
        )
 
-    min = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+    min = datetime.datetime.now()
 
     Hydrix = min.hour
 
