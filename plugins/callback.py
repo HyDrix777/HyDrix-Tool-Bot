@@ -16,6 +16,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "srrt":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete() 
+
         await msg.message.edit(
             text=f"✨ ʜᴇʟʟᴏ {msg.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ **ʜʏᴅʀɪx** ᴛᴏᴏʟs ʙᴏᴛ [🛠️](https://telegra.ph/file/f1ba9b8c2ce7e659e51f6.mp4)\n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
             reply_markup=InlineKeyboardMarkup( [[
@@ -33,6 +48,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
                
     elif msg.data == "about":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text="╭───[•](https://telegra.ph/file/65005f9a58ca27140cdc0.jpg)[ᴀʙᴏᴜᴛ]\n│➪ **ᴍʏ ɴᴀᴍᴇ**: [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n│➪ **ᴄʀᴇᴀᴛᴏʀ**: [ʜʏᴅʀɪx](https://t.me/HydraLivegrambot)\n│➪ **ᴄʜᴀɴɴᴇʟ**: [ᴛɢɢ](https://t.me/Tg_Galaxy)\n│➪ **ɢʀᴏᴜᴘ**: [ᴍɢ](https://t.me/songdownload_group)\n│➪ **sᴇʀᴠᴇʀ**: [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n│➪ **ʟɪʙʀᴀʀʏ**: [ᴘʏʀᴏɢʀᴀᴍ](https://docs.pyrogram.org/)\n│➪ **ʟᴀɴɢᴜᴀɢᴇ**: [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n│➪ **ᴅᴀᴛᴀʙᴀsᴇ**: [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n│➪ **ʙᴜɪʟᴅ sᴛᴀᴛᴜs**: `v4.0.1 [ʙᴇᴛᴀ]`\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
@@ -43,6 +73,21 @@ async def hydrix(bot, msg: CallbackQuery):
         )
 
     elif msg.data == "help":
+
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention} My name is HyDrix Tools Bot.\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\nI have multiple tools that can help you,\n\nMore Coming Soon ....",
             reply_markup=InlineKeyboardMarkup([[
