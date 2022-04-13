@@ -12,12 +12,8 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 
 
-@Client.on_message(filters.private & filters.command(["glitch", "glitchart"]))
+@Client.on_message(filters.group & filters.command)
 async def glitchart(bot, update):
-    replied = update.reply_to_message
-    if not replied:
-        await update.reply("Reply to any image file.")
-        return
     download_path = PATH + "/" + str(update.from_user.id) + "/"
     download_location = download_path + "photo.jpg"
     message = await update.reply_text(
