@@ -329,7 +329,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="[🖼️](https://telegra.ph/file/4080224664799812688b6.jpg)➥ **sᴛɪᴄᴋᴇʀ ɪᴅ**❓- __First send me the Sticker , and reply to sticker this command👉🏻__ /stickerid.\n\n📚 **Available Commands**\n\n- /stickerid : Reply to sticker",
+            text="[📚](https://telegra.ph/file/4080224664799812688b6.jpg) **sᴛɪᴄᴋᴇʀ ɪᴅ ᴄᴏᴍᴍᴀɴᴅs**\n\n➪ __ʜᴇʀ ɪs sɪᴍᴘʟᴇ **sᴛɪᴄᴋᴇʀ ɪᴅ** ᴍᴏᴅᴜʟᴇ ғᴏʀ ʏᴏᴜ, ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ sᴛɪᴄᴋᴇʀ ɪᴅ ғʀᴏᴍ ʜᴇʀᴇ.__\nғɪʀsᴛ sᴇɴᴅ ᴍᴇ ᴛʜᴇ **sᴛɪᴄᴋᴇʀ** , ᴀɴᴅ ʀᴇᴘʟʏ ᴛᴏ sᴛɪᴄᴋᴇʀ ᴅᴏᴡɴ ʙᴇʟᴏᴡ ᴄᴏᴍᴍᴀɴᴅ.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/stickerid` : ʀᴇᴘʟʏ ᴛᴏ sᴛɪᴄᴋᴇʀ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
