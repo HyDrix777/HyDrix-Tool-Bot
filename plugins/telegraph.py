@@ -52,8 +52,8 @@ async def telegraph(client, message):
     finally:
         os.remove(download_location)
 
-@Client.on_message(filters.private & filters.command(["tgmedia", "telegraph"]))
-async def tgmedia(client, message):
+@Client.on_message(filters.private & filters.command(["tgravid", "telegraph"]))
+async def tgravid(client, message):
     replied = message.reply_to_message
     if not replied:
         await message.reply("Reply to a supported media file")
