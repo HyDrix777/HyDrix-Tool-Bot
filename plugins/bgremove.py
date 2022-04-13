@@ -14,7 +14,8 @@ async def bgremove(bot, update):
     replied = update.reply_to_message
     if not replied:
         await update.reply("Reply to a supported media file")
-    if not REMOVEBG_API:
+        return
+    elif not REMOVEBG_API:
         await update.reply_text(
             text="Error :- Remove BG Api is error",
             quote=True,
