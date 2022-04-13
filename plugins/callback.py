@@ -32,19 +32,20 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "srrt":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete() 
+
+
 
         await msg.message.edit(
             text=f"✨ ʜᴇʟʟᴏ {msg.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ **ʜʏᴅʀɪx** ᴛᴏᴏʟs ʙᴏᴛ [🛠️](https://telegra.ph/file/f1ba9b8c2ce7e659e51f6.mp4)\n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
