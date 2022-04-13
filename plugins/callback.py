@@ -64,19 +64,19 @@ async def hydrix(bot, msg: CallbackQuery):
                
     elif msg.data == "about":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
+
 
         await msg.message.edit(
             text="╭───[•](https://telegra.ph/file/65005f9a58ca27140cdc0.jpg)[ᴀʙᴏᴜᴛ]\n│➪ **ᴍʏ ɴᴀᴍᴇ**: [ʜʏᴅʀɪx ᴛᴏᴏʟ ʙᴏᴛ](https://t.me/HTGToolBot)\n│➪ **ᴄʀᴇᴀᴛᴏʀ**: [ʜʏᴅʀɪx](https://t.me/HydraLivegrambot)\n│➪ **ᴄʜᴀɴɴᴇʟ**: [ᴛɢɢ](https://t.me/Tg_Galaxy)\n│➪ **ɢʀᴏᴜᴘ**: [ᴍɢ](https://t.me/songdownload_group)\n│➪ **sᴇʀᴠᴇʀ**: [ʜᴇʀᴏᴋᴜ](https://Heroku.com)\n│➪ **ʟɪʙʀᴀʀʏ**: [ᴘʏʀᴏɢʀᴀᴍ](https://docs.pyrogram.org/)\n│➪ **ʟᴀɴɢᴜᴀɢᴇ**: [ᴘʏᴛʜᴏɴ 𝟹](https://python.org/)\n│➪ **ᴅᴀᴛᴀʙᴀsᴇ**: [ᴍᴀɴɢᴏ ᴅʙ](https://mongodb.com)\n│➪ **ʙᴜɪʟᴅ sᴛᴀᴛᴜs**: `v4.0.1 [ʙᴇᴛᴀ]`\n╰───────────⍟",
@@ -89,19 +89,19 @@ async def hydrix(bot, msg: CallbackQuery):
 
     elif msg.data == "help":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
+
 
         await msg.message.edit(
             text=f"ʜᴇʏ {msg.from_user.mention} ᴍʏ ɴᴀᴍᴇ ɪs ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ.\n\n[🔰](https://telegra.ph/file/73669866e33d8be72033b.jpg) __ɪ ᴄᴀɴ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ʜʏᴅʀɪx ᴛᴏᴏʟs ʙᴏᴛ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴘʀᴏᴘᴇʀʟʏ ᴜsᴇ ᴛʜᴇᴍ. ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ ᴛʜʀᴏᴜɢʜ ᴀʟʟ ᴏғ ᴛʜᴇ ᴍᴏᴅᴜʟᴇs.__\n\nMore Coming Soon ....",
@@ -136,18 +136,17 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module2-------
     elif msg.data == "next":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
 
         await msg.message.edit(
@@ -183,18 +182,17 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module3-------
     elif msg.data == "next2":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
 
         await msg.message.edit(
@@ -230,18 +228,17 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module4-------
     elif msg.data == "next3":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
 
         await msg.message.edit(
@@ -278,18 +275,17 @@ async def hydrix(bot, msg: CallbackQuery):
 # Next Module5-------
     elif msg.data == "next4":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
 
         await msg.message.edit(
