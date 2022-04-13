@@ -52,36 +52,6 @@ async def telegraph(client, message):
     finally:
         os.remove(download_location)
 
-@Client.on_message(filters.private & filters.command(["tgravid", "telegraph"]))
-async def tgravid(client, message):
-    replied = message.reply_to_message
-    if not replied:
-        await message.reply("Reply to a supported media file")
-        return
-    location = "./FILES"
-    if not os.path.isdir(location):
-        os.makedirs(location)
-    viddir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".mp4"
-    dwn = await client.send_message(
-          text="<b>𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>",
-          chat_id = message.chat.id,
-          reply_to_message_id=message.message_id
-          )          
-    await client.download_media(
-            message=message,
-            file_name=viddir
-        )
-    await dwn.edit_text("<b>𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...</b>")
-    try:
-        response = upload_file(viddir)
-    except Exception as error:
-        await dwn.edit_text(f"𝗢𝗼𝗽𝘀 𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗪𝗲𝗻𝘁 𝗪𝗿𝗼𝗻𝗴\n{error} Contact @HydraLivegrambot")
-        return
-    await dwn.edit_text(f"https://telegra.ph{response[0]}")
-    try:
-        os.remove(viddir)
-    except:
-        pass
 
 @Client.on_callback_query()
 async def hydrix(bot, msg: CallbackQuery):
