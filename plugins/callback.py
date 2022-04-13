@@ -33,7 +33,7 @@ async def hydrix(bot, msg: CallbackQuery):
     elif msg.data == "srrt":
 
         await msg.message.reply_chat_action("Typing")
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
 
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
@@ -44,7 +44,6 @@ async def hydrix(bot, msg: CallbackQuery):
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
         await reply4.delete() 
-
 
 
         await msg.message.edit(
