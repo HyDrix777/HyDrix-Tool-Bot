@@ -12,7 +12,7 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 
 
-@Client.on_message(filters.private & filters.command(["makeglitch", "glitch", "glitchart"]))
+@Client.on_message(filters.private & filters.command(["glitch", "glitchart"]))
 async def glitchart(bot, update):
     replied = update.reply_to_message
     if not replied:
