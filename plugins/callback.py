@@ -353,7 +353,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="[🗑️](https://telegra.ph/file/c311d906b5bb2db7cf03e.jpg)➥ **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ** - __I Can Delete A Service message like join left and more,add me your group and promote it.__\n\n📚 **Available Commands**\n\n➥ /cleanservice [ON or Off]- turn on the service cleaner or off it.",
+            text="[🗑️](https://telegra.ph/file/c311d906b5bb2db7cf03e.jpg) **ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ**\n\n➪ __ᴅᴇʟᴇᴛᴇ ᴀʟʟ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇs. ᴛʜᴏsᴇ ᴀʀᴇ ᴛʜᴇ ᴀɴɴᴏʏɪɴɢ 'x ᴊᴏɪɴᴇᴅ ᴛʜᴇ ɢʀᴏᴜᴘ' ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴs ʏᴏᴜ sᴇᴇ ᴡʜᴇɴ ᴘᴇᴏᴘʟᴇ ᴊᴏɪɴ.__\n__ɪ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴀ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ ʟɪᴋᴇ ᴊᴏɪɴ ʟᴇғᴛ ᴀɴᴅ ᴍᴏʀᴇ,ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ɪᴛ.__\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/cleanservice` [ᴏɴ ᴏʀ ᴏғғ] : ᴛᴜʀɴ ᴏɴ ᴏʀ ᴏғғ ᴛʜᴇ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ ᴄʟᴇᴀɴᴇʀ.\n- `/cleanservice on` : **ᴏɴ** ᴛʜᴇ ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘ.\n- `/cleanservice off` : **ᴏғғ** ᴛʜᴇ ᴄʟᴇᴀɴ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ ɪɴ ɢʀᴏᴜᴘ.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
