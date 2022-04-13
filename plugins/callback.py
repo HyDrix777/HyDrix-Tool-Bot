@@ -377,7 +377,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg) **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n➪ __ᴛʜɪs ɪs ᴀ **ᴛᴇʟᴇɢʀᴀᴘʜ** ᴜᴘʟᴏᴀᴅᴇʀ ᴍᴏᴅᴜʟᴇ, sᴇɴᴅ ᴍᴇ ᴜɴᴅᴇʀ 𝟻ᴍʙ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ, ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ I'ʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ɪɴᴛᴏ__ telegra.ph\nᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇ ɴᴏᴛ sᴏᴘᴘᴏʀᴛ\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- /tgraph : ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ ᴇᴛᴄ.\n- /telegraph : ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ ᴇᴛᴄ.",
+            text="[📜](https://telegra.ph/file/d1d7357dc98aeb2253c2a.jpg) **ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅᴇʀ**\n\n➪ __ᴛʜɪs ɪs ᴀ **ᴛᴇʟᴇɢʀᴀᴘʜ** ᴜᴘʟᴏᴀᴅᴇʀ ᴍᴏᴅᴜʟᴇ, sᴇɴᴅ ᴍᴇ ᴜɴᴅᴇʀ 𝟻ᴍʙ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ, ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ I'ʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ɪɴᴛᴏ__ telegra.ph\nᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇ ɴᴏᴛ sᴏᴘᴘᴏʀᴛ\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/tgraph` : ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ ᴇᴛᴄ.\n- `/telegraph` : ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ,ɢɪғ,ᴘɴɢ ᴇᴛᴄ.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
