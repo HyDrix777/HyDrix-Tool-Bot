@@ -1811,7 +1811,7 @@ async def hydrix(bot, msg: CallbackQuery):
         reply3 = await reply2.edit("●●●")
         await asyncio.sleep(0.5)
 
-        await reply4.delete()
+        await reply3.delete()
 
         await msg.message.edit(
             text="**ғᴏʀᴍᴀᴛᴛɪɴɢ**\n\n➪ Hʏᴅʀɪx sᴜᴘᴘᴏʀᴛs ᴀ ʟᴀʀɢᴇ ɴᴜᴍʙᴇʀ ᴏғ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴏᴘᴛɪᴏɴs ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇs ᴍᴏʀᴇ ᴇxᴘʀᴇssɪᴠᴇ. ᴛᴀᴋᴇ ᴀ ʟᴏᴏᴋ!\n\nYou can add this formats in **Unlimited Filter** module",
@@ -1837,7 +1837,7 @@ async def hydrix(bot, msg: CallbackQuery):
         reply3 = await reply2.edit("●●●")
         await asyncio.sleep(0.5)
 
-        await reply4.delete()
+        await reply3.delete()
 
         await msg.message.edit(
             text="**ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛɪɴɢ**\n\n➪ You can format your message using **bold**, __italic__, underline, ~~strike~~ and much more. Go ahead and experiment!\n\n**Note:**\nIt supports HTML and Markdown Both as well!\n\n**Supported markdown:**\n- <code>`code words`</code>: Backticks are used for monospace fonts. Shows as: <code>code words</code>.\n- <code>__italic__</code>: Underscores are used for italic fonts. Shows as: <i>italic words</i>.\n- <code>**bold**</code>: Asterisks are used for bold fonts. Shows as: <b>bold words</b>.\n- <code>--underline--</code>: To make fronts <u>underline</u>.\n- <code>~~strike~~</code>: Tildes are used for strikethrough. Shows as: <strike>strike</strike>.\n- `[hyperlink](example.com)` : This is the formatting used for hyperlinks. Shows as: `[hyperlink](example.com)`.\n\n**Markdown Bottons**\n- `[My Button](buttonurl://example.com)`: This is the formatting used for creating buttons. This example will create a button named `My button` which opens `example.com` when clicked.\nIf you would like to send buttons on the same row, use the `same` formatting.\n\nᴇxᴀᴍᴘʟᴇ:\n`[button 3](buttonurl://example.com)`\n`[button 2](buttonurl://example.com:same)`\n`[button 1](buttonurl://example.com)`\nThis will show button 1 and 2 on the same line, with 3 underneath.",                  
@@ -1858,7 +1858,7 @@ async def hydrix(bot, msg: CallbackQuery):
         reply3 = await reply2.edit("●●●")
         await asyncio.sleep(0.5)
 
-        await reply4.delete()
+        await reply3.delete()
 
         await msg.message.edit(
             text="**ʀᴀɴᴅᴏᴍ ᴄᴏɴᴛᴇɴᴛ**\n\n➪ Another thing that can be fun, is to randomise the contents of a message. Make things a little more personal by changing welcome messages, or changing notes!\n\n**How to use random contents:**\n- %%%: This separator can be used to add **random** replies to the bot.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n<code>hello</code>\n%%%\n<code>how are you</code>\nThis will randomly choose between sending the first message, `hello`, or the second message, `how are you`.\nUse this to make Hydrix feel a bit more customised! `(only works in filters/notes)`",
@@ -1879,7 +1879,7 @@ async def hydrix(bot, msg: CallbackQuery):
         reply3 = await reply2.edit("●●●")
         await asyncio.sleep(0.5)
 
-        await reply4.delete()
+        await reply3.delete()
 
         await msg.message.edit(
             text="**ғɪʟʟɪɴɢs**\n\n➪ You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the welcome message, or mention them in a filter!\nYou can use these to mention a user in notes too!\n\n**sᴜᴘᴘᴏʀᴛᴇᴅ ғɪʟʟɪɴɢs:**\n\n- <code>{first}</code>: The user's first name.\n- <code>{last}</code>: The user's last name.\n- <code>{fullname}</code>: The user's full name.\n- <code>{username}</code>: The user's username. If they don't have one, mentions the user instead.\n- <code>{mention}</code>: Mentions the user with their firstname.\n- <code>{id}</code>: The user's ID.\n- <code>{chatname}</code>: The chat's name.",
