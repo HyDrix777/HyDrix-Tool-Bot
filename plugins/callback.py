@@ -1793,7 +1793,98 @@ async def hydrix(bot, msg: CallbackQuery):
         await msg.message.edit(
             text="💾 **Filters**\n\n__Filters are case insensitive; every time someone says your trigger words, Rose will reply something else! can be used to create your own commands, if desired.__\n\n📚 **Available Commands**\n\n**Admin only:**\n➥ /filters: List all active filters saved in the chat.\n\n**Admin only:**\n➥ /filter ‹keyword› ‹reply message›: Add a filter to this chat. The bot will now reply that message whenever 'keyword'is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.\n\n**Example**:\n`Set a filter:`\n/filter hello Hello there! How are you?\n/filter filtername1|filtername2 Reply Text\n__Using the you can make a single filter work on 2 filternames without manually adding another one.__\n\n/stop ‹filter keyword›: Stop that filter.\n**Note:** __For filters with aliases, if you stop one alias, the filter will stop working on other aliases too.__\n**For Example:** If you stop the filtername1 from above example, the bot will not respond to filtername2\n\n**Chat creator only:**\n\n➥ /removeallfilters: Remove all chat filters at once.\n\n**Note:**\n__Currently there is a limit of 50 filters and 120 aliases per chat.All filter keywords are in lowercase.__",
             reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛɪɴɢ", callback_data="frmt")
+               ],[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "frmt":
+
+        reply1 = await msg.message.reply_text("●○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
+        await msg.message.edit(
+            text="**ғᴏʀᴍᴀᴛᴛɪɴɢ**\n\n➪ Hʏᴅʀɪx sᴜᴘᴘᴏʀᴛs ᴀ ʟᴀʀɢᴇ ɴᴜᴍʙᴇʀ ᴏғ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴏᴘᴛɪᴏɴs ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇs ᴍᴏʀᴇ ᴇxᴘʀᴇssɪᴠᴇ. ᴛᴀᴋᴇ ᴀ ʟᴏᴏᴋ!\n\nYou can add this formats in **Unlimited Filter** module",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛɪɴɢ", callback_data="mrkd"),
+               InlineKeyboardButton("ʀᴀɴᴅᴏᴍ ᴄᴏɴᴛᴀɴᴛ", callback_data="rdct")
+               ],[
+               InlineKeyboardButton("ғɪʟʟɪɴɢs", callback_data="fill")
+               ],[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
+               ]]
+            )
+        )
+
+    elif msg.data == "mrkd":
+
+        reply1 = await msg.message.reply_text("●○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
+        await msg.message.edit(
+            text="**ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛɪɴɢ**\n\n➪ You can format your message using <b>bold</b>, <i>italic</i>, <u>underline</u>, <strike>strike</strike> and much more. Go ahead and experiment!\n**Note:**\nIt supports HTML and Markdown (Both) as well!\n\n**Supported markdown:**\n- <code>`code words`</code>: Backticks are used for monospace fonts. Shows as: <code>code words</code>.\n- <code>__italic__</code>: Underscores are used for italic fonts. Shows as: <i>italic words</i>.\n- <code>**bold**</code>: Asterisks are used for bold fonts. Shows as: <b>bold words</b>.\n- <code>--underline--</code>: To make fronts <u>underline</u>.\n- <code>~~strike~~</code>: Tildes are used for strikethrough. Shows as: <strike>strike</strike>.\n- <code>[hyperlink](example.com)</code>: This is the formatting used for hyperlinks. Shows as: <a href="https://example.com/">hyperlink</a>.\n\n**Markdown Bottons**\n- <code>[My Button](buttonurl://example.com)</code>: This is the formatting used for creating buttons. This example will create a button named "My button" which opens <code>example.com</code> when clicked.\nIf you would like to send buttons on the same row, use the <code>:same</code> formatting.\n\nᴇxᴀᴍᴘʟᴇ:\n<code>[button 3](buttonurl://example.com)</code>\n<code>[button 2](buttonurl://example.com:same)</code>\n<code>[button 1](buttonurl://example.com)</code>\nThis will show button 1 and 2 on the same line, with 3 underneath.",                  
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="frmt")
+               ]]
+            )
+        )
+
+    elif msg.data == "rdct":
+
+        reply1 = await msg.message.reply_text("●○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
+        await msg.message.edit(
+            text="**ʀᴀɴᴅᴏᴍ ᴄᴏɴᴛᴇɴᴛ**\n\n➪ Another thing that can be fun, is to randomise the contents of a message. Make things a little more personal by changing welcome messages, or changing notes!\n\n**How to use random contents:**\n- %%%: This separator can be used to add "random" replies to the bot.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n<code>hello</code>\n%%%\n<code>how are you</code>\nThis will randomly choose between sending the first message, `hello`, or the second message, `how are you`.\nUse this to make Hydrix feel a bit more customised! (only works in **filters/notes**)\n",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="frmt")
+               ]]
+            )
+        )
+
+    elif msg.data == "fill":
+
+        reply1 = await msg.message.reply_text("●○○")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("●●○")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("●●●")
+        await asyncio.sleep(0.5)
+
+        await reply4.delete()
+
+        await msg.message.edit(
+            text="**ғɪʟʟɪɴɢs**\n\n➪ You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the welcome message, or mention them in a filter!\nYou can use these to mention a user in notes too!\n\n**sᴜᴘᴘᴏʀᴛᴇᴅ ғɪʟʟɪɴɢs:**\n\n- <code>{first}</code>: The user's first name.\n- <code>{last}</code>: The user's last name.\n- <code>{fullname}</code>: The user's full name.\n- <code>{username}</code>: The user's username. If they don't have one, mentions the user instead.\n- <code>{mention}</code>: Mentions the user with their firstname.\n- <code>{id}</code>: The user's ID.\n- <code>{chatname}</code>: The chat's name.",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="frmt")
                ]]
             )
         )
