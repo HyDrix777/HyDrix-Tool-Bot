@@ -397,7 +397,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="[🔎](https://telegra.ph/file/9986b71e762c6a95f9659.jpg) **ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ**\n\n➪ ᴛʜɪs ɪs ᴀ ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ ᴍᴏᴅᴜʟᴇ ғᴏʀ ᴀɴ sɪᴍᴘʟᴇ ᴄᴏᴍᴍᴀɴᴅ ᴀʀɢᴜᴍᴇɴᴛs.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/ytsearch` ᴠɪᴅᴇᴏ ɴᴀᴍᴇ : sᴇᴀʀᴄʜ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏs\n- `/ytsearch Alen Walker`\n- `/search sorry justin bieber`\n- `/search alone marshmallow`",
+            text="[🔎](https://telegra.ph/file/dec01286648802eede568.jpg) **ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ**\n\n➪ ᴛʜɪs ɪs ᴀ ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ ᴍᴏᴅᴜʟᴇ ғᴏʀ ᴀɴ sɪᴍᴘʟᴇ ᴄᴏᴍᴍᴀɴᴅ ᴀʀɢᴜᴍᴇɴᴛs.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/ytsearch` ᴠɪᴅᴇᴏ ɴᴀᴍᴇ : sᴇᴀʀᴄʜ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏs\n- `/ytsearch Alen Walker`\n- `/search sorry justin bieber`\n- `/search alone marshmallow`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
