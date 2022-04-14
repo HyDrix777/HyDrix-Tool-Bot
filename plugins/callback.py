@@ -1861,7 +1861,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="**ʀᴀɴᴅᴏᴍ ᴄᴏɴᴛᴇɴᴛ**\n\n➪ Another thing that can be fun, is to randomise the contents of a message. Make things a little more personal by changing welcome messages, or changing notes!\n\n**How to use random contents:**\n- %%%: This separator can be used to add "random" replies to the bot.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n<code>hello</code>\n%%%\n<code>how are you</code>\nThis will randomly choose between sending the first message, `hello`, or the second message, `how are you`.\nUse this to make Hydrix feel a bit more customised! `(only works in filters/notes)`",
+            text="**ʀᴀɴᴅᴏᴍ ᴄᴏɴᴛᴇɴᴛ**\n\n➪ Another thing that can be fun, is to randomise the contents of a message. Make things a little more personal by changing welcome messages, or changing notes!\n\n**How to use random contents:**\n- %%%: This separator can be used to add **random** replies to the bot.\n\n**ᴇxᴀᴍᴘʟᴇ:**\n<code>hello</code>\n%%%\n<code>how are you</code>\nThis will randomly choose between sending the first message, `hello`, or the second message, `how are you`.\nUse this to make Hydrix feel a bit more customised! `(only works in filters/notes)`",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="frmt")
                ]]
