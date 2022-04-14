@@ -35,7 +35,7 @@ async def sticker_image(_, msg: Message):
         os.remove(sticker)
 
 
-@Client.on_message(filters.channel & filters.photo)
+@Client.on_message(filters.private & filters.photo)
 async def sticker_image(_, msg: Message):
     user_id = msg.from_user.id
     message_id = msg.message_id
