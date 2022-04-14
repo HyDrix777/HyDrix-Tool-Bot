@@ -11,7 +11,7 @@ async def regex_1(bot, msg):
 
 @Client.on_message(filters.private & filters.regex("hello") | filters.private & filters.regex("Hello"))
 async def regex_2(bot, msg):
-    await msg.reply_text(f"Hello {msg.from_user.first_name} bro👋")
+    await msg.reply_text(f"Hello {msg.from_user.first_name} bro, How are you 😌")
 
 
 @Client.on_message(filters.private & filters.regex("lol") | filters.private & filters.regex("Lol"))
