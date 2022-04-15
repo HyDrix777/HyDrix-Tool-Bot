@@ -421,7 +421,7 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="📚 **Available Command**\n\n[📑](https://telegra.ph/file/d0717d29431518ff9dc21.jpg)➥ /json - __Reply To Any Message To Get Json__",
+            text="[🧾](https://telegra.ph/file/d0717d29431518ff9dc21.jpg) **ᴊsᴏɴ**\n\n➪ __ɪ ᴄᴀɴ sʜᴏᴡ ʏᴏᴜ ᴊsᴏɴ ʀᴀᴡ ᴅᴀᴛᴀ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴀssᴀɢᴇ. ɪᴛ ᴄᴏᴜʟᴅ ʙᴇ ᴜsᴇғᴜʟ ᴀᴛ sᴏᴍᴇ ᴘᴏɪɴᴛs ᴀɴᴅ sʜᴏᴡs ᴛʜᴇ ᴊsᴏɴ ᴅᴀᴛᴀ ʀᴇᴄᴇɪᴠᴇᴅ ғʀᴏᴍ ʏᴏᴜʀ ᴄʟɪᴇɴᴛ.__\n\n**ᴇxᴀᴍᴘʟᴇ:**\n- `/json` : ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴛᴏ ɢᴇᴛ ᴊsᴏɴ.",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="help")
                ]]
