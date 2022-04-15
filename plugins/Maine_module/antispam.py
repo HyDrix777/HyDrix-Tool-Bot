@@ -5,7 +5,7 @@ from traceback import format_exc
 from pyrogram.errors import MessageTooLong, PeerIdInvalid, UserIsBlocked
 from pyrogram.types import Message
 
-from Alita import BOT_ID, LOGGER, MESSAGE_DUMP, SUPPORT_GROUP, SUPPORT_STAFF
+from Alita.vars import BOT_ID, LOGGER, MESSAGE_DUMP, SUPPORT_GROUP, SUPPORT_STAFF
 from Alita.bot_class import Alita
 from database.antispam_db import GBan
 from database.users_db import Users
