@@ -1229,9 +1229,9 @@ async def hydrix(bot, msg: CallbackQuery):
         await reply4.delete()
 
         await msg.message.edit(
-            text="🗳️ **Report**\n\n__ReportBoT help admins find Those who misbehave in Group.__\n__This command help you to report a message or a user to the admins of the group.__\n\n📚 **Available Commands**\n\n➥ /report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾).",
+            text="🗳️ **ʀᴇᴘᴏʀᴛs**\n\n➪ __we're all busy people who don't have time to monitor our groups 24/7. But how do you react if someone in your group is spamming?__\n\n__Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.__\n\n**ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs**:\n- /report <reason>: reply to a message to report it to admins.\n- @admin: reply to a message to report it to admins.\nNOTE:\n Neither of these will get triggered if used by admins.\n\n**Admins Only:**\n- /reports <on/off/yes/no>: change report setting, or view current status.\n- If done in PM, toggles your status.\n- If in group, toggles that groups's status.\n\nNote:\n that the report commands do not work when admins use them; or when used to report an admin. Rose assumes that admins don't need to report, or be reported!",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next2")
+               InlineKeyboardButton("« ʙᴀᴄᴋ", callback_data="next3")
                ]]
             )
         )
