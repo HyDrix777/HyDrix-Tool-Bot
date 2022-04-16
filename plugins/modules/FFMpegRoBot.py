@@ -14,7 +14,7 @@ else:
 
 # the Strings used for this "thing"
 from translation import Translation
-
+from
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
@@ -23,6 +23,9 @@ from database.help_Nekmo_ffmpeg import take_screen_shot, cult_small_video
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+from pyrogram import Client, filters
+
+
 
 
 @Client.on_message(pyrogram.filters.command(["ffmpegrobot"]))
