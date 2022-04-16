@@ -68,7 +68,7 @@ async def resume(client, message):
         await message.reply("**Error:** GroupCall not found!")
 
 
-@Client.on_message(filters.command("stop"))
+@Client.on_message(filters.command("stp"))
 @blacklist_users
 async def stopped(client, message):
     query = " ".join(message.command[1:])
