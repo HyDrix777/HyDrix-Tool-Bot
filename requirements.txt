@@ -1,5 +1,5 @@
-pyrogram==1.4.15
-tgcrypto==1.2.3
+pyrogram
+tgcrypto
 telegraph==1.4.1
 telethon
 telegram
@@ -9,7 +9,7 @@ youtube_dl
 youtube_search_python
 ffmpeg-python
 ffmpeg
-yt-dlp==2022.4.8
+yt-dlp
 googletrans==3.1.0a0
 gtts
 aiohttp==3.7.4
@@ -52,8 +52,3 @@ cachetools==4.2.4; python_version >= "3.5" and python_version < "4.0"
 regex==2021.11.10
 wikipedia==1.4.0
 tswift==0.7.0
-
-py-tgcalls==0.8.6
-sqlalchemy==1.4.35
-Pillow==9.1.0
-psycopg2-binary
