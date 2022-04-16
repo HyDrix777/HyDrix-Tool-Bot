@@ -13,7 +13,7 @@ LOGGER = logging.getLogger(__name__)
 
 
   
-@Client.on_message(events.NewMessage(pattern="^/all ?(.*)"))
+@Client.on_message(events.NewMessage(pattern="^/tall ?(.*)"))
 async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
