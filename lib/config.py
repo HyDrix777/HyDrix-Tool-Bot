@@ -1,0 +1,11 @@
+import os
+
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+SESSION_NAME = os.getenv("SESSION_NAME")
+COMMAND_PREFIXES = os.getenv("COMMAND_PREFIXES", "!")
+BOTLOG_CHATID = os.getenv("BOTLOG_CHATID")
+DATABASE_URL = os.getenv("DATABASE_URL")
+REST_API = os.getenv("REST_API")
+SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
