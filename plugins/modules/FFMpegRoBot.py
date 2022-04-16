@@ -15,7 +15,7 @@ else:
 # the Strings used for this "thing"
 from translation import Translation
 
-
+import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from database.display_progress import progress_for_pyrogram
@@ -28,7 +28,7 @@ from pyrogram import Client, filters
 
 
 
-@Client.on_message(pyrogram.filters.command(["ffmpegrobot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["ffmpegrobot"]))
 async def ffmpegrobot_ad(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
@@ -45,7 +45,7 @@ async def ffmpegrobot_ad(bot, update):
     )
 
 
-@Client.on_message(pyrogram.filters.command(["trim"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["trim"]))
 async def trim(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
@@ -160,7 +160,7 @@ async def trim(bot, update):
         )
 
 
-@Client.on_message(pyrogram.filters.command(["storageinfo"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["storageinfo"]))
 async def storage_info(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
@@ -189,7 +189,7 @@ async def storage_info(bot, update):
         )
 
 
-@Client.on_message(pyrogram.filters.command(["clearffmpegmedia"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["clearffmpegmedia"]))
 async def clear_media(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
@@ -208,7 +208,7 @@ async def clear_media(bot, update):
     )
 
 
-@Client.on_message(pyrogram.filters.command(["downloadmedia"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["downloadmedia"]))
 async def download_media(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
