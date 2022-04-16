@@ -16,7 +16,7 @@ else:
 
 # the Strings used for this "thing"
 from translation import Translation
-
+from pyrogram import Client, filters
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
