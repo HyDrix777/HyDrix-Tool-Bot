@@ -21,6 +21,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from database.help_Nekmo_ffmpeg import generate_screen_shots
 from database.display_progress import progress_for_pyrogram
+from pyrogram import Client, filters
+
 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["sshot"]))
