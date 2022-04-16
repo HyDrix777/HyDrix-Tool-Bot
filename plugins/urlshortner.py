@@ -13,7 +13,7 @@ GPLINKS_API = os.environ.get("GPLINKS_API", "008ccaedd6061ad1948838f410947603de9
 
 reply_markup = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text='My group', url='https://t.me/Music_Galaxy_Dl')
+        InlineKeyboardButton(text='My group', url='https://t.me/songdownload_group')
         ]]
     )
 
