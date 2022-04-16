@@ -25,7 +25,7 @@ from pyrogram import Client, filters
 
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["sshot"]))
+@Client.on_message(pyrogram.filters.command(["sshot"]))
 async def generate_screen_shot(bot, update):
     if update.from_user.id not in Config.AUTH_USERS:
         await bot.delete_messages(
