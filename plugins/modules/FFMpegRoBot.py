@@ -15,7 +15,7 @@ else:
 # the Strings used for this "thing"
 from translation import Translation
 
-from pyrogram
+
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from database.display_progress import progress_for_pyrogram
