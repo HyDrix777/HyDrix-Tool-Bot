@@ -39,6 +39,6 @@ class Config(object):
         custom_tag = " {" + CUSTOM_TAG + "}"
     else:
         custom_tag = " "
-    
+    DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
 
-    
+   
