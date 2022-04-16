@@ -45,3 +45,4 @@ You can use /rename command after receiving file to rename it with custom thumbn
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     AFTER_SUCCESSFUL_UPLOAD_MSG = " JOIN : https://t.me/tg_galaxy\nFor the List of Telegram Bots"
+    REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
